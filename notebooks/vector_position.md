@@ -1,5 +1,5 @@
 # Position vector and displacement vector
-As noted, vectors are defined solely by their magnitude and direction. Therefore, the beginning point (the tail) of a vector can be anywhere and it' still the same vector. When the tail is located in the Origin, the vector is called a **position vector**.
+As noted, vectors are defined solely by their magnitude and direction. Therefore, the beginning point (the tail) of a vector can be anywhere and it' still the same vector. When the tail is located in the Origin, the vector is called a **{index}`position vector`**.
 
 :::{admonition} Definition
 :class: seealso
@@ -12,7 +12,7 @@ The magnitude of the position vector $|\overline{OA}|$ corresponds to the distan
 
 :::{admonition} EXAMPLE 1. Position vectors
 :class: tip, dropdown
-Letäs create position vectors corresponding to coordinate points $A=(-2, 0)$, $B=(1, 3)$ and $C=(3, -1)$ and calculate the sum of them $\overline{OP}=\overline{OA}+\overline{OB}+\overline{OC}$. Where is the head of the vector $\overline{OP}$ located and how long is it (what is its magnitude)?
+Let's create position vectors corresponding to coordinate points $A=(-2, 0)$, $B=(1, 3)$ and $C=(3, -1)$ and calculate the sum of them $\overline{OP}=\overline{OA}+\overline{OB}+\overline{OC}$. Where is the head of the vector $\overline{OP}$ located and how long is it (what is its magnitude)?
 
 Position vectors from Origin to coordinate points $A, B$ and $C$ are
 
@@ -39,7 +39,7 @@ Magnitude is calculated as $|\overline{OP}|=\sqrt{2^2+2^2}=\sqrt8=\sqrt{4\cdot2}
 :::
 
 ## Displacement vector expressed by position vectors
-Let's examine the vector $\overline{AB}$ in [figure 7.](position_vectors) (dotted line) Vector from point $A$ to point $B$ can be written as the sum of vectors $\overline{AO}$ and $\overline{OB}$.
+Let's examine the vector $\overline{AB}$ in the previous example (Click to show) [figure 6.](position_vectors) Vector from point $A$ to point $B$ can be written as the sum of vectors $\overline{AO}$ and $\overline{OB}$.
 
 $\begin{align}\overline{AB}&=\overline{AO}+\overline{OB} \\ \\
 &=-\overline{OA}+\overline{OB} \\ \\
@@ -47,12 +47,12 @@ $\begin{align}\overline{AB}&=\overline{AO}+\overline{OB} \\ \\
 
 :::{admonition} Definition
 :class: seealso
-A displacement vector $\overline{AB}$ is the shortest distance between coordinate points *A* and *B* and is formulated by **substracting the position vector of its tail from the position vector of its head.**
+A **{index}`displacement vector`** $\overline{AB}$ is the shortest distance between coordinate points *A* and *B* and is formulated by substracting the position vector of its tail from the position vector of its head.
 
 :::
 
 
-As in [figure 7.](position_vectors), the displacement vector $\overline{AB}$ can be formed as
+As in [figure 6.](position_vectors) (Click to show EXAMPLE 1.), the displacement vector $\overline{AB}$ can be formed as
 
 $\begin{align}\overline{AB}&=\overline{OB}-\overline{OA} \\ \\
 &=(1, 3)-(-2, 0)=(3, 3)\end{align}$
@@ -78,9 +78,9 @@ $\begin{align}\overline{AB}&=\overline{OB}-\overline{OA} \\ \\
 &=(340-150, 320-200) \\ \\
 &=(190, 120)\end{align}$
 
-As in [figure 8.](orienteerer), we can now determine the displacement vector $\overline{AB}$.
+As in [figure 7.](orienteerer), we can now determine the displacement vector $\overline{AC}$.
 
-$\begin{align}\overline{AC}&=\overline{AB}+\overline{BC} \\
+$\begin{align}\overline{AC}&=\overline{AB}+\overline{BC} \\ \\
 &=(190, 120)+(60, 300) \\ \\
 &=(190+60, 120+300) \\ \\
 &=(250, 420)\end{align}$
