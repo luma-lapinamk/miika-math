@@ -41,9 +41,9 @@ Magnitude is calculated as $|\overline{OP}|=\sqrt{2^2+2^2}=\sqrt8=\sqrt{4\cdot2}
 ## Displacement vector expressed by position vectors
 Let's examine the vector $\overline{AB}$ in the previous example (Click to show) [figure 6.](position_vectors) Vector from point $A$ to point $B$ can be written as the sum of vectors $\overline{AO}$ and $\overline{OB}$.
 
-$\begin{align}\overline{AB}&=\overline{AO}+\overline{OB} \\ \\
+$$\begin{align}\overline{AB}&=\overline{AO}+\overline{OB} \\ \\
 &=-\overline{OA}+\overline{OB} \\ \\
-&=\overline{OB}-\overline{OA}\end{align}$
+&=\overline{OB}-\overline{OA}\end{align}$$
 
 :::{admonition} Definition
 :class: seealso
