@@ -1,0 +1,568 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Basic vector calculus &#8212; Math in English</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Position vector and displacement vector" href="vector_position.html" />
+    <link rel="prev" title="Preface" href="vector_intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Math in English</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Math in English
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Vectors
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="vector_intro.html">
+   Preface
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Basic vector calculus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="vector_position.html">
+   Position vector and displacement vector
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Appendix
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../genindex.html">
+   Index
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/luma-lapinamk/miika-linear-algebra"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebooks/vector_basic_calc.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#addition-substraction-and-scalar-multiplication">
+   Addition, substraction and scalar multiplication
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vector-norm">
+   Vector norm
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Basic vector calculus</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#addition-substraction-and-scalar-multiplication">
+   Addition, substraction and scalar multiplication
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vector-norm">
+   Vector norm
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="basic-vector-calculus">
+<h1>Basic vector calculus<a class="headerlink" href="#basic-vector-calculus" title="Permalink to this headline">#</a></h1>
+<section id="addition-substraction-and-scalar-multiplication">
+<h2>Addition, substraction and scalar multiplication<a class="headerlink" href="#addition-substraction-and-scalar-multiplication" title="Permalink to this headline">#</a></h2>
+<p>The sum of vectors <span class="math notranslate nohighlight">\(\overline{u}\)</span> and <span class="math notranslate nohighlight">\(\overline{v}\)</span> is denoted by <span class="math notranslate nohighlight">\(\overline{u}+\overline{v}\)</span>. The sum is a new vector, sometimes called a resultant vector. The tail of the resultant vector is the tail of vector <span class="math notranslate nohighlight">\(\overline{u}\)</span> and its head can be found from the head of vector <span class="math notranslate nohighlight">\(\overline{v}\)</span> after it is placed at the head of vector <span class="math notranslate nohighlight">\(\overline{u}\)</span>, as in <a class="reference internal" href="#sum-and-subs"><span class="std std-ref">figure 3.</span></a></p>
+<p>The difference of vectors <span class="math notranslate nohighlight">\(\overline{u}\)</span> and <span class="math notranslate nohighlight">\(\overline{v}\)</span> is denoted by <span class="math notranslate nohighlight">\(\overline{u}-\overline{v}\)</span>. Here the opposite of vector <span class="math notranslate nohighlight">\(\overline{v}\)</span> is added to the head of vector <span class="math notranslate nohighlight">\(\overline{u}\)</span> as <span class="math notranslate nohighlight">\(\overline{u}+(-\overline{v})\)</span>.</p>
+<figure class="align-default" id="sum-and-subs">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/vektorien_summa.png"><img alt="Vektorien summa ja erotus tasossa" class="bg-primary mb-1 align-center" src="../_images/vektorien_summa.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Addition and substraction of vectors in a plane</span><a class="headerlink" href="#sum-and-subs" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>For all vectors and scalars we can write the following axioms in real vector space:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Addition</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Commutativity</p></td>
+<td><p><span class="math notranslate nohighlight">\(\overline{u}+\overline{v}=\overline{v}+\overline{u}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Commutativity</p></td>
+<td><p><span class="math notranslate nohighlight">\(\overline{u}-\overline{v}=-\overline{v}+\overline{u}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Associativity</p></td>
+<td><p><span class="math notranslate nohighlight">\(\overline{u}+(\overline{v}+\overline{w})=(\overline{u}+\overline{v})+\overline{w}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Identity element</p></td>
+<td><p><span class="math notranslate nohighlight">\(\overline{u}+\overline{0}=\overline{u}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Inverse element</p></td>
+<td><p><span class="math notranslate nohighlight">\(\overline{u}+(-\overline{u})=\overline{0}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Scalar multiplication</p></th>
+<th class="head"><p>NB: the dot <span class="math notranslate nohighlight">\(\cdot\)</span> is not be used in scalar multiplication!</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Commutativity</p></td>
+<td><p><span class="math notranslate nohighlight">\(\overline{u}r=r\overline{u}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Associativity</p></td>
+<td><p><span class="math notranslate nohighlight">\(s(r\overline{u})=(sr)\overline{u}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Distributivity</p></td>
+<td><p><span class="math notranslate nohighlight">\(r(\overline{u}+\overline{v})=r\overline{u}+r\overline{v}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Distributivity</p></td>
+<td><p><span class="math notranslate nohighlight">\((r+s)\overline{u}=r\overline{u}+s\overline{u}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXAMPLE 1. Addition, substraction and scalar multiplication</p>
+<p>Let’s examine vectors <span class="math notranslate nohighlight">\(\overline{u}=(5, 2)\)</span> and <span class="math notranslate nohighlight">\(\overline{v}=(1, 3)\)</span>. When vectors are added or substracted (the sum or substraction is calculated), corresponding components are calculated separately. When a vector is multiplied by a scalar, every component of the vector is multiplied.</p>
+<p><span class="math notranslate nohighlight">\(\text{a)}\)</span> Addition</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}\overline{u}+\overline{v}&amp;=(5, 2)+(1, 3) \\ \\
+&amp;=(5+1, 2+3) \\ \\
+&amp;=(6, 5)\end{align}\)</span></p>
+<hr class="docutils" />
+<p><span class="math notranslate nohighlight">\(\text{b)}\)</span> Substraction</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}\overline{u}-\overline{v}&amp;=(5, 2)-(1, 3) \\ \\
+&amp;=(5-1, 2-3) \\ \\
+&amp;=(4,-1)\end{align}\)</span></p>
+<hr class="docutils" />
+<p><span class="math notranslate nohighlight">\(\text{c)}\)</span> Scalar multiplication</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}2\overline{u}&amp;=2(5, 2) \\ \\
+&amp;=(2\cdot5, 2\cdot2) \\ \\
+&amp;=(10, 4)\end{align}\)</span></p>
+<hr class="docutils" />
+<p><span class="math notranslate nohighlight">\(\text{d)}\)</span> Linear combination (“a mix of all the above”)</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}-2\overline{u}+3\overline{v}&amp;=-2(5, 2)+3(1, 3) \\ \\
+&amp;=(-2\cdot5, -2\cdot2)+(3\cdot1, 3\cdot3) \\ \\
+&amp;=(-10, -4)+(3, 9) \\ \\
+&amp;=(-10+3,-4+9) \\ \\
+&amp;=(-7,5)\end{align}\)</span></p>
+</div>
+<div class="seealso admonition">
+<p class="admonition-title">Definition</p>
+<p>Any vector in a plane can be presented as linear combination of two non-parallel vectors.</p>
+<figure class="align-default" id="markdown-fig">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/lineaarikombinaatio2.png"><img alt="Vektorien lineaarikombinaatio" class="bg-primary mb-1 align-center" src="../_images/lineaarikombinaatio2.png" style="width: 550px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Vector <span class="math notranslate nohighlight">\(\overline{w}\)</span> as a linear combination of vectors <span class="math notranslate nohighlight">\(\overline{u}\)</span> and <span class="math notranslate nohighlight">\(\overline{v}\)</span></span><a class="headerlink" href="#markdown-fig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXAMPLE 2. Finding the linear combination</p>
+<p>Can vector <span class="math notranslate nohighlight">\(\overline{c}=(4, -3)\)</span> be presented as a linear combination of vectors <span class="math notranslate nohighlight">\(\overline{a}=(5, 6)\)</span> and <span class="math notranslate nohighlight">\(\overline{b}=(-2, -5)\)</span>?</p>
+<p>Vectors <span class="math notranslate nohighlight">\(\overline{a}\)</span> and <span class="math notranslate nohighlight">\(\overline{b}\)</span> are clearly non-parallel, so linear combination is possible. This can be verified by dot product of vectors, which will be discussed later in material (Link <font color="red">missing</font> to dot product).</p>
+<p>Now all we have to do is to find scalars <em>r</em> ja <em>s</em> so that <span class="math notranslate nohighlight">\(r\overline{a}+s\overline{b}=\overline{c}\)</span>. Let’s form an equation from this.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}r\overline{a}+s\overline{b}&amp;=\overline{c} \\ \\
+r(5, 6) +s(-2, -5)&amp;=(4, -3) \\ \\
+(5r, 6r)+(-2s, -5s)&amp;=(4, -3) \\ \\
+(5r-2s, 6r-5s)&amp;=(4, -3)\end{align}\end{split}\]</div>
+<p>If the equation above is true, we can consider the x- and y-components separately. Thus we have a system of two equations:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+5r-2s=4 \\
+6r-5s=-3
+\end{cases}\end{split}\]</div>
+<p>A solution can be found that <span class="math notranslate nohighlight">\(r = 2\)</span> and <span class="math notranslate nohighlight">\(s = 3\)</span>. (Link <font color="red">missing</font> to systems of equations.) Because we have shown that scalars <em>s</em> and <em>r</em> exist, <span class="math notranslate nohighlight">\(\overline{c}=2\overline{a}+3\overline{b}\)</span>.</p>
+</div>
+</section>
+<section id="vector-norm">
+<h2>Vector norm<a class="headerlink" href="#vector-norm" title="Permalink to this headline">#</a></h2>
+<p>Magnitude of a vector, the vector norm, is by definition always a non-negative scalar and is denoted as the absolute of a vector. In a plane the norm is calculated with the help of <strong>Pythagorean theorem</strong>, since a vector is described by two perpendicular components. However, the norm of a vector can be calculated for any dimensional vector <span class="math notranslate nohighlight">\(\overline{v}\)</span> as</p>
+<div class="math notranslate nohighlight">
+\[\left|\overline{v}\right|=\sqrt{\sum_{k=1}^nv_k^2}=\sqrt{v_x^2+v_y^2+v_z^2+...}\]</div>
+<figure class="align-default" id="pythagorean">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/pythagoras.png"><img alt="Pythagorean theorem for right triangle, when the length of the legs are 4 and 3" class="bg-primary mb-1 align-center" src="../_images/pythagoras.png" style="width: 420px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Pythagorean theorem for right triangle, when the length of the legs are 4 and 3</span><a class="headerlink" href="#pythagorean" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>As in <a class="reference internal" href="#pythagorean"><span class="std std-ref">figure above</span></a>, the norm of the vector <span class="math notranslate nohighlight">\(\overline{u}=(4, 3)\)</span> can be calculated as</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}|\overline{u}|&amp;=\sqrt{4^2+3^2} \\
+&amp;=\sqrt{16+9} \\
+&amp;=\sqrt{25} \\
+&amp;=5\end{align}\)</span></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXAMPLE 3. Norm is known but components are not</p>
+<p>a) Solve such a positive scalar <em>y</em> that the norm of vector <span class="math notranslate nohighlight">\(\overline{u}=\left(-1,y\right)\)</span> is 5.</p>
+<p>b) Solve such a positive scalar <em>s</em> that the norm of vector <span class="math notranslate nohighlight">\(\overline{v}=(s, 3s)\)</span> is 10.</p>
+<p><strong>Solution</strong></p>
+<p>a) We need to solve the value of the <em>y</em>-component, when the x-component is -1 and the magnitude of the vector is 5. Let’s form an equation for the norm and solve <em>y</em>.</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}|\overline{u}|&amp;=5 \\
+\sqrt{(-1)^2+y^2}&amp;=5 \\
+\sqrt{1+y^2}&amp;=5\ ||\left(\ \ \right)^2 \\
+1+y^2&amp;=25 \\
+y^2&amp;=25-1 \\
+y^2&amp;=24\ ||\sqrt{\ \ } \\
+y&amp;=\pm\sqrt{24} &amp; \text{only positive value is considered} \\
+y&amp;=\sqrt{4\cdot6} \\
+y&amp;=2\sqrt6\end{align}\)</span></p>
+<p>b) We need to solve a value for the coefficient <em>s</em> so that the <em>y</em>-component is three times bigger than the <em>x</em>-component. When the norm of the vector is 10, let’s form a equation for the norm.</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}|\overline{v}|&amp;=10 \\
+\sqrt{s^2+(3s)^2}&amp;=10 \\
+\sqrt{s^2+9s^2}&amp;=10 \\
+\sqrt{{10s}^2}&amp;=10\ ||\left(\ \ \right)^2 \\
+10s^2&amp;=100\ ||:10 \\
+s^2&amp;=10\ ||\sqrt{\ \ } \\
+s&amp;=\pm\sqrt{10} &amp; \text{only positive value is considered} \\
+s&amp;=\sqrt{10}\end{align}\)</span></p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="vector_intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Preface</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="vector_position.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Position vector and displacement vector</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By <a href="https://luma-lapinamk.pub">LUMA-team</a> (<a href="mailto:luma@lapinamk.fi">luma@lapinamk.fi</a>), <a href="https://www.lapinamk.fi/en">Lapland University of Applied Sciences</a> / Miika Aitomaa (<a href="mailto:miika.aitomaa@lapinamk.fi">miika.aitomaa@lapinamk.fi</a>)<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
