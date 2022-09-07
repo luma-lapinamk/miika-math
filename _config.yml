@@ -1,0 +1,27 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+# Book settings
+# -------------
+title: Math in English
+author: <a href="https://luma-lapinamk.pub">LUMA-team</a> (<a href="mailto:luma@lapinamk.fi">luma@lapinamk.fi</a>), <a href="https://www.lapinamk.fi/en">Lapland University of Applied Sciences</a> / Miika Aitomaa (<a href="mailto:miika.aitomaa@lapinamk.fi">miika.aitomaa@lapinamk.fi</a>)
+copyright: "2022"
+logo: images/logo.png
+
+# Execution settings
+# -------------------
+execute:
+  execute_notebooks: off
+
+# GitHub-settings
+# ----------------
+repository:
+  url: https://github.com/luma-lapinamk/miika-linear-algebra
+  branch: master
+
+# HTML-settings
+# --------------
+html:
+  use_issues_button: false
+  use_repository_button: true
+  extra_navbar: Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
