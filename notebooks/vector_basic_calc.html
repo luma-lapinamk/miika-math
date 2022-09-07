@@ -137,6 +137,11 @@ const thebe_selector_output = ".output, .cell_output"
    Position vector and displacement vector
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="vector_parallel.html">
+   Parallel vectors
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -213,7 +218,7 @@ title="Fullscreen mode"
   </span>
 
 </button>
-<a href="https://github.com/luma-lapinamk/miika-linear-algebra"
+<a href="https://github.com/luma-lapinamk/miika-math"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="bottom"
@@ -467,6 +472,17 @@ $<span class="math notranslate nohighlight">\(\overline{c}=2\overline{a}+3\overl
 <p><span class="caption-number">Fig. 5 </span><span class="caption-text">Pythagorean theorem for right triangle, when the length of the legs are 4 and 3</span><a class="headerlink" href="#pythagorean" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Python code</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># define vector</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> 
+
+<span class="c1"># calculate vector norm</span>
+<span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>  
+</pre></div>
+</div>
+</aside>
 <p>As in <a class="reference internal" href="#pythagorean"><span class="std std-ref">figure above</span></a>, the norm of the vector <span class="math notranslate nohighlight">\(\overline{u}=(4, 3)\)</span> can be calculated as</p>
 <p><span class="math notranslate nohighlight">\(\begin{align}|\overline{u}|&amp;=\sqrt{4^2+3^2} \\ \\
 &amp;=\sqrt{16+9} \\ \\

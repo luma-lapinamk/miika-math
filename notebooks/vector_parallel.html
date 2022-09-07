@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Position vector and displacement vector &#8212; Math in English</title>
+    <title>Parallel vectors &#8212; Math in English</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -55,8 +55,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Parallel vectors" href="vector_parallel.html" />
-    <link rel="prev" title="Basic vector calculus" href="vector_basic_calc.html" />
+    <link rel="next" title="Index" href="../genindex.html" />
+    <link rel="prev" title="Position vector and displacement vector" href="vector_position.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -132,13 +132,13 @@ const thebe_selector_output = ".output, .cell_output"
    Basic vector calculus
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="vector_position.html">
    Position vector and displacement vector
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="vector_parallel.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Parallel vectors
   </a>
  </li>
@@ -240,7 +240,7 @@ title="Source repository"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/notebooks/vector_position.md"
+        <a href="../_sources/notebooks/vector_parallel.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -299,9 +299,14 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#displacement-vector-expressed-by-position-vectors">
-   Displacement vector expressed by position vectors
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Parallel vectors
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#unit-vector-kesken">
+   Unit vector (kesken)
   </a>
  </li>
 </ul>
@@ -313,7 +318,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Position vector and displacement vector</h1>
+                <h1>Parallel vectors</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -323,9 +328,14 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#displacement-vector-expressed-by-position-vectors">
-   Displacement vector expressed by position vectors
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Parallel vectors
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#unit-vector-kesken">
+   Unit vector (kesken)
   </a>
  </li>
 </ul>
@@ -338,78 +348,51 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="position-vector-and-displacement-vector">
-<h1>Position vector and displacement vector<a class="headerlink" href="#position-vector-and-displacement-vector" title="Permalink to this headline">#</a></h1>
-<p>As noted, vectors are defined solely by their magnitude and direction. Therefore, the beginning point (the tail) of a vector can be anywhere and it’ still the same vector. When the tail is located in the Origin, the vector is called a <strong><span class="target" id="index-0"></span>position vector</strong>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="parallel-vectors">
+<h1>Parallel vectors<a class="headerlink" href="#parallel-vectors" title="Permalink to this headline">#</a></h1>
 <div class="seealso admonition">
 <p class="admonition-title">Definition</p>
-<p>A coordinate point <span class="math notranslate nohighlight">\(A=(x, y)\)</span> in a plane corresponds to a position vector <span class="math notranslate nohighlight">\(\overline{OA}=(x, y)\)</span>, which has its tail in the Origin and the head in coordinate point <em>A</em>.
-In 3D space, the (x, y, z)-coordinate system, a coordinate point <span class="math notranslate nohighlight">\(B=(x, y, z)\)</span> corresponds to a position vector <span class="math notranslate nohighlight">\(\overline{OB}=(x, y, z)\)</span>.</p>
-<p>The magnitude of the position vector <span class="math notranslate nohighlight">\(|\overline{OA}|\)</span> corresponds to the distance from Origin to point <em>A</em>.</p>
+<p>Two non-zero vectors are parallel if one of the vectors can be presented as scalar multiplication of the other.</p>
+<p>If <span class="math notranslate nohighlight">\(\overline{u}\parallel\overline{v}\)</span>, then <span class="math notranslate nohighlight">\(\overline{u}=r\overline{v}\)</span>, where <span class="math notranslate nohighlight">\(r \ne 0\)</span>.</p>
+<p>If such a scalar doesn’t exist, vectors are nonparallel, <span class="math notranslate nohighlight">\(\overline{u}\nparallel\overline{v}\)</span>.</p>
 </div>
 <div class="tip dropdown admonition">
-<p class="admonition-title">EXAMPLE 1. Position vectors</p>
-<p>Let’s create position vectors corresponding to coordinate points <span class="math notranslate nohighlight">\(A=(-2, 0)\)</span>, <span class="math notranslate nohighlight">\(B=(1, 3)\)</span> and <span class="math notranslate nohighlight">\(C=(3, -1)\)</span> and calculate the sum of them <span class="math notranslate nohighlight">\(\overline{OP}=\overline{OA}+\overline{OB}+\overline{OC}\)</span>. Where is the head of the vector <span class="math notranslate nohighlight">\(\overline{OP}\)</span> located and how long is it (what is its magnitude)?</p>
-<p>Position vectors from Origin to coordinate points <span class="math notranslate nohighlight">\(A, B\)</span> and <span class="math notranslate nohighlight">\(C\)</span> are</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}\overline{OA}&amp;=(-2, 0) \\
-\overline{OB}&amp;=(1, 3) \\
-\overline{OC}&amp;=(3, -1)\end{align}\)</span></p>
-<p>The resultant vector is</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}\overline{OP}&amp;=\overline{OA}+\overline{OB}+\overline{OC} \\ \\
-&amp;=(-2, 0)+(1, 3)+(3, -1) \\ \\
-&amp;=(2, 2)\end{align}\)</span></p>
-<figure class="align-default" id="position-vectors">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/paikkavektori.png"><img alt="Addition of position vectors" class="bg-primary mb-1 align-center" src="../_images/paikkavektori.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Addition of position vectors and the resultant vector <span class="math notranslate nohighlight">\(\overline{OP}\)</span></span><a class="headerlink" href="#position-vectors" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Since the tail of position vector <span class="math notranslate nohighlight">\(\overline{OP}\)</span> is in Origin, the coordinates of its head are <span class="math notranslate nohighlight">\(P=(2, 2)\)</span>.</p>
-<p>Magnitude is calculated as <span class="math notranslate nohighlight">\(|\overline{OP}|=\sqrt{2^2+2^2}=\sqrt8=\sqrt{4\cdot2}=2\sqrt2\)</span></p>
-</div>
-<section id="displacement-vector-expressed-by-position-vectors">
-<h2>Displacement vector expressed by position vectors<a class="headerlink" href="#displacement-vector-expressed-by-position-vectors" title="Permalink to this headline">#</a></h2>
-<p>Let’s examine the vector <span class="math notranslate nohighlight">\(\overline{AB}\)</span> in the previous example (Click to show) <a class="reference internal" href="#position-vectors"><span class="std std-ref">figure 6.</span></a> Vector from point <span class="math notranslate nohighlight">\(A\)</span> to point <span class="math notranslate nohighlight">\(B\)</span> can be written as the sum of vectors <span class="math notranslate nohighlight">\(\overline{AO}\)</span> and <span class="math notranslate nohighlight">\(\overline{OB}\)</span>.</p>
+<p class="admonition-title">EXAMPLE 1. <strong><span class="target" id="index-0"></span>Parallel vectors</strong></p>
+<p>Let’s examine if vectors <span class="math notranslate nohighlight">\(\overline{u}=(6, -4)\)</span> and <span class="math notranslate nohighlight">\(\overline{v}=(-\frac{1}{2},\frac{1}{3})\)</span> are parallel.</p>
+<p>We have to find if such a scalar <span class="math notranslate nohighlight">\(r\)</span> exists so that <span class="math notranslate nohighlight">\(\overline{u}=r\overline{v}\)</span>.</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{align}\overline{AB}&amp;=\overline{AO}+\overline{OB} \\ \\
-&amp;=-\overline{OA}+\overline{OB} \\ \\
-&amp;=\overline{OB}-\overline{OA}\end{align}\end{split}\]</div>
-<div class="seealso admonition">
-<p class="admonition-title">Definition</p>
-<p>A <strong><span class="target" id="index-1"></span>displacement vector</strong> <span class="math notranslate nohighlight">\(\overline{AB}\)</span> is the shortest distance between coordinate points <em>A</em> and <em>B</em> and is formulated by substracting the position vector of its tail from the position vector of its head.</p>
+\[\begin{split}\begin{align}(6, -4) &amp; =r(-\frac{1}{2},\frac{1}{3}) \\ \\
+(6, -4) &amp; =(-\frac{1}{2}r,\frac{1}{3}r) \end{align}\end{split}\]</div>
+<p>Now we can write two equations corresponding the two components.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}6 &amp; =-\frac{1}{2}r &amp; -4 &amp; =\frac{1}{3}r \\ \\
+r &amp; =-12 &amp; r &amp; =-12 \\ \\
+\end{align}\end{split}\]</div>
+<p>We have found such a scalar <span class="math notranslate nohighlight">\(r\)</span> that satifies <span class="math notranslate nohighlight">\(\overline{u}=r\overline{v}\)</span> so vectors are parallel. In fact, vectors are in the opposite directions since <span class="math notranslate nohighlight">\(r &lt; 0\)</span>.</p>
 </div>
-<p>As in <a class="reference internal" href="#position-vectors"><span class="std std-ref">figure 6.</span></a> (Click to show EXAMPLE 1.), the displacement vector <span class="math notranslate nohighlight">\(\overline{AB}\)</span> can be formed as</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}\overline{AB}&amp;=\overline{OB}-\overline{OA} \\ \\
-&amp;=(1, 3)-(-2, 0)=(3, 3)\end{align}\)</span></p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">EXAMPLE 2. Orienteering</p>
-<p>Orienteerer starts from control point <span class="math notranslate nohighlight">\(A=(150, 200)\)</span> and runs to point <span class="math notranslate nohighlight">\(C\)</span> through point <span class="math notranslate nohighlight">\(B=(340, 320)\)</span>. Calculate the shortest distance from control point <span class="math notranslate nohighlight">\(A\)</span> to point <span class="math notranslate nohighlight">\(C\)</span>, when displacement vector <span class="math notranslate nohighlight">\(\overline{BC}=(60, 300)\)</span>.</p>
-<p><strong>Solution</strong></p>
-<p>Let’s determine the displacement vector <span class="math notranslate nohighlight">\(\overline{AC}\)</span> as the sum of displacement vectors <span class="math notranslate nohighlight">\(\overline{AB}\)</span> and <span class="math notranslate nohighlight">\(\overline{BC}\)</span>.</p>
-<figure class="align-default" id="orienteerer">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/suunnistajaesim.png"><img alt="Vectors to and from control points" class="bg-primary mb-1 align-center" src="../_images/suunnistajaesim.png" style="width: 350px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 7 </span><span class="caption-text">The route of the orienteerer from control point <em>A</em> to point <em>B</em>.</span><a class="headerlink" href="#orienteerer" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>First we need to formulate the displacement vector <span class="math notranslate nohighlight">\(\overline{AB}\)</span>. This can be done as the substraction of position vectors <span class="math notranslate nohighlight">\(\overline{OA}\)</span> and <span class="math notranslate nohighlight">\(\overline{OB}\)</span>.</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}\overline{AB}&amp;=\overline{OB}-\overline{OA} \\ \\
-&amp;=(340, 320)-(150, 200) \\ \\
-&amp;=(340-150, 320-200) \\ \\
-&amp;=(190, 120)\end{align}\)</span></p>
-<p>As in <a class="reference internal" href="#orienteerer"><span class="std std-ref">figure 7.</span></a>, we can now determine the displacement vector <span class="math notranslate nohighlight">\(\overline{AC}\)</span>.</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}\overline{AC}&amp;=\overline{AB}+\overline{BC} \\ \\
-&amp;=(190, 120)+(60, 300) \\ \\
-&amp;=(190+60, 120+300) \\ \\
-&amp;=(250, 420)\end{align}\)</span></p>
-<p>Finally, let’s calculate the magnitude of displacement vector <span class="math notranslate nohighlight">\(\overline{AC}\)</span>.</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}|\overline{AC}|&amp;=\sqrt{250^2+420^2} \\ \\
-&amp;=\sqrt{238900} \\ \\
-&amp;=488.773\ldots \\ \\
-&amp;\approx490\end{align}\)</span></p>
-<p><strong>Answer:</strong> the shortest distance from control point <span class="math notranslate nohighlight">\(A\)</span> to point <span class="math notranslate nohighlight">\(C\)</span> is approximately 490 metres.</p>
-</div>
+<p>We can also examine the parallelism of two vectors by forming their unit vectors and comparing the unit vectors components.</p>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="unit-vector-kesken">
+<h1>Unit vector (kesken)<a class="headerlink" href="#unit-vector-kesken" title="Permalink to this headline">#</a></h1>
+<p>Sometimes it is necessary to form a <strong><span class="target" id="index-1"></span>unit vector</strong> <span class="math notranslate nohighlight">\(\overline{a}^0\)</span> of a given vector <span class="math notranslate nohighlight">\(\overline{a}\)</span>. The unit vector has the same direction as the original vector but its magnitude is 1. Unit vector of formed by dividing a vector by its magnitude. In practise, every component of a vector will be divided separately. Here is an example of a 3D-vector.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}\overline{a}^0 &amp; =\frac{\overline{a}}{\left|\overline{a}\right|} \\ \\
+&amp; =\left(\frac{a_x}{\left|\overline{a}\right|},\frac{a_y}{\left|\overline{a}\right|},\frac{a_z}{\left|\overline{a}\right|}\right) \\ \\
+\end{align}\end{split}\]</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXAMPLE 2. Pisteeseen C asennetaan 30 m pitkä taulu alemman aidan AB suuntaisesti. Laske taulun toisen päätepisteen D koordinaatit.</p>
+<p>Kuva 1. 23 Esimerkki yksikkövektorin hyödyntämisestä</p>
+<p>Huom! Pisteen C koordinaatteihin ei saa suoraan lisätä arvoa 30. Tämä veisi pisteen D väärään suuntaan suoraan koilliseen.
+Muodostetaan ensin vektori \overline{AB}=\overline{OB}-\overline{OA}=\left(400,140\right)-\left(40,100\right)=\left(360,40\right). Jotta pisteestä C päästään 30 m vektorin \overline{AB} suuntaisesti, muodostetaan ensin vektorin \overline{AB} yksikkövektori.
+{\overline{AB}}^0=\frac{\overline{AB}}{\left|\overline{AB}\right|}=\frac{\left(360,\ 40\right)}{\sqrt=\frac{\left(360,\ 40\right)}{40\sqrt{82}}
+\ \ \ \ \ \ \ \ \ =\left(\frac{360}{40\sqrt{82}},\ \frac{40}{40\sqrt{82}}\right)=\left(\frac{9}{\sqrt{82}},\ \frac{1}{\sqrt{82}}\right)
+\ \ \ \ \ \ \ \ \ =\left(0.993\ldots,0.110\ldots\right)</p>
+<p>Seuraavaksi kerrotaan yksikkövektori pituudella 30, jotta saadaan siirtymävektori pisteiden C ja D välille.
+\overline{CD}=30\bullet{\overline{AB}}^0=30\bullet\left(\frac{9}{\sqrt{82}},\ \frac{1}{\sqrt{82}}\right)=\left(\frac{270}{\sqrt{82}},\ \frac{30}{\sqrt{82}}\right)</p>
+<p>Täten paikkavektori \overline{OD}=\overline{OC}+\overline{CD}=\left(40,130\right)+\left(\frac{270}{\sqrt{82}},\ \frac{30}{\sqrt{82}}\right)
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\left(69.816\ldots,133.312\ldots\right)\approx\left(70,133\right) eli piste D = (70, 133).</p>
+</div>
+<p>Esimerkki.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -439,17 +422,17 @@ In 3D space, the (x, y, z)-coordinate system, a coordinate point <span class="ma
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="vector_basic_calc.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="vector_position.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Basic vector calculus</p>
+            <p class="prev-next-title">Position vector and displacement vector</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="vector_parallel.html" title="next page">
+    <a class='right-next' id="next-link" href="../genindex.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Parallel vectors</p>
+        <p class="prev-next-title">Index</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
