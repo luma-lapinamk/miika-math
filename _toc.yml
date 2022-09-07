@@ -9,6 +9,7 @@ parts:
     - file: notebooks/vector_intro
     - file: notebooks/vector_basic_calc
     - file: notebooks/vector_position
+    - file: notebooks/vector_parallel
   - caption: Appendix
     chapters:
     - file: genindex

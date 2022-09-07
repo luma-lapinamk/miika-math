@@ -30,13 +30,13 @@ Examples of the direction angle and the angle between vectors
 
 :::
 
-### Denotions
+### Notations
 
-Vectors are usually denoted with a lower case letter with an overline (or a bar), for instance $\overline{u}$, $\overline{v}$, $\overline{w}$. In the case of a displacement vector, vectors are usually denoted by their tail and head coordinate points as $\overline{AB}$. An arrow above the letter $\vec{u}$ or letters $\vec{AB}$ is also used. In order to denote vectors in a fast way, letters can be written simply in bold, for instance **u** or **AB**. In this study material vectors are denoted with an overline and coordinate points are denoted by capital letters, for instance the origin is denoted as $O = (0, 0)$.
+Vectors are usually denoted with a lower case letter with an overline (or a bar), for instance $\overline{u}$, $\overline{v}$, $\overline{w}$. In the case of a displacement vector, vectors are usually denoted by their tail and head coordinate points as $\overline{AB}$. An arrow above the letter $\vec{u}$ or letters $\overrightarrow{AB}$ is also used. In order to denote vectors in a fast way, letters can be written simply in bold, for instance **u** or **AB**. In this study material vectors are denoted with an overline and coordinate points are denoted by capital letters, for instance the origin is denoted as $O = (0, 0)$.
 - Length of a vector is denoted as absolute value $|\overline{u}|$ or $|\overline{AB}|$
-- When vectors are diverging, $\overline{u}\nparallel\overline{v}$ is used
+- When vectors are nonparallel, $\overline{u}\nparallel\overline{v}$ is used
 - When vectors are perpendicular, $\overline{u}\perp\overline{v}$ is used
-- When vectors are parallel, $\overline{u}\|\overline{v}$ is used (note: this can mean that the vectors are in the same direction or the opposite direction)
+- When vectors are parallel, $\overline{u}\parallel\overline{v}$ is used (note: this can mean that the vectors are in the same direction or the opposite direction)
 - Vectors are in the same direction $\overline{u}\uparrow\uparrow\overline{v}$
 - Vectors are in the opposite direction $\overline{u}\uparrow\downarrow\overline{v}$
 

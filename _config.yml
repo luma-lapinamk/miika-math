@@ -16,7 +16,7 @@ execute:
 # GitHub-settings
 # ----------------
 repository:
-  url: https://github.com/luma-lapinamk/miika-linear-algebra
+  url: https://github.com/luma-lapinamk/miika-math
   branch: master
 
 # HTML-settings

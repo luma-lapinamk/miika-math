@@ -101,12 +101,23 @@ $$\overline{c}=2\overline{a}+3\overline{b}$$.
 **{index}`Magnitude of a vector`**, the **{index}`vector norm`**, is by definition always a non-negative scalar and is denoted as the absolute of a vector. In a plane the norm is calculated with the help of **{index}`Pythagorean theorem`**, since a vector is described by two perpendicular components. However, the norm of a vector can be calculated for any dimensional vector $\overline{v}$ as
 
 $$\left|\overline{v}\right|=\sqrt{\sum_{k=1}^nv_k^2}=\sqrt{v_x^2+v_y^2+v_z^2+...}$$
- 
+
 ```{figure-md} Pythagorean
 <img src="../images/vektorit/pythagoras.png" alt="Pythagorean theorem for right triangle, when the length of the legs are 4 and 3" class="bg-primary mb-1" width="420px" align="center">
 
 Pythagorean theorem for right triangle, when the length of the legs are 4 and 3
 ```
+
+````{margin}
+Python code
+```python
+# define vector
+v = np.array([4, 3]) 
+
+# calculate vector norm
+np.sqrt(np.sum(v**2))  
+```
+````
 
 As in [figure above](Pythagorean), the norm of the vector $\overline{u}=(4, 3)$ can be calculated as
 
