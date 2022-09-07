@@ -3,7 +3,7 @@
 
 ## Basic concepts
 
-**{index}`Scalar`s** are described solely by their magnitude but **Vectors** also have **direction**. For instance speed, acceleration and force are vectors. In cartesian coordinate system, also know as the **(*x*, *y*)-coordinate system** or **plane**, vectors can describe the number of steps taken horizontally and vertically. The direction can also be to negative.
+**{index}`Scalar`s** are described solely by their magnitude but **vectors** also have **direction**. For instance speed, acceleration and force are vectors. In cartesian coordinate system, also know as the **(*x*, *y*)-coordinate system** or **plane**, vectors can describe the number of steps taken horizontally and vertically. The direction can also be to negative.
 However, the location of a vector is not defined by in its definition. A vector can ne used describe the shortest route between two coordinate points. When a vector is defined this way, we use the term **displacement vector**.
 <br>
 <br>
