@@ -1,5 +1,5 @@
 # Preface
-Vector, as a mathematical object, is only about 200 years old term. Initially one may come across with vectors as quantities in geometry, space and physics. Therefore computer models about real world and game engines rely on vectors. Vectors are also used in many branches of technology such as GPS localisation, image and graphics prosessing, robotics and of course, machine learning.
+**{index}`Vector`**, as a mathematical object, is only about 200 years old term. Initially one may come across with vectors as quantities in geometry, space and physics. Therefore computer models about real world and game engines rely on vectors. Vectors are also used in many branches of technology such as GPS localisation, image and graphics prosessing, robotics and of course, machine learning.
 
 ## Basic concepts
 
@@ -19,9 +19,9 @@ Vectors are comprised by two **components** in the cartesian plane just as coord
 
 :::{admonition} Definition, angles
 :class: seealso
-**Direction angle** $\theta$ of a vector is measured to the **counterclockwise** direction from the positive *x*-axis.
+**{index}`Direction angle of a vector`** $\theta$ is measured to the **counterclockwise** direction from the positive *x*-axis.
 
-An angle between two vectors (between 0° … 180°) is defined so that the tail of the two vectors is in the same coordinate point and the angle is measured **counterclockwise**.
+**{index}`Angle between two vectors`** (between 0° … 180°) is defined so that the tail of the two vectors is in the same coordinate point and the angle is measured **counterclockwise**.
 ```{figure-md} vector_angles
 <img src="../images/vektorit/ENGsuuntakulma.png" alt="The direction angle and the angle between vectors" class="bg-primary mb-1" width="600px" align="center">
 
@@ -30,7 +30,7 @@ Examples of the direction angle and the angle between vectors
 
 :::
 
-### Of denoting
+### Denotions
 
 Vectors are usually denoted with a lower case letter with an overline (or a bar), for instance $\overline{u}$, $\overline{v}$, $\overline{w}$. In the case of a displacement vector, vectors are usually denoted by their tail and head coordinate points as $\overline{AB}$. An arrow above the letter $\vec{u}$ or letters $\vec{AB}$ is also used. In order to denote vectors in a fast way, letters can be written simply in bold, for instance **u** or **AB**. In this study material vectors are denoted with an overline and coordinate points are denoted by capital letters, for instance the origin is denoted as $O = (0, 0)$.
 - Length of a vector is denoted as absolute value $|\overline{u}|$ or $|\overline{AB}|$
