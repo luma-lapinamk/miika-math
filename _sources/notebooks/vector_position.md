@@ -39,7 +39,7 @@ Magnitude is calculated as $|\overline{OP}|=\sqrt{2^2+2^2}=\sqrt8=\sqrt{4\cdot2}
 :::
 
 ## Displacement vector expressed by position vectors
-Let's examine the vector $\overline{AB}$ in the previous example (Click to show) [figure 6.](position_vectors) Vector from point $A$ to point $B$ can be written as the sum of vectors $\overline{AO}$ and $\overline{OB}$.
+Let's examine the vector $\overline{AB}$ in the previous example (Click to show) Vector from point $A$ to point $B$ can be written as the sum of vectors $\overline{AO}$ and $\overline{OB}$.
 
 $$\begin{align}\overline{AB}&=\overline{AO}+\overline{OB} \\ \\
 &=-\overline{OA}+\overline{OB} \\ \\
@@ -52,7 +52,7 @@ A **{index}`displacement vector`** $\overline{AB}$ is the shortest distance betw
 :::
 
 
-As in [figure 6.](position_vectors) (Click to show EXAMPLE 1.), the displacement vector $\overline{AB}$ can be formed as
+As in the [figure](position_vectors) in EXAMPLE 1., the displacement vector $\overline{AB}$ can be formed as
 
 $\begin{align}\overline{AB}&=\overline{OB}-\overline{OA} \\ \\
 &=(1, 3)-(-2, 0)=(3, 3)\end{align}$
