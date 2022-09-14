@@ -4,6 +4,9 @@
 format: jb-book
 root: notebooks/intro
 parts: 
+  - caption: Basics of set theory and logic
+    chapters:
+    - file: notebooks/numbers
   - caption: Vectors
     chapters:
     - file: notebooks/vector_intro
