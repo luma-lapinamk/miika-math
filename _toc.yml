@@ -7,6 +7,10 @@ parts:
   - caption: Basics of set theory and logic
     chapters:
     - file: notebooks/numbers
+  - caption: Expressions
+    chapters:
+    - file: notebooks/fractions
+    - file: notebooks/powers_and_roots
   - caption: Vectors
     chapters:
     - file: notebooks/vector_intro
