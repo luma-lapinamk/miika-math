@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Preface &#8212; Maths in English</title>
+    <title>Powers and roots &#8212; Maths in English</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -55,8 +55,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Basic vector calculus" href="vector_basic_calc.html" />
-    <link rel="prev" title="Powers and roots" href="powers_and_roots.html" />
+    <link rel="next" title="Preface" href="vector_intro.html" />
+    <link rel="prev" title="Fractions" href="fractions.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -133,14 +133,14 @@ const thebe_selector_output = ".output, .cell_output"
   Expressions
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="fractions.html">
    Fractions
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="powers_and_roots.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Powers and roots
   </a>
  </li>
@@ -150,9 +150,9 @@ const thebe_selector_output = ".output, .cell_output"
   Vectors
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="vector_intro.html">
    Preface
   </a>
  </li>
@@ -269,7 +269,7 @@ title="Source repository"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/notebooks/vector_intro.md"
+        <a href="../_sources/notebooks/powers_and_roots.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -329,16 +329,14 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#basic-concepts">
-   Basic concepts
+  <a class="reference internal nav-link" href="#examples">
+   Examples
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#notations">
-     Notations
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Examples
+  </a>
  </li>
 </ul>
 
@@ -349,7 +347,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Preface</h1>
+                <h1>Powers and roots</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -360,16 +358,14 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#basic-concepts">
-   Basic concepts
+  <a class="reference internal nav-link" href="#examples">
+   Examples
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#notations">
-     Notations
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Examples
+  </a>
  </li>
 </ul>
 
@@ -381,51 +377,68 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="preface">
-<h1>Preface<a class="headerlink" href="#preface" title="Permalink to this headline">#</a></h1>
-<p><strong><span class="target" id="index-0"></span>Vector</strong>, as a mathematical object, is only about 200 years old term. Initially one may come across with vectors as quantities in geometry, space and physics. Therefore computer models about real world and game engines rely on vectors. Vectors are also used in many branches of technology such as GPS localisation, image and graphics prosessing, robotics and of course, machine learning.</p>
-<section id="basic-concepts">
-<h2>Basic concepts<a class="headerlink" href="#basic-concepts" title="Permalink to this headline">#</a></h2>
-<p><strong><span class="target" id="index-1"></span>Scalars</strong> are described solely by their magnitude but <strong>vectors</strong> also have <strong>direction</strong>. For instance speed, acceleration and force are vectors. In cartesian coordinate system, also know as the <strong>(<em>x</em>, <em>y</em>)-coordinate system</strong> or <strong>plane</strong>, vectors can describe the number of steps taken horizontally and vertically. The direction can also be to negative.
-However, the location of a vector is not defined by in its definition. A vector can ne used describe the shortest route between two coordinate points. When a vector is defined this way, we use the term <strong>displacement vector</strong>.
-<br>
-<br></p>
-<iframe scrolling="no" title="ENG - Siirtymävektori" src="https://www.geogebra.org/material/iframe/id/wnmjpae3/width/700/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
-<div class="admonition-instructions admonition">
-<p class="admonition-title">Instructions</p>
-<p>You can move the beginning point <em>A</em>, <strong>the tail</strong>, and the ending point <em>B</em>, <strong>the head</strong>, of the displacement vector <span class="math notranslate nohighlight">\(\overline{AB}\)</span> with your mouse and see how the components of the vector change.</p>
-</div>
-<br>
-<p>Vectors are comprised by two <strong>components</strong> in the cartesian plane just as coordinate points are. Where coordinate points describe the exact location of a single point, the components of a vector describe its length correspondingly. In the applet above the displacement vector from point A to point B is comprised of the component parallel to the <em>x</em>-axis (<font color="green">green dashed arrow</font>) and of the component parallel to the <em>y</em>-axis (<font color="red">red dashed arrow</font>). The components of the displacement vector are expressed in brackets as <span class="math notranslate nohighlight">\(\overline{AB}=(x, y)\)</span>. Vectors can also be described in the <strong>polar coordinate system</strong> or as a <strong>single column or row matrix</strong>, and these will be handled later in the material.</p>
-<div class="seealso admonition">
-<p class="admonition-title">Definition, angles</p>
-<p><strong><span class="target" id="index-2"></span>Direction angle of a vector</strong> <span class="math notranslate nohighlight">\(\theta\)</span> is measured to the <strong>counterclockwise</strong> direction from the positive <em>x</em>-axis.</p>
-<p><strong><span class="target" id="index-3"></span>Angle between two vectors</strong> (between 0° … 180°) is defined so that the tail of the two vectors is in the same coordinate point and the angle is measured <strong>counterclockwise</strong>.</p>
-<figure class="align-default" id="vector-angles">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/ENGsuuntakulma.png"><img alt="The direction angle and the angle between vectors" class="bg-primary mb-1 align-center" src="../_images/ENGsuuntakulma.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Examples of the direction angle and the angle between vectors</span><a class="headerlink" href="#vector-angles" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<section id="notations">
-<h3>Notations<a class="headerlink" href="#notations" title="Permalink to this headline">#</a></h3>
-<p>Vectors are usually denoted with a lower case letter with an overline (or a bar), for instance <span class="math notranslate nohighlight">\(\overline{u}\)</span>, <span class="math notranslate nohighlight">\(\overline{v}\)</span>, <span class="math notranslate nohighlight">\(\overline{w}\)</span>. In the case of a displacement vector, vectors are usually denoted by their tail and head coordinate points as <span class="math notranslate nohighlight">\(\overline{AB}\)</span>. An arrow above the letter <span class="math notranslate nohighlight">\(\vec{u}\)</span> or letters <span class="math notranslate nohighlight">\(\overrightarrow{AB}\)</span> is also used. In order to denote vectors in a fast way, letters can be written simply in bold, for instance <strong>u</strong> or <strong>AB</strong>. In this study material vectors are denoted with an overline and coordinate points are denoted by capital letters, for instance the origin is denoted as <span class="math notranslate nohighlight">\(O = (0, 0)\)</span>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="powers-and-roots">
+<h1>Powers and roots<a class="headerlink" href="#powers-and-roots" title="Permalink to this headline">#</a></h1>
+<p>“I have the Power!” - He-Man (1983)</p>
+<p>If a number is multiplied by itself, we can express this with an exponent. For instance</p>
+<p><span class="math notranslate nohighlight">\(3\cdot3=3^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(3\cdot3\cdot3=3^3\)</span></p>
+<p><span class="math notranslate nohighlight">\(3\cdot3\cdot3\cdot3=3^4\)</span></p>
+<p><span class="math notranslate nohighlight">\(3\cdot3\cdot3\cdot...\cdot3=3^n{,}\ n\in\mathbb{Z}\)</span></p>
+<p>Here 3 is called the <strong>base</strong>, the number which is being multiplied, and the number of times the base is being multiplied is called the <strong>exponent</strong>. The base can also be a real variable, for instance</p>
+<p><span class="math notranslate nohighlight">\(x\cdot x\cdot x\cdot...\cdot x=x^n{,}\ x\in\mathbb{R}{,}\ n\in\mathbb{Z}\)</span></p>
+<p>Since the exponent can be any integer, we can define</p>
+<p><span class="math notranslate nohighlight">\(x^0=1{,}\ x\in\mathbb{\mathbb{R}}\)</span> and</p>
+<p><span class="math notranslate nohighlight">\(x^{-n}=\frac{1}{x^n}{,}\ x\in\mathbb{R}{,}\ n\in\mathbb{Z}^+\)</span></p>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h2>
+<p>a) <span class="math notranslate nohighlight">\(5\cdot5\cdot5=5^3\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(10\cdot10\cdot10\cdot10\cdot10\cdot10=10^6\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(y\cdot y\cdot y\cdot y=y^4\)</span></p>
+<p>d) <span class="math notranslate nohighlight">\(9^0=1\)</span></p>
+<p>e) <span class="math notranslate nohighlight">\(3\cdot\left(4x^2\right)^0=3\cdot1=3\)</span></p>
+<p>f) <span class="math notranslate nohighlight">\(1^{-2}=\frac{1}{2}\)</span></p>
+<p>g) <span class="math notranslate nohighlight">\(x^{-4}=\frac{1}{x^4}\)</span></p>
+<p>Here are the laws of power expressions, which apply to all real numbers as bases <span class="math notranslate nohighlight">\(x{,}\ y\in\mathbb{R}\)</span> and integers as exponents <span class="math notranslate nohighlight">\(a{,}\ b\in\mathbb{Z}\)</span>.</p>
 <ul class="simple">
-<li><p>Length of a vector is denoted as absolute value <span class="math notranslate nohighlight">\(|\overline{u}|\)</span> or <span class="math notranslate nohighlight">\(|\overline{AB}|\)</span></p></li>
-<li><p>When vectors are nonparallel, <span class="math notranslate nohighlight">\(\overline{u}\nparallel\overline{v}\)</span> is used</p></li>
-<li><p>When vectors are perpendicular, <span class="math notranslate nohighlight">\(\overline{u}\perp\overline{v}\)</span> is used</p></li>
-<li><p>When vectors are parallel, <span class="math notranslate nohighlight">\(\overline{u}\parallel\overline{v}\)</span> is used (note: this can mean that the vectors are in the same direction or the opposite direction)</p></li>
-<li><p>Vectors are in the same direction <span class="math notranslate nohighlight">\(\overline{u}\uparrow\uparrow\overline{v}\)</span></p></li>
-<li><p>Vectors are in the opposite direction <span class="math notranslate nohighlight">\(\overline{u}\uparrow\downarrow\overline{v}\)</span></p></li>
+<li><p>Multiplying with the same base
+<span class="math notranslate nohighlight">\(x^a\cdot x^b=x^{a+b}\)</span></p></li>
+<li><p>Dividing with the same base
+<span class="math notranslate nohighlight">\(\frac{x^a}{x^b}=x^{a-b}\)</span></p></li>
+<li><p>Power of a product
+<span class="math notranslate nohighlight">\(\left(xy\right)^a=x^ay^a\)</span></p></li>
+<li><p>Power of a quotient
+<span class="math notranslate nohighlight">\(\left(\frac{x}{y}\right)^a=\frac{x^a}{y^a}{,}\ y\ne0\)</span></p></li>
+<li><p>Power of a power
+<span class="math notranslate nohighlight">\(\left(x^m\right)^n=x^{mn}\)</span></p></li>
 </ul>
-<figure class="align-default" id="vectors-in-plane">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/vektoreita.png"><img alt="Examples of vectors in a plane" class="bg-primary mb-1 align-center" src="../_images/vektoreita.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Examples of vectors in a plane</span><a class="headerlink" href="#vectors-in-plane" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
+<p>Roots can be expressed as powers, when exponents are fractions</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\sqrt[m]{x}=x^{\frac{1}{m}}{,}\ x\ge0\)</span></p></li>
+</ul>
+<p>and we get the following</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\sqrt{x}\sqrt{y}=\sqrt{xy}\)</span>, since <span class="math notranslate nohighlight">\(\sqrt{x}\sqrt{y}=x^{\frac{1}{2}}\cdot y^{\frac{1}{2}}=\left(xy\right)^{\frac{1}{2}}=\sqrt{xy}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\sqrt[a]{x}\sqrt[a]{y}=\sqrt[a]{xy}\)</span>, since <span class="math notranslate nohighlight">\(\sqrt[a]{x}\sqrt[a]{y}=x^{\frac{1}{a}}\cdot y^{\frac{1}{a}}=\left(xy\right)^{\frac{1}{a}}=\sqrt[a]{xy}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{\sqrt{x}}{\sqrt{y}}=\sqrt{\frac{x}{y}}\)</span>, since <span class="math notranslate nohighlight">\(\frac{\sqrt{x}}{\sqrt{y}}=\frac{x^{\frac{1}{2}}}{y^{\frac{1}{2}}}=\left(\frac{x}{y}\right)^{\frac{1}{2}}=\sqrt{\frac{x}{y}}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{\sqrt[a]{x}}{\sqrt[a]{y}}=\sqrt[a]{\frac{x}{y}}\)</span>, since <span class="math notranslate nohighlight">\(\frac{\sqrt[a]{x}}{\sqrt[a]{y}}=\frac{x^{\frac{1}{a}}}{y^{\frac{1}{a}}}=\left(\frac{x}{y}\right)^{\frac{1}{a}}=\sqrt[a]{\frac{x}{y}}\)</span></p></li>
+</ul>
+<p>And last, we have exponent as a fraction</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(x^{\frac{m}{n}}=\sqrt[n]{x^m}=\left(\sqrt[n]{x}\right)^m\)</span></p></li>
+</ul>
 </section>
+<section id="id1">
+<h2>Examples<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<p>a) <span class="math notranslate nohighlight">\(x^3\cdot x^2=x^{3+2}=x^5\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(\frac{x^4}{x^3}=x^{4-3}=x^1=x\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(\left(3x\right)^3=3^3x^3=27x^3\)</span></p>
+<p>d) <span class="math notranslate nohighlight">\(\left(\frac{x}{y^2}\right)^2=\frac{x^2}{\left(y^2\right)^2}=\frac{x^2}{y^{2\cdot2}}=\frac{x^2}{y^4}\)</span></p>
+<p>e) <span class="math notranslate nohighlight">\(\left(4x\right)^{-2}=\frac{1}{\left(4x\right)^2}=\frac{1}{4^2x^2}=\frac{1}{16x^2}\)</span></p>
+<p>f) <span class="math notranslate nohighlight">\(64^{\frac{1}{3}}=\sqrt[3]{64}=4\)</span></p>
+<p>g) <span class="math notranslate nohighlight">\(3^{\frac{2}{5}}=\sqrt[5]{3^2}=\sqrt[5]{9}\)</span></p>
+<p>h) <span class="math notranslate nohighlight">\(\sqrt[3]{3}\sqrt[3]{9}=\sqrt[3]{3\cdot9}=\sqrt[3]{27}=3\)</span></p>
+<p>i) <span class="math notranslate nohighlight">\(\sqrt{x}\sqrt{x}=x^{\frac{1}{2}}\cdot x^{\frac{1}{2}}=x^{\frac{1}{2}+\frac{1}{2}}=x^1=x\)</span></p>
 </section>
 </section>
 
@@ -456,17 +469,17 @@ However, the location of a vector is not defined by in its definition. A vector 
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="powers_and_roots.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="fractions.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Powers and roots</p>
+            <p class="prev-next-title">Fractions</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="vector_basic_calc.html" title="next page">
+    <a class='right-next' id="next-link" href="vector_intro.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Basic vector calculus</p>
+        <p class="prev-next-title">Preface</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
