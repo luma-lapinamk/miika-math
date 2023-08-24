@@ -1,7 +1,7 @@
 # Fractions
 
 ```{figure-md} fraction
-<img src="../images/algebra/fraction.png" alt="Experssions of a fraction" class="bg-primary mb-1" width="600px" align="center">
+<img src="../images/algebra/fraction.png" alt="Experssions of a fraction" class="bg-primary mb-1" width="400px" align="center">
 
 The top number is called a numerator and the bottom number is called s denominator.
 ```

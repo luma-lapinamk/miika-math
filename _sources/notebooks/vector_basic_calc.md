@@ -2,7 +2,7 @@
 
 ## Addition, substraction and scalar multiplication
 
-The sum of vectors $\overline{u}$ and $\overline{v}$ is denoted by $\overline{u}+\overline{v}$. The sum is a new vector, sometimes called a **{index}`resultant vector`**. The tail of the resultant vector is the tail of vector $\overline{u}$ and its head can be found from the head of vector $\overline{v}$ after it is placed at the head of vector $\overline{u}$, as in [figure.](sum_and_subs) below.
+The sum of vectors $\overline{u}$ and $\overline{v}$ is denoted by $\overline{u}+\overline{v}$. The sum is a new vector, sometimes called a **{index}`resultant vector`**. The tail of the resultant vector is the tail of vector $\overline{u}$ and its head can be found from the head of vector $\overline{v}$ after it is placed at the head of vector $\overline{u}$, as in [figure](sum_and_subs) below.
 
 The difference of vectors $\overline{u}$ and $\overline{v}$ is denoted by $\overline{u}-\overline{v}$. Here the opposite of vector $\overline{v}$ is added to the head of vector $\overline{u}$ as $\overline{u}+(-\overline{v})$.
 

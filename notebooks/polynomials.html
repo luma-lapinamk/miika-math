@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>**Sets of numbers &#8212; Maths in English</title>
+    <title>Polynomials &#8212; Maths in English</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -55,8 +55,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Fractions" href="fractions.html" />
-    <link rel="prev" title="Introduction" href="intro.html" />
+    <link rel="next" title="Preface" href="vector_intro.html" />
+    <link rel="prev" title="Expressions" href="expressions.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -121,9 +121,9 @@ const thebe_selector_output = ".output, .cell_output"
   Basics of set theory and logic
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="numbers.html">
    **Sets of numbers
   </a>
  </li>
@@ -133,7 +133,7 @@ const thebe_selector_output = ".output, .cell_output"
   Expressions
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="fractions.html">
    Fractions
@@ -147,6 +147,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="expressions.html">
    Expressions
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Polynomials
   </a>
  </li>
 </ul>
@@ -274,7 +279,7 @@ title="Source repository"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/notebooks/numbers.md"
+        <a href="../_sources/notebooks/polynomials.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -334,8 +339,8 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#axioms-for-the-real-numbers">
-   **Axioms for the real numbers
+  <a class="reference internal nav-link" href="#examples">
+   Examples
   </a>
  </li>
 </ul>
@@ -347,7 +352,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>**Sets of numbers</h1>
+                <h1>Polynomials</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -358,8 +363,8 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#axioms-for-the-real-numbers">
-   **Axioms for the real numbers
+  <a class="reference internal nav-link" href="#examples">
+   Examples
   </a>
  </li>
 </ul>
@@ -372,75 +377,37 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="sets-of-numbers">
-<h1>**<span class="target" id="index-0"></span>Sets of numbers<a class="headerlink" href="#sets-of-numbers" title="Permalink to this headline">#</a></h1>
-<p>Set of <strong><span class="target" id="index-1"></span>natural numbers</strong> is denoted as <span class="math notranslate nohighlight">\(\mathbb{N}=\left\{0{,}1{,}2{,}3{,}...\right\}\)</span>, sometimes called as the “naturals”.</p>
-<blockquote>
-<div><p>Natural numbers without zero <span class="math notranslate nohighlight">\(\mathbb{N}^+=\left\{1{,}2{,}3{,}...\right\}\)</span> are also called as counting numbers.</p>
-</div></blockquote>
-<p>Set of <strong><span class="target" id="index-2"></span>integers</strong> is denoted as <span class="math notranslate nohighlight">\(\mathbb{Z}=\left\{...{,}-3{,}-2{,}-1{,}0{,}1{,}2{,}3{,}...\right\}\)</span></p>
-<blockquote>
-<div><p>Positive integers are denoted as <span class="math notranslate nohighlight">\(\mathbb{Z}^+=\left\{1{,}2{,}3{,}...\right\}\)</span>, which is actually the same set as <span class="math notranslate nohighlight">\(\mathbb{N}^+\)</span>. As a subset, this can be denoted as <span class="math notranslate nohighlight">\(\mathbb{N}^+\subseteq\mathbb{Z}^+\)</span> and <span class="math notranslate nohighlight">\(\mathbb{Z}^+\subseteq\mathbb{N}^+\)</span>, since every <em>element</em> of <span class="math notranslate nohighlight">\(\mathbb{N}^+\)</span> is also an <em>element</em> of <span class="math notranslate nohighlight">\(\mathbb{Z}^+\)</span>.</p>
-</div></blockquote>
-<blockquote>
-<div><p>Negative integers <span class="math notranslate nohighlight">\(\mathbb{Z}^-=\left\{...{,}-3{,}-2{,}-1\right\}=\mathbb{Z}\ \setminus\mathbb{N}\)</span>. Here the notation <span class="math notranslate nohighlight">\(\mathbb{Z}\ \setminus\mathbb{N}\)</span> means that the elements of natural numbers are removed from the set of integers. This is called the <em>subtraction</em> of sets.</p>
-</div></blockquote>
-<div class="tip dropdown admonition">
-<p class="admonition-title">EXAMPLE 1. the number <span class="math notranslate nohighlight">\(4k-5{,}\ k\in\mathbb{Z}\)</span> is always odd</p>
-<p>Proof:</p>
-<p><span class="math notranslate nohighlight">\(\begin{align} 4k-5 &amp; =\left(4k-6\right)+1 \\ \\
-&amp; =2\left(2k-3\right)+1{,}\ k\in\mathbb{Z} \end{align}\)</span></p>
-<p>What we have shown is that the <span class="math notranslate nohighlight">\(2\left(2k-3\right)\)</span> is always even for every value of <span class="math notranslate nohighlight">\(k\)</span>, because the coefficient in front of the brackets is <span class="math notranslate nohighlight">\(2\)</span>. Therefore <span class="math notranslate nohighlight">\(2\left(2k-3\right)+1=4k-5\)</span> is always odd.</p>
-</div>
-<p><strong><span class="target" id="index-3"></span>Rational numbers</strong> <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span>, the “fractions”, are denoted as</p>
-<p><span class="math notranslate nohighlight">\(\mathbb{Q}=\left\{\frac{m}{n}\mid\ m{,}n\ \in\mathbb{Z}{,}\ n\ne0\right\}\)</span></p>
-<blockquote>
-<div><p>Includes numbers whose decimal expasion terminates, e.g <span class="math notranslate nohighlight">\(\frac{3}{5}=0.6\)</span> or
-decimal expansion begins to repeat a finite sequence e.g. <span class="math notranslate nohighlight">\(\frac{13}{17}=0.76470588235294117647058823529411...\)</span>, where the repeating finite sequence is <span class="math notranslate nohighlight">\(7647058823529411\)</span>.</p>
-</div></blockquote>
-<p>When numbers cannot be expressed as a ratio of two integers, they are called <strong><span class="target" id="index-4"></span>irrational numbers</strong>. For instance <span class="math notranslate nohighlight">\(\sqrt{2}=1.414...\)</span> and <span class="math notranslate nohighlight">\(pi{,}\ \pi=3.14159...\)</span> are irrational numbers. Here decimal expansion does not terminate nor end with a repeating finite sequence.</p>
-<p><strong><span class="target" id="index-5"></span>Real numbers</strong> <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> include rational and irrational numbers. We can call this as a <em>union</em> of rational and irrational numbers. Therefore, irrational numbers can be expressed as <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> \ <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span>.</p>
-<blockquote>
-<div><p>Real numbers correspond to all the points on a number line.</p>
-</div></blockquote>
-<p><strong><span class="target" id="index-6"></span>Complex numbers</strong> <span class="math notranslate nohighlight">\(\mathbb{C}\)</span> can be expressed as a sum of a real part <span class="math notranslate nohighlight">\(a\)</span> and an imaginary part <span class="math notranslate nohighlight">\(bi\)</span> as <span class="math notranslate nohighlight">\(a+bi\)</span>, where <span class="math notranslate nohighlight">\(a{,}b\in\mathbb{R}\)</span> and <span class="math notranslate nohighlight">\(i\)</span> is the imaginary unit, which is denoted as  <span class="math notranslate nohighlight">\(i^2=-1\Leftrightarrow i=\sqrt{-1}\)</span>.</p>
-<blockquote>
-<div><p>The imaginary part <span class="math notranslate nohighlight">\(bi{,}\ b\in\mathbb{R}\)</span> actually forms the set of imaginary numbers <span class="math notranslate nohighlight">\(\mathbb{I}\)</span>, in which real numbers are multiplied by the imaginary unit.
-Complex numbers correspond to all the points on a comlex plane, where the horizontal axis represents the real part and the vertical axis represents the imaginary part.</p>
-</div></blockquote>
-<p>Every set of numbers is a “proper” subset of larger one, excluding the set of complex numbers: <span class="math notranslate nohighlight">\(\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}\subset\mathbb{C}\)</span>. This can be presented as an Euler diagram:</p>
-<figure class="align-default" id="euler-diag">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/Euler_diag.png"><img alt="Sets of numbers presented in an Euler diagram" class="bg-primary mb-1 align-center" src="../_images/Euler_diag.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Sets of numbers presented in an Euler diagram</span><a class="headerlink" href="#euler-diag" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<ul class="simple">
-<li><p>Natural numbers are a proper subset of integers.</p></li>
-<li><p>Integers are a proper subset of rational numbers.</p></li>
-<li><p>Rational numbers are a subset of the real numbers.</p></li>
-<li><p>Union of rational and imaginary numbers makes up the real numbers.</p></li>
-<li><p>Complex Numbers are the superset of all other sets.</p></li>
-</ul>
-<section id="axioms-for-the-real-numbers">
-<h2>**<span class="target" id="index-7"></span>Axioms for the real numbers<a class="headerlink" href="#axioms-for-the-real-numbers" title="Permalink to this headline">#</a></h2>
-<p>For all real numbers <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(c\)</span> <span class="math notranslate nohighlight">\(\left(a{,}b{,}c\in\mathbb{R}\right)\)</span>, following axioms are satisfied.</p>
-<p><strong>Addition</strong>
-Commutative: <span class="math notranslate nohighlight">\(a+b=b+a\)</span>
-Associative: <span class="math notranslate nohighlight">\(a+(b+c)=(a+b)+c\)</span>
-Number Zero: a real number <span class="math notranslate nohighlight">\(0\)</span> exists so that <span class="math notranslate nohighlight">\(a+0=a\)</span>
-Inverse: a real number <span class="math notranslate nohighlight">\(-a\)</span> exists so that <span class="math notranslate nohighlight">\(a+\left(-a\right)=0\)</span></p>
-<p><strong>Multiplication</strong>
-Commutative: <span class="math notranslate nohighlight">\(a\cdot b=b\cdot a\)</span>
-Associative: <span class="math notranslate nohighlight">\(a\cdot(b\cdot c)=(a\cdot b)\cdot c\)</span>
-Number One: a real number <span class="math notranslate nohighlight">\(1\)</span> exists so that <span class="math notranslate nohighlight">\(a\cdot1=a\)</span>.
-Inverse: if <span class="math notranslate nohighlight">\(a\ne0\)</span> a real number <span class="math notranslate nohighlight">\(\frac{1}{a}=a^{-1}\)</span> exists so that <span class="math notranslate nohighlight">\(aa^{-1}=1\)</span>
-Distributive: <span class="math notranslate nohighlight">\(a\cdot(b+c)=a\cdot b+a\cdot c\)</span></p>
-<p><strong>Order</strong>
-Either <span class="math notranslate nohighlight">\(a&lt;b\)</span> or <span class="math notranslate nohighlight">\(a&gt;b\)</span> or <span class="math notranslate nohighlight">\(a=b\)</span>
-If <span class="math notranslate nohighlight">\(a&lt;b\)</span> and <span class="math notranslate nohighlight">\(b&lt;c\)</span>, then <span class="math notranslate nohighlight">\(a&lt;c\)</span>
-<span class="math notranslate nohighlight">\(a&lt;b\)</span> and <span class="math notranslate nohighlight">\(a+c&lt;b+c\)</span> are equivalent
-If <span class="math notranslate nohighlight">\(a&gt;0\)</span> and <span class="math notranslate nohighlight">\(b&gt;0\)</span>, then <span class="math notranslate nohighlight">\(ab&gt;0\)</span></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="polynomials">
+<h1><span class="target" id="index-0"></span>Polynomials<a class="headerlink" href="#polynomials" title="Permalink to this headline">#</a></h1>
+<p><strong>poly = “many”, nomial = “term”</strong></p>
+<p>Polynomial terms involve only natural number exponents. Negative exponents, fractional exponents and variable roots are exluded.</p>
+<p>For example</p>
+<p>a) <span class="math notranslate nohighlight">\(P(x)=3x^2\)</span> is monomial and so are constants</p>
+<p>b) <span class="math notranslate nohighlight">\(P(x)=3x^2-x\)</span> is binomial</p>
+<p>c) <span class="math notranslate nohighlight">\(P(x)=3x^2-x+9\)</span> is trinomial</p>
+<p>d) <span class="math notranslate nohighlight">\(P(x)=3x^{10}+6x^5-x^4+12x^2-4\)</span> is polynomial, as are all the above</p>
+<p>In general <span class="math notranslate nohighlight">\(P(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_2x^n+a_1x+a_0\ (a_n\in\mathbb{R}{,}\ n\in\mathbb{N})\)</span> in standard form of polynomials, where the terms with the highest degree are first and <span class="math notranslate nohighlight">\(a_0\)</span> has an exponent of zero and is called a <strong>constant</strong>.</p>
+<p>The <span class="target" id="index-1"></span>degree of a polynomial is the highest of the degrees of the polynomial’s monomials (highest exponent of the variables) with non-zero coefficients. If a polynomial has more than one variable, the degree of a polynomial is the largest sum of the exponents in a single term.</p>
+<p>For example</p>
+<p>a) <span class="math notranslate nohighlight">\(P(x{,}y)=4xy^2+2xy-x+4y-1\)</span> has the degree of 3</p>
+<p>b) <span class="math notranslate nohighlight">\(Q(a{,}b{,}c)=-6ab+a^2c+3abc-2ab^2=-2ab^2+a^2c+3abc-6ab\)</span> has the degree of 3</p>
+<p>If a polynomial needs to be simplified, remember that only like terms can be combined.</p>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h2>
+<p><strong>addition</strong></p>
+<p><span class="math notranslate nohighlight">\(\begin{align}(-5x^3+2x^2-5)+(7x^3+3x^2+5)&amp;=7x^3-5x^3+3x^2+2x^2+5-5 \\
+&amp;=2x^3+5x^2\end{align}\)</span></p>
+<p><strong>subtraction</strong></p>
+<p><span class="math notranslate nohighlight">\(\begin{align}(-5x^3+2x^2-5)-(7x^3+3x^2+5)&amp;=-5x^3+2x^2-5-7x^3-3x^2-5 \\
+&amp;=-5x^3-7x^3+2x^2-3x^2-5-5 \\
+&amp;=-12x^3-x^2-10\end{align}\)</span></p>
+<p><strong>multiplication</strong></p>
+<p><span class="math notranslate nohighlight">\(\text{a)} \ 3x\cdot(-5x^3+2x+2)=-15x^4+6x^2+6x\)</span></p>
+<p><span class="math notranslate nohighlight">\(\begin{align}\text{b)} \ (x^2-1)\cdot(4x+3)&amp;=x^2(4x-3)-1(4x-3) \\
+&amp;=4x^3-3x^2-4x+3\end{align}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\begin{align}\text{c)} \ (-4x^2+2x+5)\cdot(2x-5)&amp;=-4x^2(2x-5)+2x(2x-5)+5(2x-5) \\
+&amp;=-8x^3+20x^2+4x^2-10x+10x-25 \\
+&amp;=-8x^3+24x^2-15\end{align}\)</span></p>
 </section>
 </section>
 
@@ -471,17 +438,17 @@ If <span class="math notranslate nohighlight">\(a&gt;0\)</span> and <span class=
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="expressions.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Introduction</p>
+            <p class="prev-next-title">Expressions</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="fractions.html" title="next page">
+    <a class='right-next' id="next-link" href="vector_intro.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Fractions</p>
+        <p class="prev-next-title">Preface</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>**Sets of numbers &#8212; Maths in English</title>
+    <title>Expressions &#8212; Maths in English</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -55,8 +55,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Fractions" href="fractions.html" />
-    <link rel="prev" title="Introduction" href="intro.html" />
+    <link rel="next" title="Preface" href="vector_intro.html" />
+    <link rel="prev" title="Powers and roots" href="powers_and_roots.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -121,9 +121,9 @@ const thebe_selector_output = ".output, .cell_output"
   Basics of set theory and logic
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="numbers.html">
    **Sets of numbers
   </a>
  </li>
@@ -133,7 +133,7 @@ const thebe_selector_output = ".output, .cell_output"
   Expressions
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="fractions.html">
    Fractions
@@ -144,8 +144,8 @@ const thebe_selector_output = ".output, .cell_output"
    Powers and roots
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="expressions.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Expressions
   </a>
  </li>
@@ -274,7 +274,7 @@ title="Source repository"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/notebooks/numbers.md"
+        <a href="../_sources/notebooks/expressions.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -334,9 +334,26 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#axioms-for-the-real-numbers">
-   **Axioms for the real numbers
+  <a class="reference internal nav-link" href="#preface">
+   Preface
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terms">
+   Terms
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Expressions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#and-a-bit-more">
+     And a bit more
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -347,7 +364,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>**Sets of numbers</h1>
+                <h1>Expressions</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -358,9 +375,26 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#axioms-for-the-real-numbers">
-   **Axioms for the real numbers
+  <a class="reference internal nav-link" href="#preface">
+   Preface
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terms">
+   Terms
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Expressions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#and-a-bit-more">
+     And a bit more
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -372,75 +406,102 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="sets-of-numbers">
-<h1>**<span class="target" id="index-0"></span>Sets of numbers<a class="headerlink" href="#sets-of-numbers" title="Permalink to this headline">#</a></h1>
-<p>Set of <strong><span class="target" id="index-1"></span>natural numbers</strong> is denoted as <span class="math notranslate nohighlight">\(\mathbb{N}=\left\{0{,}1{,}2{,}3{,}...\right\}\)</span>, sometimes called as the “naturals”.</p>
-<blockquote>
-<div><p>Natural numbers without zero <span class="math notranslate nohighlight">\(\mathbb{N}^+=\left\{1{,}2{,}3{,}...\right\}\)</span> are also called as counting numbers.</p>
-</div></blockquote>
-<p>Set of <strong><span class="target" id="index-2"></span>integers</strong> is denoted as <span class="math notranslate nohighlight">\(\mathbb{Z}=\left\{...{,}-3{,}-2{,}-1{,}0{,}1{,}2{,}3{,}...\right\}\)</span></p>
-<blockquote>
-<div><p>Positive integers are denoted as <span class="math notranslate nohighlight">\(\mathbb{Z}^+=\left\{1{,}2{,}3{,}...\right\}\)</span>, which is actually the same set as <span class="math notranslate nohighlight">\(\mathbb{N}^+\)</span>. As a subset, this can be denoted as <span class="math notranslate nohighlight">\(\mathbb{N}^+\subseteq\mathbb{Z}^+\)</span> and <span class="math notranslate nohighlight">\(\mathbb{Z}^+\subseteq\mathbb{N}^+\)</span>, since every <em>element</em> of <span class="math notranslate nohighlight">\(\mathbb{N}^+\)</span> is also an <em>element</em> of <span class="math notranslate nohighlight">\(\mathbb{Z}^+\)</span>.</p>
-</div></blockquote>
-<blockquote>
-<div><p>Negative integers <span class="math notranslate nohighlight">\(\mathbb{Z}^-=\left\{...{,}-3{,}-2{,}-1\right\}=\mathbb{Z}\ \setminus\mathbb{N}\)</span>. Here the notation <span class="math notranslate nohighlight">\(\mathbb{Z}\ \setminus\mathbb{N}\)</span> means that the elements of natural numbers are removed from the set of integers. This is called the <em>subtraction</em> of sets.</p>
-</div></blockquote>
-<div class="tip dropdown admonition">
-<p class="admonition-title">EXAMPLE 1. the number <span class="math notranslate nohighlight">\(4k-5{,}\ k\in\mathbb{Z}\)</span> is always odd</p>
-<p>Proof:</p>
-<p><span class="math notranslate nohighlight">\(\begin{align} 4k-5 &amp; =\left(4k-6\right)+1 \\ \\
-&amp; =2\left(2k-3\right)+1{,}\ k\in\mathbb{Z} \end{align}\)</span></p>
-<p>What we have shown is that the <span class="math notranslate nohighlight">\(2\left(2k-3\right)\)</span> is always even for every value of <span class="math notranslate nohighlight">\(k\)</span>, because the coefficient in front of the brackets is <span class="math notranslate nohighlight">\(2\)</span>. Therefore <span class="math notranslate nohighlight">\(2\left(2k-3\right)+1=4k-5\)</span> is always odd.</p>
-</div>
-<p><strong><span class="target" id="index-3"></span>Rational numbers</strong> <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span>, the “fractions”, are denoted as</p>
-<p><span class="math notranslate nohighlight">\(\mathbb{Q}=\left\{\frac{m}{n}\mid\ m{,}n\ \in\mathbb{Z}{,}\ n\ne0\right\}\)</span></p>
-<blockquote>
-<div><p>Includes numbers whose decimal expasion terminates, e.g <span class="math notranslate nohighlight">\(\frac{3}{5}=0.6\)</span> or
-decimal expansion begins to repeat a finite sequence e.g. <span class="math notranslate nohighlight">\(\frac{13}{17}=0.76470588235294117647058823529411...\)</span>, where the repeating finite sequence is <span class="math notranslate nohighlight">\(7647058823529411\)</span>.</p>
-</div></blockquote>
-<p>When numbers cannot be expressed as a ratio of two integers, they are called <strong><span class="target" id="index-4"></span>irrational numbers</strong>. For instance <span class="math notranslate nohighlight">\(\sqrt{2}=1.414...\)</span> and <span class="math notranslate nohighlight">\(pi{,}\ \pi=3.14159...\)</span> are irrational numbers. Here decimal expansion does not terminate nor end with a repeating finite sequence.</p>
-<p><strong><span class="target" id="index-5"></span>Real numbers</strong> <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> include rational and irrational numbers. We can call this as a <em>union</em> of rational and irrational numbers. Therefore, irrational numbers can be expressed as <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> \ <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span>.</p>
-<blockquote>
-<div><p>Real numbers correspond to all the points on a number line.</p>
-</div></blockquote>
-<p><strong><span class="target" id="index-6"></span>Complex numbers</strong> <span class="math notranslate nohighlight">\(\mathbb{C}\)</span> can be expressed as a sum of a real part <span class="math notranslate nohighlight">\(a\)</span> and an imaginary part <span class="math notranslate nohighlight">\(bi\)</span> as <span class="math notranslate nohighlight">\(a+bi\)</span>, where <span class="math notranslate nohighlight">\(a{,}b\in\mathbb{R}\)</span> and <span class="math notranslate nohighlight">\(i\)</span> is the imaginary unit, which is denoted as  <span class="math notranslate nohighlight">\(i^2=-1\Leftrightarrow i=\sqrt{-1}\)</span>.</p>
-<blockquote>
-<div><p>The imaginary part <span class="math notranslate nohighlight">\(bi{,}\ b\in\mathbb{R}\)</span> actually forms the set of imaginary numbers <span class="math notranslate nohighlight">\(\mathbb{I}\)</span>, in which real numbers are multiplied by the imaginary unit.
-Complex numbers correspond to all the points on a comlex plane, where the horizontal axis represents the real part and the vertical axis represents the imaginary part.</p>
-</div></blockquote>
-<p>Every set of numbers is a “proper” subset of larger one, excluding the set of complex numbers: <span class="math notranslate nohighlight">\(\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}\subset\mathbb{C}\)</span>. This can be presented as an Euler diagram:</p>
-<figure class="align-default" id="euler-diag">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/Euler_diag.png"><img alt="Sets of numbers presented in an Euler diagram" class="bg-primary mb-1 align-center" src="../_images/Euler_diag.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Sets of numbers presented in an Euler diagram</span><a class="headerlink" href="#euler-diag" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<ul class="simple">
-<li><p>Natural numbers are a proper subset of integers.</p></li>
-<li><p>Integers are a proper subset of rational numbers.</p></li>
-<li><p>Rational numbers are a subset of the real numbers.</p></li>
-<li><p>Union of rational and imaginary numbers makes up the real numbers.</p></li>
-<li><p>Complex Numbers are the superset of all other sets.</p></li>
-</ul>
-<section id="axioms-for-the-real-numbers">
-<h2>**<span class="target" id="index-7"></span>Axioms for the real numbers<a class="headerlink" href="#axioms-for-the-real-numbers" title="Permalink to this headline">#</a></h2>
-<p>For all real numbers <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(c\)</span> <span class="math notranslate nohighlight">\(\left(a{,}b{,}c\in\mathbb{R}\right)\)</span>, following axioms are satisfied.</p>
-<p><strong>Addition</strong>
-Commutative: <span class="math notranslate nohighlight">\(a+b=b+a\)</span>
-Associative: <span class="math notranslate nohighlight">\(a+(b+c)=(a+b)+c\)</span>
-Number Zero: a real number <span class="math notranslate nohighlight">\(0\)</span> exists so that <span class="math notranslate nohighlight">\(a+0=a\)</span>
-Inverse: a real number <span class="math notranslate nohighlight">\(-a\)</span> exists so that <span class="math notranslate nohighlight">\(a+\left(-a\right)=0\)</span></p>
-<p><strong>Multiplication</strong>
-Commutative: <span class="math notranslate nohighlight">\(a\cdot b=b\cdot a\)</span>
-Associative: <span class="math notranslate nohighlight">\(a\cdot(b\cdot c)=(a\cdot b)\cdot c\)</span>
-Number One: a real number <span class="math notranslate nohighlight">\(1\)</span> exists so that <span class="math notranslate nohighlight">\(a\cdot1=a\)</span>.
-Inverse: if <span class="math notranslate nohighlight">\(a\ne0\)</span> a real number <span class="math notranslate nohighlight">\(\frac{1}{a}=a^{-1}\)</span> exists so that <span class="math notranslate nohighlight">\(aa^{-1}=1\)</span>
-Distributive: <span class="math notranslate nohighlight">\(a\cdot(b+c)=a\cdot b+a\cdot c\)</span></p>
-<p><strong>Order</strong>
-Either <span class="math notranslate nohighlight">\(a&lt;b\)</span> or <span class="math notranslate nohighlight">\(a&gt;b\)</span> or <span class="math notranslate nohighlight">\(a=b\)</span>
-If <span class="math notranslate nohighlight">\(a&lt;b\)</span> and <span class="math notranslate nohighlight">\(b&lt;c\)</span>, then <span class="math notranslate nohighlight">\(a&lt;c\)</span>
-<span class="math notranslate nohighlight">\(a&lt;b\)</span> and <span class="math notranslate nohighlight">\(a+c&lt;b+c\)</span> are equivalent
-If <span class="math notranslate nohighlight">\(a&gt;0\)</span> and <span class="math notranslate nohighlight">\(b&gt;0\)</span>, then <span class="math notranslate nohighlight">\(ab&gt;0\)</span></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="expressions">
+<h1>Expressions<a class="headerlink" href="#expressions" title="Permalink to this headline">#</a></h1>
+<section id="preface">
+<h2>Preface<a class="headerlink" href="#preface" title="Permalink to this headline">#</a></h2>
+<p>Distance, length, width, all are one dimensional quantities and their magnitude is expressed in many different units. The one used in <span class="target" id="index-0"></span>International System of Units, the SI-system, is metre. For instance a classroom can have a width of 12 metres and a length of 14 metres. This means that the classroom is twelve times as wide as on metre. Metres can be expressed shorter as a symbol m.</p>
+<p>We can add and subtract metres. For instance the perimeter of the classroom can be calculated as
+<span class="math notranslate nohighlight">\(\mathrm{12\ m+14\ m+12\ m+14\ m}\)</span>.</p>
+<p>If we want, this can be rearranged as</p>
+<p><span class="math notranslate nohighlight">\(\begin{align} &amp;\mathrm{12\ m+12\ m+14\ m+14\ m} \\
+&amp;\mathrm{=2\cdot12\ m+2\cdot14\ m} \\
+&amp;\mathrm{=2\cdot(12\ m+14\ m)}\end{align}\)</span></p>
+<p>We can also see that the length of the classroom is two meters greater than it’s width. This can be presented as</p>
+<p><span class="math notranslate nohighlight">\(\text{lenght}-\text{width}=\mathrm{14\ m-12\ m=(14-12)\ m=2\ m}\)</span></p>
+<p>When we talk about terms, their addition and subtraction are not that different but we must pay attention to which of the terms are like.</p>
+<p>Let’s go back to our classroom example and calculate it’s area.</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}12\ \mathrm{m}\cdot 14\ \mathrm{m} &amp;=12\cdot 14\cdot \mathrm{m}\cdot \mathrm{m} \\
+&amp;= 168\ \mathrm{m^2} \end{align}\)</span></p>
+<p>It’s clear that the unit is now different and that we cannot add width and area together as we can add width and length. This means that the width and length are <strong>like quantities</strong> but width and area are <strong>unlike quantities</strong>. However, we can multiply the area by the height and get the volume of the classroom. Still, length, area and volume are all unlike quantities and addition and subtraction of these quantities is not possible: <span class="math notranslate nohighlight">\(\mathrm{12\ m+168\ m^2}\)</span> doesn’t “add up”.</p>
+</section>
+<section id="terms">
+<h2>Terms<a class="headerlink" href="#terms" title="Permalink to this headline">#</a></h2>
+<p>A <span class="target" id="index-1"></span>term has it’s coefficient and a variable. Coefficient can be any scalar <span class="math notranslate nohighlight">\(a\in\mathbb{R}\)</span> and we can use what ever symbol to denote the variable, but usually <span class="math notranslate nohighlight">\(x\)</span> is used. For instance <span class="math notranslate nohighlight">\(4x{,}\ 7x{,}-2x^3{,}\ 9\)</span> and <span class="math notranslate nohighlight">\(3xy\)</span> are all terms, where 9 is a numerical term called a constant.</p>
+<p>Only like terms can be combined. Of the terms mentioned above, only terms <span class="math notranslate nohighlight">\(4x\)</span> and <span class="math notranslate nohighlight">\(7x\)</span> are like and we can combine them by addition or subtraction.</p>
+<p>Addition: <span class="math notranslate nohighlight">\(4x+7x=\left(4+7\right)x=11x\)</span> “4 apples plus 7 apples equals 11 apples.”
+Subtraction: <span class="math notranslate nohighlight">\(4x-7x=\left(4-7\right)x=-3x\)</span> “if there are 4 apples and 7 apples are needed, 3 apples will be missed.”</p>
+<p>Multiplication and division can be done to all terms. For instance</p>
+<p><span class="math notranslate nohighlight">\(4x\cdot7x=4\cdot7\cdot x\cdot x=28x^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(4x\cdot3xy=4\cdot3\cdot x\cdot x\cdot y=12x^2y\)</span></p>
+<p><span class="math notranslate nohighlight">\(\frac{4x}{9}=\frac{4}{9}x\)</span> variable x remains</p>
+<p><span class="math notranslate nohighlight">\(\frac{4x}{7x}=\frac{4}{7}\)</span> variable x is reduced</p>
+</section>
+<section id="id1">
+<h2>Expressions<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<p>Algebraic expressions are simplified combinations of unlike terms separated by + and - sings. Of the terms mentioned above, we can write expressions like</p>
+<p><span class="math notranslate nohighlight">\(4x+9\)</span></p>
+<p><span class="math notranslate nohighlight">\(7x+3xy\)</span></p>
+<p><span class="math notranslate nohighlight">\(7x-2x^3+9\)</span> but here the terms are not arranged correctly. Always write expressions as of lowering order of power! (The highest power first, then the second highest and so forth and constant last.) The correct expression is <span class="math notranslate nohighlight">\(-2x^3+7x+9\)</span>.</p>
+<p>In Physics, expressions are called <strong>formulas</strong>. Here are some examples.</p>
+<p>Area of an triangle <span class="math notranslate nohighlight">\(\mathrm{A=\frac{1}{2}\text{base}\cdot\text{height}=\frac{1}{2}bh}\)</span>’</p>
+<p><span class="math notranslate nohighlight">\(\text{miles} =1.6\cdot\text{kilometres}\)</span></p>
+<p>Distance <span class="math notranslate nohighlight">\(\mathrm{s=\frac{1}{2}\text{acceleration}\cdot\text{time}^2=\frac{1}{2}at^2}\)</span></p>
+<p>Temperature in Kelvin <span class="math notranslate nohighlight">\(\mathrm{K=°C+273}\)</span></p>
+<p>Formulas are typically used to evaluate the value of a unit. So can expressions also be evaluated, when variables are given a value.</p>
+<section id="and-a-bit-more">
+<h3>And a bit more<a class="headerlink" href="#and-a-bit-more" title="Permalink to this headline">#</a></h3>
+<p>It is good to know these <span class="target" id="index-2"></span>squares of binomials</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}(x+y)^2&amp;=(x+y)(x+y) \\
+&amp;=x(x+y)+y(x+y) \\
+&amp;=x\cdot x+x\cdot y+y\cdot x+y\cdot y \\
+&amp;=x^2+xy+yx+y^2 \\
+&amp;=x^2+2xy+y^2\end{align}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\begin{align}(x-y)^2&amp;=(x-y)(x-y) \\
+&amp;=x(x-y)-y(x-y) \\
+&amp;=x\cdot x+x\cdot(-y)-y\cdot x-y\cdot(-y) \\
+&amp;=x^2-2xy+y^2\end{align}\)</span></p>
+<p>and the product of a sum and a difference</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}(x+y)(x-y)&amp;=x(x-y)+y(x-y) \\
+&amp;=x\cdot x+x\cdot(-y)+y\cdot x+y\cdot(-y) \\
+&amp;=x^2-xy+xy-y^2 \\
+&amp;=x^2-y^2\end{align}\)</span></p>
+<p><strong>Examples</strong></p>
+<p>a) <span class="math notranslate nohighlight">\((2x+5)^2\)</span> with steps</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}(2x+5)^2&amp;=(2x+5)(2x+5) \\
+&amp;=2x(2x+5)+5(2x+5) \\
+&amp;=2x\cdot2x+2x\cdot5+5\cdot2x+5\cdot5 \\
+&amp;=2\cdot2\cdot x\cdot x+10x+10x+25 \\
+&amp;=4x^2+20x+25\end{align}\)</span></p>
+<p><span class="math notranslate nohighlight">\((2x+5)^2\)</span> with formula</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}(2x+5)^2&amp;=(2x)^2+2\cdot2x\cdot5+5^2 \\
+&amp;=4x^2+20x+25\end{align}\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\((-3a-7b)^2\)</span>  with steps</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}(-3a-7b)^2&amp;=(-3a-7b)(-3a-7b) \\
+&amp;=-3a(-3a-7b)-7b(-3a-7b) \\
+&amp;=-3a\cdot(-3a)-3a\cdot(-7b)-7b\cdot(-3a)-7b\cdot(-7b) \\
+&amp;=3\cdot3\cdot a\cdot a+21\cdot a\cdot b+21\cdot b\cdot a+7\cdot7\cdot b\cdot b \\
+&amp;=9a^2+42ab+49b^2\end{align}\)</span></p>
+<p><span class="math notranslate nohighlight">\((-3a-7b)^2\)</span>  with formula</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}(-3a-7b)&amp;=(-3a)^2-2\cdot(-3a)\cdot7b+(-7b)^2 \\
+&amp;=9a^2+42ab+49b^2\end{align}\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\((4x+1)(4x-1)\)</span> with steps</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}(4x+1)(4x-1)&amp;=4x(4x-1)+1(4x-1) \\
+&amp;=4x\cdot4x-4x\cdot1+1\cdot4x-1\cdot1 \\
+&amp;=4\cdot4\cdot x\cdot x-4x+4x-1 \\
+&amp;=16x^2-1\end{align}\)</span></p>
+<p><span class="math notranslate nohighlight">\((4x+1)(4x-1)\)</span> with formula</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}(4x+1)(4x-1)&amp;=(4x)^2-1^2 \\
+&amp;=4^2x^2-1\cdot1 \\
+&amp;=16x^2-1\end{align}\)</span></p>
+<p><strong>The <span class="target" id="index-3"></span>law of distributive</strong> <span class="math notranslate nohighlight">\(a\cdot(b+c)=a\cdot b+a\cdot c\)</span>
+is very useful in finding a common coefficient.</p>
+<p>For instance</p>
+<p>a) <span class="math notranslate nohighlight">\(4a+ab=a(4+b)\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(2xy-5yz+y=y(2x-5z+1)\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(-11x-8=-1(11x+8)=-(11x+8)\)</span></p>
+<p>d) <span class="math notranslate nohighlight">\(ax+ay+bx+by=a(x+y)+b(x+y)=(x+y)(a+b)\)</span></p>
+</section>
 </section>
 </section>
 
@@ -471,17 +532,17 @@ If <span class="math notranslate nohighlight">\(a&gt;0\)</span> and <span class=
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="powers_and_roots.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Introduction</p>
+            <p class="prev-next-title">Powers and roots</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="fractions.html" title="next page">
+    <a class='right-next' id="next-link" href="vector_intro.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Fractions</p>
+        <p class="prev-next-title">Preface</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
