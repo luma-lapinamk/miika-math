@@ -15,7 +15,10 @@ e) $\frac{9}{2}x^2+\frac{1}{2}x=x(\frac{9}{2}x+\frac{1}{2})=\frac{1}{2}x(9x+1)$
 
 f) $-10a^2b^2+6a^2b-ab=ab(-10ab+6a-1)$
 
-## Factoring by division (can be for quadratic polynomials and higher degrees)
+## Factoring by division
+for quadratic and higher degree of polynomials
+
+Here is a link for the technique used in Finnish schools: <a href="https://opetus.tv/lukio-ops2016/matematiikka/maa2/polynomin-jakaminen-polynomilla-jakokulmassa/" target="_blank">Polynomin jakaminen polynomilla jakokulmassa | Opetus.tv</a>
 
 ### Examples
 a) $P(x)=5x^2-10x-15$
@@ -24,7 +27,7 @@ Let's try to find a value for the variable x so that $P(x)=0$.
 
 It turns out that if $x=-1$, then $P(x)=0$. This means that one factor of the polynomial $P(x)$ is $(x+1)$.
 
-Then there are different techniques or algorithms to find out what the other factor will be. I (the author) use a method called a "division angle" since it is an algorithm and it doesn't need "trial and error". Here is a link for the technique used in Finnish schools: <a href="https://opetus.tv/lukio-ops2016/matematiikka/maa2/polynomin-jakaminen-polynomilla-jakokulmassa/" target="_blank">Polynomin jakaminen polynomilla jakokulmassa | Opetus.tv</a>
+Then there are different techniques or algorithms to find out what the other factor will be. I (the author) use a method called a "division angle" since it is an algorithm and it doesn't need "trial and error".
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jNJeZlHsMHg?si=5vpWLdbyo49W-9_C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -33,6 +36,7 @@ We found that the second factor is $(5x-15)$, so the polynomial can be factorize
 $P(x)=(x+1)(5x-15)$
 
 But this can be factorized even further! The final answer is $P(x)=5(x+1)(x-3)$ so always remember to factorize as far as possible. With polynomials of higher degree, you have to continue to find out other factors as well.
+
 
 b) $P(x)=-x^2+4x-3$
 
