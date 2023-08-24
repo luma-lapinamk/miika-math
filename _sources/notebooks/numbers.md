@@ -1,4 +1,4 @@
-# **{index}`Sets of numbers`
+# {index}`Sets of numbers`
 Set of **{index}`natural numbers`** is denoted as $\mathbb{N}=\left\{0{,}1{,}2{,}3{,}...\right\}$, sometimes called as the "naturals".
 > Natural numbers without zero $\mathbb{N}^+=\left\{1{,}2{,}3{,}...\right\}$ are also called as counting numbers.
 
