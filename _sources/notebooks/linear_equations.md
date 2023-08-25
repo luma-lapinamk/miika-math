@@ -72,25 +72,29 @@ d) $5=\frac{7}{x}-2$
 
 ## Number of solutions
 There are three possibilities for the number of solutions.
-I) Solution can be an exact one value.
-II) It can be any value (the equation is always true no matter the value of x).
-III) There is no solution at all.
+1. Solution can be an exact one value.
+2. It can be any value (the equation is always true no matter the value of x).
+3. There is no solution at all.
 
 ### Examples
-$\begin{align}\text{II)} \ 6x-2&=2x-2+4x \\
+We have examined the first case. The second case, when the equation is always true, is for example
+
+$\begin{align}6x-2&=2x-2+4x \\
 6x-2&=6x-2 \\
 6x-6x&=-2+2 \\
 0&=0 \ \| \ \text{true}\end{align}$
 
 LHS = RHS no matter the value of variable $x$.
 
-Answer: Solution exists always and is not dependent on the value of variable $x$.
+**Answer:** Solution exists always and is not dependent on the value of variable $x$.<br><br>
 
-$\begin{align}\text{III)} \ 6x-2&=2x-3+4x \\
+The third case, when there is no solution at all, is for example
+
+$\begin{align}\text{3.)} \ 6x-2&=2x-3+4x \\
 6x-2&=6x-3 \\
 6x-6x&=-3+2 \\
 0&=-1 \  \| \ \text{untrue}\end{align}$
 
 There exists no value for variable $x$ so that the equation is true.
 
-Answer: Solution doen not exist.
+Answer: Solution does not exist.
