@@ -97,4 +97,4 @@ $\begin{align}\text{3.)} \ 6x-2&=2x-3+4x \\
 
 There exists no value for variable $x$ so that the equation is true.
 
-Answer: Solution does not exist.
+**Answer:** Solution does not exist.
