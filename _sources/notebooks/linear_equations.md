@@ -32,18 +32,19 @@ $\begin{align}8+3x-3&=-5x+1 \ \| \ \text{simplify LHS} \\
 x&=-\frac{1}{2}\end{align}$
 
 Check your solution by subsituting the $x$ in the original equation with your solution.
-$\begin{align}8+3\cdot(-\frac{1}{2})-3&=-5\cdot(-\frac{1}{2})+1 \\
+$\begin{align}8+3x-3&=-5x+1 \ \|x=-\frac{1}{2} \\
+8+3\cdot(-\frac{1}{2})-3&=-5\cdot(-\frac{1}{2})+1 \\
 8-\frac{3}{2}-3&=\frac{5}{2}+1 \\
 5-\frac{3}{2}&=\frac{7}{2} \\
 \frac{10}{2}-\frac{3}{2}&=\frac{7}{2} \\
-\frac{7}{2}&=\frac{7}{2} \text{true}\end{align}$
+\frac{7}{2}&=\frac{7}{2} \ \text{true}\end{align}$
+
 Therefore the solution is correct.
 
 ### Shorter way of solving linear equations
-**moving terms form side to side**
-If a term is moved from side to side, remember to change the sign of the term!
+Transfer terms from one side to the other. As a result, the sign of the term will be reversed. Then simplify.
 
-$\being{align}8+3x-3=6-5x+1 \\
+$\begin{align}8+3x-3&=6-5x+1 \\
 3x+5&=-5x+1 \\
 3x&=-5x+1-5 \\
 3x&=-5x-4 \\
@@ -54,7 +55,7 @@ x&=-\frac{1}{2}\end{align}$
 
 Steps are not compulsory, so I (the author) would write down only the following steps:
 
-$\being{align}8+3x-3&=-5x+1 \\
+$\begin{align}8+3x-3&=-5x+1 \\
 8x&=-4 \|:8 \\
 x&=-\frac{4}{8} \\
 x&=-\frac{1}{2}\end{align}$
@@ -62,8 +63,11 @@ x&=-\frac{1}{2}\end{align}$
 
 ### Examples
 a) $6x-3=4x+9$
+
 b) $\frac{1}{2}x=4$
+
 c) $\frac{x}{2}=\frac{2x}{3}+1$
+
 d) $5=\frac{7}{x}-2$
 
 ## Number of solutions
@@ -73,18 +77,20 @@ II) It can be any value (the equation is always true no matter the value of x).
 III) There is no solution at all.
 
 ### Examples
-$\being{align}\text{II)} 6x-2&=2x-2+4x \\
+$\begin{align}\text{II)} \ 6x-2&=2x-2+4x \\
 6x-2&=6x-2 \\
 6x-6x&=-2+2 \\
-0&=0 \| \text{true}\end{align}$
+0&=0 \ \| \ \text{true}\end{align}$
+
 LHS = RHS no matter the value of variable $x$.
 
 Answer: Solution exists always and is not dependent on the value of variable $x$.
 
-$\being{align}\text{III)} 6x-2&=2x-3+4x \\
+$\begin{align}\text{III)} \ 6x-2&=2x-3+4x \\
 6x-2&=6x-3 \\
 6x-6x&=-3+2 \\
-0&=-1  \| \text{untrue}\end{align}$
+0&=-1 \  \| \ \text{untrue}\end{align}$
+
 There exists no value for variable $x$ so that the equation is true.
 
 Answer: Solution doen not exist.
