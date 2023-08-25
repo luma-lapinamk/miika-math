@@ -1,7 +1,7 @@
 # Expressions
 
 ## Preface
-Distance, length, width, all are one dimensional quantities and their magnitude is expressed in many different units. The one used in {index}`International System of Units`, the SI-system, is metre. For instance a classroom can have a width of 12 metres and a length of 14 metres. This means that the classroom is twelve times as wide as on metre. Metres can be expressed shorter as a symbol m.
+Distance, length, width, all are one dimensional quantities and their magnitude is expressed in many different units. The one used in the <a href="https://www.nist.gov/pml/owm/metric-si/si-units" target="_blank">International System of Units</a>, the SI-system, is metre. For instance a classroom can have a width of 12 metres and a length of 14 metres. This means that the classroom is twelve times as wide as on metre. Metres can be expressed shorter as a symbol m.
 
 We can add and subtract metres. For instance the perimeter of the classroom can be calculated as
 $\mathrm{12\ m+14\ m+12\ m+14\ m}$.

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Expressions &#8212; Maths in English</title>
+    <title>Linear equations &#8212; Maths in English</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -55,8 +55,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Polynomials" href="polynomials.html" />
-    <link rel="prev" title="Powers and roots" href="powers_and_roots.html" />
+    <link rel="next" title="Inequality" href="inequality.html" />
+    <link rel="prev" title="Factoring" href="factoring.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -133,7 +133,7 @@ const thebe_selector_output = ".output, .cell_output"
   Expressions
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="fractions.html">
    Fractions
@@ -144,8 +144,8 @@ const thebe_selector_output = ".output, .cell_output"
    Powers and roots
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="expressions.html">
    Expressions
   </a>
  </li>
@@ -165,10 +165,15 @@ const thebe_selector_output = ".output, .cell_output"
   Equations
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="linear_equations.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Linear equations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="inequality.html">
+   Inequality
   </a>
  </li>
 </ul>
@@ -332,7 +337,7 @@ title="Source repository"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/notebooks/expressions.md"
+        <a href="../_sources/notebooks/linear_equations.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -392,23 +397,42 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#preface">
-   Preface
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#terms">
-   Terms
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Expressions
+  <a class="reference internal nav-link" href="#what-is-an-equation">
+   What is an equation?
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#and-a-bit-more">
-     And a bit more
+    <a class="reference internal nav-link" href="#what-does-it-mean-to-solve-an-equation">
+     What does it mean to solve an equation?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-solve-linear-equations">
+   How to solve linear equations?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#shorter-way-of-solving-linear-equations">
+     Shorter way of solving linear equations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#examples">
+     Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#number-of-solutions">
+   Number of solutions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Examples
     </a>
    </li>
   </ul>
@@ -422,7 +446,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Expressions</h1>
+                <h1>Linear equations</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -433,23 +457,42 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#preface">
-   Preface
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#terms">
-   Terms
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Expressions
+  <a class="reference internal nav-link" href="#what-is-an-equation">
+   What is an equation?
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#and-a-bit-more">
-     And a bit more
+    <a class="reference internal nav-link" href="#what-does-it-mean-to-solve-an-equation">
+     What does it mean to solve an equation?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-solve-linear-equations">
+   How to solve linear equations?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#shorter-way-of-solving-linear-equations">
+     Shorter way of solving linear equations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#examples">
+     Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#number-of-solutions">
+   Number of solutions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Examples
     </a>
    </li>
   </ul>
@@ -464,101 +507,94 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="expressions">
-<h1>Expressions<a class="headerlink" href="#expressions" title="Permalink to this headline">#</a></h1>
-<section id="preface">
-<h2>Preface<a class="headerlink" href="#preface" title="Permalink to this headline">#</a></h2>
-<p>Distance, length, width, all are one dimensional quantities and their magnitude is expressed in many different units. The one used in the <a href="https://www.nist.gov/pml/owm/metric-si/si-units" target="_blank">International System of Units</a>, the SI-system, is metre. For instance a classroom can have a width of 12 metres and a length of 14 metres. This means that the classroom is twelve times as wide as on metre. Metres can be expressed shorter as a symbol m.</p>
-<p>We can add and subtract metres. For instance the perimeter of the classroom can be calculated as
-<span class="math notranslate nohighlight">\(\mathrm{12\ m+14\ m+12\ m+14\ m}\)</span>.</p>
-<p>If we want, this can be rearranged as</p>
-<p><span class="math notranslate nohighlight">\(\begin{align} &amp;\mathrm{12\ m+12\ m+14\ m+14\ m} \\
-&amp;\mathrm{=2\cdot12\ m+2\cdot14\ m} \\
-&amp;\mathrm{=2\cdot(12\ m+14\ m)}\end{align}\)</span></p>
-<p>We can also see that the length of the classroom is two meters greater than it’s width. This can be presented as</p>
-<p><span class="math notranslate nohighlight">\(\text{lenght}-\text{width}=\mathrm{14\ m-12\ m=(14-12)\ m=2\ m}\)</span></p>
-<p>When we talk about terms, their addition and subtraction are not that different but we must pay attention to which of the terms are like.</p>
-<p>Let’s go back to our classroom example and calculate it’s area.</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}12\ \mathrm{m}\cdot 14\ \mathrm{m} &amp;=12\cdot 14\cdot \mathrm{m}\cdot \mathrm{m} \\
-&amp;= 168\ \mathrm{m^2} \end{align}\)</span></p>
-<p>It’s clear that the unit is now different and that we cannot add width and area together as we can add width and length. This means that the width and length are <strong>like quantities</strong> but width and area are <strong>unlike quantities</strong>. However, we can multiply the area by the height and get the volume of the classroom. Still, length, area and volume are all unlike quantities and addition and subtraction of these quantities is not possible: <span class="math notranslate nohighlight">\(\mathrm{12\ m+168\ m^2}\)</span> doesn’t “add up”.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="linear-equations">
+<h1>Linear equations<a class="headerlink" href="#linear-equations" title="Permalink to this headline">#</a></h1>
+<p>are equations with one unknown variable with the power of one and constants.</p>
+<section id="what-is-an-equation">
+<h2>What is an equation?<a class="headerlink" href="#what-is-an-equation" title="Permalink to this headline">#</a></h2>
+<p>An equation is a mathematical statement that shows that two expressions are equal. It consists of two sides, the left-hand side (LHS) and the right-hand side (RHS), separated by an equal sign (=). The key idea of an equation is to express that the quantities on both sides have the same value.</p>
+<blockquote>
+<div><p>Equations are used to represent various mathematical relationships and to solve for unknown values. They are commonly used in algebra, physics, engineering, and other scientific disciplines to describe real-world phenomena and to find solutions to problems.</p>
+</div></blockquote>
+<p>An equation can involve various mathematical operations, such as addition, subtraction, multiplication, division, exponentiation, and more. Solving an equation typically involves finding the values of the variables that make the equation true.</p>
+<p>For example, the equation <span class="math notranslate nohighlight">\(8+3x-3=-5x+1\)</span> states that the left-hand side <span class="math notranslate nohighlight">\(8+3x-3\)</span> is equal to the right-hand side <span class="math notranslate nohighlight">\(-5x+1\)</span>. Solving this equation involves finding the value of <span class="math notranslate nohighlight">\(x\)</span> that satisfies the equality, which in this case is <span class="math notranslate nohighlight">\(x=-\frac{1}{2}\)</span>.</p>
+<blockquote>
+<div><p>In summary, an equation is a mathematical expression that asserts equality between two sides.</p>
+</div></blockquote>
+<section id="what-does-it-mean-to-solve-an-equation">
+<h3>What does it mean to solve an equation?<a class="headerlink" href="#what-does-it-mean-to-solve-an-equation" title="Permalink to this headline">#</a></h3>
+<p>Solving equations involves determining the values of variables that satisfy the equality. In other words, find out what is the value of the unknown variable in order to have the equation to be <strong>true</strong>.</p>
 </section>
-<section id="terms">
-<h2>Terms<a class="headerlink" href="#terms" title="Permalink to this headline">#</a></h2>
-<p>A <span class="target" id="index-0"></span>term has it’s coefficient and a variable. Coefficient can be any scalar <span class="math notranslate nohighlight">\(a\in\mathbb{R}\)</span> and we can use what ever symbol to denote the variable, but usually <span class="math notranslate nohighlight">\(x\)</span> is used. For instance <span class="math notranslate nohighlight">\(4x{,}\ 7x{,}-2x^3{,}\ 9\)</span> and <span class="math notranslate nohighlight">\(3xy\)</span> are all terms, where 9 is a numerical term called a constant.</p>
-<p>Only like terms can be combined. Of the terms mentioned above, only terms <span class="math notranslate nohighlight">\(4x\)</span> and <span class="math notranslate nohighlight">\(7x\)</span> are like and we can combine them by addition or subtraction.</p>
-<p>Addition: <span class="math notranslate nohighlight">\(4x+7x=\left(4+7\right)x=11x\)</span> “4 apples plus 7 apples equals 11 apples.”
-Subtraction: <span class="math notranslate nohighlight">\(4x-7x=\left(4-7\right)x=-3x\)</span> “if there are 4 apples and 7 apples are needed, 3 apples will be missed.”</p>
-<p>Multiplication and division can be done to all terms. For instance</p>
-<p><span class="math notranslate nohighlight">\(4x\cdot7x=4\cdot7\cdot x\cdot x=28x^2\)</span></p>
-<p><span class="math notranslate nohighlight">\(4x\cdot3xy=4\cdot3\cdot x\cdot x\cdot y=12x^2y\)</span></p>
-<p><span class="math notranslate nohighlight">\(\frac{4x}{9}=\frac{4}{9}x\)</span> variable x remains</p>
-<p><span class="math notranslate nohighlight">\(\frac{4x}{7x}=\frac{4}{7}\)</span> variable x is reduced</p>
 </section>
+<section id="how-to-solve-linear-equations">
+<h2>How to solve linear equations?<a class="headerlink" href="#how-to-solve-linear-equations" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Perform the same operation to both sides of the equation to maintain equality.</p></li>
+<li><p>Keep track of the properties of the mathematical operations you’re using.</p></li>
+<li><p><strong>Check your solution(s)</strong> by substituting them back into the original equation.</p></li>
+</ul>
+<p>Let’s examine the equation mentioned above, <span class="math notranslate nohighlight">\(8+3x-3=-5x+1\)</span>. The steps to reach the solution are, for example</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}8+3x-3&amp;=-5x+1 \ \| \ \text{simplify LHS} \\
+3x+5&amp;=-5x+1 \  \|-5  \ \text{Constants can be added to or subtracted from both sides.} \\
+3x+5-5&amp;=-5x+1-5 \  \|  \ \text{simplify both sides} \\
+3x&amp;=-5x-4 \  \| +5x  \ \text{terms can be added to or subtracted from both sides} \\
+3x+5x&amp;=-5x+5x-4 \  \|  \ \text{simplify both sides} \\
+8x&amp;=-4 \  \|  \ \text{last step: divide the equations with coefficient of x} \\
+\frac{8x}{8}&amp;=\frac{-4}{8} \  \|  \ \text{simplify both sides} \\
+x&amp;=-\frac{1}{2}\end{align}\)</span></p>
+<p>Check your solution by subsituting the <span class="math notranslate nohighlight">\(x\)</span> in the original equation with your solution.
+<span class="math notranslate nohighlight">\(\begin{align}8+3\cdot(-\frac{1}{2})-3&amp;=-5\cdot(-\frac{1}{2})+1 \\
+8-\frac{3}{2}-3&amp;=\frac{5}{2}+1 \\
+5-\frac{3}{2}&amp;=\frac{7}{2} \\
+\frac{10}{2}-\frac{3}{2}&amp;=\frac{7}{2} \\
+\frac{7}{2}&amp;=\frac{7}{2} \text{true}\end{align}\)</span>
+Therefore the solution is correct.</p>
+<section id="shorter-way-of-solving-linear-equations">
+<h3>Shorter way of solving linear equations<a class="headerlink" href="#shorter-way-of-solving-linear-equations" title="Permalink to this headline">#</a></h3>
+<p><strong>moving terms form side to side</strong>
+If a term is moved from side to side, remember to change the sign of the term!</p>
+<p><span class="math notranslate nohighlight">\(\being{align}8+3x-3=6-5x+1 \\
+3x+5&amp;=-5x+1 \\
+3x&amp;=-5x+1-5 \\
+3x&amp;=-5x-4 \\
+3x+5x&amp;=-4 \\
+8x&amp;=-4 \|:8 \\
+\frac{8x}{8}&amp;=\frac{-4}{8} \\
+x&amp;=-\frac{1}{2}\end{align}\)</span></p>
+<p>Steps are not compulsory, so I (the author) would write down only the following steps:</p>
+<p><span class="math notranslate nohighlight">\(\being{align}8+3x-3&amp;=-5x+1 \\
+8x&amp;=-4 \|:8 \\
+x&amp;=-\frac{4}{8} \\
+x&amp;=-\frac{1}{2}\end{align}\)</span></p>
+</section>
+<section id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h3>
+<p>a) <span class="math notranslate nohighlight">\(6x-3=4x+9\)</span>
+b) <span class="math notranslate nohighlight">\(\frac{1}{2}x=4\)</span>
+c) <span class="math notranslate nohighlight">\(\frac{x}{2}=\frac{2x}{3}+1\)</span>
+d) <span class="math notranslate nohighlight">\(5=\frac{7}{x}-2\)</span></p>
+</section>
+</section>
+<section id="number-of-solutions">
+<h2>Number of solutions<a class="headerlink" href="#number-of-solutions" title="Permalink to this headline">#</a></h2>
+<p>There are three possibilities for the number of solutions.
+I) Solution can be an exact one value.
+II) It can be any value (the equation is always true no matter the value of x).
+III) There is no solution at all.</p>
 <section id="id1">
-<h2>Expressions<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-<p>Algebraic expressions are simplified combinations of unlike terms separated by + and - sings. Of the terms mentioned above, we can write expressions like</p>
-<p><span class="math notranslate nohighlight">\(4x+9\)</span></p>
-<p><span class="math notranslate nohighlight">\(7x+3xy\)</span></p>
-<p><span class="math notranslate nohighlight">\(7x-2x^3+9\)</span> but here the terms are not arranged correctly. Always write expressions as of lowering order of power! (The highest power first, then the second highest and so forth and constant last.) The correct expression is <span class="math notranslate nohighlight">\(-2x^3+7x+9\)</span>.</p>
-<p>In Physics, expressions are called <strong>formulas</strong>. Here are some examples.</p>
-<p>Area of an triangle <span class="math notranslate nohighlight">\(\mathrm{A=\frac{1}{2}\text{base}\cdot\text{height}=\frac{1}{2}bh}\)</span>’</p>
-<p><span class="math notranslate nohighlight">\(\text{miles} =1.6\cdot\text{kilometres}\)</span></p>
-<p>Distance <span class="math notranslate nohighlight">\(\mathrm{s=\frac{1}{2}\text{acceleration}\cdot\text{time}^2=\frac{1}{2}at^2}\)</span></p>
-<p>Temperature in Kelvin <span class="math notranslate nohighlight">\(\mathrm{K=°C+273}\)</span></p>
-<p>Formulas are typically used to evaluate the value of a unit. So can expressions also be evaluated, when variables are given a value.</p>
-<section id="and-a-bit-more">
-<h3>And a bit more<a class="headerlink" href="#and-a-bit-more" title="Permalink to this headline">#</a></h3>
-<p>It is good to know these <span class="target" id="index-1"></span>squares of binomials</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(x+y)^2&amp;=(x+y)(x+y) \\
-&amp;=x(x+y)+y(x+y) \\
-&amp;=x\cdot x+x\cdot y+y\cdot x+y\cdot y \\
-&amp;=x^2+xy+yx+y^2 \\
-&amp;=x^2+2xy+y^2\end{align}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(x-y)^2&amp;=(x-y)(x-y) \\
-&amp;=x(x-y)-y(x-y) \\
-&amp;=x\cdot x+x\cdot(-y)-y\cdot x-y\cdot(-y) \\
-&amp;=x^2-2xy+y^2\end{align}\)</span></p>
-<p>and the product of a sum and a difference</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(x+y)(x-y)&amp;=x(x-y)+y(x-y) \\
-&amp;=x\cdot x+x\cdot(-y)+y\cdot x+y\cdot(-y) \\
-&amp;=x^2-xy+xy-y^2 \\
-&amp;=x^2-y^2\end{align}\)</span></p>
-<p><strong>Examples</strong></p>
-<p>a) <span class="math notranslate nohighlight">\((2x+5)^2\)</span> with steps</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(2x+5)^2&amp;=(2x+5)(2x+5) \\
-&amp;=2x(2x+5)+5(2x+5) \\
-&amp;=2x\cdot2x+2x\cdot5+5\cdot2x+5\cdot5 \\
-&amp;=2\cdot2\cdot x\cdot x+10x+10x+25 \\
-&amp;=4x^2+20x+25\end{align}\)</span></p>
-<p><span class="math notranslate nohighlight">\((2x+5)^2\)</span> with formula</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(2x+5)^2&amp;=(2x)^2+2\cdot2x\cdot5+5^2 \\
-&amp;=4x^2+20x+25\end{align}\)</span></p>
-<p>b) <span class="math notranslate nohighlight">\((-3a-7b)^2\)</span>  with steps</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(-3a-7b)^2&amp;=(-3a-7b)(-3a-7b) \\
-&amp;=-3a(-3a-7b)-7b(-3a-7b) \\
-&amp;=-3a\cdot(-3a)-3a\cdot(-7b)-7b\cdot(-3a)-7b\cdot(-7b) \\
-&amp;=3\cdot3\cdot a\cdot a+21\cdot a\cdot b+21\cdot b\cdot a+7\cdot7\cdot b\cdot b \\
-&amp;=9a^2+42ab+49b^2\end{align}\)</span></p>
-<p><span class="math notranslate nohighlight">\((-3a-7b)^2\)</span>  with formula</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(-3a-7b)&amp;=(-3a)^2-2\cdot(-3a)\cdot7b+(-7b)^2 \\
-&amp;=9a^2+42ab+49b^2\end{align}\)</span></p>
-<p>c) <span class="math notranslate nohighlight">\((4x+1)(4x-1)\)</span> with steps</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(4x+1)(4x-1)&amp;=4x(4x-1)+1(4x-1) \\
-&amp;=4x\cdot4x-4x\cdot1+1\cdot4x-1\cdot1 \\
-&amp;=4\cdot4\cdot x\cdot x-4x+4x-1 \\
-&amp;=16x^2-1\end{align}\)</span></p>
-<p><span class="math notranslate nohighlight">\((4x+1)(4x-1)\)</span> with formula</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(4x+1)(4x-1)&amp;=(4x)^2-1^2 \\
-&amp;=4^2x^2-1\cdot1 \\
-&amp;=16x^2-1\end{align}\)</span></p>
-<p><strong>The <span class="target" id="index-2"></span>law of distributive</strong> <span class="math notranslate nohighlight">\(a\cdot(b+c)=a\cdot b+a\cdot c\)</span>
-is very useful in finding a common coefficient.</p>
-<p>For instance</p>
-<p>a) <span class="math notranslate nohighlight">\(4a+ab=a(4+b)\)</span></p>
-<p>b) <span class="math notranslate nohighlight">\(2xy-5yz+y=y(2x-5z+1)\)</span></p>
-<p>c) <span class="math notranslate nohighlight">\(-11x-8=-1(11x+8)=-(11x+8)\)</span></p>
-<p>d) <span class="math notranslate nohighlight">\(ax+ay+bx+by=a(x+y)+b(x+y)=(x+y)(a+b)\)</span></p>
+<h3>Examples<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\being{align}\text{II)} 6x-2&amp;=2x-2+4x \\
+6x-2&amp;=6x-2 \\
+6x-6x&amp;=-2+2 \\
+0&amp;=0 \| \text{true}\end{align}\)</span>
+LHS = RHS no matter the value of variable <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p>Answer: Solution exists always and is not dependent on the value of variable <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(\being{align}\text{III)} 6x-2&amp;=2x-3+4x \\
+6x-2&amp;=6x-3 \\
+6x-6x&amp;=-3+2 \\
+0&amp;=-1  \| \text{untrue}\end{align}\)</span>
+There exists no value for variable <span class="math notranslate nohighlight">\(x\)</span> so that the equation is true.</p>
+<p>Answer: Solution doen not exist.</p>
 </section>
 </section>
 </section>
@@ -590,17 +626,17 @@ is very useful in finding a common coefficient.</p>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="powers_and_roots.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="factoring.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Powers and roots</p>
+            <p class="prev-next-title">Factoring</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="polynomials.html" title="next page">
+    <a class='right-next' id="next-link" href="inequality.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Polynomials</p>
+        <p class="prev-next-title">Inequality</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

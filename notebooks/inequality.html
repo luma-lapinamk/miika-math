@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Expressions &#8212; Maths in English</title>
+    <title>Inequality &#8212; Maths in English</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -51,12 +51,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Polynomials" href="polynomials.html" />
-    <link rel="prev" title="Powers and roots" href="powers_and_roots.html" />
+    <link rel="next" title="Missing chapter" href="blank2.html" />
+    <link rel="prev" title="Linear equations" href="linear_equations.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -133,7 +131,7 @@ const thebe_selector_output = ".output, .cell_output"
   Expressions
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="fractions.html">
    Fractions
@@ -144,8 +142,8 @@ const thebe_selector_output = ".output, .cell_output"
    Powers and roots
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="expressions.html">
    Expressions
   </a>
  </li>
@@ -165,10 +163,15 @@ const thebe_selector_output = ".output, .cell_output"
   Equations
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="linear_equations.html">
    Linear equations
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Inequality
   </a>
  </li>
 </ul>
@@ -332,7 +335,7 @@ title="Source repository"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/notebooks/expressions.md"
+        <a href="../_sources/notebooks/inequality.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -392,26 +395,9 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#preface">
-   Preface
+  <a class="reference internal nav-link" href="#examples">
+   Examples
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#terms">
-   Terms
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Expressions
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#and-a-bit-more">
-     And a bit more
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -422,7 +408,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Expressions</h1>
+                <h1>Inequality</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -433,26 +419,9 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#preface">
-   Preface
+  <a class="reference internal nav-link" href="#examples">
+   Examples
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#terms">
-   Terms
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Expressions
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#and-a-bit-more">
-     And a bit more
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -464,102 +433,25 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="expressions">
-<h1>Expressions<a class="headerlink" href="#expressions" title="Permalink to this headline">#</a></h1>
-<section id="preface">
-<h2>Preface<a class="headerlink" href="#preface" title="Permalink to this headline">#</a></h2>
-<p>Distance, length, width, all are one dimensional quantities and their magnitude is expressed in many different units. The one used in the <a href="https://www.nist.gov/pml/owm/metric-si/si-units" target="_blank">International System of Units</a>, the SI-system, is metre. For instance a classroom can have a width of 12 metres and a length of 14 metres. This means that the classroom is twelve times as wide as on metre. Metres can be expressed shorter as a symbol m.</p>
-<p>We can add and subtract metres. For instance the perimeter of the classroom can be calculated as
-<span class="math notranslate nohighlight">\(\mathrm{12\ m+14\ m+12\ m+14\ m}\)</span>.</p>
-<p>If we want, this can be rearranged as</p>
-<p><span class="math notranslate nohighlight">\(\begin{align} &amp;\mathrm{12\ m+12\ m+14\ m+14\ m} \\
-&amp;\mathrm{=2\cdot12\ m+2\cdot14\ m} \\
-&amp;\mathrm{=2\cdot(12\ m+14\ m)}\end{align}\)</span></p>
-<p>We can also see that the length of the classroom is two meters greater than it’s width. This can be presented as</p>
-<p><span class="math notranslate nohighlight">\(\text{lenght}-\text{width}=\mathrm{14\ m-12\ m=(14-12)\ m=2\ m}\)</span></p>
-<p>When we talk about terms, their addition and subtraction are not that different but we must pay attention to which of the terms are like.</p>
-<p>Let’s go back to our classroom example and calculate it’s area.</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}12\ \mathrm{m}\cdot 14\ \mathrm{m} &amp;=12\cdot 14\cdot \mathrm{m}\cdot \mathrm{m} \\
-&amp;= 168\ \mathrm{m^2} \end{align}\)</span></p>
-<p>It’s clear that the unit is now different and that we cannot add width and area together as we can add width and length. This means that the width and length are <strong>like quantities</strong> but width and area are <strong>unlike quantities</strong>. However, we can multiply the area by the height and get the volume of the classroom. Still, length, area and volume are all unlike quantities and addition and subtraction of these quantities is not possible: <span class="math notranslate nohighlight">\(\mathrm{12\ m+168\ m^2}\)</span> doesn’t “add up”.</p>
-</section>
-<section id="terms">
-<h2>Terms<a class="headerlink" href="#terms" title="Permalink to this headline">#</a></h2>
-<p>A <span class="target" id="index-0"></span>term has it’s coefficient and a variable. Coefficient can be any scalar <span class="math notranslate nohighlight">\(a\in\mathbb{R}\)</span> and we can use what ever symbol to denote the variable, but usually <span class="math notranslate nohighlight">\(x\)</span> is used. For instance <span class="math notranslate nohighlight">\(4x{,}\ 7x{,}-2x^3{,}\ 9\)</span> and <span class="math notranslate nohighlight">\(3xy\)</span> are all terms, where 9 is a numerical term called a constant.</p>
-<p>Only like terms can be combined. Of the terms mentioned above, only terms <span class="math notranslate nohighlight">\(4x\)</span> and <span class="math notranslate nohighlight">\(7x\)</span> are like and we can combine them by addition or subtraction.</p>
-<p>Addition: <span class="math notranslate nohighlight">\(4x+7x=\left(4+7\right)x=11x\)</span> “4 apples plus 7 apples equals 11 apples.”
-Subtraction: <span class="math notranslate nohighlight">\(4x-7x=\left(4-7\right)x=-3x\)</span> “if there are 4 apples and 7 apples are needed, 3 apples will be missed.”</p>
-<p>Multiplication and division can be done to all terms. For instance</p>
-<p><span class="math notranslate nohighlight">\(4x\cdot7x=4\cdot7\cdot x\cdot x=28x^2\)</span></p>
-<p><span class="math notranslate nohighlight">\(4x\cdot3xy=4\cdot3\cdot x\cdot x\cdot y=12x^2y\)</span></p>
-<p><span class="math notranslate nohighlight">\(\frac{4x}{9}=\frac{4}{9}x\)</span> variable x remains</p>
-<p><span class="math notranslate nohighlight">\(\frac{4x}{7x}=\frac{4}{7}\)</span> variable x is reduced</p>
-</section>
-<section id="id1">
-<h2>Expressions<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-<p>Algebraic expressions are simplified combinations of unlike terms separated by + and - sings. Of the terms mentioned above, we can write expressions like</p>
-<p><span class="math notranslate nohighlight">\(4x+9\)</span></p>
-<p><span class="math notranslate nohighlight">\(7x+3xy\)</span></p>
-<p><span class="math notranslate nohighlight">\(7x-2x^3+9\)</span> but here the terms are not arranged correctly. Always write expressions as of lowering order of power! (The highest power first, then the second highest and so forth and constant last.) The correct expression is <span class="math notranslate nohighlight">\(-2x^3+7x+9\)</span>.</p>
-<p>In Physics, expressions are called <strong>formulas</strong>. Here are some examples.</p>
-<p>Area of an triangle <span class="math notranslate nohighlight">\(\mathrm{A=\frac{1}{2}\text{base}\cdot\text{height}=\frac{1}{2}bh}\)</span>’</p>
-<p><span class="math notranslate nohighlight">\(\text{miles} =1.6\cdot\text{kilometres}\)</span></p>
-<p>Distance <span class="math notranslate nohighlight">\(\mathrm{s=\frac{1}{2}\text{acceleration}\cdot\text{time}^2=\frac{1}{2}at^2}\)</span></p>
-<p>Temperature in Kelvin <span class="math notranslate nohighlight">\(\mathrm{K=°C+273}\)</span></p>
-<p>Formulas are typically used to evaluate the value of a unit. So can expressions also be evaluated, when variables are given a value.</p>
-<section id="and-a-bit-more">
-<h3>And a bit more<a class="headerlink" href="#and-a-bit-more" title="Permalink to this headline">#</a></h3>
-<p>It is good to know these <span class="target" id="index-1"></span>squares of binomials</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(x+y)^2&amp;=(x+y)(x+y) \\
-&amp;=x(x+y)+y(x+y) \\
-&amp;=x\cdot x+x\cdot y+y\cdot x+y\cdot y \\
-&amp;=x^2+xy+yx+y^2 \\
-&amp;=x^2+2xy+y^2\end{align}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(x-y)^2&amp;=(x-y)(x-y) \\
-&amp;=x(x-y)-y(x-y) \\
-&amp;=x\cdot x+x\cdot(-y)-y\cdot x-y\cdot(-y) \\
-&amp;=x^2-2xy+y^2\end{align}\)</span></p>
-<p>and the product of a sum and a difference</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(x+y)(x-y)&amp;=x(x-y)+y(x-y) \\
-&amp;=x\cdot x+x\cdot(-y)+y\cdot x+y\cdot(-y) \\
-&amp;=x^2-xy+xy-y^2 \\
-&amp;=x^2-y^2\end{align}\)</span></p>
-<p><strong>Examples</strong></p>
-<p>a) <span class="math notranslate nohighlight">\((2x+5)^2\)</span> with steps</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(2x+5)^2&amp;=(2x+5)(2x+5) \\
-&amp;=2x(2x+5)+5(2x+5) \\
-&amp;=2x\cdot2x+2x\cdot5+5\cdot2x+5\cdot5 \\
-&amp;=2\cdot2\cdot x\cdot x+10x+10x+25 \\
-&amp;=4x^2+20x+25\end{align}\)</span></p>
-<p><span class="math notranslate nohighlight">\((2x+5)^2\)</span> with formula</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(2x+5)^2&amp;=(2x)^2+2\cdot2x\cdot5+5^2 \\
-&amp;=4x^2+20x+25\end{align}\)</span></p>
-<p>b) <span class="math notranslate nohighlight">\((-3a-7b)^2\)</span>  with steps</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(-3a-7b)^2&amp;=(-3a-7b)(-3a-7b) \\
-&amp;=-3a(-3a-7b)-7b(-3a-7b) \\
-&amp;=-3a\cdot(-3a)-3a\cdot(-7b)-7b\cdot(-3a)-7b\cdot(-7b) \\
-&amp;=3\cdot3\cdot a\cdot a+21\cdot a\cdot b+21\cdot b\cdot a+7\cdot7\cdot b\cdot b \\
-&amp;=9a^2+42ab+49b^2\end{align}\)</span></p>
-<p><span class="math notranslate nohighlight">\((-3a-7b)^2\)</span>  with formula</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(-3a-7b)&amp;=(-3a)^2-2\cdot(-3a)\cdot7b+(-7b)^2 \\
-&amp;=9a^2+42ab+49b^2\end{align}\)</span></p>
-<p>c) <span class="math notranslate nohighlight">\((4x+1)(4x-1)\)</span> with steps</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(4x+1)(4x-1)&amp;=4x(4x-1)+1(4x-1) \\
-&amp;=4x\cdot4x-4x\cdot1+1\cdot4x-1\cdot1 \\
-&amp;=4\cdot4\cdot x\cdot x-4x+4x-1 \\
-&amp;=16x^2-1\end{align}\)</span></p>
-<p><span class="math notranslate nohighlight">\((4x+1)(4x-1)\)</span> with formula</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}(4x+1)(4x-1)&amp;=(4x)^2-1^2 \\
-&amp;=4^2x^2-1\cdot1 \\
-&amp;=16x^2-1\end{align}\)</span></p>
-<p><strong>The <span class="target" id="index-2"></span>law of distributive</strong> <span class="math notranslate nohighlight">\(a\cdot(b+c)=a\cdot b+a\cdot c\)</span>
-is very useful in finding a common coefficient.</p>
-<p>For instance</p>
-<p>a) <span class="math notranslate nohighlight">\(4a+ab=a(4+b)\)</span></p>
-<p>b) <span class="math notranslate nohighlight">\(2xy-5yz+y=y(2x-5z+1)\)</span></p>
-<p>c) <span class="math notranslate nohighlight">\(-11x-8=-1(11x+8)=-(11x+8)\)</span></p>
-<p>d) <span class="math notranslate nohighlight">\(ax+ay+bx+by=a(x+y)+b(x+y)=(x+y)(a+b)\)</span></p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="inequality">
+<h1>Inequality<a class="headerlink" href="#inequality" title="Permalink to this headline">#</a></h1>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h2>
+<p>a) 5x-5&lt;3x+9
+5x-3x&lt;9+5
+2x&lt;14\ \parallel:2
+x&lt;7</p>
+<p>b) 7\le3x-4
+-3x\le-11\ \parallel:\left(-3\right)
+x\ge\frac{11}{3}</p>
+<p>Note! If you divide or multiply the inequality with a negative number, always remember to change the direction of the inequality sign!</p>
+<p>But the division with a negative number can be avoided, if wanted, as in the example below:
+7\le3x-4
+11\le3x
+3x\ge11\ \parallel:3
+x\ge\frac{11}{3}</p>
+<p>c) -\frac{x}{4}&gt;-3\ \parallel\cdot\left(-4\right)
+x&lt;12</p>
 </section>
 </section>
 
@@ -590,17 +482,17 @@ is very useful in finding a common coefficient.</p>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="powers_and_roots.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="linear_equations.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Powers and roots</p>
+            <p class="prev-next-title">Linear equations</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="polynomials.html" title="next page">
+    <a class='right-next' id="next-link" href="blank2.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Polynomials</p>
+        <p class="prev-next-title">Missing chapter</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
