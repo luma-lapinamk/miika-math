@@ -46,24 +46,24 @@ Sets of numbers presented in an Euler diagram
 - Union of rational and imaginary numbers makes up the real numbers.
 - Complex Numbers are the superset of all other sets.
 
-## **{index}`Axioms for the real numbers`
+## {index}`Axioms for the real numbers`
 For all real numbers $a$, $b$ and $c$ $\left(a{,}b{,}c\in\mathbb{R}\right)$, following axioms are satisfied.
 
 **Addition**
-Commutative: $a+b=b+a$
-Associative: $a+(b+c)=(a+b)+c$
-Number Zero: a real number $0$ exists so that $a+0=a$
-Inverse: a real number $-a$ exists so that $a+\left(-a\right)=0$
+- Commutative: $a+b=b+a$
+- Associative: $a+(b+c)=(a+b)+c$
+- Number Zero: a real number $0$ exists so that $a+0=a$
+- Inverse: a real number $-a$ exists so that $a+\left(-a\right)=0$
 
 **Multiplication**
-Commutative: $a\cdot b=b\cdot a$
-Associative: $a\cdot(b\cdot c)=(a\cdot b)\cdot c$
-Number One: a real number $1$ exists so that $a\cdot1=a$.
-Inverse: if $a\ne0$ a real number $\frac{1}{a}=a^{-1}$ exists so that $aa^{-1}=1$
-Distributive: $a\cdot(b+c)=a\cdot b+a\cdot c$
+- Commutative: $a\cdot b=b\cdot a$
+- Associative: $a\cdot(b\cdot c)=(a\cdot b)\cdot c$
+- Number One: a real number $1$ exists so that $a\cdot1=a$.
+- Inverse: if $a\ne0$ a real number $\frac{1}{a}=a^{-1}$ exists so that $aa^{-1}=1$
+- Distributive: $a\cdot(b+c)=a\cdot b+a\cdot c$
 
 **Order**
-Either $a<b$ or $a>b$ or $a=b$
-If $a<b$ and $b<c$, then $a<c$
-$a<b$ and $a+c<b+c$ are equivalent
-If $a>0$ and $b>0$, then $ab>0$
+- Either $a<b$ or $a>b$ or $a=b$
+- If $a<b$ and $b<c$, then $a<c$
+- $a<b$ and $a+c<b+c$ are equivalent
+- If $a>0$ and $b>0$, then $ab>0$
