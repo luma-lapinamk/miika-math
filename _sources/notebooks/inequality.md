@@ -28,7 +28,7 @@ When solving linear inequalities (inequalities with a variable raised to the pow
 
 For example, to solve $2x - 3 < 5$, you would add 3 to both sides to isolate $2x$ on the LHS. Then divide the inequality by 2 in order to find the solution to be $x < 4$. The solution states that 
 
-> the inequality $2x - 3 < 5$ is true, when the variable $x$ is lesser than 4. The solution can also be expressed as a set of {3, 2, 1, 0, -1, -2, \dots}.
+> The inequality $2x - 3 < 5$ is true, when the variable $x$ is lesser than 4. The solution can also be expressed as a set of $\{3, 2, 1, 0, -1, -2, \dots\}$.
 
 ### Examples
 
