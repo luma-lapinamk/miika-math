@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Fractions" href="fractions.html" />
@@ -409,6 +411,11 @@ title="Print to PDF"
    Introduction
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basic-concepts-of-logic">
+   Basic concepts of logic
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -433,6 +440,11 @@ title="Print to PDF"
    Introduction
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basic-concepts-of-logic">
+   Basic concepts of logic
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -447,6 +459,115 @@ title="Print to PDF"
 <h1><span class="target" id="index-0"></span>Logic<a class="headerlink" href="#logic" title="Permalink to this headline">#</a></h1>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>Logic is the systematic study of reasoning and argumentation. It provides a structured framework for understanding how propositions (statements) relate to each other and how conclusions can be drawn from given premises. Logic is an essential tool in various disciplines, including philosophy, mathematics, computer science, linguistics, and more. It helps us evaluate the validity of arguments and make informed decisions based on sound reasoning.</p>
+<p>Logic is governed by various laws and principles that help us analyze and manipulate propositions. For instance the <strong><span class="target" id="index-1"></span>Law of Non-Contradiction</strong> states that</p>
+<blockquote>
+<div><p><em>A proposition cannot be both true and false at the same time.</em></p>
+</div></blockquote>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DkQhK8O9Jik?si=7-SYvoETvxLYfrAN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>Logic can be done in natural language (English, Finnish…) or through a formal language, as seen below.</p>
+</section>
+<section id="basic-concepts-of-logic">
+<h2>Basic concepts of logic<a class="headerlink" href="#basic-concepts-of-logic" title="Permalink to this headline">#</a></h2>
+<p><strong>Propositions</strong></p>
+<ul class="simple">
+<li><p><span class="target" id="index-2"></span>Closed propositions are statements that can be true (T) or false (F), but not both simultaneously. For example, “The sky is blue” and “<span class="math notranslate nohighlight">\(2 + 2 = 5\)</span>” are closed propositions and they can be determined definitively based on established facts or logical reasoning.</p></li>
+<li><p><span class="target" id="index-3"></span>Open propositions are statements that cannot be definitively assigned a truth value because it contains variables, ambiguous terms, or is dependent on future events or circumstances. For example “It will rain tomorrow.” and “<span class="math notranslate nohighlight">\(5x+4=4\)</span>” are open propositions.</p></li>
+</ul>
+<p><strong><span class="target" id="index-4"></span>Logical connectives</strong>
+Logical connectives are words or symbols that combine propositions to create more complex statements. Common logical connectives include</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Connective</p></th>
+<th class="head"><p>Symbol</p></th>
+<th class="head"><p>Meaning</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Negation</p></td>
+<td><p><span class="math notranslate nohighlight">\(\neg\)</span></p></td>
+<td><p>NOT, reverses truth value</p></td>
+<td><p>“It’s not cloudy.”</p></td>
+</tr>
+<tr class="row-odd"><td><p>Disjunction</p></td>
+<td><p><span class="math notranslate nohighlight">\(\lor\)</span></p></td>
+<td><p>OR, at least one proposition true</p></td>
+<td><p>“It’s raining OR it’s snowing.”</p></td>
+</tr>
+<tr class="row-even"><td><p>Conjunction</p></td>
+<td><p><span class="math notranslate nohighlight">\(\land\)</span></p></td>
+<td><p>AND, both propositions are true</p></td>
+<td><p>“It’s sunny AND it’s warm.”</p></td>
+</tr>
+<tr class="row-odd"><td><p>Implication</p></td>
+<td><p><span class="math notranslate nohighlight">\(\Rightarrow\)</span></p></td>
+<td><p>IF…THEN, implication</p></td>
+<td><p>“If it’s raining, then the ground is wet.”</p></td>
+</tr>
+<tr class="row-even"><td><p>Biconditional</p></td>
+<td><p><span class="math notranslate nohighlight">\(\Leftrightarrow\)</span></p></td>
+<td><p>IF AND ONLY IF, equivalence</p></td>
+<td><p>“It’s cold IF AND ONLY IF it’s not warm.”</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>If a statement involves multiple logical connectives, the order of evaluation is</p>
+<ol class="simple">
+<li><p>negation</p></li>
+<li><p>conjunction and disjunction</p></li>
+<li><p>implication and biconditional</p></li>
+</ol>
+</div></blockquote>
+<p><strong><span class="target" id="index-5"></span>Truth Tables</strong> are tables that show all possible truth values of compound propositions based on the truth values of their component propositions. For all possible values of propositions of <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(q\)</span>, a truth table can be written as</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\neg p\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(p \lor q\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(p \land q\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(p \Rightarrow q\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(p \Leftrightarrow q\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+</tbody>
+</table>
+<p>A <strong><span class="target" id="index-6"></span>tautology</strong> is a logical statement that is always true, for example <span class="math notranslate nohighlight">\(p \lor \neg p\)</span>, “I own a bicycle OR I don’t own a bicycle.” A <strong><span class="target" id="index-7"></span>contradiction</strong> then again is always false, for example <span class="math notranslate nohighlight">\(p \land \neg p\)</span>, “I own a bicycle AND I don’t own a bicycle.”</p>
 </section>
 </section>
 
