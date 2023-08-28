@@ -12,7 +12,7 @@ Inequalities are denoted using the following symbols:
 
 For example
 
-- $x > 5$ means "$$x is greater than 5."
+- $x > 5$ means "$x$ is greater than 5."
 - $y < 10$ means "$y$ is less than 10."
 - $z \ge 3$ means "$z$ is greater than or equal to 3."
 - $w \le 7$ means "$w$ is less than or equal to 7."
@@ -26,7 +26,9 @@ When solving linear inequalities (inequalities with a variable raised to the pow
 2. **Pay attention to sign changes when multiplying or dividing by negative numbers.**
 3. Express the solution as an interval or a set of values.
 
-For example, to solve $2x - 3 < 5$, you would add 3 to both sides to isolate $2x$. Then divide by 2, remembering to reverse the inequality sign due to division by a negative coefficient.
+For example, to solve $2x - 3 < 5$, you would add 3 to both sides to isolate $2x$ on the LHS. Then divide the inequality by 2 in order to find the solution to be $x < 4$. The solution states that 
+
+> the inequality $2x - 3 < 5$ is true, when the variable $x$ is lesser than 4. The solution can also be expressed as a set of {3, 2, 1, 0, -1, -2, \dots}.
 
 ### Examples
 
