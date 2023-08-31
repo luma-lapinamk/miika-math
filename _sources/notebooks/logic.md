@@ -16,6 +16,7 @@ Logic can be done in natural language (English, Finnish...) or through a formal 
 - {index}`Open propositions` are statements that cannot be definitively assigned a truth value because it contains variables, ambiguous terms, or is dependent on future events or circumstances. For example "It will rain tomorrow." and "$5x+4=4$" are open propositions.
 
 **{index}`Logical connectives`**
+
 Logical connectives are words or symbols that combine propositions to create more complex statements. Common logical connectives include
 
 | Connective      | Symbol            | Meaning                           | Example |
@@ -40,4 +41,4 @@ Logical connectives are words or symbols that combine propositions to create mor
 |   F   |   T   |   T   |    T    |    F    |    T    |    F    |
 |   F   |   F   |   T   |    F    |    F    |    T    |    T    |
 
-A **{index}`tautology`** is a logical statement that is always true, for example $p \lor \neg p$, "I own a bicycle OR I don't own a bicycle." A **{index}`contradiction`** then again is always false, for example $p \land \neg p$, "I own a bicycle AND I don't own a bicycle."
+A **{index}`tautology`** is a logical statement that is always true, for example $p \lor \neg p$, "I own a bicycle OR I don't own a bicycle." A **{index}`contradiction`** in the other hand is always false, for example $p \land \neg p$, "I own a bicycle AND I don't own a bicycle."
