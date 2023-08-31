@@ -44,6 +44,7 @@ Intersection of sets A and B presented in a Venn diagram
 Intersection of sets A and B presented in a Venn diagram
 ```
 > Note that usually $A-B \not= B-A$, so the order of subtraction matters.
+
 > In some context, especially in programming and computer sciences, the set difference $A-B$ can be written as $A \setminus B$.
 
 
