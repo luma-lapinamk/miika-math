@@ -3,9 +3,9 @@ The set of **{index}`natural numbers`** is denoted by the symbol $\mathbb{N}$. I
 > Natural numbers without zero $\mathbb{N}^+=\left\{1{,}2{,}3{,}...\right\}$ are also called as "counting numbers".
 
 The set of **{index}`integers`** is denoted by $\mathbb{Z}=\{...{,}-3{,}-2{,}-1{,}0{,}1{,}2{,}3{,}...\}$
-> Positive integers are denoted as $\mathbb{Z}^+=\{1{,}2{,}3{,}...\}$, which is actually the same set as $\mathbb{N}^+$. As a subset, this can be denoted as $\mathbb{N}^+\subseteq\mathbb{Z}^+$ and $\mathbb{Z}^+\subseteq\mathbb{N}^+$, since every *element* of $\mathbb{N}^+$ is also an *element* of $\mathbb{Z}^+$.
+> Positive integers are denoted as $\mathbb{Z}^+=\{1{,}2{,}3{,}...\}$, which is actually the same set as $\mathbb{N}^+$. As a subset, this can be denoted by $\mathbb{N}^+\subseteq\mathbb{Z}^+$ and $\mathbb{Z}^+\subseteq\mathbb{N}^+$, since every *element* of $\mathbb{N}^+$ is also an *element* of $\mathbb{Z}^+$.
 
-> Negative integers $\mathbb{Z}^-=\{...{,}-3{,}-2{,}-1\}=\mathbb{Z}\ \setminus\mathbb{N}$. Here the notation $\mathbb{Z}\ \setminus\mathbb{N}$ means that the elements of natural numbers are removed from the set of integers. This is called the *subtraction* of sets.
+> Negative integers $\mathbb{Z}^-=\{...{,}-3{,}-2{,}-1\}=\mathbb{Z}-\mathbb{N}$. Here the notation $\mathbb{Z}-\mathbb{N}$ (or $\mathbb{Z}\ \setminus\mathbb{N}$) means that the elements of natural numbers are removed from the set of integers. See <a href="https://luma-lapinamk.github.io/miika-math/notebooks/set_theory.html#index-10" target="_blank">set difference</a>.
 
 :::{admonition} EXAMPLE 1. the number $4k-5{,}\ k\in\mathbb{Z}$ is always odd
 :class: tip, dropdown

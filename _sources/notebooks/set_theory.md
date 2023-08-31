@@ -37,13 +37,15 @@ Union of sets A and B presented in a Venn diagram
 Intersection of sets A and B presented in a Venn diagram
 ```
 
-**Set difference:** The {index}`set difference` between sets $A$ and $B$ consists of all the elements that are in set $A$ but not in set $B$. In other words, $A-B$ contains the elements that are exclusive to set $A$ and are not shared with set $B$. Mathematically $A-B = \{x \mid x \in A \text{ and } x \notin B\}$.
-> Note that usually $A-B \not= B-A$, so the order of subtraction matters.
+**Set difference:** The {index}`set difference` between sets $A$ and $B$ consists of all the elements that are only in set $A$ but not in set $B$. In other words, when you subtract one set from another, $A-B$ contains the elements that are exclusive to set $A$ and are not shared with set $B$. Mathematically $A-B = \{x \mid x \in A \text{ and } x \notin B\}$.
 ```{figure-md} Set difference
 <img src="../images/algebra/difference.png" alt="Set difference of sets A and B presented in a Venn diagram" class="bg-primary mb-1" width="300px" align="center">
 
 Intersection of sets A and B presented in a Venn diagram
 ```
+> Note that usually $A-B \not= B-A$, so the order of subtraction matters.
+> In some context, especially in programming and computer sciences, the set difference $A-B$ can be written as $A \setminus B$.
+
 
 ### Examples
 Let $A=\{1,2,3\}$, $B=\{1,2,3,4\}$, $C=\{3,4,5\}$ and $U=\{1,2,3, \dots ,9\}$.<br><br>
