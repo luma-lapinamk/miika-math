@@ -2,17 +2,16 @@
 ## Introduction
 Boolean algebra is a branch of algebra that deals with binary variables and operations, named after its founder George Boole. It plays a fundamental role in digital electronics, computer science, and mathematical logic. Boolean algebra is essential for designing and analyzing digital circuits, creating logical expressions, and simplifying complex logical statements.
 
-## Basics of Boolean Algebra
+## Basics
 
 ### Boolean Variables
-
 Boolean algebra operates on binary variables that can have only two values: true (1) and false (0). These values are often represented as "T" and "F" or "1" and "0."
 
 ### Boolean Operators
 
 Boolean algebra uses three primary operators: AND, OR, and NOT. These operators manipulate Boolean variables to produce logical results.
 
-- **AND (Conjunction):** Denoted by `∧` or `*`, it returns true (1) only when both inputs are true (1).
+**AND (Conjunction):** Denoted by `∧` or `*`, it returns true (1) only when both inputs are true (1).
 
   | A | B | A ∧ B |
   |---|---|-------|
@@ -21,7 +20,7 @@ Boolean algebra uses three primary operators: AND, OR, and NOT. These operators 
   | 1 | 0 |   0   |
   | 1 | 1 |   1   |
 
-- **OR (Disjunction):** Denoted by `∨` or `+`, it returns true (1) when at least one input is true (1).
+**OR (Disjunction):** Denoted by `∨` or `+`, it returns true (1) when at least one input is true (1).
 
   | A | B | A ∨ B |
   |---|---|-------|
@@ -30,7 +29,7 @@ Boolean algebra uses three primary operators: AND, OR, and NOT. These operators 
   | 1 | 0 |   1   |
   | 1 | 1 |   1   |
 
-- **NOT (Negation):** Denoted by `¬` or `'`, it returns the opposite of the input.
+**NOT (Negation):** Denoted by `¬` or `'`, it returns the opposite of the input.
 
   | A | ¬A |
   |---|----|
@@ -72,8 +71,8 @@ Boolean algebra follows several important laws and rules that help simplify and 
 
 ### Domination Laws
 
-- **AND:** A ∧ A' = 0
-- **OR:** A ∨ A' = 1
+- **AND:** A ∧ ¬A = 0
+- **OR:** A ∨ ¬A = 1
 
 ### Double Negation Law
 
