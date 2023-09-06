@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Introduction &#8212; Maths in English</title>
+    <title>Boolean algebra &#8212; Maths in English</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,7 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Set theory" href="set_theory.html" />
+    <link rel="next" title="Sets of numbers" href="numbers.html" />
+    <link rel="prev" title="Logic" href="logic.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -107,8 +108,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Introduction
                 </a>
             </li>
@@ -118,7 +119,7 @@ const thebe_selector_output = ".output, .cell_output"
   Basics of set theory and logic
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="set_theory.html">
    Set theory
@@ -129,8 +130,8 @@ const thebe_selector_output = ".output, .cell_output"
    Logic
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Boolean.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Boolean algebra
   </a>
  </li>
@@ -349,7 +350,7 @@ title="Source repository"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/notebooks/intro.md"
+        <a href="../_sources/notebooks/Boolean.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -409,11 +410,78 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#table-of-contents">
-   Table of contents
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basics-of-boolean-algebra">
+   Basics of Boolean Algebra
   </a>
   <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#boolean-variables">
+     Boolean Variables
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#boolean-operators">
+     Boolean Operators
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#boolean-expressions">
+     Boolean Expressions
+    </a>
+   </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#boolean-algebra-laws">
+   Boolean Algebra Laws
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#commutative-laws">
+     Commutative Laws
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#associative-laws">
+     Associative Laws
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#distributive-laws">
+     Distributive Laws
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#identity-laws">
+     Identity Laws
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#null-laws">
+     Null Laws
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#domination-laws">
+     Domination Laws
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#double-negation-law">
+     Double Negation Law
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#boolean-algebra-applications">
+   Boolean Algebra Applications
+  </a>
  </li>
 </ul>
 
@@ -424,7 +492,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introduction</h1>
+                <h1>Boolean algebra</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -435,11 +503,78 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#table-of-contents">
-   Table of contents
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basics-of-boolean-algebra">
+   Basics of Boolean Algebra
   </a>
   <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#boolean-variables">
+     Boolean Variables
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#boolean-operators">
+     Boolean Operators
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#boolean-expressions">
+     Boolean Expressions
+    </a>
+   </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#boolean-algebra-laws">
+   Boolean Algebra Laws
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#commutative-laws">
+     Commutative Laws
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#associative-laws">
+     Associative Laws
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#distributive-laws">
+     Distributive Laws
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#identity-laws">
+     Identity Laws
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#null-laws">
+     Null Laws
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#domination-laws">
+     Domination Laws
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#double-negation-law">
+     Double Negation Law
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#boolean-algebra-applications">
+   Boolean Algebra Applications
+  </a>
  </li>
 </ul>
 
@@ -451,71 +586,164 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
-<p>Hey there! Here you can find study material for maths courses <strong>Algebra, geometry ja trigonometry</strong> and <strong>Linear algebra</strong>. Material is made by LUMA-team of Lapland University of Applied Sciences. Work in progress…</p>
-<section id="table-of-contents">
-<h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">#</a></h2>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Basics of set theory and logic</span></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="boolean-algebra">
+<h1><span class="target" id="index-0"></span>Boolean algebra<a class="headerlink" href="#boolean-algebra" title="Permalink to this headline">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>Boolean algebra is a branch of algebra that deals with binary variables and operations, named after its founder George Boole. It plays a fundamental role in digital electronics, computer science, and mathematical logic. Boolean algebra is essential for designing and analyzing digital circuits, creating logical expressions, and simplifying complex logical statements.</p>
+</section>
+<section id="basics-of-boolean-algebra">
+<h2>Basics of Boolean Algebra<a class="headerlink" href="#basics-of-boolean-algebra" title="Permalink to this headline">#</a></h2>
+<section id="boolean-variables">
+<h3>Boolean Variables<a class="headerlink" href="#boolean-variables" title="Permalink to this headline">#</a></h3>
+<p>Boolean algebra operates on binary variables that can have only two values: true (1) and false (0). These values are often represented as “T” and “F” or “1” and “0.”</p>
+</section>
+<section id="boolean-operators">
+<h3>Boolean Operators<a class="headerlink" href="#boolean-operators" title="Permalink to this headline">#</a></h3>
+<p>Boolean algebra uses three primary operators: AND, OR, and NOT. These operators manipulate Boolean variables to produce logical results.</p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="set_theory.html">Set theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="logic.html">Logic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Boolean.html">Boolean algebra</a></li>
+<li><p><strong>AND (Conjunction):</strong> Denoted by <code class="docutils literal notranslate"><span class="pre">∧</span></code> or <code class="docutils literal notranslate"><span class="pre">*</span></code>, it returns true (1) only when both inputs are true (1).</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>A ∧ B</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p><strong>OR (Disjunction):</strong> Denoted by <code class="docutils literal notranslate"><span class="pre">∨</span></code> or <code class="docutils literal notranslate"><span class="pre">+</span></code>, it returns true (1) when at least one input is true (1).</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>A ∨ B</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p><strong>NOT (Negation):</strong> Denoted by <code class="docutils literal notranslate"><span class="pre">¬</span></code> or <code class="docutils literal notranslate"><span class="pre">'</span></code>, it returns the opposite of the input.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>¬A</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</li>
 </ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Expressions</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="numbers.html">Sets of numbers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fractions.html">Fractions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="powers_and_roots.html">Powers and roots</a></li>
-<li class="toctree-l1"><a class="reference internal" href="expressions.html">Expressions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="polynomials.html">Polynomials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="factoring.html">Factoring</a></li>
+</section>
+<section id="boolean-expressions">
+<h3>Boolean Expressions<a class="headerlink" href="#boolean-expressions" title="Permalink to this headline">#</a></h3>
+<p>Boolean expressions are combinations of Boolean variables and operators. They can be used to represent logical conditions and are the building blocks of more complex logical statements.</p>
+</section>
+</section>
+<section id="boolean-algebra-laws">
+<h2>Boolean Algebra Laws<a class="headerlink" href="#boolean-algebra-laws" title="Permalink to this headline">#</a></h2>
+<p>Boolean algebra follows several important laws and rules that help simplify and manipulate expressions.</p>
+<section id="commutative-laws">
+<h3>Commutative Laws<a class="headerlink" href="#commutative-laws" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><strong>AND:</strong> A ∧ B = B ∧ A</p></li>
+<li><p><strong>OR:</strong> A ∨ B = B ∨ A</p></li>
 </ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Equations</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="linear_equations.html">Linear equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="inequality.html">Inequality</a></li>
+</section>
+<section id="associative-laws">
+<h3>Associative Laws<a class="headerlink" href="#associative-laws" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><strong>AND:</strong> (A ∧ B) ∧ C = A ∧ (B ∧ C)</p></li>
+<li><p><strong>OR:</strong> (A ∨ B) ∨ C = A ∨ (B ∨ C)</p></li>
 </ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Functions</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="blank2.html">Missing chapter</a></li>
+</section>
+<section id="distributive-laws">
+<h3>Distributive Laws<a class="headerlink" href="#distributive-laws" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><strong>AND over OR:</strong> A ∧ (B ∨ C) = (A ∧ B) ∨ (A ∧ C)</p></li>
+<li><p><strong>OR over AND:</strong> A ∨ (B ∧ C) = (A ∨ B) ∧ (A ∨ C)</p></li>
 </ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trigonometry</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="blank3.html">Missing chapter</a></li>
+</section>
+<section id="identity-laws">
+<h3>Identity Laws<a class="headerlink" href="#identity-laws" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><strong>AND:</strong> A ∧ 1 = A</p></li>
+<li><p><strong>OR:</strong> A ∨ 0 = A</p></li>
 </ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometry</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="blank4.html">Missing chapter</a></li>
+</section>
+<section id="null-laws">
+<h3>Null Laws<a class="headerlink" href="#null-laws" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><strong>AND:</strong> A ∧ 0 = 0</p></li>
+<li><p><strong>OR:</strong> A ∨ 1 = 1</p></li>
 </ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectors</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="vector_intro.html">Preface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vector_basic_calc.html">Basic vector calculus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vector_position.html">Position vector and displacement vector</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vector_parallel.html">Parallel vectors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vector_parallel.html#unit-vector-kesken">Unit vector (kesken)</a></li>
+</section>
+<section id="domination-laws">
+<h3>Domination Laws<a class="headerlink" href="#domination-laws" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><strong>AND:</strong> A ∧ A’ = 0</p></li>
+<li><p><strong>OR:</strong> A ∨ A’ = 1</p></li>
 </ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</section>
+<section id="double-negation-law">
+<h3>Double Negation Law<a class="headerlink" href="#double-negation-law" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>¬(¬A) = A</p></li>
 </ul>
-</div>
+</section>
+</section>
+<section id="boolean-algebra-applications">
+<h2>Boolean Algebra Applications<a class="headerlink" href="#boolean-algebra-applications" title="Permalink to this headline">#</a></h2>
+<p>Boolean algebra finds extensive applications in various fields:</p>
+<ul class="simple">
+<li><p><strong>Digital Logic Design:</strong> Boolean algebra is the foundation for designing digital circuits, including logic gates, flip-flops, and memory units. It allows engineers to create efficient and reliable electronic systems.</p></li>
+<li><p><strong>Computer Science:</strong> In computer science, Boolean algebra is used to design algorithms, control flow, and decision-making processes in programming. It plays a crucial role in conditional statements and loops.</p></li>
+<li><p><strong>Information Retrieval:</strong> Boolean algebra is used in search engines and databases for information retrieval. Boolean operators (AND, OR, NOT) are employed to refine search queries and filter results.</p></li>
+<li><p><strong>Network Design:</strong> In networking, Boolean algebra helps design routing algorithms, address resolution protocols, and access control lists, enabling efficient data transmission and security.</p></li>
+<li><p><strong>Artificial Intelligence:</strong> In AI and machine learning, Boolean algebra is used to create decision trees, logical rules, and classifiers for various applications, including natural language processing and image recognition.</p></li>
+</ul>
 </section>
 </section>
 
@@ -546,10 +774,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="set_theory.html" title="next page">
+    <a class='left-prev' id="prev-link" href="logic.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Logic</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="numbers.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Set theory</p>
+        <p class="prev-next-title">Sets of numbers</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
