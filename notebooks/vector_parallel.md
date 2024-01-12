@@ -32,31 +32,39 @@ We can also examine the parallelism of two vectors by forming their unit vectors
 
 # Unit vector (kesken)
 
-Sometimes it is necessary to form a **{index}`unit vector`** $\overline{a}^0$ of a given vector $\overline{a}$. The unit vector has the same direction as the original vector but its magnitude is 1. Unit vector of formed by dividing a vector by its magnitude. In practise, every component of a vector will be divided separately. Here is an example of a 3D-vector.
+Sometimes it is necessary to form a **{index}`unit vector`** $\overline{a}^0$ of a given vector $\overline{a}$. The unit vector has the same direction as the original vector but it has the norm of 1. The unit vector of formed by dividing a vector by its magnitude. In practise, every component of a vector will be divided separately. In general for a three dimensional vector, the unit vector is given by
 
-$$\begin{align}\overline{a}^0 & =\frac{\overline{a}}{\left|\overline{a}\right|} \\ \\
-& =\left(\frac{a_x}{\left|\overline{a}\right|},\frac{a_y}{\left|\overline{a}\right|},\frac{a_z}{\left|\overline{a}\right|}\right) \\ \\
-\end{align}$$
+$\begin{align}\overline{a}^0 & =\frac{\overline{a}}{|\overline{a}|} \\ \\
+& =(\frac{a_x}{|\overline{a}|},\frac{a_y}{|\overline{a}|},\frac{a_z}{|\overline{a}|}) \\ \\
+\end{align}$
 
-:::{admonition} EXAMPLE 2. Pisteeseen C asennetaan 30 m pitkä taulu alemman aidan AB suuntaisesti. Laske taulun toisen päätepisteen D koordinaatit.
+:::{admonition} EXAMPLE 2. Where is the head of a displacement vector from coordinate point C, when the magnitude of the vector is 30 and it is parallel to line AB?
 :class: tip, dropdown
 Kuva 1. 23 Esimerkki yksikkövektorin hyödyntämisestä
 
 Huom! Pisteen C koordinaatteihin ei saa suoraan lisätä arvoa 30. Tämä veisi pisteen D väärään suuntaan suoraan koilliseen.
-Muodostetaan ensin vektori \overline{AB}=\overline{OB}-\overline{OA}=\left(400,140\right)-\left(40,100\right)=\left(360,40\right). Jotta pisteestä C päästään 30 m vektorin \overline{AB} suuntaisesti, muodostetaan ensin vektorin \overline{AB} yksikkövektori.
-{\overline{AB}}^0=\frac{\overline{AB}}{\left|\overline{AB}\right|}=\frac{\left(360,\ 40\right)}{\sqrt{{360}^2+{20}^2}}=\frac{\left(360,\ 40\right)}{40\sqrt{82}}
-\ \ \ \ \ \ \ \ \ =\left(\frac{360}{40\sqrt{82}},\ \frac{40}{40\sqrt{82}}\right)=\left(\frac{9}{\sqrt{82}},\ \frac{1}{\sqrt{82}}\right)
-\ \ \ \ \ \ \ \ \ =\left(0.993\ldots,0.110\ldots\right)
+
+Muodostetaan ensin vektori $\overline{AB}=\overline{OB}-\overline{OA}=(400,140)-(40,100)=(360,40)$.
+
+Jotta pisteestä C päästään 30 m vektorin $\overline{AB}$ suuntaisesti, muodostetaan ensin vektorin $\overline{AB}$ yksikkövektori.
+
+$\begin{align}\{\overline{AB}}^0&=\frac{\overline{AB}}{|\overline{AB}|}=\frac{(360,40)}{\sqrt{{360}^2+{20}^2}}=\frac{(360,40)}{40\sqrt{82}} \\
+& =(\frac{360}{40\sqrt{82}},\frac{40}{40\sqrt{82}})=(\frac{9}{\sqrt{82}},\frac{1}{\sqrt{82}}) \\
+& =(0.993\ldots,0.110\ldots)\end{align}$
 
 Seuraavaksi kerrotaan yksikkövektori pituudella 30, jotta saadaan siirtymävektori pisteiden C ja D välille.
-\overline{CD}=30\bullet{\overline{AB}}^0=30\bullet\left(\frac{9}{\sqrt{82}},\ \frac{1}{\sqrt{82}}\right)=\left(\frac{270}{\sqrt{82}},\ \frac{30}{\sqrt{82}}\right)
+$ \overline{CD}=30\bullet{\overline{AB}}^0=30\bullet(\frac{9}{\sqrt{82}}$
 
-Täten paikkavektori \overline{OD}=\overline{OC}+\overline{CD}=\left(40,130\right)+\left(\frac{270}{\sqrt{82}},\ \frac{30}{\sqrt{82}}\right)
-\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\left(69.816\ldots,133.312\ldots\right)\approx\left(70,133\right) eli piste D = (70, 133).
+$\frac{1}{\sqrt{82}})=(\frac{270}{\sqrt{82}}$
+
+$\frac{30}{\sqrt{82}})$
+
+Täten paikkavektori $\overline{OD}=\overline{OC}+\overline{CD}=(40,130)+(\frac{270}{\sqrt{82}}$
+
+$\frac{30}{\sqrt{82}})$
+
+$=(69.816\ldots,133.312\ldots)\approx(70,133)$ eli piste D = (70, 133).
 
 :::
 
-
 Esimerkki. 
- 
-
