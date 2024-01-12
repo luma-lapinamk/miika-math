@@ -32,13 +32,13 @@ We can also examine the parallelism of two vectors by forming their unit vectors
 
 # Unit vector (kesken)
 
-Sometimes it is necessary to form a **{index}`unit vector`** $\overline{a}^0$ of a given vector $\overline{a}$. The unit vector has the same direction as the original vector but its magnitude is 1. Unit vector of formed by dividing a vector by its magnitude. In practise, every component of a vector will be divided separately. Here is an example of a 3D-vector.
+Sometimes it is necessary to form a **{index}`unit vector`** $\overline{a}^0$ of a given vector $\overline{a}$. The unit vector has the same direction as the original vector but it has the norm of 1. The unit vector of formed by dividing a vector by its magnitude. In practise, every component of a vector will be divided separately. In general for a three dimensional vector, the unit vector is given by
 
 $\begin{align}\overline{a}^0 & =\frac{\overline{a}}{|\overline{a}|} \\ \\
 & =(\frac{a_x}{|\overline{a}|},\frac{a_y}{|\overline{a}|},\frac{a_z}{|\overline{a}|}) \\ \\
 \end{align}$
 
-:::{admonition} EXAMPLE 2. Pisteeseen C asennetaan 30 m pitkä taulu alemman aidan AB suuntaisesti. Laske taulun toisen päätepisteen D koordinaatit.
+:::{admonition} EXAMPLE 2. Where is the head of a displacement vector from coordinate point C, when the magnitude of the vector is 30 and it is parallel to line AB?
 :class: tip, dropdown
 Kuva 1. 23 Esimerkki yksikkövektorin hyödyntämisestä
 
