@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Introduction &#8212; Maths in English</title>
+    <title>Combinatorics &#8212; Maths in English</title>
   
   
   
@@ -63,10 +63,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/intro';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/combinatorics';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Set theory" href="set_theory.html" />
+    <link rel="next" title="Index" href="../genindex.html" />
+    <link rel="prev" title="Parallel vectors" href="vector_parallel.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -150,7 +153,7 @@ const thebe_selector_output = ".output, .cell_output"
 
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -170,8 +173,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Introduction
                 </a>
             </li>
@@ -217,8 +220,8 @@ const thebe_selector_output = ".output, .cell_output"
 
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Probability</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="combinatorics.html">Combinatorics</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Combinatorics</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul class="nav bd-sidenav">
@@ -292,7 +295,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/notebooks/intro.md" target="_blank"
+      <li><a href="../_sources/notebooks/combinatorics.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -376,7 +379,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduction</h1>
+    <h1>Combinatorics</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -386,9 +389,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of contents</a><ul class="nav section-nav flex-column">
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplication-principle">Multiplication principle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-principle">Addition principle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permuations-and-variations">Permuations and variations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a></li>
 </ul>
             </nav>
         </div>
@@ -400,77 +404,30 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
-<p>Hey there! Here you can find study material for maths courses <strong>Algebra, geometry ja trigonometry</strong> and <strong>Linear algebra</strong>. Material is made by LUMA-team of Lapland University of Applied Sciences. Work in progress…</p>
-<section id="table-of-contents">
-<h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Basics of set theory and logic</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="set_theory.html">Set theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="logic.html">Logic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Boolean.html">Boolean algebra</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Expressions</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="numbers.html">Sets of numbers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fractions.html">Fractions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="powers_and_roots.html">Powers and roots</a></li>
-<li class="toctree-l1"><a class="reference internal" href="expressions.html">Expressions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="polynomials.html">Polynomials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="factoring.html">Factoring</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Equations</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="linear_equations.html">Linear equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="inequality.html">Inequality</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Functions</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="blank2.html">Missing chapter</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trigonometry</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="blank3.html">Missing chapter</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometry</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="blank4.html">Missing chapter</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectors</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="vector_intro.html">Preface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vector_basic_calc.html">Basic vector calculus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vector_position.html">Position vector and displacement vector</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vector_parallel.html">Parallel vectors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vector_parallel.html#unit-vector-kesken">Unit vector (kesken)</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Probability</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="combinatorics.html">Combinatorics</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
-</ul>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="combinatorics">
+<h1><span class="target" id="index-0"></span>Combinatorics<a class="headerlink" href="#combinatorics" title="Permalink to this heading">#</a></h1>
+<p>Combinatorics is a branch of mathematics that deals with counting, arrangement and combination of objects or elements. It focuses on studying the ways in which simple discrete objects can be organized, combined or chosen. For instance, it is pretty easy to compute the amount of numbers with three figures but it is much harder to find all the possible arrengements for a bookshelf.</p>
+<section id="multiplication-principle">
+<h2><span class="target" id="index-1"></span>Multiplication principle<a class="headerlink" href="#multiplication-principle" title="Permalink to this heading">#</a></h2>
+<p>also known as <strong>Rule of product</strong>. When making multiple consecutive choices, the total number of possibilities is obtained by multiplying the respective numbers of options available at each choice stage. Intuitively it can expressed as “if there are <span class="math notranslate nohighlight">\(a\)</span> ways of doing something and <span class="math notranslate nohighlight">\(a\)</span> ways of doing another thing, then there are <span class="math notranslate nohighlight">\(a \cdot b\)</span> ways of performing both actions.</p>
+<p>The principle can be described by a ladder model.</p>
+<p><strong>Example.</strong> A student has two knitted caps, two jumpsuits and three pairs of shoes. How many different sets of outfits can be created from these pieces of clothing?</p>
+<figure class="align-default" id="multiprinciple">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/multiprinciple.png"><img alt="Number of different sets of clothes" class="bg-primary mb-1 align-center" src="../_images/multiprinciple.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">The number of different sets of outfits can be computed from the bottom row of the ladder moddel.</span><a class="headerlink" href="#multiprinciple" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The cap can be chosen in two different ways, the jumpsuit can be chosen from two different options and there are three different pairs of shoes. Using the multiplication principle we can compute the number of different sets by <span class="math notranslate nohighlight">\(2 \cdot 2 \cdot 3 = 12\)</span>.</p>
+</section>
+<section id="addition-principle">
+<h2><span class="target" id="index-2"></span>Addition principle<a class="headerlink" href="#addition-principle" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="permuations-and-variations">
+<h2><span class="target" id="index-3"></span>Permuations and variations<a class="headerlink" href="#permuations-and-variations" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="combinations">
+<h2><span class="target" id="index-4"></span>Combinations<a class="headerlink" href="#combinations" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -504,12 +461,21 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="vector_parallel.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Parallel vectors</p>
+      </div>
+    </a>
     <a class="right-next"
-       href="set_theory.html"
+       href="../genindex.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Set theory</p>
+        <p class="prev-next-title">Index</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -529,9 +495,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of contents</a><ul class="nav section-nav flex-column">
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplication-principle">Multiplication principle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-principle">Addition principle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permuations-and-variations">Permuations and variations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a></li>
 </ul>
   </nav></div>
 
