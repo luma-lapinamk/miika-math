@@ -6,17 +6,39 @@ root: notebooks/intro
 parts: 
   - caption: Basics of set theory and logic
     chapters:
-    - file: notebooks/numbers
+    - file: notebooks/set_theory
+    - file: notebooks/logic
+    - file: notebooks/Boolean
   - caption: Expressions
     chapters:
+    - file: notebooks/numbers
     - file: notebooks/fractions
     - file: notebooks/powers_and_roots
+    - file: notebooks/expressions
+    - file: notebooks/polynomials
+    - file: notebooks/factoring
+  - caption: Equations
+    chapters:
+    - file: notebooks/linear_equations
+    - file: notebooks/inequality
+  - caption: Functions
+    chapters:
+    - file: notebooks/blank2
+  - caption: Trigonometry
+    chapters:
+    - file: notebooks/blank3
+  - caption: Geometry
+    chapters:
+    - file: notebooks/blank4
   - caption: Vectors
     chapters:
     - file: notebooks/vector_intro
     - file: notebooks/vector_basic_calc
     - file: notebooks/vector_position
     - file: notebooks/vector_parallel
+  - caption: Probability
+    chapters:
+    - file: notebooks/combinatorics
   - caption: Appendix
     chapters:
     - file: genindex

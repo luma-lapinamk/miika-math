@@ -22,7 +22,7 @@ $x^0=1{,}\ x\in\mathbb{\mathbb{R}}$ and
 
 $x^{-n}=\frac{1}{x^n}{,}\ x\in\mathbb{R}{,}\ n\in\mathbb{Z}^+$
 
-### Examples
+## Examples
 
 a) $5\cdot5\cdot5=5^3$
 
@@ -71,7 +71,7 @@ And last, we have exponent as a fraction
 
 - $x^{\frac{m}{n}}=\sqrt[n]{x^m}=\left(\sqrt[n]{x}\right)^m$
 
-### Examples
+## Examples
 
 a) $x^3\cdot x^2=x^{3+2}=x^5$
 
