@@ -409,7 +409,7 @@ document.write(`
 <p>Combinatorics is a branch of mathematics that deals with counting, arrangement and combination of objects or elements. It focuses on studying the ways in which simple discrete objects can be organized, combined or chosen. For instance, it is pretty easy to compute the amount of numbers with three figures but it is much harder to find all the possible arrengements for a bookshelf.</p>
 <section id="multiplication-principle">
 <h2><span class="target" id="index-1"></span>Multiplication principle<a class="headerlink" href="#multiplication-principle" title="Permalink to this heading">#</a></h2>
-<p>also known as <strong>Rule of product</strong>. When making multiple consecutive choices, the total number of possibilities is obtained by multiplying the respective numbers of options available at each choice stage. Intuitively it can expressed as “if there are <span class="math notranslate nohighlight">\(a\)</span> ways of doing something and <span class="math notranslate nohighlight">\(a\)</span> ways of doing another thing, then there are <span class="math notranslate nohighlight">\(a \cdot b\)</span> ways of performing both actions.</p>
+<p>also known as <strong>Rule of product</strong>. When making multiple consecutive choices, the total number of possibilities is obtained by multiplying the respective numbers of options available at each choice stage. Intuitively it can expressed as “if there are <span class="math notranslate nohighlight">\(a\)</span> ways of doing something and <span class="math notranslate nohighlight">\(a\)</span> ways of doing another thing, then there are <span class="math notranslate nohighlight">\(a \cdot b\)</span> ways of performing both actions.”</p>
 <p>The principle can be described by a ladder model.</p>
 <p><strong>Example.</strong> A student has two knitted caps, two jumpsuits and three pairs of shoes. How many different sets of outfits can be created from these pieces of clothing?</p>
 <figure class="align-default" id="multiprinciple">
@@ -419,9 +419,31 @@ document.write(`
 </figcaption>
 </figure>
 <p>The cap can be chosen in two different ways, the jumpsuit can be chosen from two different options and there are three different pairs of shoes. Using the multiplication principle we can compute the number of different sets by <span class="math notranslate nohighlight">\(2 \cdot 2 \cdot 3 = 12\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 1. 13 Premier League matches</p>
+<p>There are 13 Premier League matches happening on the upcoming Saturday and a gambler can choose the result of a match from three different options.</p>
+<ul class="simple">
+<li><p>1: home team wins</p></li>
+<li><p>X: tie</p></li>
+<li><p>2: away team wins</p></li>
+</ul>
+<p>a) How many different football pools does there exist?</p>
+<p>b) What if the number of matches is <span class="math notranslate nohighlight">\(n\)</span>?</p>
+</div>
 </section>
 <section id="addition-principle">
 <h2><span class="target" id="index-2"></span>Addition principle<a class="headerlink" href="#addition-principle" title="Permalink to this heading">#</a></h2>
+<p>also known as <strong>Rule of sum</strong>. The overall number of options of which to choose from can be can be computed by adding the number of separated options. In general, if there are different cases with n<sub>1</sub> choices in Case 1, n<sub>2</sub> choices in Case 2, and so forth, then the overall number of options is the sum n<sub>1</sub> + n<sub>2</sub> + … + n<sub>k</sub>. Intuitively it can expressed as that if we have <span class="math notranslate nohighlight">\(A\)</span> number of ways of doing something and <span class="math notranslate nohighlight">\(B\)</span> number of ways of doing another thing and we can not do both at the same time, then there are <span class="math notranslate nohighlight">\(A+B\)</span> ways to choose one of the actions.”</p>
+<p><strong>Example.</strong> Store number 1 has three different computers for sale, store number 2 has five different computers for sale and store number 3 has four different computers for sale of which one is the same as in store number 1. How many different computers are there to choose from?</p>
+<p>Applying the addition principle, there are 3 + 5 + (4 - 1) = 11 computers to choose from, since one of them is sold in two different stores.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 2. Three digit password</p>
+<p>You have forgotten your three digit password but you know that the digits of the password are capital letters and at most (no more than) one of them is a vowel.</p>
+<p>The numbers of Finnish vowels is 8 (A-E-I-O-U-Y-Ä-Ö-Å) and the number of nouns is 20.</p>
+<p>a) How many different <strong>cases</strong> are there when taking into consideration that at most one of the digits is a vowel?</p>
+<p>b) How many different strings (ordered three digit sets) are there that matches of what you can remember about your password?</p>
+<p>c) How many different strings are there all together?</p>
+</div>
 </section>
 <section id="permuations-and-variations">
 <h2><span class="target" id="index-3"></span>Permuations and variations<a class="headerlink" href="#permuations-and-variations" title="Permalink to this heading">#</a></h2>
