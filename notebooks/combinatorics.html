@@ -392,7 +392,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplication-principle">Multiplication principle</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-principle">Addition principle</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations">Permutations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variations-the-k-permuations-of-n">Variations, the *k*-permuations of *n*</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variations-the-k-permutations-of-n">Variations, the k-permutations of n</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a></li>
 </ul>
             </nav>
@@ -452,7 +452,7 @@ document.write(`
 <p class="admonition-title">Definition</p>
 <p>Let <em>A</em> be a set of <em>n</em> elements. A <strong>permutation</strong> of <em>A</em> is any sequence of its elements, where every element of <em>A</em> appears exactly once.</p>
 </div>
-<p>In short, a permutation is an ordered arrangement of things, where <strong>the order of selection matters</strong>.</p>
+<p>In short, a permutation is an ordered arrangement of things, where ==the order of selection matters==.</p>
 <p><strong>Example.</strong> Let <em>A</em> = {<em>a</em>, <em>b</em>, <em>c</em>}. All the permutations of <em>A</em> are {<em>a</em>, <em>b</em>, <em>c</em>}, {<em>a</em>, <em>c</em>, <em>b</em>}, {<em>b</em>, <em>a</em>, <em>c</em>}, {<em>b</em>, <em>c</em>, <em>a</em>}, {<em>c</em>, <em>a</em>, <em>b</em>} and {<em>c</em>, <em>b</em>, <em>a</em>}.</p>
 <figure class="align-default" id="permutation-tree">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/permutation_tree.png"><img alt="Number of permutations of a set {a, b, c}" class="bg-primary mb-1 align-center" src="../_images/permutation_tree.png" style="width: 600px;" /></a>
@@ -461,14 +461,17 @@ document.write(`
 </figcaption>
 </figure>
 <p>Even words are permuations of a set of letters but only some sequences, or <a href="https://wordsmith.org/anagram/" target="_blank">anagrams</a>, bear signifance. For example, from letters A, C and R we can form sequences of ARC and CAR and all the other arrangements are abbreviations of some sort.</p>
-<p>Let’s denote the number of elements in a set by <em>n</em>. In general, when <span class="math notranslate nohighlight">\(n \ge 0\)</span>, the first element can be any of the elements so there are <em>n</em> ways of choosing the first element (step 1).
-After that there are <em>n-1</em> elements left, so the second element can be chosen by <em>n-1</em> ways (step 2).
-The third element can be chosen by <em>n-2</em> ways and so forth, until the last element remains and there is only one way of choosing it (last step).</p>
+<blockquote>
+<div><p>Let’s denote the number of elements in a set by <em>n</em>.</p>
+<p>In general, when <span class="math notranslate nohighlight">\(n \ge 0\)</span>, the first element can be any of the elements so there are <em>n</em> ways of choosing the first element (step 1).</p>
+<p>After that there are <em>n-1</em> elements left, so the second element can be chosen by <em>n-1</em> ways (step 2).</p>
+<p>The third element can be chosen by <em>n-2</em> ways and so forth, until the last element remains and there is only one way of choosing it (last step).</p>
+</div></blockquote>
 <p>According to the multiplication rule, the number of permutations is <span class="math notranslate nohighlight">\(n \cdot (n-1) \cdot (n-2) \cdot \dots \cdot 3 \cdot 2 \cdot 1=n!\)</span>, where <span class="math notranslate nohighlight">\(n!\)</span> is known as the <strong>factorial</strong>.</p>
 <p>When <span class="math notranslate nohighlight">\(n=0\)</span>, the only set with zero elements is the empty set, <span class="math notranslate nohighlight">\(\emptyset\)</span>. The only permutation of the empty set is an empty arrangement <span class="math notranslate nohighlight">\({}\)</span>, so it has been agreed that <span class="math notranslate nohighlight">\(0!=1\)</span>.</p>
 <div class="admonition-definition admonition">
 <p class="admonition-title">Definition</p>
-<p>In a set with a finite number of elements, the number of ordered arrangements, or permutations, is denoted by <span class="math notranslate nohighlight">\(n!\)</span>.”</p>
+<p>In a set with a finite number of elements, the number of ordered arrangements, or permutations, is denoted by <span class="math notranslate nohighlight">\(n!\)</span>.</p>
 </div>
 <div class="tip dropdown admonition">
 <p class="admonition-title">EXERCISE 3. Arrangement of books on a book shelf</p>
@@ -477,19 +480,19 @@ The third element can be chosen by <em>n-2</em> ways and so forth, until the las
 <p>b) How many different arrangements can be made from the textbooks, when every field of a study is arranged on its own?</p>
 </div>
 </section>
-<section id="variations-the-k-permuations-of-n">
-<h2><span class="target" id="index-4"></span>Variations, the *k*-permuations of *n*<a class="headerlink" href="#variations-the-k-permuations-of-n" title="Permalink to this heading">#</a></h2>
+<section id="variations-the-k-permutations-of-n">
+<h2><span class="target" id="index-4"></span>Variations, the k-permutations of n<a class="headerlink" href="#variations-the-k-permutations-of-n" title="Permalink to this heading">#</a></h2>
 <div class="admonition-definition admonition">
 <p class="admonition-title">Definition</p>
-<p>Let <em>A</em> be a set of <em>n</em> elements and <span class="math notranslate nohighlight">\(k&lt;n\)</span>. A <strong>variation</strong> or a <strong><em>k</em>-permuation</strong> of <em>A</em> is any ordered subset of <em>A</em> with <em>k</em> elements.</p>
+<p>Let <em>A</em> be a set of <em>n</em> elements and <span class="math notranslate nohighlight">\(k&lt;n\)</span>. A <strong>variation</strong> or a <strong><em>k</em>-permutation</strong> of <em>A</em> is any ordered subset of <em>A</em> with <em>k</em> elements.</p>
 </div>
 <p>In short, it refers to the number of ways you can choose and arrange <em>k</em> elements from a set of <em>n</em> distinct elements, where again the order of selection matters. This is often denoted as <span class="math notranslate nohighlight">\(P(n,k)=n \cdot (n-1) \cdot (n-2) \cdot \dots \cdot (n-k+1)\)</span>, where <span class="math notranslate nohighlight">\(P(n,k)\)</span> consists of <em>k</em> factors.</p>
-<p>The formula for variations is given by
-<span class="math notranslate nohighlight">\(P(n,k)=\frac{n!}{(n - k)!}\)</span></p>
+<p>The formula for variations is given by</p>
+<p><span class="math notranslate nohighlight">\(P(n,k)=\frac{n!}{(n - k)!}\)</span></p>
 <p><strong>Example.</strong> Let <em>A</em> = {<em>a</em>, <em>b</em>, <em>c</em>}. All the varations of <em>A</em> with two elements are {<em>a</em>, <em>b</em>}, {<em>a</em>, <em>c</em>}, {<em>b</em>, <em>a</em>}, {<em>b</em>, <em>c</em>}, {<em>c</em>, <em>a</em>} and {<em>c</em>, <em>b</em>}.</p>
 <p>The first letter can be chosen from 3 different letters and after that the second can be chosen from 2 different letters. According to the multiplication rule, the number of variations is <span class="math notranslate nohighlight">\(3 \cdot 2=6\)</span>.</p>
-<p>Using the formule we get
-<span class="math notranslate nohighlight">\(P(3,2)=\frac{3!}{(3 - 2)!}=\frac{3*2*1}{1}=6\)</span>.</p>
+<p>Using the formula we get</p>
+<p><span class="math notranslate nohighlight">\(P(3,2)=\frac{3!}{(3 - 2)!}=\frac{3*2*1}{1}=6\)</span>.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">EXERCISE 4. A smaller arrangement of books on a book shelf</p>
 <p>A teacher still has a collection of 12 STEM textbooks: 3 on Physics, 4 on Chemistry and 5 on Maths. Only seven books can be fitted in the book shelf.</p>
@@ -569,7 +572,7 @@ The third element can be chosen by <em>n-2</em> ways and so forth, until the las
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplication-principle">Multiplication principle</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-principle">Addition principle</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations">Permutations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variations-the-k-permuations-of-n">Variations, the *k*-permuations of *n*</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variations-the-k-permutations-of-n">Variations, the k-permutations of n</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a></li>
 </ul>
   </nav></div>
