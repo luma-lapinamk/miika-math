@@ -55,7 +55,7 @@ c) How many different strings are there all together?
 Let *A* be a set of *n* elements. A **permutation** of *A* is any sequence of its elements, where every element of *A* appears exactly once.
 :::
 
-In short, a permutation is an ordered arrangement of things, where ==the order of selection matters==.
+In short, a permutation is an ordered arrangement of things, where <mark>the order of selection matters</mark>.
 
 **Example.** Let *A* = {*a*, *b*, *c*}. All the permutations of *A* are {*a*, *b*, *c*}, {*a*, *c*, *b*}, {*b*, *a*, *c*}, {*b*, *c*, *a*}, {*c*, *a*, *b*} and {*c*, *b*, *a*}.
 
