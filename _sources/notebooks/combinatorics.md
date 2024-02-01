@@ -4,14 +4,14 @@ Combinatorics is a branch of mathematics that deals with counting, arrangement a
 ## {index}`Multiplication principle`
 also known as **Rule of product**. When making multiple consecutive choices, the total number of possibilities is obtained by multiplying the respective numbers of options available at each choice stage. Intuitively it can expressed as "if there are $a$ ways of doing something and $a$ ways of doing another thing, then there are $a \cdot b$ ways of performing both actions."
 
-The principle can be described by a ladder model.
+The principle can be described by a tree model.
 
 **Example.** A student has two knitted caps, two jumpsuits and three pairs of shoes. How many different sets of outfits can be created from these pieces of clothing?
 
 ```{figure-md} multiprinciple
 <img src="../images/probstat/multiprinciple.png" alt="Number of different sets of clothes" class="bg-primary mb-1" width="600px" align="center">
 
-The number of different sets of outfits can be computed from the bottom row of the ladder moddel.
+The number of different sets of outfits can be computed from the bottom row of the tree moddel.
 ```
 
 The cap can be chosen in two different ways, the jumpsuit can be chosen from two different options and there are three different pairs of shoes. Using the multiplication principle we can compute the number of different sets by $2 \cdot 2 \cdot 3 = 12$.
@@ -49,22 +49,72 @@ b) How many different strings (ordered three digit sets) are there that matches 
 c) How many different strings are there all together?
 :::
 
-## {index}`Permutations and variations`
+## {index}`Permutations`
 
 :::{admonition} Definition
 Let *A* be a set of *n* elements. A **permutation** of *A* is any sequence of its elements, where every element of *A* appears exactly once.
 :::
 
-In short, a permutation is an ordered arrangement of things. 
+In short, a permutation is an ordered arrangement of things, where **the order of selection matters**.
 
 **Example.** Let *A* = {*a*, *b*, *c*}. All the permutations of *A* are {*a*, *b*, *c*}, {*a*, *c*, *b*}, {*b*, *a*, *c*}, {*b*, *c*, *a*}, {*c*, *a*, *b*} and {*c*, *b*, *a*}.
 
-```{figure-md} permutationladder
-<img src="../images/probstat/permutationladder.png" alt="Number of permutations of a set {a, b, c}" class="bg-primary mb-1" width="600px" align="center">
+```{figure-md} permutation_tree
+<img src="../images/probstat/permutation_tree.png" alt="Number of permutations of a set {a, b, c}" class="bg-primary mb-1" width="600px" align="center">
 
-The number of permutations of a set {*a*, *b*, *c*} can be computed from the ladder moddel. In the first step we have 3 options, in the second step we have 2 options and in the last step only one choice is possible for each sequence. The total amount of permutations can be computed using the multiplication principle: $3 \cdot 2 \cdot 1 = 6$.
+The number of permutations of a set {*a*, *b*, *c*} can be computed from the tree moddel. In the first step we have 3 options, in the second step we have 2 options and in the last step only one choice is possible for each sequence. The total number of permutations can be computed using the multiplication principle: $3 \cdot 2 \cdot 1 = 6$.
 ```
 
-Even words are permuations of a set of letters but only some sequences, for example, of letters A, C and R bear signifance: ARC and CAR. All the other arrangements are abbreviations of some sort. 
+Even words are permuations of a set of letters but only some sequences, or <a href="https://wordsmith.org/anagram/" target="_blank">anagrams</a>, bear signifance. For example, from letters A, C and R we can form sequences of ARC and CAR and all the other arrangements are abbreviations of some sort.
+
+Let's denote the number of elements in a set by *n*. In general, when $n \ge 0$, the first element can be any of the elements so there are *n* ways of choosing the first element (step 1).
+After that there are *n-1* elements left, so the second element can be chosen by *n-1* ways (step 2).
+The third element can be chosen by *n-2* ways and so forth, until the last element remains and there is only one way of choosing it (last step).
+
+According to the multiplication rule, the number of permutations is $n \cdot (n-1) \cdot (n-2) \cdot \dots \cdot 3 \cdot 2 \cdot 1=n!$, where $n!$ is known as the **factorial**.
+
+When $n=0$, the only set with zero elements is the empty set, $\emptyset$. The only permutation of the empty set is an empty arrangement ${}$, so it has been agreed that $0!=1$.
+
+:::{admonition} Definition
+In a set with a finite number of elements, the number of ordered arrangements, or permutations, is denoted by $n!$."
+:::
+
+:::{admonition} EXERCISE 3. Arrangement of books on a book shelf
+:class: tip, dropdown
+
+A teacher has a collection of 12 STEM textbooks: 3 on Physics, 4 on Chemistry and 5 on Maths.
+
+a) How many different arrangements can be made from the textbooks?
+
+b) How many different arrangements can be made from the textbooks, when every field of a study is arranged on its own?
+:::
+
+## {index}`Variations, the *k*-permuations of *n*`
+
+:::{admonition} Definition
+Let *A* be a set of *n* elements and $k<n$. A **variation** or a ***k*-permuation** of *A* is any ordered subset of *A* with *k* elements.
+:::
+
+In short, it refers to the number of ways you can choose and arrange *k* elements from a set of *n* distinct elements, where again the order of selection matters. This is often denoted as $P(n,k)=n \cdot (n-1) \cdot (n-2) \cdot \dots \cdot (n-k+1)$, where $P(n,k)$ consists of *k* factors.
+
+The formula for variations is given by
+$P(n,k)=\frac{n!}{(n - k)!}$
+
+**Example.** Let *A* = {*a*, *b*, *c*}. All the varations of *A* with two elements are {*a*, *b*}, {*a*, *c*}, {*b*, *a*}, {*b*, *c*}, {*c*, *a*} and {*c*, *b*}.
+
+The first letter can be chosen from 3 different letters and after that the second can be chosen from 2 different letters. According to the multiplication rule, the number of variations is $3 \cdot 2=6$. 
+
+Using the formule we get
+$P(3,2)=\frac{3!}{(3 - 2)!}=\frac{3*2*1}{1}=6$.
+
+:::{admonition} EXERCISE 4. A smaller arrangement of books on a book shelf
+:class: tip, dropdown
+
+A teacher still has a collection of 12 STEM textbooks: 3 on Physics, 4 on Chemistry and 5 on Maths. Only seven books can be fitted in the book shelf.
+
+a) How many different arrangements can be made from the textbooks?
+
+b) How many different arrangements can be made from the textbooks, when only two fields of a study are chosen and arranged on their own?
+:::
 
 ## {index}`Combinations`
