@@ -69,11 +69,11 @@ Even words are permuations of a set of letters but only some sequences, or <a hr
 
 > Let's denote the number of elements in a set by *n*.
 >
-> In general, when $n \ge 0$, the first element can be any of the elements so there are *n* ways of choosing the first element (step 1).
+> In general, when $n \ge 0$, the first element can be any of the elements so there are $n$ ways of choosing the first element (step 1).
 >
-> After that there are *n-1* elements left, so the second element can be chosen by *n-1* ways (step 2).
+> After that there are $n-1$ elements left, so the second element can be chosen by $n-1$ ways (step 2).
 >
-> The third element can be chosen by *n-2* ways and so forth, until the last element remains and there is only one way of choosing it (last step).
+> The third element can be chosen by $n-2$ ways and so forth, until the last element remains and there is only one way of choosing it (last step).
 
 According to the multiplication rule, the number of permutations is $n \cdot (n-1) \cdot (n-2) \cdot \dots \cdot 3 \cdot 2 \cdot 1=n!$, where $n!$ is known as the **factorial**.
 
