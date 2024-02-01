@@ -55,7 +55,7 @@ c) How many different strings are there all together?
 Let *A* be a set of *n* elements. A **permutation** of *A* is any sequence of its elements, where every element of *A* appears exactly once.
 :::
 
-In short, a permutation is an ordered arrangement of things, where **the order of selection matters**.
+In short, a permutation is an ordered arrangement of things, where <mark>the order of selection matters</mark>.
 
 **Example.** Let *A* = {*a*, *b*, *c*}. All the permutations of *A* are {*a*, *b*, *c*}, {*a*, *c*, *b*}, {*b*, *a*, *c*}, {*b*, *c*, *a*}, {*c*, *a*, *b*} and {*c*, *b*, *a*}.
 
@@ -67,16 +67,20 @@ The number of permutations of a set {*a*, *b*, *c*} can be computed from the tre
 
 Even words are permuations of a set of letters but only some sequences, or <a href="https://wordsmith.org/anagram/" target="_blank">anagrams</a>, bear signifance. For example, from letters A, C and R we can form sequences of ARC and CAR and all the other arrangements are abbreviations of some sort.
 
-Let's denote the number of elements in a set by *n*. In general, when $n \ge 0$, the first element can be any of the elements so there are *n* ways of choosing the first element (step 1).
-After that there are *n-1* elements left, so the second element can be chosen by *n-1* ways (step 2).
-The third element can be chosen by *n-2* ways and so forth, until the last element remains and there is only one way of choosing it (last step).
+> Let's denote the number of elements in a set by *n*.
+>
+> In general, when $n \ge 0$, the first element can be any of the elements so there are $n$ ways of choosing the first element (step 1).
+>
+> After that there are $n-1$ elements left, so the second element can be chosen by $n-1$ ways (step 2).
+>
+> The third element can be chosen by $n-2$ ways and so forth, until the last element remains and there is only one way of choosing it (last step).
 
 According to the multiplication rule, the number of permutations is $n \cdot (n-1) \cdot (n-2) \cdot \dots \cdot 3 \cdot 2 \cdot 1=n!$, where $n!$ is known as the **factorial**.
 
 When $n=0$, the only set with zero elements is the empty set, $\emptyset$. The only permutation of the empty set is an empty arrangement ${}$, so it has been agreed that $0!=1$.
 
 :::{admonition} Definition
-In a set with a finite number of elements, the number of ordered arrangements, or permutations, is denoted by $n!$."
+In a set with a finite number of elements, the number of ordered arrangements, or permutations, is denoted by $n!$.
 :::
 
 :::{admonition} EXERCISE 3. Arrangement of books on a book shelf
@@ -89,22 +93,24 @@ a) How many different arrangements can be made from the textbooks?
 b) How many different arrangements can be made from the textbooks, when every field of a study is arranged on its own?
 :::
 
-## {index}`Variations, the *k*-permuations of *n*`
+## {index}`Variations, the k-permutations of n`
 
 :::{admonition} Definition
-Let *A* be a set of *n* elements and $k<n$. A **variation** or a ***k*-permuation** of *A* is any ordered subset of *A* with *k* elements.
+Let *A* be a set of *n* elements and $k<n$. A **variation** or a ***k*-permutation** of *A* is any ordered subset of *A* with *k* elements.
 :::
 
 In short, it refers to the number of ways you can choose and arrange *k* elements from a set of *n* distinct elements, where again the order of selection matters. This is often denoted as $P(n,k)=n \cdot (n-1) \cdot (n-2) \cdot \dots \cdot (n-k+1)$, where $P(n,k)$ consists of *k* factors.
 
 The formula for variations is given by
+
 $P(n,k)=\frac{n!}{(n - k)!}$
 
 **Example.** Let *A* = {*a*, *b*, *c*}. All the varations of *A* with two elements are {*a*, *b*}, {*a*, *c*}, {*b*, *a*}, {*b*, *c*}, {*c*, *a*} and {*c*, *b*}.
 
 The first letter can be chosen from 3 different letters and after that the second can be chosen from 2 different letters. According to the multiplication rule, the number of variations is $3 \cdot 2=6$. 
 
-Using the formule we get
+Using the formula we get
+
 $P(3,2)=\frac{3!}{(3 - 2)!}=\frac{3*2*1}{1}=6$.
 
 :::{admonition} EXERCISE 4. A smaller arrangement of books on a book shelf
