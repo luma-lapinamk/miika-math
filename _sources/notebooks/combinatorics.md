@@ -40,7 +40,7 @@ Applying the addition principle, there are 3 + 5 + (4 - 1) = 11 computers to cho
 :class: tip, dropdown
 You have forgotten your three digit password but you know that the digits of the password are capital letters and at most (no more than) one of them is a vowel.
 
-The numbers of Finnish vowels is 8 (A-E-I-O-U-Y-Ä-Ö-Å) and the number of nouns is 20.
+The numbers of Finnish vowels is 8 (A-E-I-O-U-Y-Ä-Ö-Å) and the number of consonants is 20.
 
 a) How many different **cases** are there when taking into consideration that at most one of the digits is a vowel?
 
@@ -49,6 +49,22 @@ b) How many different strings (ordered three digit sets) are there that matches 
 c) How many different strings are there all together?
 :::
 
-## {index}`Permuations and variations`
+## {index}`Permutations and variations`
+
+:::{admonition} Definition
+Let *A* be a set of *n* elements. A **permutation** of *A* is any sequence of its elements, where every element of *A* appears exactly once.
+:::
+
+In short, a permutation is an ordered arrangement of things. 
+
+**Example.** Let *A* = {*a*, *b*, *c*}. All the permutations of *A* are {*a*, *b*, *c*}, {*a*, *c*, *b*}, {*b*, *a*, *c*}, {*b*, *c*, *a*}, {*c*, *a*, *b*} and {*c*, *b*, *a*}.
+
+```{figure-md} permutationladder
+<img src="../images/probstat/permutationladder.png" alt="Number of permutations of a set {a, b, c}" class="bg-primary mb-1" width="600px" align="center">
+
+The number of permutations of a set {*a*, *b*, *c*} can be computed from the ladder moddel. In the first step we have 3 options, in the second step we have 2 options and in the last step only one choice is possible for each sequence. The total amount of permutations can be computed using the multiplication principle: $3 \cdot 2 \cdot 1 = 6$.
+```
+
+Even words are permuations of a set of letters but only some sequences, for example, of letters A, C and R bear signifance: ARC and CAR. All the other arrangements are abbreviations of some sort. 
 
 ## {index}`Combinations`

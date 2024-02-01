@@ -391,7 +391,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplication-principle">Multiplication principle</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-principle">Addition principle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permuations-and-variations">Permuations and variations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations-and-variations">Permutations and variations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a></li>
 </ul>
             </nav>
@@ -439,14 +439,27 @@ document.write(`
 <div class="tip dropdown admonition">
 <p class="admonition-title">EXERCISE 2. Three digit password</p>
 <p>You have forgotten your three digit password but you know that the digits of the password are capital letters and at most (no more than) one of them is a vowel.</p>
-<p>The numbers of Finnish vowels is 8 (A-E-I-O-U-Y-Ä-Ö-Å) and the number of nouns is 20.</p>
+<p>The numbers of Finnish vowels is 8 (A-E-I-O-U-Y-Ä-Ö-Å) and the number of consonants is 20.</p>
 <p>a) How many different <strong>cases</strong> are there when taking into consideration that at most one of the digits is a vowel?</p>
 <p>b) How many different strings (ordered three digit sets) are there that matches of what you can remember about your password?</p>
 <p>c) How many different strings are there all together?</p>
 </div>
 </section>
-<section id="permuations-and-variations">
-<h2><span class="target" id="index-3"></span>Permuations and variations<a class="headerlink" href="#permuations-and-variations" title="Permalink to this heading">#</a></h2>
+<section id="permutations-and-variations">
+<h2><span class="target" id="index-3"></span>Permutations and variations<a class="headerlink" href="#permutations-and-variations" title="Permalink to this heading">#</a></h2>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Definition</p>
+<p>Let <em>A</em> be a set of <em>n</em> elements. A <strong>permutation</strong> of <em>A</em> is any sequence of its elements, where every element of <em>A</em> appears exactly once.</p>
+</div>
+<p>In short, a permutation is an ordered arrangement of things.</p>
+<p><strong>Example.</strong> Let <em>A</em> = {<em>a</em>, <em>b</em>, <em>c</em>}. All the permutations of <em>A</em> are {<em>a</em>, <em>b</em>, <em>c</em>}, {<em>a</em>, <em>c</em>, <em>b</em>}, {<em>b</em>, <em>a</em>, <em>c</em>}, {<em>b</em>, <em>c</em>, <em>a</em>}, {<em>c</em>, <em>a</em>, <em>b</em>} and {<em>c</em>, <em>b</em>, <em>a</em>}.</p>
+<figure class="align-default" id="permutationladder">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/permutationladder.png"><img alt="Number of permutations of a set {a, b, c}" class="bg-primary mb-1 align-center" src="../_images/permutationladder.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">The number of permutations of a set {<em>a</em>, <em>b</em>, <em>c</em>} can be computed from the ladder moddel. In the first step we have 3 options, in the second step we have 2 options and in the last step only one choice is possible for each sequence. The total amount of permutations can be computed using the multiplication principle: <span class="math notranslate nohighlight">\(3 \cdot 2 \cdot 1 = 6\)</span>.</span><a class="headerlink" href="#permutationladder" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Even words are permuations of a set of letters but only some sequences, for example, of letters A, C and R bear signifance: ARC and CAR. All the other arrangements are abbreviations of some sort.</p>
 </section>
 <section id="combinations">
 <h2><span class="target" id="index-4"></span>Combinations<a class="headerlink" href="#combinations" title="Permalink to this heading">#</a></h2>
@@ -519,7 +532,7 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplication-principle">Multiplication principle</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-principle">Addition principle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permuations-and-variations">Permuations and variations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations-and-variations">Permutations and variations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a></li>
 </ul>
   </nav></div>
