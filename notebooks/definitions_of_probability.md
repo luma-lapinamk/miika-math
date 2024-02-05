@@ -1,7 +1,7 @@
 # {index}`General definitions of probability`
 For introduction, let's compare how statistical and classical probabilites relate to each other.
 
-<iframe fullscreen="" height="550px" scrolling="no" src="https://www.geogebra.org/material/iframe/id/humATwzb/width/750/height/550/border/000000/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false" style="border: 0px;" width="750px"> </iframe>
+<iframe scrolling="no" title="Nopan_heittoa" src="https://www.geogebra.org/material/iframe/id/srqwbybn/width/600/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="500px" style="border:0px;"> </iframe>
 
 Source: <a href="https://ggbm.at/humATwzb" target="_blank">Huippu, Otava</a>
 
@@ -27,7 +27,6 @@ Below are statistics of some darts practise.
 Statistics of 50 darts throws.
 ```
 What is the probability that the score of a single throw is even?
-
 :::
 
 :::{admonition} EXERCISE 2. Jari 'The King' Litmanen #10
@@ -38,9 +37,26 @@ The greatest Finnish football player is undisputedly Jari Litmanen. The probabil
 ## {index}`Classical definition of probability`
 The classical definition of probability is based on equally likely outcomes in a universal set. According to this definition:
 
-$P(A) = \frac{\text{number of favorable outcomes for event A}}{\text{total number of possible outcomes}}$
+$P(A) = \frac{\text{number of favourable outcomes for event A}}{\text{total number of possible outcomes}}$
 
 This definition assumes that all outcomes in the sample set are equally likely. It is commonly used in situations where each elementary outcome is equally likely to occur, such as in the tossing of a fair coin or a six-sided dice.
+<br></br>
+
+**Example.** Two six-sided dices are thrown. What are the odds that the dices have the same face?
+
+Let's denote $A$ = 'dices have the same face' = 'faces are ones OR faces are twos OR ... OR faces are six's'.
+
+The favourable events are $\{1,1\}$, $\{2,2\}$, $\{3,3\}$, $\{4,4\}$, $\{5,5\}$ and $\{6,6\}$ so the number of favourable events is 6. When applying the multiplication principle, the total number of possible outcomes is $6 \cdot 6=36$.
+
+This can be visualized by sketching all the possible combinations.
+
+```{figure-md} dices
+<img src="../images/probstat/dices.png" alt="Combinations of two dices" class="bg-primary mb-1" width="300px" align="center">
+
+All the combinations of two six-sided dices, where green cells represent the favourable events.
+```
+
+Therefore, $P(A) = \frac{6}{36} = \frac{1}{6}$
 
 :::{admonition} EXERCISE 3. Balls in a box
 :class: tip, dropdown
@@ -64,7 +80,7 @@ What is the possibility that a randomly chosen address will open a wormhole to a
 ## {index}`Geometrical definition of probability`
 For introduction...
 
-<iframe fullscreen="" height="550px" scrolling="no" src="https://www.geogebra.org/material/iframe/id/xgTuTpJX/width/750/height/600/border/000000/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false" style="border: 0px;" width="750px"> </iframe>
+<iframe scrolling="no" title="Grains in flowerbed" src="https://www.geogebra.org/material/iframe/id/tnhfnm8n/width/600/height/470/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="470px" style="border:0px;"> </iframe>
 
 Source: <a href="https://www.geogebra.org/m/SUPFr8qC#material/xgTuTpJX" target="_blank">Huippu, Otava</a>
 
