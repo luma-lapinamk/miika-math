@@ -217,6 +217,9 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Probability</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="notebooks/combinatorics.html">Combinatorics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/basic_probability.html">Random phenomena</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/definitions_of_probability.html">Genreal definitions of probability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/rules_of_probability.html">Rules of probability</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul class="current nav bd-sidenav">
@@ -348,6 +351,7 @@ document.write(`
  | <a href="#D"><strong>D</strong></a>
  | <a href="#E"><strong>E</strong></a>
  | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
  | <a href="#I"><strong>I</strong></a>
  | <a href="#L"><strong>L</strong></a>
  | <a href="#M"><strong>M</strong></a>
@@ -366,6 +370,8 @@ document.write(`
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="notebooks/combinatorics.html#index-2">Addition principle</a>
 </li>
+      <li><a href="notebooks/rules_of_probability.html#index-1">Addition rule</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="notebooks/vector_intro.html#index-3">Angle between two vectors</a>
@@ -378,6 +384,10 @@ document.write(`
 <h2 id="B">B</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="notebooks/rules_of_probability.html#index-6">Bayes&#39; theorem</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="notebooks/Boolean.html#index-0">Boolean algebra</a>
 </li>
   </ul></td>
@@ -386,9 +396,13 @@ document.write(`
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="notebooks/rules_of_probability.html#index-7">Chain rule</a>
+</li>
+      <li><a href="notebooks/definitions_of_probability.html#index-1">Classical definition of probability</a>
+</li>
       <li><a href="notebooks/logic.html#index-2">Closed proposition</a>
 </li>
-      <li><a href="notebooks/combinatorics.html#index-5">Combinations</a>
+      <li><a href="notebooks/combinatorics.html#index-5">Combinations, the k-combinations of n (a bit unfinished)</a>
 </li>
       <li><a href="notebooks/combinatorics.html#index-0">Combinatorics</a>
 </li>
@@ -396,7 +410,11 @@ document.write(`
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="notebooks/set_theory.html#index-7">complement of a set</a>
 </li>
+      <li><a href="notebooks/rules_of_probability.html#index-2">Complement rule</a>
+</li>
       <li><a href="notebooks/numbers.html#index-6">Complex numbers</a>
+</li>
+      <li><a href="notebooks/rules_of_probability.html#index-3">Conditional probability</a>
 </li>
       <li><a href="notebooks/logic.html#index-7">contradiction</a>
 </li>
@@ -439,6 +457,20 @@ document.write(`
   </ul></td>
 </tr></table>
 
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="notebooks/rules_of_probability.html#index-4">General multiplication rule</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="notebooks/definitions_of_probability.html#index-0">Genreal definitions of probability</a>
+</li>
+      <li><a href="notebooks/definitions_of_probability.html#index-3">Geometrical definition of probability</a>
+</li>
+  </ul></td>
+</tr></table>
+
 <h2 id="I">I</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -459,6 +491,8 @@ document.write(`
       <li><a href="notebooks/expressions.html#index-2">law of distributive</a>
 </li>
       <li><a href="notebooks/logic.html#index-1">Law of Non-Contradiction</a>
+</li>
+      <li><a href="notebooks/rules_of_probability.html#index-5">Law of Total Probability</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -522,6 +556,8 @@ document.write(`
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="notebooks/basic_probability.html#index-0">Random phenomena</a>
+</li>
       <li><a href="notebooks/numbers.html#index-3">Rational numbers</a>
 </li>
   </ul></td>
@@ -529,6 +565,8 @@ document.write(`
       <li><a href="notebooks/numbers.html#index-5">Real numbers</a>
 </li>
       <li><a href="notebooks/vector_basic_calc.html#index-0">resultant vector</a>
+</li>
+      <li><a href="notebooks/rules_of_probability.html#index-0">Rules of probability</a>
 </li>
   </ul></td>
 </tr></table>
@@ -542,13 +580,15 @@ document.write(`
 </li>
       <li><a href="notebooks/set_theory.html#index-10">set difference</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="notebooks/set_theory.html#index-0">Set theory</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="notebooks/numbers.html#index-0">Sets of numbers</a>
 </li>
       <li><a href="notebooks/expressions.html#index-1">squares of binomials</a>
+</li>
+      <li><a href="notebooks/definitions_of_probability.html#index-2">Statistical definition of probability</a>
 </li>
       <li><a href="notebooks/set_theory.html#index-5">subset</a>
 </li>

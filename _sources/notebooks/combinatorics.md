@@ -99,9 +99,9 @@ b) How many different arrangements can be made from the textbooks, when every fi
 Let *A* be a set of *n* elements and $k<n$. A **variation** or a ***k*-permutation** of *A* is any ordered subset of *A* with *k* elements.
 :::
 
-In short, it refers to the number of ways you can choose and arrange *k* elements from a set of *n* distinct elements, where again the order of selection matters. This is often denoted as $P(n,k)=n \cdot (n-1) \cdot (n-2) \cdot \dots \cdot (n-k+1)$, where $P(n,k)$ consists of *k* factors.
+In short, it refers to the number of ways you can choose and arrange *k* elements from a set of *n* distinct elements, where again the order of selection matters. This is often denoted as $P(n,k)=n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot (n-k+1)$, where $P(n,k)$ consists of *k* factors.
 
-The formula for variations is given by
+The number of variations doesn't take into consideration the factors after $(n-k+1)$. Since factors $(n-k)\cdot(n-k-1)\cdot(n-k-2)\cdot \ldots \cdot 2 \cdot 1=(n-k)!$ are reduced, the formula for the number variations is given by
 
 $P(n,k)=\frac{n!}{(n - k)!}$
 
@@ -123,4 +123,43 @@ a) How many different arrangements can be made from the textbooks?
 b) How many different arrangements can be made from the textbooks, when only two fields of a study are chosen and arranged on their own?
 :::
 
-## {index}`Combinations`
+## {index}`Combinations, the k-combinations of n (a bit unfinished)`
+
+:::{admonition} Definition
+Let *A* be a set of *n* elements and $0 \le k \le n$. A **combination** of *A* is any subset of *A* with *k* elements.
+:::
+
+Since a combination is a subset of a set, the order is not significant. Let's examine a set of A = {a, b, c}.
+
+- For a subset of  3 elements the set {a, b, c} is the same as {a, c, b} - 1 combination
+- For a subset of 2 elements we have sets {a, b}, {b, c}, {a, c} - 3 possible combinations
+- For a subset of 1 element we have sets {a}, {b}, {c} - 3 possible combinations
+- For a subset of 0 elements we have only empty set denoted by {} or  $\emptyset$  - 1 combination
+
+In total, the number of all possible combinations for a set of A = {a, b, c} is 8.
+
+The number of combinations can be computed using the formula denoted by $\binom{n}{k}$ (read as "n over k") also known as the *Binomial coefficients*. Since combinations don't consider the order, the arrangements that result in the same combination are to be eliminated. For every combination of $k$ items, there are $k!$ ways to arrange those $k$ items. Therefore,
+
+$C(n,k)=\binom{n}{k}=\frac{P(n,k)}{P(k,k)}=\frac{\frac{n!}{(n - k)!}}{k!}=\frac{n!}{(n - k)!k!}$
+
+:::{admonition} EXERCISE 5. Two referees
+:class: tip, dropdown
+
+A group of 12 students are having a match of <a href="https://www.pesis.fi/pesis-info/in-english/" target="_blank">Finnish baseball</a>.
+
+a) Two referees are needed. How many different ways there are of choosing two referees?
+
+b) How many different ways there are of choosing one referee and one spectator?
+:::
+
+:::{admonition} EXERCISE 6. Lottery
+:class: tip, dropdown
+
+There are 40 numbers in Finnish Lottery (there used to be 39 in the 80's!) and 7 are chosen for one row. In Lottery draw, 7 numbers are randomly drawn plus one extra number.
+
+a) What is the number of ways of choosing a Lottery row?
+
+b) What is the number of Lottery rows, where there are exactly 5 correct numbers and no correct extra numbers?
+
+*Hint: How many combinations are of 5 correct numbers and how many combinations there are of numbers, that were not drawn at all?*
+:::

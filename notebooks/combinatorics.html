@@ -68,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/combinatorics';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Index" href="../genindex.html" />
+    <link rel="next" title="Modeling random phenomena" href="basic_probability.html" />
     <link rel="prev" title="Parallel vectors" href="vector_parallel.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -222,6 +222,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Probability</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Combinatorics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic_probability.html">Modeling random phenomena</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul class="nav bd-sidenav">
@@ -393,7 +394,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-principle">Addition principle</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations">Permutations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variations-the-k-permutations-of-n">Variations, the k-permutations of n</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations-the-k-combinations-of-n-a-bit-unfinished">Combinations, the k-combinations of n (a bit unfinished)</a></li>
 </ul>
             </nav>
         </div>
@@ -486,8 +487,8 @@ document.write(`
 <p class="admonition-title">Definition</p>
 <p>Let <em>A</em> be a set of <em>n</em> elements and <span class="math notranslate nohighlight">\(k&lt;n\)</span>. A <strong>variation</strong> or a <strong><em>k</em>-permutation</strong> of <em>A</em> is any ordered subset of <em>A</em> with <em>k</em> elements.</p>
 </div>
-<p>In short, it refers to the number of ways you can choose and arrange <em>k</em> elements from a set of <em>n</em> distinct elements, where again the order of selection matters. This is often denoted as <span class="math notranslate nohighlight">\(P(n,k)=n \cdot (n-1) \cdot (n-2) \cdot \dots \cdot (n-k+1)\)</span>, where <span class="math notranslate nohighlight">\(P(n,k)\)</span> consists of <em>k</em> factors.</p>
-<p>The formula for variations is given by</p>
+<p>In short, it refers to the number of ways you can choose and arrange <em>k</em> elements from a set of <em>n</em> distinct elements, where again the order of selection matters. This is often denoted as <span class="math notranslate nohighlight">\(P(n,k)=n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot (n-k+1)\)</span>, where <span class="math notranslate nohighlight">\(P(n,k)\)</span> consists of <em>k</em> factors.</p>
+<p>The number of variations doesn’t take into consideration the factors after <span class="math notranslate nohighlight">\((n-k+1)\)</span>. Since factors <span class="math notranslate nohighlight">\((n-k)\cdot(n-k-1)\cdot(n-k-2)\cdot \ldots \cdot 2 \cdot 1=(n-k)!\)</span> are reduced, the formula for the number variations is given by</p>
 <p><span class="math notranslate nohighlight">\(P(n,k)=\frac{n!}{(n - k)!}\)</span></p>
 <p><strong>Example.</strong> Let <em>A</em> = {<em>a</em>, <em>b</em>, <em>c</em>}. All the varations of <em>A</em> with two elements are {<em>a</em>, <em>b</em>}, {<em>a</em>, <em>c</em>}, {<em>b</em>, <em>a</em>}, {<em>b</em>, <em>c</em>}, {<em>c</em>, <em>a</em>} and {<em>c</em>, <em>b</em>}.</p>
 <p>The first letter can be chosen from 3 different letters and after that the second can be chosen from 2 different letters. According to the multiplication rule, the number of variations is <span class="math notranslate nohighlight">\(3 \cdot 2=6\)</span>.</p>
@@ -500,8 +501,35 @@ document.write(`
 <p>b) How many different arrangements can be made from the textbooks, when only two fields of a study are chosen and arranged on their own?</p>
 </div>
 </section>
-<section id="combinations">
-<h2><span class="target" id="index-5"></span>Combinations<a class="headerlink" href="#combinations" title="Permalink to this heading">#</a></h2>
+<section id="combinations-the-k-combinations-of-n-a-bit-unfinished">
+<h2><span class="target" id="index-5"></span>Combinations, the k-combinations of n (a bit unfinished)<a class="headerlink" href="#combinations-the-k-combinations-of-n-a-bit-unfinished" title="Permalink to this heading">#</a></h2>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Definition</p>
+<p>Let <em>A</em> be a set of <em>n</em> elements and <span class="math notranslate nohighlight">\(0 \le k \le n\)</span>. A <strong>combination</strong> of <em>A</em> is any subset of <em>A</em> with <em>k</em> elements.</p>
+</div>
+<p>Since a combination is a subset of a set, the order is not significant. Let’s examine a set of A = {a, b, c}.</p>
+<ul class="simple">
+<li><p>For a subset of  3 elements the set {a, b, c} is the same as {a, c, b} - 1 combination</p></li>
+<li><p>For a subset of 2 elements we have sets {a, b}, {b, c}, {a, c} - 3 possible combinations</p></li>
+<li><p>For a subset of 1 element we have sets {a}, {b}, {c} - 3 possible combinations</p></li>
+<li><p>For a subset of 0 elements we have only empty set denoted by {} or  <span class="math notranslate nohighlight">\(\emptyset\)</span>  - 1 combination</p></li>
+</ul>
+<p>In total, the number of all possible combinations for a set of A = {a, b, c} is 8.</p>
+<p>The number of combinations can be computed using the formula denoted by <span class="math notranslate nohighlight">\(\binom{n}{k}\)</span> (read as “n over k”) also known as the <em>Binomial coefficients</em>. Since combinations don’t consider the order, the arrangements that result in the same combination are to be eliminated. For every combination of <span class="math notranslate nohighlight">\(k\)</span> items, there are <span class="math notranslate nohighlight">\(k!\)</span> ways to arrange those <span class="math notranslate nohighlight">\(k\)</span> items. Therefore,</p>
+<p><span class="math notranslate nohighlight">\(C(n,k)=\binom{n}{k}=\frac{P(n,k)}{P(k,k)}=\frac{\frac{n!}{(n - k)!}}{k!}=\frac{n!}{(n - k)!k!}\)</span></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 5. Two referees</p>
+<p>A group of 12 students are having a match of <a href="https://www.pesis.fi/pesis-info/in-english/" target="_blank">Finnish baseball</a>.</p>
+<p>a) Two referees are needed. How many different ways there are of choosing two referees?</p>
+<p>b) How many different ways there are of choosing one referee and one spectator?</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 6. Lottery</p>
+<p>There are 40 numbers in Finnish Lottery (there used to be 39 in the 80’s!) and 7 are chosen for one row. In Lottery draw, 7 numbers are randomly drawn plus one extra number.</p>
+<p>a) What is the number of ways of choosing a Lottery row?</p>
+<p>b) What is the number of Lottery rows, where there are exactly 5 correct numbers and no correct extra numbers?</p>
+<p><em>Hint: How many combinations are of 5 correct numbers and how many combinations there are of numbers, that were not drawn at all?</em></p>
+</div>
 </section>
 </section>
 
@@ -545,11 +573,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="../genindex.html"
+       href="basic_probability.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Index</p>
+        <p class="prev-next-title">Modeling random phenomena</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -573,7 +601,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-principle">Addition principle</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations">Permutations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variations-the-k-permutations-of-n">Variations, the k-permutations of n</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations-the-k-combinations-of-n-a-bit-unfinished">Combinations, the k-combinations of n (a bit unfinished)</a></li>
 </ul>
   </nav></div>
 

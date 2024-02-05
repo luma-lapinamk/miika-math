@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Introduction &#8212; Maths in English</title>
+    <title>Random phenomena &#8212; Maths in English</title>
   
   
   
@@ -63,10 +63,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/intro';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/basic_probability';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Set theory" href="set_theory.html" />
+    <link rel="next" title="Genreal definitions of probability" href="definitions_of_probability.html" />
+    <link rel="prev" title="Combinatorics" href="combinatorics.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -150,7 +153,7 @@ const thebe_selector_output = ".output, .cell_output"
 
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -170,8 +173,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Introduction
                 </a>
             </li>
@@ -217,9 +220,9 @@ const thebe_selector_output = ".output, .cell_output"
 
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Probability</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="combinatorics.html">Combinatorics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="basic_probability.html">Random phenomena</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Random phenomena</a></li>
 <li class="toctree-l1"><a class="reference internal" href="definitions_of_probability.html">Genreal definitions of probability</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rules_of_probability.html">Rules of probability</a></li>
 </ul>
@@ -295,7 +298,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/notebooks/intro.md" target="_blank"
+      <li><a href="../_sources/notebooks/basic_probability.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -366,9 +369,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -379,21 +380,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduction</h1>
+    <h1>Random phenomena</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of contents</a><ul class="nav section-nav flex-column">
-</ul>
-</li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -403,81 +394,41 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
-<p>Hey there! Here you can find study material for maths courses <strong>Algebra, geometry ja trigonometry</strong> and <strong>Linear algebra</strong>. Material is made by LUMA-team of Lapland University of Applied Sciences. Work in progress…</p>
-<section id="table-of-contents">
-<h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Basics of set theory and logic</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="set_theory.html">Set theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="logic.html">Logic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Boolean.html">Boolean algebra</a></li>
+  <section class="tex2jax_ignore mathjax_ignore" id="random-phenomena">
+<h1><span class="target" id="index-0"></span>Random phenomena<a class="headerlink" href="#random-phenomena" title="Permalink to this heading">#</a></h1>
+<p>All phenomena can, in principle, be divided into two groups.</p>
+<ul class="simple">
+<li><p><strong>Deterministic phenomena</strong> are highly predictable, for example, based on the laws of physics. It is known that when a stone held in hand is released, it falls to the ground due to the influence of gravity.</p></li>
+<li><p>The outcome of a <strong>random phenomenon</strong>, on the other hand, cannot be precisely predicted in advance. When a six-sided die is thrown onto a table, it cannot be known in advance what number will appear on the die.</p></li>
 </ul>
+<p><strong>Probability calculus</strong> is the theory of mathematical models for random phenomena (random experiments). The following steps are associated with modeling:</p>
+<ol class="arabic simple">
+<li><p>Outline the options, or <strong>elementary outcomes</strong>, associated with a random experiment. The elementary outcomes are described with the precision necessary for the analysis. For example, in the toss of a six-sided dice, the elementary outcomes are considered to be the possible face numbers: 1, 2, 3, 4, 5, and 6. (The trajectory of the dice’s roll is irrelevant for the analysis.) The set of all elementary outcomes is referred to as the <strong>universal set</strong> of the random experiment, denoted here by the letter <span class="math notranslate nohighlight">\(U\)</span>. So, in the case of a dice roll, <span class="math notranslate nohighlight">\(U = \{1, 2, 3, 4, 5, 6\}\)</span>.</p></li>
+<li><p>In a random experiment, the realization of various events is observed. An <strong>event</strong> is a subset of the given set, and its elements are called <strong>favourable elementary outcomes</strong>. For example, in the toss of a six-sided dice, an event could be denoted as <span class="math notranslate nohighlight">\(A\)</span> = ‘the dice shows an odd number,’ which corresponds to <span class="math notranslate nohighlight">\(A = \{1, 3, 5\}\)</span>. The favorable elementary outcomes for event <span class="math notranslate nohighlight">\(A\)</span> are 1, 3, and 5.</p></li>
+<li><p>Finally, in modeling, the probabilities of events must be determined.</p></li>
+</ol>
+<p>An event also has a <strong>complementary event</strong>, known as the <strong>complement</strong>. For instance, for the event <span class="math notranslate nohighlight">\(A\)</span> = ‘the dice shows an odd number,’ the complement is <span class="math notranslate nohighlight">\(\overline{A}\)</span> = ‘the dice does not show an odd number’, or equivalently, ‘the dice shows an even number’, which can be expressed as <span class="math notranslate nohighlight">\(\overline{A} = \{2, 4, 6\}\)</span>.</p>
+<blockquote>
+<div><p>Events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are separate or <strong>mutually exclusive</strong> (complementary) when they cannot occur simultaneously, i.e., they have no common elementary outcomes.</p>
+</div></blockquote>
+<p>Event <span class="math notranslate nohighlight">\(A\)</span> and its complement <span class="math notranslate nohighlight">\(\overline{A}\)</span> are always separate.</p>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Definition</p>
+<p>The probability of an event <span class="math notranslate nohighlight">\(A\)</span> is denoted as <span class="math notranslate nohighlight">\(P(A)\)</span>. The probability <span class="math notranslate nohighlight">\(P(A)\)</span> must satisfy the following conditions:</p>
+<p>a) The probability of any event <span class="math notranslate nohighlight">\(A\)</span> is non-negative, i.e., <span class="math notranslate nohighlight">\(P(A) \ge 0\)</span>.</p>
+<p>b) The probability of the certain event <span class="math notranslate nohighlight">\(U\)</span> is one, i.e., <span class="math notranslate nohighlight">\(P(U) = 1\)</span>.</p>
+<p>c) The probability of the impossible event <span class="math notranslate nohighlight">\(\emptyset\)</span> is zero, i.e., <span class="math notranslate nohighlight">\(P(\emptyset) = 0\)</span>.</p>
+<p>d) Probability is additive, meaning that if <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are separate events, then the probability of the event <span class="math notranslate nohighlight">\(A\)</span> or <span class="math notranslate nohighlight">\(B\)</span> is <span class="math notranslate nohighlight">\(P(A \cup B) = P(A) + P(B)\)</span>.</p>
 </div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Expressions</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="numbers.html">Sets of numbers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fractions.html">Fractions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="powers_and_roots.html">Powers and roots</a></li>
-<li class="toctree-l1"><a class="reference internal" href="expressions.html">Expressions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="polynomials.html">Polynomials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="factoring.html">Factoring</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Equations</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="linear_equations.html">Linear equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="inequality.html">Inequality</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Functions</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="blank2.html">Missing chapter</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trigonometry</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="blank3.html">Missing chapter</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometry</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="blank4.html">Missing chapter</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectors</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="vector_intro.html">Preface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vector_basic_calc.html">Basic vector calculus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vector_position.html">Position vector and displacement vector</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vector_parallel.html">Parallel vectors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vector_parallel.html#unit-vector-kesken">Unit vector (kesken)</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Probability</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="combinatorics.html">Combinatorics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="basic_probability.html">Random phenomena</a></li>
-<li class="toctree-l1"><a class="reference internal" href="definitions_of_probability.html">Genreal definitions of probability</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rules_of_probability.html">Rules of probability</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
-</ul>
-</div>
-</section>
+<p>The probabilities of elementary outcomes are called <strong>point probabilities</strong>. If the probabilities of all elementary outcomes are equal, the elementary outcomes are symmetric.</p>
+<p><strong>Example.</strong> Let’s consider a coin toss. In a coin toss, the elementary outcomes are heads and tails, so <span class="math notranslate nohighlight">\(E = \{ \text{heads, tails} \}\)</span>. It is reasonable to assume that the elementary outcomes are equally likely, and the pattern on the coin does not affect the probabilities of elementary outcomes. Therefore, the elementary outcomes occur with equal probability, making them symmetric.</p>
+<p>When considering this mathematically, let <span class="math notranslate nohighlight">\(A\)</span> = ‘heads’, <span class="math notranslate nohighlight">\(B\)</span> = ‘tails’, and <span class="math notranslate nohighlight">\(E\)</span> = ‘heads or tails’, which is a certain event. Let’s determine the probabilities of the elementary outcomes or point probabilities <span class="math notranslate nohighlight">\(P(A)\)</span> and <span class="math notranslate nohighlight">\(P(B)\)</span>. Since events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are separate, meaning they have no common elementary outcomes, according to additivity, we get</p>
+<p><span class="math notranslate nohighlight">\(\begin{align} P(A \cup B)&amp;=P(A)+P(B) \\ \\
+P(E)&amp;=P(A)+P(B) \\ \\
+1&amp;=P(A)+P(B) \\ \\
+1&amp;=2P(A) \\ \\
+P(A)&amp;=\frac{1}{2} \end{align}\)</span></p>
+<p>Therefore <span class="math notranslate nohighlight">\(P(\text{heads})=P(\text{tails})=\frac{1}{2}\)</span>.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -510,12 +461,21 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="combinatorics.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Combinatorics</p>
+      </div>
+    </a>
     <a class="right-next"
-       href="set_theory.html"
+       href="definitions_of_probability.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Set theory</p>
+        <p class="prev-next-title">Genreal definitions of probability</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -526,22 +486,7 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of contents</a><ul class="nav section-nav flex-column">
-</ul>
-</li>
-</ul>
-  </nav></div>
-
-</div></div>
+                <div class="bd-sidebar-secondary bd-toc"></div>
               
             
           </div>
