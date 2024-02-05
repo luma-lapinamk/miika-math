@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Genreal definitions of probability &#8212; Maths in English</title>
+    <title>General definitions of probability &#8212; Maths in English</title>
   
   
   
@@ -63,6 +63,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/definitions_of_probability';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -221,7 +223,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="combinatorics.html">Combinatorics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basic_probability.html">Random phenomena</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Genreal definitions of probability</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">General definitions of probability</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rules_of_probability.html">Rules of probability</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
@@ -380,7 +382,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Genreal definitions of probability</h1>
+    <h1>General definitions of probability</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -390,8 +392,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-definition-of-probability">Classical definition of probability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-definition-of-probability">Statistical definition of probability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-definition-of-probability">Classical definition of probability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geometrical-definition-of-probability">Geometrical definition of probability</a></li>
 </ul>
             </nav>
@@ -404,19 +406,111 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="genreal-definitions-of-probability">
-<h1><span class="target" id="index-0"></span>Genreal definitions of probability<a class="headerlink" href="#genreal-definitions-of-probability" title="Permalink to this heading">#</a></h1>
-<section id="classical-definition-of-probability">
-<h2><span class="target" id="index-1"></span>Classical definition of probability<a class="headerlink" href="#classical-definition-of-probability" title="Permalink to this heading">#</a></h2>
-<p>blaa</p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="general-definitions-of-probability">
+<h1><span class="target" id="index-0"></span>General definitions of probability<a class="headerlink" href="#general-definitions-of-probability" title="Permalink to this heading">#</a></h1>
+<p>For introduction, let’s compare how statistical and classical probabilites relate to each other.</p>
+<iframe fullscreen="" height="550px" scrolling="no" src="https://www.geogebra.org/material/iframe/id/humATwzb/width/750/height/550/border/000000/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false" style="border: 0px;" width="750px"> </iframe>
+<p>Source: <a href="https://ggbm.at/humATwzb" target="_blank">Huippu, Otava</a></p>
 <section id="statistical-definition-of-probability">
-<h2><span class="target" id="index-2"></span>Statistical definition of probability<a class="headerlink" href="#statistical-definition-of-probability" title="Permalink to this heading">#</a></h2>
-<p>blaablaa</p>
+<h2><span class="target" id="index-1"></span>Statistical definition of probability<a class="headerlink" href="#statistical-definition-of-probability" title="Permalink to this heading">#</a></h2>
+<p>Probabilities can be calculated based on experimental observations. The simplest example of such a probability is based on empirical or experimental data, known as <strong>statistical probability</strong>. In this case, the probability of an event is the same as the relative frequency of the corresponding statistical variable.</p>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Definition</p>
+<p>Statistical definition of probability is denoted by
+<span class="math notranslate nohighlight">\(P(A)=\frac{f_A}{n}\)</span>
+where <span class="math notranslate nohighlight">\(f_A\)</span> is the frequency of the event and <span class="math notranslate nohighlight">\(n\)</span> is the number of observations.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 1. Statistics of Darts</p>
+<p>A dartboard is a circular ring target, where in the center of the board is a circle with a point value of 10. Surrounding this circle are numbered rings from 9 to 1, as well as an unnumbered border. (See photo in Exercise 6.)</p>
+<p>Below are statistics of some darts practise.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Points</p></th>
+<th class="head"><p>Frequency</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>10</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>50</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>What is the probability that the score of a single throw is even?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 2. Jari ‘The King’ Litmanen #10</p>
+<p>The greatest Finnish football player is undisputedly Jari Litmanen. The probability that Litmanen scores once in a match 30 % and twice is 10 %. However, Litmanen doesn’t score more than twice. What is the probability that Litmanen scores at least once in a match?</p>
+</div>
+</section>
+<section id="classical-definition-of-probability">
+<h2><span class="target" id="index-2"></span>Classical definition of probability<a class="headerlink" href="#classical-definition-of-probability" title="Permalink to this heading">#</a></h2>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 3. Balls in a box</p>
+<p>There are 4 blue, 1 yellow, and 3 red balls in a box. One ball is randomly drawn from the box. What is the probability that the ball is
+a) blue
+b) yellow
+c) not red?</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 4. Dial Home Device from Stargate</p>
+<p>A Dial Home Devices (DHD in short) is device that consist of 19 glyphs on the inner circle and 19 glyphs on the outer circle as well. The device opens a wormhole to a distant planet in our galaxy, where, let’s say, one million planets are habitable and have a stargate.</p>
+<p><img alt="Dial Home Device from Stargate" src="https://static.wikia.nocookie.net/stargate/images/0/02/DHD.jpg/revision/latest/scale-to-width-down/1000?cb=20070513011315" /></p>
+<p>To dial an address, seven glyphs must be pressed in a spesific order and one glyph can be selected only once.</p>
+<p>What is the possibility that a randomly chosen address will open a wormhole to a planet?</p>
+</div>
 </section>
 <section id="geometrical-definition-of-probability">
 <h2><span class="target" id="index-3"></span>Geometrical definition of probability<a class="headerlink" href="#geometrical-definition-of-probability" title="Permalink to this heading">#</a></h2>
-<p>blaablaalbaa</p>
+<p>For introduction…</p>
+<iframe fullscreen="" height="550px" scrolling="no" src="https://www.geogebra.org/material/iframe/id/xgTuTpJX/width/750/height/600/border/000000/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false" style="border: 0px;" width="750px"> </iframe>
+<p>Source: <a href="https://www.geogebra.org/m/SUPFr8qC#material/xgTuTpJX" target="_blank">Huippu, Otava</a></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 5. Stone is thrown</p>
+<p>A stone is being randomly thrown on an area of land, which has the shape of a rectangle and the dimensions are 4 metres and 6 metres. In the middle of the area is a circular pond with the radius of 2 meters. What is probability that the stone hits the pond?</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 6. Darts - again</p>
+<p><a href="https://commons.wikimedia.org/wiki/File:Tikkataulu.JPG#/media/Tiedosto:Tikkataulu.JPG"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Tikkataulu.JPG" alt="Tikkataulu.JPG" height="480" width="457"></a><br><a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=8103163">Linkki</a></p>
+<p>The diameter of the dartboard is 341 mm, measured from the outer edge of the number one (1). The diameter of the ten (10) is 35 mm, and the width of the rings is 17 mm.</p>
+<p>Let’s assume in questions a) and b) that the darts will hit some number.</p>
+<p>a) What is the probability that a randomly thrown dart will hit at least nine?</p>
+<p>b) Five darts are thrown on each turn. What is the probability that the total points of a turn is at least 45?</p>
+<p>c) The possibility to miss the dartboard is 5 %. What is the probability that all five darts will hit at most two?</p>
+</div>
 </section>
 </section>
 
@@ -484,8 +578,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-definition-of-probability">Classical definition of probability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-definition-of-probability">Statistical definition of probability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-definition-of-probability">Classical definition of probability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geometrical-definition-of-probability">Geometrical definition of probability</a></li>
 </ul>
   </nav></div>
