@@ -39,6 +39,9 @@ parts:
   - caption: Probability
     chapters:
     - file: notebooks/combinatorics
+    - file: notebooks/basic_probability
+    - file: notebooks/definitions_of_probability
+    - file: notebooks/rules_of_probability
   - caption: Appendix
     chapters:
     - file: genindex
