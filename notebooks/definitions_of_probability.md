@@ -99,7 +99,7 @@ Let's assume in questions a) and b) that the darts will hit some number.
 
 a) What is the probability that a randomly thrown dart will hit at least nine?
 
-b) Five darts are thrown on each turn. What is the probability that the total points of a turn is at least 45?
+b) Five darts are thrown on each turn. What is the probability that the total points of a turn is at least 49?
 
 c) The possibility to miss the dartboard is 5 %. What is the probability that all five darts will hit at most two?
 :::
