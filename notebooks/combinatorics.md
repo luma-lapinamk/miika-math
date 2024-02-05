@@ -11,7 +11,7 @@ The principle can be described by a tree model.
 ```{figure-md} multiprinciple
 <img src="../images/probstat/multiprinciple.png" alt="Number of different sets of clothes" class="bg-primary mb-1" width="600px" align="center">
 
-The number of different sets of outfits can be computed from the bottom row of the tree moddel.
+The number of different sets of outfits can be computed from the bottom row of the tree model.
 ```
 
 The cap can be chosen in two different ways, the jumpsuit can be chosen from two different options and there are three different pairs of shoes. Using the multiplication principle we can compute the number of different sets by $2 \cdot 2 \cdot 3 = 12$.
