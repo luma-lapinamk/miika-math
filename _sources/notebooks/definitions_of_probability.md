@@ -16,27 +16,19 @@ where $f_A$ is the frequency of the event and $n$ is the number of observations.
 
 :::{admonition} EXERCISE 1. Statistics of Darts
 :class: tip, dropdown
-A dartboard is a circular ring target, where in the center of the board is a circle with a point value of 10. Surrounding this circle are numbered rings from 9 to 1, as well as an unnumbered border. (See photo in Exercise 6.)
+A dartboard is a circular ring target, where in the center of the board is a circle with a point value of 10. Surrounding this circle are numbered rings from 9 to 1, as well as an unnumbered border.
+
+<p><a href="https://commons.wikimedia.org/wiki/File:Tikkataulu.JPG#/media/Tiedosto:Tikkataulu.JPG"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Tikkataulu.JPG" alt="Tikkataulu.JPG" height="480" width="457"></a><br><a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=8103163">Linkki</a></p>
 
 Below are statistics of some darts practise.
+```{figure-md} darts
+<img src="../images/probstat/darts.png" alt="Statistics of darts practise" class="bg-primary mb-1" width="200px" align="center">
 
-| Points | Frequency |
-| ------ | --------- |
-| 0 | 6 |
-| 1 | 2 |
-| 2 | 4 |
-| 3 | 5 |
-| 4 | 3 |
-| 5 | 10 |
-| 6 | 6 |
-| 7 | 4 |
-| 8 | 6 |
-| 9 | 3 |
-| 10 | 1 |
-|  | 50 |
-:::
-
+Statistics of 50 darts throws.
+```
 What is the probability that the score of a single throw is even?
+
+:::
 
 :::{admonition} EXERCISE 2. Jari 'The King' Litmanen #10
 :class: tip, dropdown
@@ -44,6 +36,12 @@ The greatest Finnish football player is undisputedly Jari Litmanen. The probabil
 :::
 
 ## {index}`Classical definition of probability`
+The classical definition of probability is based on equally likely outcomes in a universal set. According to this definition:
+
+$P(A) = \frac{\text{number of favorable outcomes for event A}}{\text{total number of possible outcomes}}$
+
+This definition assumes that all outcomes in the sample set are equally likely. It is commonly used in situations where each elementary outcome is equally likely to occur, such as in the tossing of a fair coin or a six-sided dice.
+
 :::{admonition} EXERCISE 3. Balls in a box
 :class: tip, dropdown
 There are 4 blue, 1 yellow, and 3 red balls in a box. One ball is randomly drawn from the box. What is the probability that the ball is
