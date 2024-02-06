@@ -52,6 +52,13 @@ The are 7 red balls, 4 blue balls and 5 white balls in box. Two balls are random
 <br></br>
 
 ## {index}`Complement rule`
+Since an event $A$ and its complementary event $\overline{A}$ are separate and mutually exclusive events, based on the additivity of probabilities, we have that 
+
+$\begin{align}P(A \cup \overline{A})&=P(A)+P(\overline{A}) \\ \\
+1&=P(A)+P(\overline{A}) \\ \\
+P(A)&=1-P(\overline{A})\end{align}$
+
+If you know the chance of something occurring, then you can easily find the chance of it not occurring by subtracting the probability of it happening from 1, as the sum of the probabilities of an event and its complement is always 1. The complement rule can be spesifically useful in cases, where the question is about "at least" or "no more than".
 
 **Example.** Three cards are picked from the deck. What are the odds that at least one card is a face card?
 
