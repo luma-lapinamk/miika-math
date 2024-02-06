@@ -56,7 +56,7 @@ Since an event $A$ and its complementary event $\overline{A}$ are separate and m
 
 $\begin{align}P(A \cup \overline{A})&=P(A)+P(\overline{A}) \\ \\
 1&=P(A)+P(\overline{A}) \\ \\
-P(A) = 1 - P(A\overline{A})\end{align}$
+P(A)&=1-P(\overline{A})\end{align}$
 
 If you know the chance of something occurring, then you can easily find the chance of it not occurring by subtracting the probability of it happening from 1, as the sum of the probabilities of an event and its complement is always 1. The complement rule can be spesifically useful in cases, where the question is about "at least" or "no more than".
 
