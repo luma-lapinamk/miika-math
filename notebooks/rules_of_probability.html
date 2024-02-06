@@ -413,7 +413,7 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="rules-of-probability">
 <h1><span class="target" id="index-0"></span>Rules of probability<a class="headerlink" href="#rules-of-probability" title="Permalink to this heading">#</a></h1>
 <p>For starters…</p>
-<p>Since the examples below deal with a standard 52-deck of cards, the four suits are spaces, hearts, clubs and diamonds, as seen in the figure below. Each suit includes 13 ranks: ten numeral cards (1 = Ace, 2, 3, …, 10) and three face cards (King, Queen and Jack). Depending on a game, the ace can also have the rank of 14.</p>
+<p>Since the examples below deal with a standard 52-deck of cards, the four suits are spades, hearts, clubs and diamonds, as seen in the figure below. Each suit includes 13 ranks: ten numeral cards (1 = Ace, 2, 3, …, 10) and three face cards (King, Queen and Jack). Depending on a game, the ace can also have the rank of 14.</p>
 <p><a href="https://commons.wikimedia.org/wiki/File:Piatnikcards.jpg#/media/File:Piatnikcards.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Piatnikcards.jpg" alt="Piatnikcards.jpg" height="360" width="770"></a><br><a href="https://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=7104281">Link</a></p>
 <p>Basic rules of probability are <strong>Addition rule</strong> and <strong>Complement rule</strong>.</p>
 <section id="addition-rule">
@@ -466,14 +466,29 @@ P(A)&amp;=1-P(\overline{A})\end{align}\)</span></p>
 </section>
 <section id="conditional-probability">
 <h2><span class="target" id="index-3"></span>Conditional probability<a class="headerlink" href="#conditional-probability" title="Permalink to this heading">#</a></h2>
-<p>Conditional probability is probability of event <span class="math notranslate nohighlight">\(A\)</span> happening given that event <span class="math notranslate nohighlight">\(B\)</span> has already occurred, and it’s denoted as <span class="math notranslate nohighlight">\(P(A|B)\)</span>. Mathematically, the conditional probability of event <span class="math notranslate nohighlight">\(A\)</span> given event <span class="math notranslate nohighlight">\(B\)</span> is calculated using the formula:</p>
+<p>The conditional probability is probability of event <span class="math notranslate nohighlight">\(A\)</span> happening given that event <span class="math notranslate nohighlight">\(B\)</span> has already occurred is denoted as <span class="math notranslate nohighlight">\(P(A|B)\)</span>. The conditional probability of event <span class="math notranslate nohighlight">\(A\)</span> given event <span class="math notranslate nohighlight">\(B\)</span> can be calculated using the formula</p>
 <p><span class="math notranslate nohighlight">\(P(A|B) = \frac{P(A \cap B)}{P(B)}\)</span>, where</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(P(A|B)\)</span> is the conditional probability of event <span class="math notranslate nohighlight">\(A\)</span> given event <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(P(A \cap B)\)</span> is the probability of both events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> occurring simultaneously (the intersection of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>).</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(A \cap B)\)</span> is the probability of both events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> occurring simultaneously, the intersection of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
 <li><p><span class="math notranslate nohighlight">\(P(B)\)</span> is the probability of event <span class="math notranslate nohighlight">\(B\)</span> occurring.</p></li>
 </ul>
-<p>The idea behind conditional probability is that the probability of event A happening can change depending on whether event B has already occurred. It’s like updating our knowledge or information about the situation.</p>
+<figure class="align-default" id="id2">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/addition_rule_conditional.png"><img alt="The intersection of A and B" class="bg-primary mb-1 align-center" src="../_images/addition_rule_conditional.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">The intersection of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The idea behind conditional probability is that the probability of event A happening can change depending on whether event B has already occurred. It’s like updating the knowledge or information about the situation.</p>
+<p>From the formula we can write the <strong>general multiplication rule</strong> as:
+<span class="math notranslate nohighlight">\(\frac{P(A \cap B)} = P(A|B) \cdot {P(B)}\)</span></p>
+<p><strong>Example.</strong> A hand of cards is two red aces, two black fives and a three of hearts. The three is given away and one card is taken from the deck. What it the probability that the card is an ace?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 4. One card drwan from the deck, when…</p>
+<p>One card is drawn from the deck. What are the odds that the card is a two of spades, when</p>
+<p>a) four cards are alreday drawn from the deck?</p>
+<p>b) the ace of spades id already drawn and the card drawn is black?</p>
+</div>
 </section>
 <section id="general-multiplication-rule">
 <h2><span class="target" id="index-4"></span>General multiplication rule<a class="headerlink" href="#general-multiplication-rule" title="Permalink to this heading">#</a></h2>

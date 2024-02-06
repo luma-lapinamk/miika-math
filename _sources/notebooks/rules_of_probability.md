@@ -1,7 +1,7 @@
 # {index}`Rules of probability`
 For starters...
 
-Since the examples below deal with a standard 52-deck of cards, the four suits are spaces, hearts, clubs and diamonds, as seen in the figure below. Each suit includes 13 ranks: ten numeral cards (1 = Ace, 2, 3, ..., 10) and three face cards (King, Queen and Jack). Depending on a game, the ace can also have the rank of 14.
+Since the examples below deal with a standard 52-deck of cards, the four suits are spades, hearts, clubs and diamonds, as seen in the figure below. Each suit includes 13 ranks: ten numeral cards (1 = Ace, 2, 3, ..., 10) and three face cards (King, Queen and Jack). Depending on a game, the ace can also have the rank of 14.
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Piatnikcards.jpg#/media/File:Piatnikcards.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Piatnikcards.jpg" alt="Piatnikcards.jpg" height="360" width="770"></a><br><a href="https://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=7104281">Link</a></p>
 
@@ -69,14 +69,34 @@ What is the probability that at least two persons of four are born on the same w
 <br></br>
 
 ## {index}`Conditional probability`
-Conditional probability is probability of event $A$ happening given that event $B$ has already occurred, and it's denoted as $P(A|B)$. Mathematically, the conditional probability of event $A$ given event $B$ is calculated using the formula:
+The conditional probability is probability of event $A$ happening given that event $B$ has already occurred is denoted as $P(A|B)$. The conditional probability of event $A$ given event $B$ can be calculated using the formula
 
 $P(A|B) = \frac{P(A \cap B)}{P(B)}$, where
 - $P(A|B)$ is the conditional probability of event $A$ given event $B$.
-- $P(A \cap B)$ is the probability of both events $A$ and $B$ occurring simultaneously (the intersection of $A$ and $B$).
+- $P(A \cap B)$ is the probability of both events $A$ and $B$ occurring simultaneously, the intersection of $A$ and $B$.
 - $P(B)$ is the probability of event $B$ occurring.
 
-The idea behind conditional probability is that the probability of event A happening can change depending on whether event B has already occurred. It's like updating our knowledge or information about the situation.
+```{figure-md} addition_rule_conditional
+<img src="../images/probstat/addition_rule_conditional.png" alt="The intersection of A and B" class="bg-primary mb-1" width="300px" align="center">
+
+The intersection of $A$ and $B$.
+```
+
+The idea behind conditional probability is that the probability of event A happening can change depending on whether event B has already occurred. It's like updating the knowledge or information about the situation.
+
+From the formula we can write the **general multiplication rule** as:
+$\frac{P(A \cap B)} = P(A|B) \cdot {P(B)}$
+
+**Example.** A hand of cards is two red aces, two black fives and a three of hearts. The three is given away and one card is taken from the deck. What it the probability that the card is an ace?
+
+:::{admonition} EXERCISE 4. One card drwan from the deck, when...
+:class: tip, dropdown
+One card is drawn from the deck. What are the odds that the card is a two of spades, when
+
+a) four cards are alreday drawn from the deck?
+
+b) the ace of spades id already drawn and the card drawn is black?
+:::
 
 ## {index}`General multiplication rule`
 Nostetaan korttipakasta kaksi korttia. Millä todennäköisyydellä molemmat kortit ovat ässiä?
