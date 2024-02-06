@@ -69,6 +69,14 @@ What is the probability that at least two persons of four are born on the same w
 <br></br>
 
 ## {index}`Conditional probability`
+Conditional probability is probability of event $A$ happening given that event $B$ has already occurred, and it's denoted as $P(A|B)$. Mathematically, the conditional probability of event $A$ given event $B$ is calculated using the formula:
+
+$P(A|B) = \frac{P(A \cap B)}{P(B)}$, where
+- $P(A|B)$ is the conditional probability of event $A$ given event $B$.
+- $P(A \cap B)$ is the probability of both events $A$ and $B$ occurring simultaneously (the intersection of $A$ and $B$).
+- $P(B)$ is the probability of event $B$ occurring.
+
+The idea behind conditional probability is that the probability of event A happening can change depending on whether event B has already occurred. It's like updating our knowledge or information about the situation.
 
 ## {index}`General multiplication rule`
 Nostetaan korttipakasta kaksi korttia. Millä todennäköisyydellä molemmat kortit ovat ässiä?
