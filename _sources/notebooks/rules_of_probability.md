@@ -84,9 +84,6 @@ The intersection of $A$ and $B$.
 
 The idea behind conditional probability is that the probability of event A happening can change depending on whether event B has already occurred. It's like updating the knowledge or information about the situation.
 
-From the formula we can write the **general multiplication rule** as:
-$\frac{P(A \cap B)} = P(A|B) \cdot {P(B)}$
-
 **Example.** A hand of cards is two red aces, two black fives and a three of hearts. The three is given away and one card is taken from the deck. What it the probability that the card is an ace?
 
 :::{admonition} EXERCISE 4. One card drwan from the deck, when...
@@ -99,7 +96,11 @@ b) the ace of spades id already drawn and the card drawn is black?
 :::
 
 ## {index}`General multiplication rule`
-Nostetaan korttipakasta kaksi korttia. Millä todennäköisyydellä molemmat kortit ovat ässiä?
+From the formula of conditional probability we can write the **general multiplication rule** as:
+
+$P(A \cap B) = P(A|B) \cdot {P(B)}$
+
+**Example.** Nostetaan korttipakasta kaksi korttia. Millä todennäköisyydellä molemmat kortit ovat ässiä?
 
 Korttipakassa on 52 korttia, joista 4 on ässiä. Kun ensimmäinen ässä on nostettu, korttipakassa on 51 korttia, joista 3 on ässiä. Lasketaan todennäköisyys sille, että molemmat kortit ovat ässiä.
  
