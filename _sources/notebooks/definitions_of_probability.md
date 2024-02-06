@@ -68,9 +68,9 @@ c) not red?
 
 :::{admonition} EXERCISE 4. Dial Home Device from Stargate
 :class: tip, dropdown
-A Dial Home Devices (DHD in short) is device that consist of 19 glyphs on the inner circle and 19 glyphs on the outer circle as well. The device opens a wormhole to a distant planet in our galaxy, where, let's say, one million planets are habitable and have a stargate.
+A Dial Home Device (DHD in short) consist of 19 glyphs on the inner circle and 19 glyphs on the outer circle. The device opens a wormhole through a ring called Stargate to a distant planet in our Milky Way galaxy, where, let's say, one million planets are habitable and have a stargate.
 
-![Dial Home Device from Stargate](https://static.wikia.nocookie.net/stargate/images/0/02/DHD.jpg/revision/latest/scale-to-width-down/1000?cb=20070513011315 "DHD")
+<a title="Promethee33127, Eric Heunthep, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:DHD_2.png"><img width="512" alt="DHD 2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/DHD_2.png/512px-DHD_2.png"></a>
 
 To dial an address, seven glyphs must be pressed in a spesific order and one glyph can be selected only once.
 

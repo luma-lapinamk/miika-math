@@ -63,6 +63,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/rules_of_probability';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -410,13 +412,52 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="rules-of-probability">
 <h1><span class="target" id="index-0"></span>Rules of probability<a class="headerlink" href="#rules-of-probability" title="Permalink to this heading">#</a></h1>
-<p>Basic rules are Addition rule and Complement rule.</p>
+<p>For starters…</p>
+<p>Since the examples below deal with a standard 52-deck of cards, the four suits are spaces, hearts, clubs and diamonds, as seen in the figure below. Each suit includes 13 ranks: ten numeral cards (1 = Ace, 2, 3, …, 10) and three face cards (King, Queen and Jack). Depending on a game, the ace can also have the rank of 14.</p>
+<p><a href="https://commons.wikimedia.org/wiki/File:Piatnikcards.jpg#/media/File:Piatnikcards.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Piatnikcards.jpg" alt="Piatnikcards.jpg" height="360" width="770"></a><br><a href="https://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=7104281">Link</a></p>
+<p>Basic rules of probability are <strong>Addition rule</strong> and <strong>Complement rule</strong>.</p>
 <section id="addition-rule">
 <h2><span class="target" id="index-1"></span>Addition rule<a class="headerlink" href="#addition-rule" title="Permalink to this heading">#</a></h2>
-<p>Depending on whether both events can occur at the same time, or does one event exclude the other, the addition rule has two outcomes.</p>
+<p>Depending on whether both events can occur at the same time, or does one event exclude the other, the addition rule can have two outcomes.</p>
+<p>When events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> cannot occur at the same time or they are mutually exclusive, the probabilites can be added together since the events are different cases.</p>
+<p><span class="math notranslate nohighlight">\(P(A \cup B)=P(A)+P(B)\)</span></p>
+<p><span class="math notranslate nohighlight">\(P(A \ \text{or} \ B)=P(A)+P(B)\)</span></p>
+<figure class="align-default" id="id1">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/addition_rule.png"><img alt="Addition rule" class="bg-primary mb-1 align-center" src="../_images/addition_rule.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Separate elementary events are both counted since the other cannot happen if the other one does.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Example.</strong> A random card is picked from the deck. What are the odds that the card is either spaces or diamonds?</p>
+<p><br></br></p>
+<p>When events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> can occur at the same time, or they have common elements, the same events would be counted twice. Therefore the union of <span class="math notranslate nohighlight">\(P(A)\)</span> and <span class="math notranslate nohighlight">\(P(B)\)</span> must be subtracted.</p>
+<p><span class="math notranslate nohighlight">\(P(A \cup B)=P(A)+P(B)-(P(A) \cap P(B))\)</span></p>
+<p><span class="math notranslate nohighlight">\(P(A \ \text{or} \ B)=P(A)+P(B)-(P(A) \ \text{and} \ P(B))\)</span></p>
+<figure class="align-default" id="addition-rule-conditional">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/addition_rule_conditional.png"><img alt="Common elementary events are counted twice" class="bg-primary mb-1 align-center" src="../_images/addition_rule_conditional.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">Common elementary events are counted twice unless they are subtracted.</span><a class="headerlink" href="#addition-rule-conditional" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Example.</strong> A random card is picked from the deck. What are the odds that the card is spaces or a face card?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 1. Two dices</p>
+<p>In a board game, two six-sided dices are cast. The player wins a prize, if the faces of the dice are the same or the sum of the faces is 7 or 11. If the player doesn’t win the prize, the player can try once again. What is the probability that the player wins the prize?</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 2. Oh no more balls!</p>
+<p>The are 7 red balls, 4 blue balls and 5 white balls in box. Two balls are randomly picked. What is the probability that the balls are red and white?</p>
+</div>
+<p><br></br></p>
 </section>
 <section id="complement-rule">
 <h2><span class="target" id="index-2"></span>Complement rule<a class="headerlink" href="#complement-rule" title="Permalink to this heading">#</a></h2>
+<p><strong>Example.</strong> Three cards are picked from the deck. What are the odds that at least one card is a face card?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 3. Birthday on same weekday</p>
+<p>What is the probability that at least two persons of four are born on the same weekday?</p>
+</div>
+<p><br></br></p>
 </section>
 <section id="conditional-probability">
 <h2><span class="target" id="index-3"></span>Conditional probability<a class="headerlink" href="#conditional-probability" title="Permalink to this heading">#</a></h2>
