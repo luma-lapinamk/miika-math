@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Rules of probability &#8212; Maths in English</title>
+    <title>Binomial distribution &#8212; Maths in English</title>
   
   
   
@@ -65,11 +65,11 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/rules_of_probability';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/binomial_distr';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Binomial distribution" href="binomial_distr.html" />
-    <link rel="prev" title="General definitions of probability" href="definitions_of_probability.html" />
+    <link rel="next" title="Index" href="../genindex.html" />
+    <link rel="prev" title="Rules of probability" href="rules_of_probability.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -224,8 +224,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="combinatorics.html">Combinatorics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basic_probability.html">Random phenomena</a></li>
 <li class="toctree-l1"><a class="reference internal" href="definitions_of_probability.html">General definitions of probability</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Rules of probability</a></li>
-<li class="toctree-l1"><a class="reference internal" href="binomial_distr.html">Binomial distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rules_of_probability.html">Rules of probability</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Binomial distribution</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul class="nav bd-sidenav">
@@ -299,7 +299,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/notebooks/rules_of_probability.md" target="_blank"
+      <li><a href="../_sources/notebooks/binomial_distr.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -370,9 +370,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -383,25 +381,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Rules of probability</h1>
+    <h1>Binomial distribution</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-rule">Addition rule</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-rule">Complement rule</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-probability">Conditional probability</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-multiplication-rule">General multiplication rule</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#law-of-total-probability">Law of Total Probability</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bayes-theorem">Bayes’ theorem</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chain-rule">Chain rule</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -411,103 +395,41 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="rules-of-probability">
-<h1><span class="target" id="index-0"></span>Rules of probability<a class="headerlink" href="#rules-of-probability" title="Permalink to this heading">#</a></h1>
-<p>For starters…</p>
-<p>Since the examples below deal with a standard 52-deck of cards, the four suits are spades, hearts, clubs and diamonds, as seen in the figure below. Each suit includes 13 ranks: ten numeral cards (1 = Ace, 2, 3, …, 10) and three face cards (King, Queen and Jack). Depending on a game, the ace can also have the rank of 14.</p>
-<p><a href="https://commons.wikimedia.org/wiki/File:Piatnikcards.jpg#/media/File:Piatnikcards.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Piatnikcards.jpg" alt="Piatnikcards.jpg" height="360" width="770"></a><br><a href="https://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=7104281">Link</a></p>
-<p>Basic rules of probability are <strong>Addition rule</strong> and <strong>Complement rule</strong>.</p>
-<section id="addition-rule">
-<h2><span class="target" id="index-1"></span>Addition rule<a class="headerlink" href="#addition-rule" title="Permalink to this heading">#</a></h2>
-<p>Depending on whether both events can occur at the same time, or does one event exclude the other, the addition rule can have two outcomes.</p>
-<p>When events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> cannot occur at the same time or they are mutually exclusive, the probabilites can be added together since the events are different cases.</p>
-<p><span class="math notranslate nohighlight">\(P(A \cup B)=P(A)+P(B)\)</span></p>
-<p><span class="math notranslate nohighlight">\(P(A \ \text{or} \ B)=P(A)+P(B)\)</span></p>
-<figure class="align-default" id="id1">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/addition_rule.png"><img alt="Addition rule" class="bg-primary mb-1 align-center" src="../_images/addition_rule.png" style="width: 400px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Separate elementary events are both counted since the other cannot happen if the other one does.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p><strong>Example.</strong> A random card is picked from the deck. What are the odds that the card is either spaces or diamonds?</p>
-<p><br></br></p>
-<p>When events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> can occur at the same time, or they have common elements, the same events would be counted twice. Therefore the union of <span class="math notranslate nohighlight">\(P(A)\)</span> and <span class="math notranslate nohighlight">\(P(B)\)</span> must be subtracted.</p>
-<p><span class="math notranslate nohighlight">\(P(A \cup B)=P(A)+P(B)-(P(A) \cap P(B))\)</span></p>
-<p><span class="math notranslate nohighlight">\(P(A \ \text{or} \ B)=P(A)+P(B)-(P(A) \ \text{and} \ P(B))\)</span></p>
-<figure class="align-default" id="addition-rule-conditional">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/addition_rule_conditional.png"><img alt="Common elementary events are counted twice" class="bg-primary mb-1 align-center" src="../_images/addition_rule_conditional.png" style="width: 300px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 21 </span><span class="caption-text">Common elementary events are counted twice unless they are subtracted.</span><a class="headerlink" href="#addition-rule-conditional" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p><strong>Example.</strong> A random card is picked from the deck. What are the odds that the card is spaces or a face card?</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">EXERCISE 1. Two dices</p>
-<p>In a board game, two six-sided dices are cast. The player wins a prize, if the faces of the dice are the same or the sum of the faces is 7 or 11. If the player doesn’t win the prize, the player can try once again. What is the probability that the player wins the prize?</p>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">EXERCISE 2. Oh no more balls!</p>
-<p>The are 7 red balls, 4 blue balls and 5 white balls in box. Two balls are randomly picked. What is the probability that the balls are red and white?</p>
-</div>
-<p><br></br></p>
-</section>
-<section id="complement-rule">
-<h2><span class="target" id="index-2"></span>Complement rule<a class="headerlink" href="#complement-rule" title="Permalink to this heading">#</a></h2>
-<p>Since an event <span class="math notranslate nohighlight">\(A\)</span> and its complementary event <span class="math notranslate nohighlight">\(\overline{A}\)</span> are separate and mutually exclusive events, based on the additivity of probabilities, we have that</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}P(A \cup \overline{A})&amp;=P(A)+P(\overline{A}) \\ \\
-1&amp;=P(A)+P(\overline{A}) \\ \\
-P(A)&amp;=1-P(\overline{A})\end{align}\)</span></p>
-<p>If you know the chance of something occurring, then you can easily find the chance of it not occurring by subtracting the probability of it happening from 1, as the sum of the probabilities of an event and its complement is always 1. The complement rule can be spesifically useful in cases, where the question is about “at least” or “no more than”.</p>
-<p><strong>Example.</strong> Three cards are picked from the deck. What are the odds that at least one card is a face card?</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">EXERCISE 3. Birthday on same weekday</p>
-<p>What is the probability that at least two persons of four are born on the same weekday?</p>
-</div>
-<p><br></br></p>
-</section>
-<section id="conditional-probability">
-<h2><span class="target" id="index-3"></span>Conditional probability<a class="headerlink" href="#conditional-probability" title="Permalink to this heading">#</a></h2>
-<p>The conditional probability is probability of event <span class="math notranslate nohighlight">\(A\)</span> happening given that event <span class="math notranslate nohighlight">\(B\)</span> has already occurred is denoted as <span class="math notranslate nohighlight">\(P(A|B)\)</span>. The conditional probability of event <span class="math notranslate nohighlight">\(A\)</span> given event <span class="math notranslate nohighlight">\(B\)</span> can be calculated using the formula</p>
-<p><span class="math notranslate nohighlight">\(P(A|B) = \frac{P(A \cap B)}{P(B)}\)</span>, where</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="binomial-distribution">
+<h1><span class="target" id="index-0"></span>Binomial distribution<a class="headerlink" href="#binomial-distribution" title="Permalink to this heading">#</a></h1>
+<p>The binomial distribution is a discrete probability distribution that describes the number of positive outcomes in a fixed number of independent events, where each event has the same probability of success. In other words, it models the number of positive outcomes, denoted by <span class="math notranslate nohighlight">\(k\)</span>, out of a fixed number of independent events (or experiments), denoted by <span class="math notranslate nohighlight">\(n\)</span>, where each experiment can result in either success or failure.</p>
+<p>Key characteristics of the binomial distribution include:</p>
+<blockquote>
+<div><p>-<strong>Binary Outcomes</strong>: Each event can result only in one of two outcomes: postivive or negative / success or failure / ture or false etc.
+-<strong>Independent Trials</strong>: The events are independent of each other, meaning the outcome of one event does not influence the outcome of another.
+-<strong>Constant Probability</strong>: The probability of success is constant for each event. In other words, the probability does not change between events.</p>
+</div></blockquote>
+<p>The probability of event <span class="math notranslate nohighlight">\(A\)</span> happening exactly <span class="math notranslate nohighlight">\(k\)</span> times out of <span class="math notranslate nohighlight">\(n\)</span> is given by the <strong>discrete probability density function</strong>, also knwon as the <strong>mass function of the binomial distribution</strong>, the <strong>PMF</strong>. The formula looks like</p>
+<p><span class="math notranslate nohighlight">\(P(A=k) = \binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}\)</span></p>
+<p>where</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(P(A|B)\)</span> is the conditional probability of event <span class="math notranslate nohighlight">\(A\)</span> given event <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(P(A \cap B)\)</span> is the probability of both events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> occurring simultaneously, the intersection of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(P(B)\)</span> is the probability of event <span class="math notranslate nohighlight">\(B\)</span> occurring.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\binom{n}{x}\)</span> is here called as the <strong>binomial coefficient</strong>, also known as the <strong>k-combinations of n</strong>, which represents the number of ways to choose <span class="math notranslate nohighlight">\(k\)</span> successes out of <span class="math notranslate nohighlight">\(n\)</span> events</p></li>
+<li><p><span class="math notranslate nohighlight">\(p\)</span> is the probability of success in each event</p></li>
+<li><p><span class="math notranslate nohighlight">\((1 - p\)</span> is the probability of failure in each trial, sometimes denoted by <span class="math notranslate nohighlight">\(q = (1 - p)\)</span> and</p></li>
+<li><p><span class="math notranslate nohighlight">\(n\)</span> is the total number of events.</p></li>
 </ul>
-<figure class="align-default" id="id2">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/addition_rule_conditional.png"><img alt="The intersection of A and B" class="bg-primary mb-1 align-center" src="../_images/addition_rule_conditional.png" style="width: 300px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 22 </span><span class="caption-text">The intersection of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>The idea behind conditional probability is that the probability of event A happening can change depending on whether event B has already occurred. It’s like updating the knowledge or information about the situation.</p>
-<p><strong>Example.</strong> A hand of cards is two red aces, two black fives and a three of hearts. The three is given away and one card is taken from the deck. What it the probability that the card is an ace?</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">EXERCISE 4. One card drawn from the deck, when…</p>
-<p>One card is drawn from the deck. What are the odds that the card is a two of spades, when</p>
-<p>a) four cards are alreday drawn from the deck?</p>
-<p>b) the ace of spades id already drawn and the card drawn is black?</p>
-</div>
-</section>
-<section id="general-multiplication-rule">
-<h2><span class="target" id="index-4"></span>General multiplication rule<a class="headerlink" href="#general-multiplication-rule" title="Permalink to this heading">#</a></h2>
-<p>From the formula of conditional probability we can write the <strong>general multiplication rule</strong> as:</p>
-<p><span class="math notranslate nohighlight">\(P(A \cap B) = P(A|B) \cdot {P(B)}\)</span></p>
-<p><strong>Example.</strong> Nostetaan korttipakasta kaksi korttia. Millä todennäköisyydellä molemmat kortit ovat ässiä?</p>
-<p>Korttipakassa on 52 korttia, joista 4 on ässiä. Kun ensimmäinen ässä on nostettu, korttipakassa on 51 korttia, joista 3 on ässiä. Lasketaan todennäköisyys sille, että molemmat kortit ovat ässiä.</p>
-<p>P(molemmat kortit ovat ässiä)
-= P(ensimmäinen kortti on ässä JA toinen kortti on ässä)
-= P(ensimmäinen kortti on ässä) · P(toinen kortti on ässä)</p>
-</section>
-<section id="law-of-total-probability">
-<h2><span class="target" id="index-5"></span>Law of Total Probability<a class="headerlink" href="#law-of-total-probability" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="bayes-theorem">
-<h2><span class="target" id="index-6"></span>Bayes’ theorem<a class="headerlink" href="#bayes-theorem" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="chain-rule">
-<h2><span class="target" id="index-7"></span>Chain rule<a class="headerlink" href="#chain-rule" title="Permalink to this heading">#</a></h2>
-</section>
+<p>So the formula can be interpretated kind of as the product of <span class="math notranslate nohighlight">\(\text{combinations} \times \text{successes} \times \text{failures}\)</span>.</p>
+<p><strong>Example.</strong> What is the probability of getting two times the value of 6 out of six casts?</p>
+<p>Here <span class="math notranslate nohighlight">\(k=2\)</span>, <span class="math notranslate nohighlight">\(n=6\)</span> and <span class="math notranslate nohighlight">\(p=\frac{1}{6}\)</span>. Let’s substitute this in the discrete probability density function.</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}P(A=2) &amp;= \binom{6}{2} \cdot (\frac{1}{6})^2 \cdot (1 - \frac{1}{6})^{6 - 2} \\ \\
+&amp;= 15 \cdot \frac{1}{36} \cdot \frac{625}{1296} \\ \\
+&amp;= \frac{3125}{15552} \\ \\
+&amp;= 0.200 \ldots \end{align}\)</span></p>
+<p>The <strong>mean</strong> of the binomial distribution is given by</p>
+<p><span class="math notranslate nohighlight">\(\text{mean} = np\)</span>, where</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(n\)</span> is the total number of events and</p></li>
+<li><p><span class="math notranslate nohighlight">\(p\)</span> is the probability of success in each event.</p></li>
+</ul>
+<p>So, the product <span class="math notranslate nohighlight">\(np\)</span> gives us the expected number of successes (or positive outcomes) in <span class="math notranslate nohighlight">\(n\)</span> events.</p>
+<p>The <strong>variance</strong> of the binomial distribution is given by</p>
+<p><span class="math notranslate nohighlight">\(\text{variance} = np(1 - p)\)</span></p>
+<p>Variance describes how much the values vary from the mean, so it gives the spread of the distribution. If <span class="math notranslate nohighlight">\(p\)</span> is close to 0 or 1, meaning the probability of success or failure is very low or very high, the variance tends to be smaller. If <span class="math notranslate nohighlight">\(p\)</span> is closer to 0.5, indicating a more balanced probability of success and failure, the variance tends to be larger.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -541,20 +463,20 @@ P(A)&amp;=1-P(\overline{A})\end{align}\)</span></p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="definitions_of_probability.html"
+       href="rules_of_probability.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">General definitions of probability</p>
+        <p class="prev-next-title">Rules of probability</p>
       </div>
     </a>
     <a class="right-next"
-       href="binomial_distr.html"
+       href="../genindex.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Binomial distribution</p>
+        <p class="prev-next-title">Index</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -565,26 +487,7 @@ P(A)&amp;=1-P(\overline{A})\end{align}\)</span></p>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-rule">Addition rule</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-rule">Complement rule</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-probability">Conditional probability</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-multiplication-rule">General multiplication rule</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#law-of-total-probability">Law of Total Probability</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bayes-theorem">Bayes’ theorem</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chain-rule">Chain rule</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
+                <div class="bd-sidebar-secondary bd-toc"></div>
               
             
           </div>
