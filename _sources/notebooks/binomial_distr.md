@@ -21,14 +21,28 @@ $P(A=k) = \binom{n}{k} p^k (1 - p)^{n - k}$, where
 So the formula can be interpretated kind of as the product of $\text{combinations} \times \text{successes} \times \text{failures}$.
 <br></br>
 
-**Example.** What is the probability of getting two times the value of 6 out of six casts?
+**Example.** Let's cast a normal dice six times. What is the probability of getting two sixes?
 
 Here $k=2$, $n=6$ and $p=\frac{1}{6}$. Let's substitute this in the discrete probability density function.
 
 $\begin{align}P(A=2) &= \binom{6}{2} \cdot (\frac{1}{6})^2 \cdot (1 - \frac{1}{6})^{6 - 2} \\ \\
+&= \binom{6}{2} \cdot (\frac{1}{6})^2 \cdot (\frac{5}{6})^4 \\ \\
 &= 15 \cdot \frac{1}{36} \cdot \frac{625}{1296} \\ \\
 &= \frac{3125}{15552} \\ \\
 &= 0.200 \ldots \end{align}$
+
+Looking at the values we can say that there are 15 different ways (combinations) of getting two sixes, one sixth of a change of getting a six on a cast and five sixth of a change of not getting a six.
+<br></br>
+
+**Example.** Let's cast a normal dice six times. What is the probability of getting at least two sixes?
+
+So the favourable events are getting two, three, four, five or six times sixes. We could count these separately and by the addition rule, add them together. However, it would more efficient to use the complement. The complement of 'at least two sixes' is 'no sixes or one six'. So we can write
+
+$\begin{align}P(\text{at least two sixes}) &= P(\text{zero or one sixes}) \\ \\
+&= 1 - (\binom{6}{0} \cdot (\frac{1}{6})^0 \cdot (1 - \frac{1}{6})^{6 - 0} + \binom{6}{1} \cdot (\frac{1}{6})^1 \cdot (1 - \frac{1}{6})^{6 - 1})\\ \\
+&= 1 - (1 \cdot 1 \cdot (\frac{5}{6})^6 + 6 \cdot \frac{1}{6} \cdot (\frac{5}{6})^5)\\ \\
+&= \frac{12281}{46656} \\ \\
+&= 0.263 \ldots \end{align}$
 <br></br>
 
 The **mean** of the binomial distribution is given by
