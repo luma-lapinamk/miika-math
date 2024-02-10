@@ -42,6 +42,7 @@ parts:
     - file: notebooks/basic_probability
     - file: notebooks/definitions_of_probability
     - file: notebooks/rules_of_probability
+    - file: notebooks/binomial_distr
   - caption: Appendix
     chapters:
     - file: genindex

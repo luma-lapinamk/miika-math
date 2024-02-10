@@ -86,7 +86,7 @@ The idea behind conditional probability is that the probability of event A happe
 
 **Example.** A hand of cards is two red aces, two black fives and a three of hearts. The three is given away and one card is taken from the deck. What it the probability that the card is an ace?
 
-:::{admonition} EXERCISE 4. One card drwan from the deck, when...
+:::{admonition} EXERCISE 4. One card drawn from the deck, when...
 :class: tip, dropdown
 One card is drawn from the deck. What are the odds that the card is a two of spades, when
 
