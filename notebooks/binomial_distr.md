@@ -53,6 +53,8 @@ $\text{mean} = np$, where
 - $p$ is the probability of success in each event.
 
 So, the product $np$ gives us the expected number of successes (or positive outcomes) in $n$ events.
+
+**Example.** How many times is is expected to get the number six out of six casts?
 <br></br>
 
 The **variance**, denoted by $\sigma^2$, of the binomial distribution is given by
@@ -60,6 +62,8 @@ The **variance**, denoted by $\sigma^2$, of the binomial distribution is given b
 $\sigma^2 = np(1 - p)$
 
 Variance describes how much the values vary from the mean, so it gives the spread of the distribution. If $p$ is close to 0 or 1, meaning the probability of success or failure is very low or very high, the variance tends to be smaller. If $p$ is closer to 0.5, indicating a more balanced probability of success and failure, the variance tends to be larger.
+
+**Example.** What is the variance for this case?
 <br></br>
 
 The **standard deviation**, denoted by $\sigma$, is another important measure of spread or dispersion. 
