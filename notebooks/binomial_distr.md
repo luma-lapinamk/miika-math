@@ -43,6 +43,11 @@ $\begin{align}P(\text{at least two sixes}) &= P(\text{zero or one sixes}) \\ \\
 &= 1 - (1 \cdot 1 \cdot (\frac{5}{6})^6 + 6 \cdot \frac{1}{6} \cdot (\frac{5}{6})^5)\\ \\
 &= \frac{12281}{46656} \\ \\
 &= 0.263 \ldots \end{align}$
+
+:::{admonition} EXERCISE 1. More rolls of the dice
+:class: tip, dropdown
+How does the change is getting two sixes change if we have less rolls of the dice? Give an example.
+:::
 <br></br>
 
 The **mean** of the binomial distribution is given by
