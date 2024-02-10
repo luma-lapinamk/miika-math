@@ -41,8 +41,17 @@ $\text{mean} = np$, where
 So, the product $np$ gives us the expected number of successes (or positive outcomes) in $n$ events.
 <br></br>
 
-The **variance** of the binomial distribution is given by
+The **variance**, denoted by $\sigma^2$, of the binomial distribution is given by
 
 $\sigma^2 = np(1 - p)$
 
 Variance describes how much the values vary from the mean, so it gives the spread of the distribution. If $p$ is close to 0 or 1, meaning the probability of success or failure is very low or very high, the variance tends to be smaller. If $p$ is closer to 0.5, indicating a more balanced probability of success and failure, the variance tends to be larger.
+<br></br>
+
+The **standard deviation**, denoted by $\sigma$, is another important measure of spread or dispersion. 
+
+For the binomial distribution, the standard deviation is the square root of the variance.
+
+$\sigma = \sqrt{np(1-p)}$
+
+The standard deviation measures the average distance of the data points from the mean. It tells us how much individual data points in the distribution typically deviate from the mean. A larger standard deviation indicates greater variability in the data, while a smaller standard deviation indicates less variability.
