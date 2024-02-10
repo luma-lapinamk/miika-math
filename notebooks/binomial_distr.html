@@ -398,28 +398,31 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="binomial-distribution">
 <h1><span class="target" id="index-0"></span>Binomial distribution<a class="headerlink" href="#binomial-distribution" title="Permalink to this heading">#</a></h1>
 <p>The binomial distribution is a discrete probability distribution that describes the number of positive outcomes in a fixed number of independent events, where each event has the same probability of success. In other words, it models the number of positive outcomes, denoted by <span class="math notranslate nohighlight">\(k\)</span>, out of a fixed number of independent events (or experiments), denoted by <span class="math notranslate nohighlight">\(n\)</span>, where each experiment can result in either success or failure.</p>
-<p>Key characteristics of the binomial distribution include:</p>
 <blockquote>
-<div><p>-<strong>Binary Outcomes</strong>: Each event can result only in one of two outcomes: postivive or negative / success or failure / ture or false etc.
--<strong>Independent Trials</strong>: The events are independent of each other, meaning the outcome of one event does not influence the outcome of another.
--<strong>Constant Probability</strong>: The probability of success is constant for each event. In other words, the probability does not change between events.</p>
+<div><p>Key characteristics of the binomial distribution include:</p>
+<ul class="simple">
+<li><p><strong>Binary Outcomes</strong>: Each event can result only in one of two outcomes: postivive or negative / success or failure / ture or false etc.</p></li>
+<li><p><strong>Independent Trials</strong>: The events are independent of each other, meaning the outcome of one event does not influence the outcome of another.</p></li>
+<li><p><strong>Constant Probability</strong>: The probability of success is constant for each event. In other words, the probability does not change between events.</p></li>
+</ul>
 </div></blockquote>
 <p>The probability of event <span class="math notranslate nohighlight">\(A\)</span> happening exactly <span class="math notranslate nohighlight">\(k\)</span> times out of <span class="math notranslate nohighlight">\(n\)</span> is given by the <strong>discrete probability density function</strong>, also knwon as the <strong>mass function of the binomial distribution</strong>, the <strong>PMF</strong>. The formula looks like</p>
-<p><span class="math notranslate nohighlight">\(P(A=k) = \binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}\)</span></p>
-<p>where</p>
+<p><span class="math notranslate nohighlight">\(P(A=k) = \binom{n}{k} p^k (1 - p)^{n - k}\)</span>, where</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\binom{n}{x}\)</span> is here called as the <strong>binomial coefficient</strong>, also known as the <strong>k-combinations of n</strong>, which represents the number of ways to choose <span class="math notranslate nohighlight">\(k\)</span> successes out of <span class="math notranslate nohighlight">\(n\)</span> events</p></li>
 <li><p><span class="math notranslate nohighlight">\(p\)</span> is the probability of success in each event</p></li>
 <li><p><span class="math notranslate nohighlight">\((1 - p\)</span> is the probability of failure in each trial, sometimes denoted by <span class="math notranslate nohighlight">\(q = (1 - p)\)</span> and</p></li>
 <li><p><span class="math notranslate nohighlight">\(n\)</span> is the total number of events.</p></li>
 </ul>
-<p>So the formula can be interpretated kind of as the product of <span class="math notranslate nohighlight">\(\text{combinations} \times \text{successes} \times \text{failures}\)</span>.</p>
+<p>So the formula can be interpretated kind of as the product of <span class="math notranslate nohighlight">\(\text{combinations} \times \text{successes} \times \text{failures}\)</span>.
+<br>&lt;\br&gt;</p>
 <p><strong>Example.</strong> What is the probability of getting two times the value of 6 out of six casts?</p>
 <p>Here <span class="math notranslate nohighlight">\(k=2\)</span>, <span class="math notranslate nohighlight">\(n=6\)</span> and <span class="math notranslate nohighlight">\(p=\frac{1}{6}\)</span>. Let’s substitute this in the discrete probability density function.</p>
 <p><span class="math notranslate nohighlight">\(\begin{align}P(A=2) &amp;= \binom{6}{2} \cdot (\frac{1}{6})^2 \cdot (1 - \frac{1}{6})^{6 - 2} \\ \\
 &amp;= 15 \cdot \frac{1}{36} \cdot \frac{625}{1296} \\ \\
 &amp;= \frac{3125}{15552} \\ \\
-&amp;= 0.200 \ldots \end{align}\)</span></p>
+&amp;= 0.200 \ldots \end{align}\)</span>
+<br>&lt;\br&gt;</p>
 <p>The <strong>mean</strong> of the binomial distribution is given by</p>
 <p><span class="math notranslate nohighlight">\(\text{mean} = np\)</span>, where</p>
 <ul class="simple">
@@ -428,7 +431,7 @@ document.write(`
 </ul>
 <p>So, the product <span class="math notranslate nohighlight">\(np\)</span> gives us the expected number of successes (or positive outcomes) in <span class="math notranslate nohighlight">\(n\)</span> events.</p>
 <p>The <strong>variance</strong> of the binomial distribution is given by</p>
-<p><span class="math notranslate nohighlight">\(\text{variance} = np(1 - p)\)</span></p>
+<p><span class="math notranslate nohighlight">\(\omega^2 = np(1 - p)\)</span></p>
 <p>Variance describes how much the values vary from the mean, so it gives the spread of the distribution. If <span class="math notranslate nohighlight">\(p\)</span> is close to 0 or 1, meaning the probability of success or failure is very low or very high, the variance tends to be smaller. If <span class="math notranslate nohighlight">\(p\)</span> is closer to 0.5, indicating a more balanced probability of success and failure, the variance tends to be larger.</p>
 </section>
 
