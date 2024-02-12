@@ -60,6 +60,47 @@ b) What is the probability that he makes at most 7 of them?
 :::
 <br></br>
 
+Binomial distribution can be plotted and the result can be seen from the graph.
+
+:::{admonition} Code for plotting the binomial distribution
+:class: note, dropdown
+> import numpy as np
+> 
+> import matplotlib.pyplot as plt
+> 
+> from scipy.stats import binom
+> 
+> Define parameters for the binomial distribution
+> 
+> n = 16  # Number of events
+> 
+> p = 0.9  # Probability of success
+> 
+> Generate x values (number of successes)
+> 
+> x_values = np.arange(0, n+1)
+> 
+> Calculate the probability mass function (PMF) for each x value
+> 
+> pmf_values = binom.pmf(x_values, n, p)
+> 
+> Plot the binomial distribution
+> 
+> plt.bar(x_values, pmf_values, color='skyblue')
+> 
+> plt.title('Binomial Distribution, when n={} and p={}'.format(n, p))
+> 
+> plt.xlabel('Number of Successes')
+> 
+> plt.ylabel('Probability')
+> 
+> plt.xticks(x_values)
+> 
+> plt.grid(axis='y', linestyle='--', alpha=0.7)
+> 
+> plt.show()
+:::
+
 The **mean** of the binomial distribution is given by
 
 $\text{mean} = np$, where
