@@ -50,6 +50,16 @@ How does the change is getting two sixes change if we have less rolls of the dic
 :::
 <br></br>
 
+:::{admonition} EXERCISE 2. Basketball
+:class: tip, dropdown
+Lauri Markkanen, a Finnish basketball player for Utah Jazz, has a free throw shooting percentage of 88.4 % in season 2023-2024. (source: <a href="https://www.nba.com/stats/player/1628374" target="_blank">NBA stats</a>).
+
+a) In a game, he attempts 10 free throws. What is the probability that he makes exactly 8 of them?
+
+b) What is the probability that he makes at most 7 of them?
+:::
+<br></br>
+
 The **mean** of the binomial distribution is given by
 
 $\text{mean} = np$, where
@@ -61,6 +71,15 @@ So, the product $np$ gives us the expected number of successes (or positive outc
 
 **Example.** How many times is is expected to get the number six out of six casts?
 <br></br>
+
+:::{admonition} EXERCISE 3. Multiple-choice test
+:class: tip, dropdown
+In a multiple-choice test, each question has 4 options, of which only one is correct. To pass a test, a student must gain at least one third of the questions correct.
+
+a) If a student guesses the answer to each question, what is the probability that the student passes a test of 16 questions?
+
+b) What is the expected number of correct answers when quessing?
+:::
 
 The **variance**, denoted by $\sigma^2$, of the binomial distribution is given by
 
