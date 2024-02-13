@@ -128,6 +128,7 @@ b) What is the expected number of correct answers when quessing?
 
 c) Calculate the variance.
 :::
+<br></br>
 
 The **standard deviation**, denoted by $\sigma$, is another important measure of spread or dispersion. 
 
@@ -138,8 +139,8 @@ $\sigma = \sqrt{np(1-p)}$
 The standard deviation measures the average distance of the data points from the mean. It tells us how much individual data points in the distribution typically deviate from the mean. A larger standard deviation indicates greater variability in the data, while a smaller standard deviation indicates less variability.
 <br></br>
 
-**Note!** When the probability varies across repetitions, the mean (the expected value) is determined by considering all possible values of the random variable, denoted as $x_i$. Each value is multiplied by its respective probability, $p_i$, and the products are then summed together.
-
-$\text{mean} = \sum_i^{}p_ix_i$
-
-$\text{variance} = \sum_i^{}p_i(x_i-\text{mean})^2$
+> **Note!** When the probability varies across repetitions, the mean (the expected value) is determined by considering all possible values of the random variable, denoted as $x_i$. Each value is multiplied by its respective probability, $p_i$, and the products are then summed together.
+>
+> $\text{mean} = \sum_i^{}p_ix_i$
+>
+> $\text{variance} = \sum_i^{}p_i(x_i-\text{mean})^2$
