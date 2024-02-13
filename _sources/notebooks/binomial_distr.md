@@ -21,7 +21,7 @@ $P(A=k) = \binom{n}{k} p^k (1 - p)^{n - k}$, where
 So the formula can be interpretated kind of as the product of $\text{combinations} \times \text{successes} \times \text{failures}$.
 <br></br>
 
-**Example.** Let's cast a normal dice six times. What is the probability of getting two sixes?
+**Example.** Let's cast a normal dice six times. What is the probability of getting exactly two sixes?
 
 Here $k=2$, $n=6$ and $p=\frac{1}{6}$. Let's substitute this in the discrete probability density function.
 
@@ -32,23 +32,35 @@ $\begin{align}P(A=2) &= \binom{6}{2} \cdot (\frac{1}{6})^2 \cdot (1 - \frac{1}{6
 &= 0.200 \ldots \end{align}$
 
 Looking at the values we can say that there are 15 different ways (combinations) of getting two sixes, one sixth of a change of getting a six on a cast and five sixth of a change of not getting a six.
+
+```{figure-md} bin_distr_example1
+<img src="../images/probstat/bin_distr_example1.png" alt="Binomial distribution of six dice casts" class="bg-primary mb-1" width="600px" align="center">
+
+Binomial distribution of casting a dice six times - what is the probability of getting exactly two sixes
+```
 <br></br>
 
 **Example.** Let's cast a normal dice six times. What is the probability of getting at least two sixes?
 
 So the favourable events are getting two, three, four, five or six times sixes. We could count these separately and by the addition rule, add them together. However, it would more efficient to use the complement. The complement of 'at least two sixes' is 'no sixes or one six'. So we can write
 
-$\begin{align}P(\text{at least two sixes}) &= P(\text{zero or one sixes}) \\ \\
+$\begin{align}P(\text{at least two sixes}) &= 1 - P(\text{zero or one sixes}) \\ \\
 &= 1 - (\binom{6}{0} \cdot (\frac{1}{6})^0 \cdot (1 - \frac{1}{6})^{6 - 0} + \binom{6}{1} \cdot (\frac{1}{6})^1 \cdot (1 - \frac{1}{6})^{6 - 1})\\ \\
 &= 1 - (1 \cdot 1 \cdot (\frac{5}{6})^6 + 6 \cdot \frac{1}{6} \cdot (\frac{5}{6})^5)\\ \\
 &= \frac{12281}{46656} \\ \\
 &= 0.263 \ldots \end{align}$
 
+```{figure-md} bin_distr_example2
+<img src="../images/probstat/bin_distr_example2.png" alt="Binomial distribution of six dice casts #2" class="bg-primary mb-1" width="600px" align="center">
+
+Binomial distribution of casting a dice six times - what is the probability of getting at least two sixes
+```
+<br></br>
+
 :::{admonition} EXERCISE 1. More rolls of the dice
 :class: tip, dropdown
 How does the change is getting two sixes change if we have less rolls of the dice? Give an example.
 :::
-<br></br>
 
 :::{admonition} EXERCISE 2. Basketball
 :class: tip, dropdown
@@ -58,48 +70,18 @@ a) In a game, he attempts 10 free throws. What is the probability that he makes 
 
 b) What is the probability that he makes at most 7 of them?
 :::
-<br></br>
 
 Binomial distribution can be plotted and the result can be seen from the graph.
 
 :::{admonition} Code for plotting the binomial distribution
 :class: note, dropdown
-> import numpy as np
-> 
-> import matplotlib.pyplot as plt
-> 
-> from scipy.stats import binom
-> 
-> Define parameters for the binomial distribution
-> 
-> n = 16  # Number of events
-> 
-> p = 0.9  # Probability of success
-> 
-> Generate x values (number of successes)
-> 
-> x_values = np.arange(0, n+1)
-> 
-> Calculate the probability mass function (PMF) for each x value
-> 
-> pmf_values = binom.pmf(x_values, n, p)
-> 
-> Plot the binomial distribution
-> 
-> plt.bar(x_values, pmf_values, color='skyblue')
-> 
-> plt.title('Binomial Distribution, when n={} and p={}'.format(n, p))
-> 
-> plt.xlabel('Number of Successes')
-> 
-> plt.ylabel('Probability')
-> 
-> plt.xticks(x_values)
-> 
-> plt.grid(axis='y', linestyle='--', alpha=0.7)
-> 
-> plt.show()
+```{figure-md} bin_distr_Python
+<img src="../images/probstat/bin_distr_Python.png" alt="Code for plotting a binomial distribution" class="bg-primary mb-1" width="600px" align="center">
+
+Code for plotting a binomial distribution
+```
 :::
+<br></br>
 
 The **mean** of the binomial distribution is given by
 

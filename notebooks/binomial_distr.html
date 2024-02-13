@@ -416,58 +416,56 @@ document.write(`
 </ul>
 <p>So the formula can be interpretated kind of as the product of <span class="math notranslate nohighlight">\(\text{combinations} \times \text{successes} \times \text{failures}\)</span>.
 <br></br></p>
-<p><strong>Example.</strong> Let’s cast a normal dice six times. What is the probability of getting two sixes?</p>
+<p><strong>Example.</strong> Let’s cast a normal dice six times. What is the probability of getting exactly two sixes?</p>
 <p>Here <span class="math notranslate nohighlight">\(k=2\)</span>, <span class="math notranslate nohighlight">\(n=6\)</span> and <span class="math notranslate nohighlight">\(p=\frac{1}{6}\)</span>. Let’s substitute this in the discrete probability density function.</p>
 <p><span class="math notranslate nohighlight">\(\begin{align}P(A=2) &amp;= \binom{6}{2} \cdot (\frac{1}{6})^2 \cdot (1 - \frac{1}{6})^{6 - 2} \\ \\
 &amp;= \binom{6}{2} \cdot (\frac{1}{6})^2 \cdot (\frac{5}{6})^4 \\ \\
 &amp;= 15 \cdot \frac{1}{36} \cdot \frac{625}{1296} \\ \\
 &amp;= \frac{3125}{15552} \\ \\
 &amp;= 0.200 \ldots \end{align}\)</span></p>
-<p>Looking at the values we can say that there are 15 different ways (combinations) of getting two sixes, one sixth of a change of getting a six on a cast and five sixth of a change of not getting a six.
-<br></br></p>
+<p>Looking at the values we can say that there are 15 different ways (combinations) of getting two sixes, one sixth of a change of getting a six on a cast and five sixth of a change of not getting a six.</p>
+<figure class="align-default" id="bin-distr-example1">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/bin_distr_example1.png"><img alt="Binomial distribution of six dice casts" class="bg-primary mb-1 align-center" src="../_images/bin_distr_example1.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Binomial distribution of casting a dice six times - what is the probability of getting exactly two sixes</span><a class="headerlink" href="#bin-distr-example1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><br></br></p>
 <p><strong>Example.</strong> Let’s cast a normal dice six times. What is the probability of getting at least two sixes?</p>
 <p>So the favourable events are getting two, three, four, five or six times sixes. We could count these separately and by the addition rule, add them together. However, it would more efficient to use the complement. The complement of ‘at least two sixes’ is ‘no sixes or one six’. So we can write</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}P(\text{at least two sixes}) &amp;= P(\text{zero or one sixes}) \\ \\
+<p><span class="math notranslate nohighlight">\(\begin{align}P(\text{at least two sixes}) &amp;= 1 - P(\text{zero or one sixes}) \\ \\
 &amp;= 1 - (\binom{6}{0} \cdot (\frac{1}{6})^0 \cdot (1 - \frac{1}{6})^{6 - 0} + \binom{6}{1} \cdot (\frac{1}{6})^1 \cdot (1 - \frac{1}{6})^{6 - 1})\\ \\
 &amp;= 1 - (1 \cdot 1 \cdot (\frac{5}{6})^6 + 6 \cdot \frac{1}{6} \cdot (\frac{5}{6})^5)\\ \\
 &amp;= \frac{12281}{46656} \\ \\
 &amp;= 0.263 \ldots \end{align}\)</span></p>
+<figure class="align-default" id="bin-distr-example2">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/bin_distr_example2.png"><img alt="Binomial distribution of six dice casts" class="bg-primary mb-1 align-center" src="../_images/bin_distr_example2.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Binomial distribution of casting a dice six times - what is the probability of getting at least two sixes</span><a class="headerlink" href="#bin-distr-example2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><br></br></p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">EXERCISE 1. More rolls of the dice</p>
 <p>How does the change is getting two sixes change if we have less rolls of the dice? Give an example.</p>
 </div>
-<p><br></br></p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">EXERCISE 2. Basketball</p>
 <p>Lauri Markkanen, a Finnish basketball player for Utah Jazz, has a free throw shooting percentage of 88.4 % in season 2023-2024. (source: <a href="https://www.nba.com/stats/player/1628374" target="_blank">NBA stats</a>).</p>
 <p>a) In a game, he attempts 10 free throws. What is the probability that he makes exactly 8 of them?</p>
 <p>b) What is the probability that he makes at most 7 of them?</p>
 </div>
-<p><br></br></p>
 <p>Binomial distribution can be plotted and the result can be seen from the graph.</p>
 <div class="note dropdown admonition">
 <p class="admonition-title">Code for plotting the binomial distribution</p>
-<blockquote>
-<div><p>import numpy as np</p>
-<p>import matplotlib.pyplot as plt</p>
-<p>from scipy.stats import binom</p>
-<p>Define parameters for the binomial distribution</p>
-<p>n = 16  # Number of events</p>
-<p>p = 0.9  # Probability of success</p>
-<p>Generate x values (number of successes)</p>
-<p>x_values = np.arange(0, n+1)</p>
-<p>Calculate the probability mass function (PMF) for each x value</p>
-<p>pmf_values = binom.pmf(x_values, n, p)</p>
-<p>Plot the binomial distribution</p>
-<p>plt.bar(x_values, pmf_values, color=’skyblue’)</p>
-<p>plt.title(‘Binomial Distribution, when n={} and p={}’.format(n, p))</p>
-<p>plt.xlabel(‘Number of Successes’)</p>
-<p>plt.ylabel(‘Probability’)</p>
-<p>plt.xticks(x_values)</p>
-<p>plt.grid(axis=’y’, linestyle=’–’, alpha=0.7)</p>
-<p>plt.show()</p>
-</div></blockquote>
+<figure class="align-default" id="bin-distr-python">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/bin_distr_Python.png"><img alt="Code for plotting a binomial distribution" class="bg-primary mb-1 align-center" src="../_images/bin_distr_Python.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Code for plotting a binomial distribution</span><a class="headerlink" href="#bin-distr-python" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
+<p><br></br></p>
 <p>The <strong>mean</strong> of the binomial distribution is given by</p>
 <p><span class="math notranslate nohighlight">\(\text{mean} = np\)</span>, where</p>
 <ul class="simple">
