@@ -68,8 +68,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/binomial_distr';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Index" href="../genindex.html" />
-    <link rel="prev" title="Rules of probability" href="rules_of_probability.html" />
+    <link rel="next" title="Poisson distribution (missing)" href="Poisson_distr.html" />
+    <link rel="prev" title="Discrete probability distribution" href="discrete_distr.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -225,7 +225,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="basic_probability.html">Random phenomena</a></li>
 <li class="toctree-l1"><a class="reference internal" href="definitions_of_probability.html">General definitions of probability</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rules_of_probability.html">Rules of probability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discrete_distr.html">Discrete probability distribution</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Binomial distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Poisson_distr.html">Poisson distribution (missing)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul class="nav bd-sidenav">
@@ -411,7 +413,7 @@ document.write(`
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\binom{n}{x}\)</span> is here called as the <strong>binomial coefficient</strong>, also known as the <strong>k-combinations of n</strong>, which represents the number of ways to choose <span class="math notranslate nohighlight">\(k\)</span> successes out of <span class="math notranslate nohighlight">\(n\)</span> events</p></li>
 <li><p><span class="math notranslate nohighlight">\(p\)</span> is the probability of success in each event</p></li>
-<li><p><span class="math notranslate nohighlight">\((1 - p\)</span> is the probability of failure in each trial, sometimes denoted by <span class="math notranslate nohighlight">\(q = (1 - p)\)</span> and</p></li>
+<li><p><span class="math notranslate nohighlight">\((1 - p)\)</span> is the probability of failure in each trial, sometimes denoted by <span class="math notranslate nohighlight">\(q = (1 - p)\)</span> and</p></li>
 <li><p><span class="math notranslate nohighlight">\(n\)</span> is the total number of events.</p></li>
 </ul>
 <p>So the formula can be interpretated kind of as the product of <span class="math notranslate nohighlight">\(\text{combinations} \times \text{successes} \times \text{failures}\)</span>.
@@ -500,13 +502,7 @@ document.write(`
 <p>The <strong>standard deviation</strong>, denoted by <span class="math notranslate nohighlight">\(\sigma\)</span>, is another important measure of spread or dispersion.</p>
 <p>For the binomial distribution, the standard deviation is the square root of the variance.</p>
 <p><span class="math notranslate nohighlight">\(\sigma = \sqrt{np(1-p)}\)</span></p>
-<p>The standard deviation measures the average distance of the data points from the mean. It tells us how much individual data points in the distribution typically deviate from the mean. A larger standard deviation indicates greater variability in the data, while a smaller standard deviation indicates less variability.
-<br></br></p>
-<blockquote>
-<div><p><strong>Note!</strong> When the probability varies across repetitions, the mean (the expected value) is determined by considering all possible values of the random variable, denoted as <span class="math notranslate nohighlight">\(x_i\)</span>. Each value is multiplied by its respective probability, <span class="math notranslate nohighlight">\(p_i\)</span>, and the products are then summed together.</p>
-<p><span class="math notranslate nohighlight">\(\text{mean} = \sum_i^{}p_ix_i\)</span></p>
-<p><span class="math notranslate nohighlight">\(\text{variance} = \sum_i^{}p_i(x_i-\text{mean})^2\)</span></p>
-</div></blockquote>
+<p>The standard deviation measures the average distance of the data points from the mean. It tells us how much individual data points in the distribution typically deviate from the mean. A larger standard deviation indicates greater variability in the data (a broader distribution), while a smaller standard deviation indicates less variability (a narrow distribution).</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -540,20 +536,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rules_of_probability.html"
+       href="discrete_distr.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Rules of probability</p>
+        <p class="prev-next-title">Discrete probability distribution</p>
       </div>
     </a>
     <a class="right-next"
-       href="../genindex.html"
+       href="Poisson_distr.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Index</p>
+        <p class="prev-next-title">Poisson distribution (missing)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
