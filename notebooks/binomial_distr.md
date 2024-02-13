@@ -21,7 +21,7 @@ $P(A=k) = \binom{n}{k} p^k (1 - p)^{n - k}$, where
 So the formula can be interpretated kind of as the product of $\text{combinations} \times \text{successes} \times \text{failures}$.
 <br></br>
 
-**Example.** Let's cast a normal dice six times. What is the probability of getting two sixes?
+**Example.** Let's cast a normal dice six times. What is the probability of getting exactly two sixes?
 
 Here $k=2$, $n=6$ and $p=\frac{1}{6}$. Let's substitute this in the discrete probability density function.
 
@@ -32,23 +32,37 @@ $\begin{align}P(A=2) &= \binom{6}{2} \cdot (\frac{1}{6})^2 \cdot (1 - \frac{1}{6
 &= 0.200 \ldots \end{align}$
 
 Looking at the values we can say that there are 15 different ways (combinations) of getting two sixes, one sixth of a change of getting a six on a cast and five sixth of a change of not getting a six.
+
+```{figure-md} bin_distr_example1
+<img src="../images/probstat/bin_distr_example1.png" alt="Binomial distribution of six dice casts" class="bg-primary mb-1" width="600px" align="center">
+
+Binomial distribution of casting a dice six times - what is the probability of getting exactly two sixes
+```
 <br></br>
 
 **Example.** Let's cast a normal dice six times. What is the probability of getting at least two sixes?
 
-So the favourable events are getting two, three, four, five or six times sixes. We could count these separately and by the addition rule, add them together. However, it would more efficient to use the complement. The complement of 'at least two sixes' is 'no sixes or one six'. So we can write
+So the favourable events are getting two, three, four, five or six times sixes. We could count these separately and by the addition rule, add them together.
 
-$\begin{align}P(\text{at least two sixes}) &= P(\text{zero or one sixes}) \\ \\
+```{figure-md} bin_distr_example2
+<img src="../images/probstat/bin_distr_example2.png" alt="Binomial distribution of six dice casts #2" class="bg-primary mb-1" width="600px" align="center">
+
+Binomial distribution of casting a dice six times - what is the probability of getting at least two sixes
+```
+
+However, it would more efficient to use the complement. The complement of 'at least two sixes' is 'no sixes or one six'. So we can write
+
+$\begin{align}P(\text{at least two sixes}) &= 1 - P(\text{zero or one sixes}) \\ \\
 &= 1 - (\binom{6}{0} \cdot (\frac{1}{6})^0 \cdot (1 - \frac{1}{6})^{6 - 0} + \binom{6}{1} \cdot (\frac{1}{6})^1 \cdot (1 - \frac{1}{6})^{6 - 1})\\ \\
 &= 1 - (1 \cdot 1 \cdot (\frac{5}{6})^6 + 6 \cdot \frac{1}{6} \cdot (\frac{5}{6})^5)\\ \\
 &= \frac{12281}{46656} \\ \\
 &= 0.263 \ldots \end{align}$
+<br></br>
 
 :::{admonition} EXERCISE 1. More rolls of the dice
 :class: tip, dropdown
-How does the change is getting two sixes change if we have less rolls of the dice? Give an example.
+How does the change is getting two sixes change if we have less rolls of the dice? Think about the outcome first and then give an example.
 :::
-<br></br>
 
 :::{admonition} EXERCISE 2. Basketball
 :class: tip, dropdown
@@ -58,48 +72,18 @@ a) In a game, he attempts 10 free throws. What is the probability that he makes 
 
 b) What is the probability that he makes at most 7 of them?
 :::
-<br></br>
 
 Binomial distribution can be plotted and the result can be seen from the graph.
 
 :::{admonition} Code for plotting the binomial distribution
 :class: note, dropdown
-> import numpy as np
-> 
-> import matplotlib.pyplot as plt
-> 
-> from scipy.stats import binom
-> 
-> Define parameters for the binomial distribution
-> 
-> n = 16  # Number of events
-> 
-> p = 0.9  # Probability of success
-> 
-> Generate x values (number of successes)
-> 
-> x_values = np.arange(0, n+1)
-> 
-> Calculate the probability mass function (PMF) for each x value
-> 
-> pmf_values = binom.pmf(x_values, n, p)
-> 
-> Plot the binomial distribution
-> 
-> plt.bar(x_values, pmf_values, color='skyblue')
-> 
-> plt.title('Binomial Distribution, when n={} and p={}'.format(n, p))
-> 
-> plt.xlabel('Number of Successes')
-> 
-> plt.ylabel('Probability')
-> 
-> plt.xticks(x_values)
-> 
-> plt.grid(axis='y', linestyle='--', alpha=0.7)
-> 
-> plt.show()
+```{figure-md} bin_distr_Python
+<img src="../images/probstat/bin_distr_Python.png" alt="Code for plotting a binomial distribution" class="bg-primary mb-1" width="600px" align="center">
+
+Code for plotting a binomial distribution
+```
 :::
+<br></br>
 
 The **mean** of the binomial distribution is given by
 
@@ -109,8 +93,29 @@ $\text{mean} = np$, where
 - $p$ is the probability of success in each event.
 
 So, the product $np$ gives us the expected number of successes (or positive outcomes) in $n$ events.
+<br></br>
 
 **Example.** How many times is is expected to get the number six out of six casts?
+
+When $n=6$ and $p=\frac{1}{6}$, we get
+
+$\begin{align}\text{mean} &= np \\ \\
+&=6 \cdot \frac{1}{6} = 1 \end{align}$
+<br></br>
+
+The **variance**, denoted by $\sigma^2$, of the binomial distribution is given by
+
+$\sigma^2 = np(1 - p)$
+
+Variance describes how much the values vary from the mean, so it gives us information about the spread of the distribution. If $p$ is close to 0 or 1, meaning the probability of success or failure is very low or very high, the variance tends to be smaller. If $p$ is closer to 0.5, indicating a more balanced probability of success and failure, the variance tends to be larger.
+<br></br>
+
+**Example.** What is the variance for this case?
+
+When $n=6$ and $p=\frac{1}{6}$, we get
+
+$\begin{align}\sigma^2 &= np(1 - p) \\ \\
+&=6 \cdot \frac{1}{6} \cdot (1 - \frac{1}{6}) = \frac{5}{6} \end{align}$
 <br></br>
 
 :::{admonition} EXERCISE 3. Multiple-choice test
@@ -120,15 +125,9 @@ In a multiple-choice test, each question has 4 options, of which only one is cor
 a) If a student guesses the answer to each question, what is the probability that the student passes a test of 16 questions?
 
 b) What is the expected number of correct answers when quessing?
+
+c) Calculate the variance.
 :::
-
-The **variance**, denoted by $\sigma^2$, of the binomial distribution is given by
-
-$\sigma^2 = np(1 - p)$
-
-Variance describes how much the values vary from the mean, so it gives the spread of the distribution. If $p$ is close to 0 or 1, meaning the probability of success or failure is very low or very high, the variance tends to be smaller. If $p$ is closer to 0.5, indicating a more balanced probability of success and failure, the variance tends to be larger.
-
-**Example.** What is the variance for this case?
 <br></br>
 
 The **standard deviation**, denoted by $\sigma$, is another important measure of spread or dispersion. 
@@ -140,8 +139,8 @@ $\sigma = \sqrt{np(1-p)}$
 The standard deviation measures the average distance of the data points from the mean. It tells us how much individual data points in the distribution typically deviate from the mean. A larger standard deviation indicates greater variability in the data, while a smaller standard deviation indicates less variability.
 <br></br>
 
-**Note!** When the probability varies across repetitions, the mean (the expected value) is determined by considering all possible values of the random variable, denoted as $x_i$. Each value is multiplied by its respective probability, $p_i$, and the products are then summed together.
-
-$\text{mean} = \sum_i^{}p_ix_i$
-
-$\text{variance} = \sum_i^{}p_i(x_i-\text{mean})^2$
+> **Note!** When the probability varies across repetitions, the mean (the expected value) is determined by considering all possible values of the random variable, denoted as $x_i$. Each value is multiplied by its respective probability, $p_i$, and the products are then summed together.
+>
+> $\text{mean} = \sum_i^{}p_ix_i$
+>
+> $\text{variance} = \sum_i^{}p_i(x_i-\text{mean})^2$
