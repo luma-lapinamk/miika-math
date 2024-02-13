@@ -432,22 +432,23 @@ document.write(`
 </figure>
 <p><br></br></p>
 <p><strong>Example.</strong> Let’s cast a normal dice six times. What is the probability of getting at least two sixes?</p>
-<p>So the favourable events are getting two, three, four, five or six times sixes. We could count these separately and by the addition rule, add them together. However, it would more efficient to use the complement. The complement of ‘at least two sixes’ is ‘no sixes or one six’. So we can write</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}P(\text{at least two sixes}) &amp;= 1 - P(\text{zero or one sixes}) \\ \\
-&amp;= 1 - (\binom{6}{0} \cdot (\frac{1}{6})^0 \cdot (1 - \frac{1}{6})^{6 - 0} + \binom{6}{1} \cdot (\frac{1}{6})^1 \cdot (1 - \frac{1}{6})^{6 - 1})\\ \\
-&amp;= 1 - (1 \cdot 1 \cdot (\frac{5}{6})^6 + 6 \cdot \frac{1}{6} \cdot (\frac{5}{6})^5)\\ \\
-&amp;= \frac{12281}{46656} \\ \\
-&amp;= 0.263 \ldots \end{align}\)</span></p>
+<p>So the favourable events are getting two, three, four, five or six times sixes. We could count these separately and by the addition rule, add them together.</p>
 <figure class="align-default" id="bin-distr-example2">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/bin_distr_example2.png"><img alt="Binomial distribution of six dice casts" class="bg-primary mb-1 align-center" src="../_images/bin_distr_example2.png" style="width: 600px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 24 </span><span class="caption-text">Binomial distribution of casting a dice six times - what is the probability of getting at least two sixes</span><a class="headerlink" href="#bin-distr-example2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p><br></br></p>
+<p>However, it would more efficient to use the complement. The complement of ‘at least two sixes’ is ‘no sixes or one six’. So we can write</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}P(\text{at least two sixes}) &amp;= 1 - P(\text{zero or one sixes}) \\ \\
+&amp;= 1 - (\binom{6}{0} \cdot (\frac{1}{6})^0 \cdot (1 - \frac{1}{6})^{6 - 0} + \binom{6}{1} \cdot (\frac{1}{6})^1 \cdot (1 - \frac{1}{6})^{6 - 1})\\ \\
+&amp;= 1 - (1 \cdot 1 \cdot (\frac{5}{6})^6 + 6 \cdot \frac{1}{6} \cdot (\frac{5}{6})^5)\\ \\
+&amp;= \frac{12281}{46656} \\ \\
+&amp;= 0.263 \ldots \end{align}\)</span>
+<br></br></p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">EXERCISE 1. More rolls of the dice</p>
-<p>How does the change is getting two sixes change if we have less rolls of the dice? Give an example.</p>
+<p>How does the change is getting two sixes change if we have less rolls of the dice? Think about the outcome first and then give an example.</p>
 </div>
 <div class="tip dropdown admonition">
 <p class="admonition-title">EXERCISE 2. Basketball</p>
@@ -472,20 +473,29 @@ document.write(`
 <li><p><span class="math notranslate nohighlight">\(n\)</span> is the total number of events and</p></li>
 <li><p><span class="math notranslate nohighlight">\(p\)</span> is the probability of success in each event.</p></li>
 </ul>
-<p>So, the product <span class="math notranslate nohighlight">\(np\)</span> gives us the expected number of successes (or positive outcomes) in <span class="math notranslate nohighlight">\(n\)</span> events.</p>
-<p><strong>Example.</strong> How many times is is expected to get the number six out of six casts?
+<p>So, the product <span class="math notranslate nohighlight">\(np\)</span> gives us the expected number of successes (or positive outcomes) in <span class="math notranslate nohighlight">\(n\)</span> events.
+<br></br></p>
+<p><strong>Example.</strong> How many times is is expected to get the number six out of six casts?</p>
+<p>When <span class="math notranslate nohighlight">\(n=6\)</span> and <span class="math notranslate nohighlight">\(p=\frac{1}{6}\)</span>, we get</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}\text{mean} &amp;= np \\ \\
+&amp;=6 \cdot \frac{1}{6} = 1 \end{align}\)</span>
+<br></br></p>
+<p>The <strong>variance</strong>, denoted by <span class="math notranslate nohighlight">\(\sigma^2\)</span>, of the binomial distribution is given by</p>
+<p><span class="math notranslate nohighlight">\(\sigma^2 = np(1 - p)\)</span></p>
+<p>Variance describes how much the values vary from the mean, so it gives us information about the spread of the distribution. If <span class="math notranslate nohighlight">\(p\)</span> is close to 0 or 1, meaning the probability of success or failure is very low or very high, the variance tends to be smaller. If <span class="math notranslate nohighlight">\(p\)</span> is closer to 0.5, indicating a more balanced probability of success and failure, the variance tends to be larger.
+<br></br></p>
+<p><strong>Example.</strong> What is the variance for this case?</p>
+<p>When <span class="math notranslate nohighlight">\(n=6\)</span> and <span class="math notranslate nohighlight">\(p=\frac{1}{6}\)</span>, we get</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}\sigma^2 &amp;= np(1 - p) \\ \\
+&amp;=6 \cdot \frac{1}{6} \cdot (1 - \frac{1}{6}) = \frac{5}{6} \end{align}\)</span>
 <br></br></p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">EXERCISE 3. Multiple-choice test</p>
 <p>In a multiple-choice test, each question has 4 options, of which only one is correct. To pass a test, a student must gain at least one third of the questions correct.</p>
 <p>a) If a student guesses the answer to each question, what is the probability that the student passes a test of 16 questions?</p>
 <p>b) What is the expected number of correct answers when quessing?</p>
+<p>c) Calculate the variance.</p>
 </div>
-<p>The <strong>variance</strong>, denoted by <span class="math notranslate nohighlight">\(\sigma^2\)</span>, of the binomial distribution is given by</p>
-<p><span class="math notranslate nohighlight">\(\sigma^2 = np(1 - p)\)</span></p>
-<p>Variance describes how much the values vary from the mean, so it gives the spread of the distribution. If <span class="math notranslate nohighlight">\(p\)</span> is close to 0 or 1, meaning the probability of success or failure is very low or very high, the variance tends to be smaller. If <span class="math notranslate nohighlight">\(p\)</span> is closer to 0.5, indicating a more balanced probability of success and failure, the variance tends to be larger.</p>
-<p><strong>Example.</strong> What is the variance for this case?
-<br></br></p>
 <p>The <strong>standard deviation</strong>, denoted by <span class="math notranslate nohighlight">\(\sigma\)</span>, is another important measure of spread or dispersion.</p>
 <p>For the binomial distribution, the standard deviation is the square root of the variance.</p>
 <p><span class="math notranslate nohighlight">\(\sigma = \sqrt{np(1-p)}\)</span></p>
