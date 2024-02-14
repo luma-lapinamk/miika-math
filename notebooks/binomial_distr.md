@@ -78,7 +78,7 @@ Binomial distribution can be plotted and the result can be seen from the graph.
 :::{admonition} Code for plotting the binomial distribution
 :class: note, dropdown
 ```{figure-md} bin_distr_Python
-<img src="../images/probstat/bin_distr_Python.png" alt="Code for plotting a binomial distribution" class="bg-primary mb-1" width="600px" align="center">
+<img src="../images/probstat/bin_distr_Python.png" alt="Code for plotting a binomial distribution" class="bg-primary mb-1" width="800px" align="center">
 
 Code for plotting a binomial distribution
 ```
