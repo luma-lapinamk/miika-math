@@ -68,8 +68,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/discrete_distr';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Binomial distribution" href="binomial_distr.html" />
-    <link rel="prev" title="Rules of probability" href="rules_of_probability.html" />
+    <link rel="next" title="Poisson distribution (missing)" href="Poisson_distr.html" />
+    <link rel="prev" title="Binomial distribution" href="binomial_distr.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -225,8 +225,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="basic_probability.html">Random phenomena</a></li>
 <li class="toctree-l1"><a class="reference internal" href="definitions_of_probability.html">General definitions of probability</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rules_of_probability.html">Rules of probability</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Discrete probability distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="binomial_distr.html">Binomial distribution</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Discrete probability distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Poisson_distr.html">Poisson distribution (missing)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
@@ -399,18 +399,34 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="discrete-probability-distribution">
 <h1><span class="target" id="index-0"></span>Discrete probability distribution<a class="headerlink" href="#discrete-probability-distribution" title="Permalink to this heading">#</a></h1>
-<p>When the probability varies across repetitions, the mean (the expected value) is determined by considering all possible values of the random variable, denoted as <span class="math notranslate nohighlight">\(x_i\)</span>. Each value is multiplied by its respective probability, <span class="math notranslate nohighlight">\(p_i\)</span>, and the products are then summed together.</p>
+<p>A binomial distribution is actually a special case of a discrete probability distribution since the probability is constant across all the events. When the probability varies across repetitions, the mean (the expected value) is determined by considering all possible values of the random variable, denoted as <span class="math notranslate nohighlight">\(x_i\)</span>. Each value is multiplied by its respective probability, <span class="math notranslate nohighlight">\(p_i\)</span>, and the products are then summed together.</p>
 <p><span class="math notranslate nohighlight">\(\text{mean} = \sum_i^{}p_ix_i\)</span></p>
 <p><span class="math notranslate nohighlight">\(\text{variance} = \sum_i^{}p_i(x_i-\text{mean})^2\)</span></p>
 <p>If each of the individual probabilities, <span class="math notranslate nohighlight">\(p_i\)</span>, are plotted, the discrete probability distribution is called a <strong>discrete probability density function</strong> (or a probability mass function, PMF). A discrete random variable is one that can take on a countable number of distinct values. For each possible value of the random variable, the PMF gives the probability of observing that value.</p>
-<p>This can be denoted as <span class="math notranslate nohighlight">\(P(X = x)\)</span>, where <span class="math notranslate nohighlight">\(X\)</span> is the random variable and <span class="math notranslate nohighlight">\(x\)</span> is a specific value that the random variable can take.</p>
 <blockquote>
 <div><p>Key properties of a discrete probability density function include:</p>
-<ol class="arabic simple">
-<li><p>Non-negative values: <span class="math notranslate nohighlight">\(P(X = x) \geq 0\)</span> for all possible values of <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
-<li><p>Sum of probabilities: The sum of the probabilities for all possible values of <span class="math notranslate nohighlight">\(x\)</span> equals 1: <span class="math notranslate nohighlight">\(\sum_{\text{all } x} P(X = x) = 1\)</span>.</p></li>
-</ol>
+<ul class="simple">
+<li><p>For all possible values of <span class="math notranslate nohighlight">\(x_i\)</span>, the probability is non-negative, i.e <span class="math notranslate nohighlight">\(p_i \geq 0\)</span>.</p></li>
+<li><p>The sum of the probabilities for all possible values of <span class="math notranslate nohighlight">\(x_i\)</span> equals 1: <span class="math notranslate nohighlight">\(\sum_{i} p_i = 1\)</span>.
+<nr></br></p></li>
+</ul>
 </div></blockquote>
+<p><strong>Example.</strong> Two six-sided dices are thrown. What is the probability that the sum of the dices is 10?</p>
+<figure class="align-default" id="sum-of-two-dices">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/sum_of_dices.png"><img alt="Combinations for the sum of two dices" class="bg-primary mb-1 align-center" src="../_images/sum_of_dices.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">All the combinations for the sum of two dices, where green cells represent the favourable events.</span><a class="headerlink" href="#sum-of-two-dices" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>By classical probability, we can compute that</p>
+<p><span class="math notranslate nohighlight">\(P(\text{the sum of two dices is 10})=\frac{3}{36}=\frac{1}{12}\)</span></p>
+<p>If we draw a distribution of all the possible sums, we have to count the probabilites separately. A Python code could look like this:</p>
+<figure class="align-default" id="sum-of-two-dices-in-a-distribution">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/sum_of_dices_distr.png"><img alt="Sum of two dices in a discrete distribution" class="bg-primary mb-1 align-center" src="../_images/sum_of_dices_distr.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">All the combinations for the sum of two dices, where green cells represent the favourable events.</span><a class="headerlink" href="#sum-of-two-dices-in-a-distribution" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 
     <script type="text/x-thebe-config">
@@ -444,20 +460,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rules_of_probability.html"
+       href="binomial_distr.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Rules of probability</p>
+        <p class="prev-next-title">Binomial distribution</p>
       </div>
     </a>
     <a class="right-next"
-       href="binomial_distr.html"
+       href="Poisson_distr.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Binomial distribution</p>
+        <p class="prev-next-title">Poisson distribution (missing)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
