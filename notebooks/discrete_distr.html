@@ -372,7 +372,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -388,6 +390,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cumulative-distribution-funtion-cdf">Cumulative distribution funtion, CDF</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -422,11 +432,36 @@ document.write(`
 <p><span class="math notranslate nohighlight">\(P(\text{the sum of two dices is 10})=\frac{3}{36}=\frac{1}{12}\)</span></p>
 <p>If we draw a distribution of all the possible sums, we have to count the probabilites separately. A Python code could look like this:</p>
 <figure class="align-default" id="sum-of-two-dices-in-a-distribution">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/sum_of_dices_distr.png"><img alt="Sum of two dices in a discrete distribution" class="bg-primary mb-1 align-center" src="../_images/sum_of_dices_distr.png" style="width: 300px;" /></a>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/sum_of_dices_distr.png"><img alt="Sum of two dices in a discrete distribution" class="bg-primary mb-1 align-center" src="../_images/sum_of_dices_distr.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 27 </span><span class="caption-text">All the combinations for the sum of two dices, where green cells represent the favourable events.</span><a class="headerlink" href="#sum-of-two-dices-in-a-distribution" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Sum of two dices in a discrete distribution.</span><a class="headerlink" href="#sum-of-two-dices-in-a-distribution" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<p>So if the question would be, what is the probability that the sum of the two dices is at most 5, we would have add the probabilities of events ‘the sum is 2’, ‘the sum is 3’, ‘the sum is 4’ and ‘the sum is 5’. That’s when the <em>cumulative distribution funtion</em> comes handy.</p>
+<section id="cumulative-distribution-funtion-cdf">
+<h2><span class="target" id="index-1"></span>Cumulative distribution funtion, CDF<a class="headerlink" href="#cumulative-distribution-funtion-cdf" title="Permalink to this heading">#</a></h2>
+<p>The cumulative distribution function (CDF) describes the probability that a random variable takes on a value <strong>less than or equal to a given value</strong>. For discrete random variables, the CDF gives the cumulative probabilities for each possible value.</p>
+<p>If we denote the cumulative distribution function by <span class="math notranslate nohighlight">\(F(x_i)\)</span> of a random variable <span class="math notranslate nohighlight">\(x_i\)</span>, the notation would be</p>
+<p><span class="math notranslate nohighlight">\(F(x_i) = P(X \leq x_i) = \sum_{i} p_i\)</span></p>
+<p>The value of the CDF at the highest possible variable value is 1, since every value is at most equal to the highest variable value.</p>
+<blockquote>
+<div><p>The cumulative distribution function satisfies the following properties:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(0 \leq F(x) \leq 1\)</span> for all <span class="math notranslate nohighlight">\(x_i\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(F(x)\)</span> is non-decreasing: <span class="math notranslate nohighlight">\(F(x_1) \leq F(x_2)\)</span> if <span class="math notranslate nohighlight">\(x_1 \leq x_2\)</span></p></li>
+</ul>
+</div></blockquote>
+<p>So what is the probability that the sum of the two dices is at most 5? From the CDF we can see that</p>
+<p><span class="math notranslate nohighlight">\(F(5) = P(X \leq 5) = \sum_{5} p_5 = 0.416...\)</span></p>
+<p>In Python, the CDF can computed using the command <em>cumsum</em> <a href="https://numpy.org/doc/stable/reference/generated/numpy.cumsum.html" target="_blank">from NumPy</a>.</p>
+<figure class="align-default" id="sum-of-two-dices-as-a-cdf">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/CDF_of_dices.png"><img alt="Sum of two dices as a CDF" class="bg-primary mb-1 align-center" src="../_images/CDF_of_dices.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 28 </span><span class="caption-text">Sum of two dices in a cumulative distribution function.</span><a class="headerlink" href="#sum-of-two-dices-as-a-cdf" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Although the cumulative function describes the probability that the variable value is <em>at most</em> something, it can also be used to calculate that the variable value is <em>at least</em> something. In this case, the complement principle must be used: if the number is greater than 10, then it is not less than or equal to 10.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -484,7 +519,20 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cumulative-distribution-funtion-cdf">Cumulative distribution funtion, CDF</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
