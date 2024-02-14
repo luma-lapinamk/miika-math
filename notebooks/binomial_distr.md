@@ -15,7 +15,7 @@ $P(A=k) = \binom{n}{k} p^k (1 - p)^{n - k}$, where
 
 - $\binom{n}{x}$ is here called as the **binomial coefficient**, also known as the **k-combinations of n**, which represents the number of ways to choose $k$ successes out of $n$ events
 - $p$ is the probability of success in each event
-- $(1 - p$ is the probability of failure in each trial, sometimes denoted by $q = (1 - p)$ and
+- $(1 - p)$ is the probability of failure in each trial, sometimes denoted by $q = (1 - p)$ and
 - $n$ is the total number of events.
 
 So the formula can be interpretated kind of as the product of $\text{combinations} \times \text{successes} \times \text{failures}$.
@@ -136,11 +136,4 @@ For the binomial distribution, the standard deviation is the square root of the 
 
 $\sigma = \sqrt{np(1-p)}$
 
-The standard deviation measures the average distance of the data points from the mean. It tells us how much individual data points in the distribution typically deviate from the mean. A larger standard deviation indicates greater variability in the data, while a smaller standard deviation indicates less variability.
-<br></br>
-
-> **Note!** When the probability varies across repetitions, the mean (the expected value) is determined by considering all possible values of the random variable, denoted as $x_i$. Each value is multiplied by its respective probability, $p_i$, and the products are then summed together.
->
-> $\text{mean} = \sum_i^{}p_ix_i$
->
-> $\text{variance} = \sum_i^{}p_i(x_i-\text{mean})^2$
+The standard deviation measures the average distance of the data points from the mean. It tells us how much individual data points in the distribution typically deviate from the mean. A larger standard deviation indicates greater variability in the data (a broader distribution), while a smaller standard deviation indicates less variability (a narrow distribution).

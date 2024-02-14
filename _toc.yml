@@ -43,6 +43,8 @@ parts:
     - file: notebooks/definitions_of_probability
     - file: notebooks/rules_of_probability
     - file: notebooks/binomial_distr
+    - file: notebooks/discrete_distr
+    - file: notebooks/Poisson_distr
   - caption: Appendix
     chapters:
     - file: genindex
