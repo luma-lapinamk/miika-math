@@ -26,6 +26,11 @@ By classical probability, we can compute that
 
 $P(\text{the sum of two dices is 10})=\frac{3}{36}=\frac{1}{12}$
 
+:::{admonition} EXERCISE 1. Mean and variance for the sum of two dices
+:class: tip, dropdown
+Compute the mean and variance for the sum of the faces, when two six-sided dices are thrown.
+:::
+
 If we draw a distribution of all the possible sums, we have to count the probabilites separately. A Python code could look like this:
 
 ```{figure-md} sum of two dices in a distribution
