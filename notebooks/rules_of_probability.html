@@ -226,6 +226,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="definitions_of_probability.html">General definitions of probability</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Rules of probability</a></li>
 <li class="toctree-l1"><a class="reference internal" href="binomial_distr.html">Binomial distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discrete_distr.html">Discrete probability distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Poisson_distr.html">Poisson distribution (missing)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul class="nav bd-sidenav">
@@ -493,11 +495,14 @@ P(A)&amp;=1-P(\overline{A})\end{align}\)</span></p>
 <h2><span class="target" id="index-4"></span>General multiplication rule<a class="headerlink" href="#general-multiplication-rule" title="Permalink to this heading">#</a></h2>
 <p>From the formula of conditional probability we can write the <strong>general multiplication rule</strong> as:</p>
 <p><span class="math notranslate nohighlight">\(P(A \cap B) = P(A|B) \cdot {P(B)}\)</span></p>
-<p><strong>Example.</strong> Nostetaan korttipakasta kaksi korttia. Millä todennäköisyydellä molemmat kortit ovat ässiä?</p>
-<p>Korttipakassa on 52 korttia, joista 4 on ässiä. Kun ensimmäinen ässä on nostettu, korttipakassa on 51 korttia, joista 3 on ässiä. Lasketaan todennäköisyys sille, että molemmat kortit ovat ässiä.</p>
-<p>P(molemmat kortit ovat ässiä)
-= P(ensimmäinen kortti on ässä JA toinen kortti on ässä)
-= P(ensimmäinen kortti on ässä) · P(toinen kortti on ässä)</p>
+<p><strong>Example.</strong> Two cards are drawn from a deck of cards. What is the probability that both cards are aces?</p>
+<p>There are 52 cards in the deck, with 4 of them being aces. After the first ace is drawn, there are 51 cards left in the deck, with 3 of them being aces. Let’s calculate the probability that both cards are aces.</p>
+<p><span class="math notranslate nohighlight">\(\begin{align} P(\text{both cards are aces}) &amp;= P(\text{first card is an ace AND second card is an ace}) \\ \\
+&amp;= P(\text{first card is an ace}) \times P(\text{second card is an ace}) \\ \\
+&amp;= \frac{4}{52} \times \frac{3}{51} \\ \\
+&amp;= \frac{1}{13} \times \frac{1}{17} \\ \\
+&amp;= \frac{1}{221} \end{align}\)</span></p>
+<p>So, the probability that both cards drawn are aces is <span class="math notranslate nohighlight">\(\frac{1}{221} \approx 0.0045\)</span>.</p>
 </section>
 <section id="law-of-total-probability">
 <h2><span class="target" id="index-5"></span>Law of Total Probability<a class="headerlink" href="#law-of-total-probability" title="Permalink to this heading">#</a></h2>
