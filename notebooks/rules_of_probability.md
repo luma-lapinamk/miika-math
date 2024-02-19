@@ -100,13 +100,17 @@ From the formula of conditional probability we can write the **general multiplic
 
 $P(A \cap B) = P(A|B) \cdot {P(B)}$
 
-**Example.** Nostetaan korttipakasta kaksi korttia. Millä todennäköisyydellä molemmat kortit ovat ässiä?
+**Example.** Two cards are drawn from a deck of cards. What is the probability that both cards are aces?
 
-Korttipakassa on 52 korttia, joista 4 on ässiä. Kun ensimmäinen ässä on nostettu, korttipakassa on 51 korttia, joista 3 on ässiä. Lasketaan todennäköisyys sille, että molemmat kortit ovat ässiä.
- 
-P(molemmat kortit ovat ässiä)
-= P(ensimmäinen kortti on ässä JA toinen kortti on ässä)
-= P(ensimmäinen kortti on ässä) · P(toinen kortti on ässä)
+There are 52 cards in the deck, with 4 of them being aces. After the first ace is drawn, there are 51 cards left in the deck, with 3 of them being aces. Let's calculate the probability that both cards are aces.
+
+$\begin{align} P(\text{both cards are aces}) &= P(\text{first card is an ace AND second card is an ace}) \\ \\
+&= P(\text{first card is an ace}) \times P(\text{second card is an ace}) \\ \\
+&= \frac{4}{52} \times \frac{3}{51} \\ \\
+&= \frac{1}{13} \times \frac{1}{17} \\ \\
+&= \frac{1}{221} \end{align}$
+
+So, the probability that both cards drawn are aces is $\frac{1}{221} \approx 0.0045$.
 
 ## {index}`Law of Total Probability`
 
