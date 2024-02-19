@@ -87,7 +87,7 @@ Code for plotting a binomial distribution
 
 The **mean** of the binomial distribution is given by
 
-$\text{mean} = np$, where
+$\text{mean} = \mu = np$, where
 
 - $n$ is the total number of events and
 - $p$ is the probability of success in each event.

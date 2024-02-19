@@ -38,6 +38,7 @@ parts:
     - file: notebooks/vector_parallel
   - caption: Probability
     chapters:
+    - file: notebooks/probability_intro
     - file: notebooks/combinatorics
     - file: notebooks/basic_probability
     - file: notebooks/definitions_of_probability
