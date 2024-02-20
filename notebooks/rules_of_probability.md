@@ -84,17 +84,6 @@ The intersection of $A$ and $B$.
 
 The idea behind conditional probability is that the probability of event A happening can change depending on whether event B has already occurred. It's like updating the knowledge or information about the situation.
 
-**Example.** A hand of cards is two red aces, two black fives and a three of hearts. The three is given away and one card is taken from the deck. What it the probability that the card is an ace?
-
-:::{admonition} EXERCISE 4. One card drawn from the deck, when...
-:class: tip, dropdown
-One card is drawn from the deck. What are the odds that the card is a two of spades, when
-
-a) four cards are alreday drawn from the deck?
-
-b) the ace of spades id already drawn and the card drawn is black?
-:::
-
 ## {index}`General multiplication rule`
 From the formula of conditional probability we can write the **general multiplication rule** as:
 
@@ -112,8 +101,83 @@ $\begin{align} P(\text{both cards are aces}) &= P(\text{first card is an ace AND
 
 So, the probability that both cards drawn are aces is $\frac{1}{221} \approx 0.0045$.
 
-## {index}`Law of Total Probability`
+**Example.** A hand of cards is two red aces, two black fives and a three of hearts. The three is given away and one card is taken from the deck. What it the probability that the card is an ace?
+
+:::{admonition} EXERCISE 4. One card drawn from the deck, when...
+:class: tip, dropdown
+One card is drawn from the deck. What are the odds that the card is a two of spades, when
+
+a) four cards are already drawn from the deck?
+
+b) the ace of spades is already drawn and the card drawn is black?
+:::
+
+## {index}`Law of total probability`
+The Law of total probability provides a way to calculate the probability of an event by considering *all possible ways* or conditions under which it *could* happen. It states that if you have a partition (or a mutually exclusive and exhaustive set) of events $B_1, \ B_2, \ \ldots, \ B_n$, then the probability of event $A$ can be calculated by summing the probabilities of $A$ given each of the events in the partition, weighted by the probability of each event in the partition.
+
+Mathematically, if $B_1, \ B_2, \ \ldots, \ B_n$ form a partition of the sample space (meaning they are mutually exclusive and exhaustive), then the Law of total probability states:
+
+$P(A) = \sum_{i=1}^{n} P(A|B_i) \times P(B_i)$
+
+In simpler terms, this means that the probability of event $A$ occurring is equal to the sum of the probabilities of $A$ occurring given each possible condition (each event in the partition), multiplied by the probability of each condition occurring.
+
+**Example.** Factory with production lines A and B
+
+Suppose you are considering a factory with two production lines, A and B, that produce the same product. Line A produces 60 % of the total output, while line B produces the remaining 40 %. However, line A has a defective rate of 5 %, while line B has a defective rate of only 3 %.
+
+What is the probabilit that a randomly selected product from the overall production is defective?
+
+To apply the law of total probability, we can partition the sample space into two events. The product is selected either form product line A $(B_A)$ or from product line B $(B_B)$. These events are mutually exclusive and exhaustive since every product must come from either product line A or B. This can be presented by a tree model.
+
+```{figure-md} total_law_prob
+<img src="../images/probstat/total_law_prob.png" alt="Factory has 2 product lines" class="bg-primary mb-1" width="800px" align="center">
+
+All possible different outcomes for a product from a factory, which has 2 product lines, as a tree model.
+```
+
+Now we can calculate the probability of a product being defective using the law of total probability:
+
+$P(\text{Defective}) = P(\text{Defective} | B_A) \cdot P(B_A) + P(\text{Defective} | B_B) \cdot P(B_B)$
+
+where
+- $P(\text{Defective} | B_A)$ is the probability that a product is defective given that it came from Factory A, which is 0.05.
+- $P(B_A)$ is the probability of selecting a product from Factory A, which is 0.60.
+- $P(\text{Defective} | B_B)$ is the probability that a product is defective given that it came from Factory B, which is 0.03.
+- $P(B_B)$ is the probability of selecting a product from Factory B, which is 0.40.
+
+Substituting these values in the formula we get
+
+$\begin{align} P(\text{Defective}) &= (0.05 \cdot 0.60) + (0.03 \cdot 0.40) \\ \\
+P(\text{Defective}) &= 0.03 + 0.012 \\ \\
+P(\text{Defective}) &= 0.042 \end{align}$
+
+So, the probability of selecting a defective product is 0.042.
+
+:::{admonition} EXERCISE 5. Passing a test depends of many factors.
+:class: tip, dropdown
+Let's assume that a student's success in an exam depends heavily on the time of day the exam is held. If the exam is early in the morning, the probability of passing is only 40 %. If it's in the afternoon, the student passes with a probability of 90 %. The teacher schedules the exam with a 30 % probability in the morning and a 70 % probability in the afternoon. What is the probability of passing the exam considering these two factors?
+:::
 
 ## {index}`Bayes' theorem`
+Bayes' theorem describes how to update the probability of a hypothesis in light of *new evidence or information*. It's named after the Reverend Thomas Bayes, an 18th-century British mathematician. Bayes' theorem is particularly useful in situations where we want to infer the probability of a hypothesis given observed data.
+
+Bayes' theorem can be stated as follows
+
+$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$
+
+where
+- $P(A|B)$ is the probability of event A occurring given that event B has occurred (this is called the posterior probability).
+- $P(B|A)$ is the probability of event B occurring given that event A has occurred (this is called the likelihood).
+- $P(A)$ is the prior probability of event A (the probability of A occurring before considering any new evidence).
+- $P(B)$ is the prior probability of event B (the probability of B occurring before considering any new evidence).
+
+In simpler terms, Bayes' theorem allows us to update our belief in the probability of a hypothesis (A) based on observed data (B).
+
+**Example.** In another factory, bulbs are manufactured on two different production lines, line A and line B. 70% of the production comes from line A and 30% from line B. Of the bulbs from line A, 4% are defective, and of the bulbs from line B, 2% are defective. A customer complains about a defective bulb, and the management cannot determine from which line it originated. Calculate the probability that the defective bulb came from line A."
+
+:::{admonition} EXERCISE 6. Dirty sports
+:class: tip, dropdown
+Let's assume that in a sports competition, 0.2 % of the participants use doping. The use of substances is tested through a blood test. If the substance being tested for is present in the blood, a positive result is obtained with a probability of 99 %. However, the test is somewhat uncertain in a sense that a positive result can be obtained with a probability of 5 % even if the substance is not present in the blood. What is the probability that a person who receives a positive test result is using a prohibited substance?
+:::
 
 ## {index}`Chain rule`

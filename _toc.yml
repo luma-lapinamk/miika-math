@@ -38,7 +38,6 @@ parts:
     - file: notebooks/vector_parallel
   - caption: Probability
     chapters:
-    - file: notebooks/probability_intro
     - file: notebooks/combinatorics
     - file: notebooks/basic_probability
     - file: notebooks/definitions_of_probability
@@ -46,6 +45,9 @@ parts:
     - file: notebooks/binomial_distr
     - file: notebooks/discrete_distr
     - file: notebooks/Poisson_distr
+  - caption: Statistics
+    chapters:
+    - file: notebooks/statistics_intro
   - caption: Appendix
     chapters:
     - file: genindex

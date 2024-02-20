@@ -10,17 +10,17 @@ A continuous variable, on the other hand, is a type of variable that can take on
 
 **Example.** Suppose you are conducting a study on the shoe size and heights of students in the UAS. You collect data from a sample of 20 students. The shoe sizes of the students are recorded as discrete variables, while their heights are recorded as continuous variables.
 
-**Discrete variable - shoe sizes**
+Discrete variable - shoe sizes
 
 For the shoe sizes of the students, we can create a frequency table showing the number of students in each shoe size group. If the number some shoe sizes is small, you can also categorize the shoe numbers into groups such as 3-4½, 5-6½, 6-7½, etc., depending on the range and distribution of show numbers in your sample.
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Shoesize-adult-es.svg#/media/File:Shoesize-adult-es.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Shoesize-adult-es.svg" alt="Shoesize-adult-es.svg" height="319" width="999"></a><a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=11462228">Link</a></p>
 
-**Continuous variable - heights**
+Continuous variable - heights
 
 For the heights of the students, create a histogram to visualize the distribution of heights. Determine appropriate bins (intervals) for the histogram, such as 140-150 cm, 151-160 cm, 161-170 cm, etc., based on the range of heights in your sample.
 
-**Analysis**
+Analysis
 
 Compare and contrast the distributions of shoe sizes and heights. Discuss any patterns or trends you observe in the data. Consider questions such as
 
