@@ -45,6 +45,7 @@ parts:
     - file: notebooks/binomial_distr
     - file: notebooks/discrete_distr
     - file: notebooks/Poisson_distr
+    - file: notebooks/continuos_distr
   - caption: Statistics
     chapters:
     - file: notebooks/statistics_intro
