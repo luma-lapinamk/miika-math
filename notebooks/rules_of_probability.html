@@ -525,7 +525,7 @@ P(A)&amp;=1-P(\overline{A})\end{align}\)</span></p>
 </figcaption>
 </figure>
 <p>Now we can calculate the probability of a product being defective using the law of total probability:</p>
-<p><span class="math notranslate nohighlight">\(P(\text{Defective}) = P(\text{Defective} | B_A) \times P(B_A) + P(\text{Defective} | B_B) \times P(B_B)\)</span></p>
+<p><span class="math notranslate nohighlight">\(P(\text{Defective}) = P(\text{Defective} | B_A) \cdot P(B_A) + P(\text{Defective} | B_B) \cdot P(B_B)\)</span></p>
 <p>where</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(P(\text{Defective} | B_A)\)</span> is the probability that a product is defective given that it came from Factory A, which is 0.05.</p></li>
@@ -534,7 +534,7 @@ P(A)&amp;=1-P(\overline{A})\end{align}\)</span></p>
 <li><p><span class="math notranslate nohighlight">\(P(B_B)\)</span> is the probability of selecting a product from Factory B, which is 0.40.</p></li>
 </ul>
 <p>Substituting these values in the formula we get</p>
-<p><span class="math notranslate nohighlight">\(\begin{align} P(\text{Defective}) &amp;= (0.05 \times 0.60) + (0.03 \times 0.40) \\ \\
+<p><span class="math notranslate nohighlight">\(\begin{align} P(\text{Defective}) &amp;= (0.05 \cdot 0.60) + (0.03 \cdot 0.40) \\ \\
 P(\text{Defective}) &amp;= 0.03 + 0.012 \\ \\
 P(\text{Defective}) &amp;= 0.042 \end{align}\)</span></p>
 <p>So, the probability of selecting a defective product is 0.042.</p>
@@ -547,7 +547,7 @@ P(\text{Defective}) &amp;= 0.042 \end{align}\)</span></p>
 <h2><span class="target" id="index-6"></span>Bayes’ theorem<a class="headerlink" href="#bayes-theorem" title="Permalink to this heading">#</a></h2>
 <p>Bayes’ theorem describes how to update the probability of a hypothesis in light of <em>new evidence or information</em>. It’s named after the Reverend Thomas Bayes, an 18th-century British mathematician. Bayes’ theorem is particularly useful in situations where we want to infer the probability of a hypothesis given observed data.</p>
 <p>Bayes’ theorem can be stated as follows</p>
-<p><span class="math notranslate nohighlight">\(P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}\)</span></p>
+<p><span class="math notranslate nohighlight">\(P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}\)</span></p>
 <p>where</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(P(A|B)\)</span> is the probability of event A occurring given that event B has occurred (this is called the posterior probability).</p></li>

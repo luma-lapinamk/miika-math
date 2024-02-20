@@ -137,7 +137,7 @@ All possible different outcomes for a product from a factory, which has 2 produc
 
 Now we can calculate the probability of a product being defective using the law of total probability:
 
-$P(\text{Defective}) = P(\text{Defective} | B_A) \times P(B_A) + P(\text{Defective} | B_B) \times P(B_B)$
+$P(\text{Defective}) = P(\text{Defective} | B_A) \cdot P(B_A) + P(\text{Defective} | B_B) \cdot P(B_B)$
 
 where
 - $P(\text{Defective} | B_A)$ is the probability that a product is defective given that it came from Factory A, which is 0.05.
@@ -147,7 +147,7 @@ where
 
 Substituting these values in the formula we get
 
-$\begin{align} P(\text{Defective}) &= (0.05 \times 0.60) + (0.03 \times 0.40) \\ \\
+$\begin{align} P(\text{Defective}) &= (0.05 \cdot 0.60) + (0.03 \cdot 0.40) \\ \\
 P(\text{Defective}) &= 0.03 + 0.012 \\ \\
 P(\text{Defective}) &= 0.042 \end{align}$
 
@@ -163,7 +163,7 @@ Bayes' theorem describes how to update the probability of a hypothesis in light 
 
 Bayes' theorem can be stated as follows
 
-$P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}$
+$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$
 
 where
 - $P(A|B)$ is the probability of event A occurring given that event B has occurred (this is called the posterior probability).
