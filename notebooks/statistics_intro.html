@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Binomial distribution &#8212; Maths in English</title>
+    <title>Preface and basic terms &#8212; Maths in English</title>
   
   
   
@@ -65,11 +65,11 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/binomial_distr';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/statistics_intro';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Discrete probability distribution" href="discrete_distr.html" />
-    <link rel="prev" title="Rules of probability" href="rules_of_probability.html" />
+    <link rel="next" title="Index" href="../genindex.html" />
+    <link rel="prev" title="Poisson distribution (missing)" href="Poisson_distr.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -220,18 +220,18 @@ const thebe_selector_output = ".output, .cell_output"
 
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Probability</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="combinatorics.html">Combinatorics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basic_probability.html">Random phenomena</a></li>
 <li class="toctree-l1"><a class="reference internal" href="definitions_of_probability.html">General definitions of probability</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rules_of_probability.html">Rules of probability</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Binomial distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="binomial_distr.html">Binomial distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discrete_distr.html">Discrete probability distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Poisson_distr.html">Poisson distribution (missing)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistics</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="statistics_intro.html">Preface and basic terms</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Preface and basic terms</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul class="nav bd-sidenav">
@@ -305,7 +305,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/notebooks/binomial_distr.md" target="_blank"
+      <li><a href="../_sources/notebooks/statistics_intro.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -376,7 +376,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -387,11 +389,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Binomial distribution</h1>
+    <h1>Preface and basic terms</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discrete-variable">Discrete variable</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-variable">Continuous variable</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conducting-a-survey">Conducting a survey</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list-of-fundamental-terms">List of fundamental terms</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -401,112 +414,54 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="binomial-distribution">
-<h1><span class="target" id="index-0"></span>Binomial distribution<a class="headerlink" href="#binomial-distribution" title="Permalink to this heading">#</a></h1>
-<p>The binomial distribution is a discrete probability distribution that describes the number of positive outcomes in a fixed number of independent events, where each event has the same probability of success. In other words, it models the number of positive outcomes, denoted by <span class="math notranslate nohighlight">\(k\)</span>, out of a fixed number of independent events (or experiments), denoted by <span class="math notranslate nohighlight">\(n\)</span>, where each experiment can result in either success or failure.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="preface-and-basic-terms">
+<h1>Preface and basic terms<a class="headerlink" href="#preface-and-basic-terms" title="Permalink to this heading">#</a></h1>
+<section id="discrete-variable">
+<h2><span class="target" id="index-0"></span>Discrete variable<a class="headerlink" href="#discrete-variable" title="Permalink to this heading">#</a></h2>
+<p>A discrete variable is a type of variable that can only take on a finite number of distinct values, or countable values within a specified range. These values are typically integers, and there are no intermediate values between them. Discrete variables often represent characteristics that can be counted, such as the number of children in a family, the number of cars in a parking lot, or the outcome of rolling a die.</p>
+</section>
+<section id="continuous-variable">
+<h2><span class="target" id="index-1"></span>Continuous variable<a class="headerlink" href="#continuous-variable" title="Permalink to this heading">#</a></h2>
+<p>A continuous variable, on the other hand, is a type of variable that can take on any value within a certain range or interval. Unlike discrete variables, continuous variables can take on an infinite number of possible values, and there are theoretically infinite possibilities between any two values. Continuous variables are often used to represent measurements such as height, weight, time, temperature, or any other quantity that can be measured on a continuous scale.</p>
+</section>
+<section id="conducting-a-survey">
+<h2>Conducting a survey<a class="headerlink" href="#conducting-a-survey" title="Permalink to this heading">#</a></h2>
+<p><strong>Example.</strong> Suppose you are conducting a study on the shoe size and heights of students in the UAS. You collect data from a sample of 20 students. The shoe sizes of the students are recorded as discrete variables, while their heights are recorded as continuous variables.</p>
+<p>Discrete variable - shoe sizes</p>
+<p>For the shoe sizes of the students, we can create a frequency table showing the number of students in each shoe size group. If the number some shoe sizes is small, you can also categorize the shoe numbers into groups such as 3-4½, 5-6½, 6-7½, etc., depending on the range and distribution of show numbers in your sample.</p>
+<p><a href="https://commons.wikimedia.org/wiki/File:Shoesize-adult-es.svg#/media/File:Shoesize-adult-es.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Shoesize-adult-es.svg" alt="Shoesize-adult-es.svg" height="319" width="999"></a><a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=11462228">Link</a></p>
+<p>Continuous variable - heights</p>
+<p>For the heights of the students, create a histogram to visualize the distribution of heights. Determine appropriate bins (intervals) for the histogram, such as 140-150 cm, 151-160 cm, 161-170 cm, etc., based on the range of heights in your sample.</p>
+<p>Analysis</p>
+<p>Compare and contrast the distributions of shoe sizes and heights. Discuss any patterns or trends you observe in the data. Consider questions such as</p>
+<ul class="simple">
+<li><p>Are there any predominant shoe size groups among the students?</p></li>
+<li><p>What is the typical height range for students in the sample?</p></li>
+<li><p>Is there any relationship between shoe size and height in the sample?</p></li>
+</ul>
+</section>
+<section id="list-of-fundamental-terms">
+<h2>List of fundamental terms<a class="headerlink" href="#list-of-fundamental-terms" title="Permalink to this heading">#</a></h2>
 <blockquote>
-<div><p>Key characteristics of the binomial distribution include</p>
-<ul class="simple">
-<li><p><strong>Binary Outcomes</strong>: Each event can result only in one of two outcomes: postivive or negative / success or failure / ture or false etc.</p></li>
-<li><p><strong>Independent Trials</strong>: The events are independent of each other, meaning the outcome of one event does not influence the outcome of another.</p></li>
-<li><p><strong>Constant Probability</strong>: The probability of success is constant for each event. In other words, the probability does not change between events.</p></li>
-</ul>
+<div><ol class="arabic simple">
+<li><p><strong>Population</strong> or the <strong>Univeral set</strong>: The entire group that is the subject of a statistical study or analysis.</p></li>
+<li><p><strong>Sample</strong>: A subset of the population selected for analysis.</p></li>
+<li><p><strong>Parameter</strong>: A numerical characteristic of a population, often denoted by Greek letters (e.g., <span class="math notranslate nohighlight">\(\mu\)</span> for population mean, <span class="math notranslate nohighlight">\(\sigma\)</span> for population standard deviation).</p></li>
+<li><p><strong>Statistic</strong>: A numerical characteristic of a sample, used to estimate or infer information about a population parameter.</p></li>
+<li><p><strong>Random Variable</strong>: A variable that can take on different values as a result of random phenomena. It can be either discrete or continuous.</p></li>
+<li><p><strong>Probability Distribution</strong>: A function that describes the likelihood of different outcomes of a random variable.</p></li>
+<li><p><strong>Probability Mass Function (PMF)</strong>: For discrete random variables, the PMF gives the probability of each possible value.</p></li>
+<li><p><strong>Probability Density Function (PDF)</strong>: For continuous random variables, the PDF gives the relative likelihood of different values (the probability of a value falling within a particular interval).</p></li>
+<li><p><strong>Expected Value (Mean)</strong>: The average value of a random variable, calculated as the weighted sum of all possible values.</p></li>
+<li><p><strong>Variance</strong>: A measure of the spread or dispersion of a random variable’s values around its mean.</p></li>
+<li><p><strong>Standard Deviation</strong>: The square root of the variance, providing a measure of the average deviation of values from the mean.</p></li>
+<li><p><strong>Sampling Distribution</strong>: The distribution of a statistic (e.g., sample mean or sample proportion) calculated from different samples of the same size taken from the same population.</p></li>
+<li><p><strong>Hypothesis Testing</strong>: A statistical method used to make inferences about a population parameter based on sample data.</p></li>
+<li><p><strong>Confidence Interval</strong>: A range of values constructed around a sample statistic, within which the true population parameter is likely to lie with a certain level of confidence.</p></li>
+<li><p><strong>Regression Analysis</strong>: A statistical technique used to explore the relationship between one or more independent variables and a dependent variable.</p></li>
+</ol>
 </div></blockquote>
-<p>The probability of event <span class="math notranslate nohighlight">\(A\)</span> happening exactly <span class="math notranslate nohighlight">\(k\)</span> times out of <span class="math notranslate nohighlight">\(n\)</span> is given by the <strong>discrete probability density function</strong>, also knwon as the <strong>mass function of the binomial distribution</strong>, the <strong>PMF</strong>. The formula looks like</p>
-<p><span class="math notranslate nohighlight">\(P(A=k) = \binom{n}{k} p^k (1 - p)^{n - k}\)</span>, where</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\binom{n}{x}\)</span> is here called as the <strong>binomial coefficient</strong>, also known as the <strong>k-combinations of n</strong>, which represents the number of ways to choose <span class="math notranslate nohighlight">\(k\)</span> successes out of <span class="math notranslate nohighlight">\(n\)</span> events</p></li>
-<li><p><span class="math notranslate nohighlight">\(p\)</span> is the probability of success in each event</p></li>
-<li><p><span class="math notranslate nohighlight">\((1 - p)\)</span> is the probability of failure in each trial, sometimes denoted by <span class="math notranslate nohighlight">\(q = (1 - p)\)</span> and</p></li>
-<li><p><span class="math notranslate nohighlight">\(n\)</span> is the total number of events.</p></li>
-</ul>
-<p>So the formula can be interpretated kind of as the product of <span class="math notranslate nohighlight">\(\text{combinations} \times \text{successes} \times \text{failures}\)</span>.
-<br></br></p>
-<p><strong>Example.</strong> Let’s cast a normal dice six times. What is the probability of getting exactly two sixes?</p>
-<p>Here <span class="math notranslate nohighlight">\(k=2\)</span>, <span class="math notranslate nohighlight">\(n=6\)</span> and <span class="math notranslate nohighlight">\(p=\frac{1}{6}\)</span>. Let’s substitute this in the discrete probability density function.</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}P(A=2) &amp;= \binom{6}{2} \cdot (\frac{1}{6})^2 \cdot (1 - \frac{1}{6})^{6 - 2} \\ \\
-&amp;= \binom{6}{2} \cdot (\frac{1}{6})^2 \cdot (\frac{5}{6})^4 \\ \\
-&amp;= 15 \cdot \frac{1}{36} \cdot \frac{625}{1296} \\ \\
-&amp;= \frac{3125}{15552} \\ \\
-&amp;= 0.200 \ldots \end{align}\)</span></p>
-<p>Looking at the values we can say that there are 15 different ways (combinations) of getting two sixes, one sixth of a change of getting a six on a cast and five sixth of a change of not getting a six.</p>
-<figure class="align-default" id="bin-distr-example1">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/bin_distr_example1.png"><img alt="Binomial distribution of six dice casts" class="bg-primary mb-1 align-center" src="../_images/bin_distr_example1.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Binomial distribution of casting a dice six times - what is the probability of getting exactly two sixes</span><a class="headerlink" href="#bin-distr-example1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p><br></br></p>
-<p><strong>Example.</strong> Let’s cast a normal dice six times. What is the probability of getting at least two sixes?</p>
-<p>So the favourable events are getting two, three, four, five or six times sixes. We could count these separately and by the addition rule, add them together.</p>
-<figure class="align-default" id="bin-distr-example2">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/bin_distr_example2.png"><img alt="Binomial distribution of six dice casts" class="bg-primary mb-1 align-center" src="../_images/bin_distr_example2.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Binomial distribution of casting a dice six times - what is the probability of getting at least two sixes</span><a class="headerlink" href="#bin-distr-example2" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>However, it would more efficient to use the complement. The complement of ‘at least two sixes’ is ‘no sixes or one six’. So we can write</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}P(\text{at least two sixes}) &amp;= 1 - P(\text{zero or one sixes}) \\ \\
-&amp;= 1 - (\binom{6}{0} \cdot (\frac{1}{6})^0 \cdot (1 - \frac{1}{6})^{6 - 0} + \binom{6}{1} \cdot (\frac{1}{6})^1 \cdot (1 - \frac{1}{6})^{6 - 1})\\ \\
-&amp;= 1 - (1 \cdot 1 \cdot (\frac{5}{6})^6 + 6 \cdot \frac{1}{6} \cdot (\frac{5}{6})^5)\\ \\
-&amp;= \frac{12281}{46656} \\ \\
-&amp;= 0.263 \ldots \end{align}\)</span>
-<br></br></p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">EXERCISE 1. More rolls of the dice</p>
-<p>How does the change is getting two sixes change if we have less rolls of the dice? Think about the outcome first and then give an example.</p>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">EXERCISE 2. Basketball</p>
-<p>Lauri Markkanen, a Finnish basketball player for Utah Jazz, has a free throw shooting percentage of 88.4 % in season 2023-2024. (source: <a href="https://www.nba.com/stats/player/1628374" target="_blank">NBA stats</a>).</p>
-<p>a) In a game, he attempts 10 free throws. What is the probability that he makes exactly 8 of them?</p>
-<p>b) What is the probability that he makes at most 7 of them?</p>
-</div>
-<p>Binomial distribution can be plotted and the result can be seen from the graph.</p>
-<div class="note dropdown admonition">
-<p class="admonition-title">Code for plotting the binomial distribution</p>
-<figure class="align-default" id="bin-distr-python">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/bin_distr_Python.png"><img alt="Code for plotting a binomial distribution" class="bg-primary mb-1 align-center" src="../_images/bin_distr_Python.png" style="width: 800px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Code for plotting a binomial distribution</span><a class="headerlink" href="#bin-distr-python" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<p><br></br></p>
-<p>The <strong>mean</strong> of the binomial distribution is given by</p>
-<p><span class="math notranslate nohighlight">\(\text{mean} = \mu = np\)</span>, where</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(n\)</span> is the total number of events and</p></li>
-<li><p><span class="math notranslate nohighlight">\(p\)</span> is the probability of success in each event.</p></li>
-</ul>
-<p>So, the product <span class="math notranslate nohighlight">\(np\)</span> gives us the expected number of successes (or positive outcomes) in <span class="math notranslate nohighlight">\(n\)</span> events.
-<br></br></p>
-<p><strong>Example.</strong> How many times is is expected to get the number six out of six casts?</p>
-<p>When <span class="math notranslate nohighlight">\(n=6\)</span> and <span class="math notranslate nohighlight">\(p=\frac{1}{6}\)</span>, we get</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}\text{mean} &amp;= np \\ \\
-&amp;=6 \cdot \frac{1}{6} = 1 \end{align}\)</span>
-<br></br></p>
-<p>The <strong>variance</strong>, denoted by <span class="math notranslate nohighlight">\(\sigma^2\)</span>, of the binomial distribution is given by</p>
-<p><span class="math notranslate nohighlight">\(\sigma^2 = np(1 - p)\)</span></p>
-<p>Variance describes how much the values vary from the mean, so it gives us information about the spread of the distribution. If <span class="math notranslate nohighlight">\(p\)</span> is close to 0 or 1, meaning the probability of success or failure is very low or very high, the variance tends to be smaller. If <span class="math notranslate nohighlight">\(p\)</span> is closer to 0.5, indicating a more balanced probability of success and failure, the variance tends to be larger.
-<br></br></p>
-<p><strong>Example.</strong> What is the variance for this case?</p>
-<p>When <span class="math notranslate nohighlight">\(n=6\)</span> and <span class="math notranslate nohighlight">\(p=\frac{1}{6}\)</span>, we get</p>
-<p><span class="math notranslate nohighlight">\(\begin{align}\sigma^2 &amp;= np(1 - p) \\ \\
-&amp;=6 \cdot \frac{1}{6} \cdot (1 - \frac{1}{6}) = \frac{5}{6} \end{align}\)</span>
-<br></br></p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">EXERCISE 3. Multiple-choice test</p>
-<p>In a multiple-choice test, each question has 4 options, of which only one is correct. To pass a test, a student must gain at least one third of the questions correct.</p>
-<p>a) If a student guesses the answer to each question, what is the probability that the student passes a test of 16 questions?</p>
-<p>b) What is the expected number of correct answers when quessing?</p>
-<p>c) Calculate the variance.</p>
-</div>
-<p><br></br></p>
-<p>The <strong>standard deviation</strong>, denoted by <span class="math notranslate nohighlight">\(\sigma\)</span>, is another important measure of spread or dispersion.</p>
-<p>For the binomial distribution, the standard deviation is the square root of the variance.</p>
-<p><span class="math notranslate nohighlight">\(\sigma = \sqrt{np(1-p)}\)</span></p>
-<p>The standard deviation measures the average distance of the data points from the mean. It tells us how much individual data points in the distribution typically deviate from the mean. A larger standard deviation indicates greater variability in the data (a broader distribution), while a smaller standard deviation indicates less variability (a narrow distribution).</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -540,20 +495,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rules_of_probability.html"
+       href="Poisson_distr.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Rules of probability</p>
+        <p class="prev-next-title">Poisson distribution (missing)</p>
       </div>
     </a>
     <a class="right-next"
-       href="discrete_distr.html"
+       href="../genindex.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Discrete probability distribution</p>
+        <p class="prev-next-title">Index</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -564,7 +519,23 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discrete-variable">Discrete variable</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-variable">Continuous variable</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conducting-a-survey">Conducting a survey</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list-of-fundamental-terms">List of fundamental terms</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -229,6 +229,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="discrete_distr.html">Discrete probability distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Poisson_distr.html">Poisson distribution (missing)</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="statistics_intro.html">Preface and basic terms</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
@@ -399,7 +403,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-rule">Complement rule</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-probability">Conditional probability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-multiplication-rule">General multiplication rule</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#law-of-total-probability">Law of Total Probability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#law-of-total-probability">Law of total probability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bayes-theorem">Bayes’ theorem</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chain-rule">Chain rule</a></li>
 </ul>
@@ -505,7 +509,35 @@ P(A)&amp;=1-P(\overline{A})\end{align}\)</span></p>
 <p>So, the probability that both cards drawn are aces is <span class="math notranslate nohighlight">\(\frac{1}{221} \approx 0.0045\)</span>.</p>
 </section>
 <section id="law-of-total-probability">
-<h2><span class="target" id="index-5"></span>Law of Total Probability<a class="headerlink" href="#law-of-total-probability" title="Permalink to this heading">#</a></h2>
+<h2><span class="target" id="index-5"></span>Law of total probability<a class="headerlink" href="#law-of-total-probability" title="Permalink to this heading">#</a></h2>
+<p>The Law of total probability provides a way to calculate the probability of an event by considering <em>all possible ways</em> or conditions under which it <em>could</em> happen. It states that if you have a partition (or a mutually exclusive and exhaustive set) of events <span class="math notranslate nohighlight">\(B_1, \ B_2, \ \ldots, \ B_n\)</span>, then the probability of event <span class="math notranslate nohighlight">\(A\)</span> can be calculated by summing the probabilities of <span class="math notranslate nohighlight">\(A\)</span> given each of the events in the partition, weighted by the probability of each event in the partition.</p>
+<p>Mathematically, if <span class="math notranslate nohighlight">\(B_1, \ B_2, \ \ldots, \ B_n\)</span> form a partition of the sample space (meaning they are mutually exclusive and exhaustive), then the Law of total probability states:</p>
+<p><span class="math notranslate nohighlight">\(P(A) = \sum_{i=1}^{n} P(A|B_i) \times P(B_i)\)</span></p>
+<p>In simpler terms, this means that the probability of event <span class="math notranslate nohighlight">\(A\)</span> occurring is equal to the sum of the probabilities of <span class="math notranslate nohighlight">\(A\)</span> occurring given each possible condition (each event in the partition), multiplied by the probability of each condition occurring.</p>
+<p><strong>Example.</strong> Factory with production lines A and B</p>
+<p>Suppose you are considering a factory with two production lines, A and B, that produce the same product. Line A produces 60 % of the total output, while line B produces the remaining 40 %. However, line A has a defective rate of 5 %, while line B has a defective rate of only 3 %.</p>
+<p>What is the probabilit that a randomly selected product from the overall production is defective?</p>
+<p>To apply the law of total probability, we can partition the sample space into two events. The product is selected either form product line A <span class="math notranslate nohighlight">\((B_A)\)</span> or from product line B <span class="math notranslate nohighlight">\((B_B)\)</span>. These events are mutually exclusive and exhaustive since every product must come from either product line A or B. This can be presented by a tree model.</p>
+<figure class="align-default" id="total-law-prob">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/total_law_prob.png"><img alt="Factory has 2 product lines" class="bg-primary mb-1 align-center" src="../_images/total_law_prob.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text">All possible different outcomes for a product from a factory, which has 2 product lines, as a tree model.</span><a class="headerlink" href="#total-law-prob" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Now we can calculate the probability of a product being defective using the law of total probability:</p>
+<p><span class="math notranslate nohighlight">\(P(\text{Defective}) = P(\text{Defective} | B_A) \times P(B_A) + P(\text{Defective} | B_B) \times P(B_B)\)</span></p>
+<p>where</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P(\text{Defective} | B_A)\)</span> is the probability that a product is defective given that it came from Factory A, which is 0.05.</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(B_A)\)</span> is the probability of selecting a product from Factory A, which is 0.60.</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(\text{Defective} | B_B)\)</span> is the probability that a product is defective given that it came from Factory B, which is 0.03.</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(B_B)\)</span> is the probability of selecting a product from Factory B, which is 0.40.</p></li>
+</ul>
+<p>Substituting these values in the formula we get</p>
+<p><span class="math notranslate nohighlight">\(\begin{align} P(\text{Defective}) &amp;= (0.05 \times 0.60) + (0.03 \times 0.40) \\ \\
+P(\text{Defective}) &amp;= 0.03 + 0.012 \\ \\
+P(\text{Defective}) &amp;= 0.042 \end{align}\)</span></p>
+<p>So, the probability of selecting a defective product is 0.042.</p>
 </section>
 <section id="bayes-theorem">
 <h2><span class="target" id="index-6"></span>Bayes’ theorem<a class="headerlink" href="#bayes-theorem" title="Permalink to this heading">#</a></h2>
@@ -583,7 +615,7 @@ P(A)&amp;=1-P(\overline{A})\end{align}\)</span></p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-rule">Complement rule</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-probability">Conditional probability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-multiplication-rule">General multiplication rule</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#law-of-total-probability">Law of Total Probability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#law-of-total-probability">Law of total probability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bayes-theorem">Bayes’ theorem</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chain-rule">Chain rule</a></li>
 </ul>

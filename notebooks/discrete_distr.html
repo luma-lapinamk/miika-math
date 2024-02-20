@@ -221,7 +221,6 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Probability</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="probability_intro.html">Preface and basic terms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="combinatorics.html">Combinatorics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basic_probability.html">Random phenomena</a></li>
 <li class="toctree-l1"><a class="reference internal" href="definitions_of_probability.html">General definitions of probability</a></li>
@@ -229,6 +228,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="binomial_distr.html">Binomial distribution</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Discrete probability distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Poisson_distr.html">Poisson distribution (missing)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="statistics_intro.html">Preface and basic terms</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul class="nav bd-sidenav">
@@ -426,7 +429,7 @@ document.write(`
 <figure class="align-default" id="sum-of-two-dices">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/sum_of_dices.png"><img alt="Combinations for the sum of two dices" class="bg-primary mb-1 align-center" src="../_images/sum_of_dices.png" style="width: 300px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 26 </span><span class="caption-text">All the combinations for the sum of two dices, where green cells represent the favourable events.</span><a class="headerlink" href="#sum-of-two-dices" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">All the combinations for the sum of two dices, where green cells represent the favourable events.</span><a class="headerlink" href="#sum-of-two-dices" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>By classical probability, we can compute that</p>
@@ -439,7 +442,7 @@ document.write(`
 <figure class="align-default" id="sum-of-two-dices-in-a-distribution">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/sum_of_dices_distr.png"><img alt="Sum of two dices in a discrete distribution" class="bg-primary mb-1 align-center" src="../_images/sum_of_dices_distr.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Sum of two dices in a discrete distribution.</span><a class="headerlink" href="#sum-of-two-dices-in-a-distribution" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 28 </span><span class="caption-text">Sum of two dices in a discrete distribution.</span><a class="headerlink" href="#sum-of-two-dices-in-a-distribution" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>So if the question would be, what is the probability that the sum of the two dices is at most 5, we would have add the probabilities of events ‘the sum is 2’, ‘the sum is 3’, ‘the sum is 4’ and ‘the sum is 5’. That’s when the <em>cumulative distribution funtion</em> comes handy.</p>
@@ -462,7 +465,7 @@ document.write(`
 <figure class="align-default" id="sum-of-two-dices-as-a-cdf">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/CDF_of_dices.png"><img alt="Sum of two dices as a CDF" class="bg-primary mb-1 align-center" src="../_images/CDF_of_dices.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 28 </span><span class="caption-text">Sum of two dices in a cumulative distribution function.</span><a class="headerlink" href="#sum-of-two-dices-as-a-cdf" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 29 </span><span class="caption-text">Sum of two dices in a cumulative distribution function.</span><a class="headerlink" href="#sum-of-two-dices-as-a-cdf" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Although the cumulative function describes the probability that the variable value is <em>at most</em> something, it can also be used to calculate that the variable value is <em>at least</em> something. In this case, the complement principle must be used: if the number is greater than 10, then it is not less than or equal to 10.</p>
