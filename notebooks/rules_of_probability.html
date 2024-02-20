@@ -487,13 +487,6 @@ P(A)&amp;=1-P(\overline{A})\end{align}\)</span></p>
 </figcaption>
 </figure>
 <p>The idea behind conditional probability is that the probability of event A happening can change depending on whether event B has already occurred. It’s like updating the knowledge or information about the situation.</p>
-<p><strong>Example.</strong> A hand of cards is two red aces, two black fives and a three of hearts. The three is given away and one card is taken from the deck. What it the probability that the card is an ace?</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">EXERCISE 4. One card drawn from the deck, when…</p>
-<p>One card is drawn from the deck. What are the odds that the card is a two of spades, when</p>
-<p>a) four cards are alreday drawn from the deck?</p>
-<p>b) the ace of spades id already drawn and the card drawn is black?</p>
-</div>
 </section>
 <section id="general-multiplication-rule">
 <h2><span class="target" id="index-4"></span>General multiplication rule<a class="headerlink" href="#general-multiplication-rule" title="Permalink to this heading">#</a></h2>
@@ -507,6 +500,13 @@ P(A)&amp;=1-P(\overline{A})\end{align}\)</span></p>
 &amp;= \frac{1}{13} \times \frac{1}{17} \\ \\
 &amp;= \frac{1}{221} \end{align}\)</span></p>
 <p>So, the probability that both cards drawn are aces is <span class="math notranslate nohighlight">\(\frac{1}{221} \approx 0.0045\)</span>.</p>
+<p><strong>Example.</strong> A hand of cards is two red aces, two black fives and a three of hearts. The three is given away and one card is taken from the deck. What it the probability that the card is an ace?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 4. One card drawn from the deck, when…</p>
+<p>One card is drawn from the deck. What are the odds that the card is a two of spades, when</p>
+<p>a) four cards are already drawn from the deck?</p>
+<p>b) the ace of spades is already drawn and the card drawn is black?</p>
+</div>
 </section>
 <section id="law-of-total-probability">
 <h2><span class="target" id="index-5"></span>Law of total probability<a class="headerlink" href="#law-of-total-probability" title="Permalink to this heading">#</a></h2>
@@ -519,7 +519,7 @@ P(A)&amp;=1-P(\overline{A})\end{align}\)</span></p>
 <p>What is the probabilit that a randomly selected product from the overall production is defective?</p>
 <p>To apply the law of total probability, we can partition the sample space into two events. The product is selected either form product line A <span class="math notranslate nohighlight">\((B_A)\)</span> or from product line B <span class="math notranslate nohighlight">\((B_B)\)</span>. These events are mutually exclusive and exhaustive since every product must come from either product line A or B. This can be presented by a tree model.</p>
 <figure class="align-default" id="total-law-prob">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/total_law_prob.png"><img alt="Factory has 2 product lines" class="bg-primary mb-1 align-center" src="../_images/total_law_prob.png" style="width: 600px;" /></a>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/total_law_prob.png"><img alt="Factory has 2 product lines" class="bg-primary mb-1 align-center" src="../_images/total_law_prob.png" style="width: 800px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 23 </span><span class="caption-text">All possible different outcomes for a product from a factory, which has 2 product lines, as a tree model.</span><a class="headerlink" href="#total-law-prob" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -538,9 +538,29 @@ P(A)&amp;=1-P(\overline{A})\end{align}\)</span></p>
 P(\text{Defective}) &amp;= 0.03 + 0.012 \\ \\
 P(\text{Defective}) &amp;= 0.042 \end{align}\)</span></p>
 <p>So, the probability of selecting a defective product is 0.042.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 5. Passing a test depends of many factors.</p>
+<p>Let’s assume that a student’s success in an exam depends heavily on the time of day the exam is held. If the exam is early in the morning, the probability of passing is only 40 %. If it’s in the afternoon, the student passes with a probability of 90 %. The teacher schedules the exam with a 30 % probability in the morning and a 70 % probability in the afternoon. What is the probability of passing the exam considering these two factors?</p>
+</div>
 </section>
 <section id="bayes-theorem">
 <h2><span class="target" id="index-6"></span>Bayes’ theorem<a class="headerlink" href="#bayes-theorem" title="Permalink to this heading">#</a></h2>
+<p>Bayes’ theorem describes how to update the probability of a hypothesis in light of <em>new evidence or information</em>. It’s named after the Reverend Thomas Bayes, an 18th-century British mathematician. Bayes’ theorem is particularly useful in situations where we want to infer the probability of a hypothesis given observed data.</p>
+<p>Bayes’ theorem can be stated as follows</p>
+<p><span class="math notranslate nohighlight">\(P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}\)</span></p>
+<p>where</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P(A|B)\)</span> is the probability of event A occurring given that event B has occurred (this is called the posterior probability).</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(B|A)\)</span> is the probability of event B occurring given that event A has occurred (this is called the likelihood).</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(A)\)</span> is the prior probability of event A (the probability of A occurring before considering any new evidence).</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(B)\)</span> is the prior probability of event B (the probability of B occurring before considering any new evidence).</p></li>
+</ul>
+<p>In simpler terms, Bayes’ theorem allows us to update our belief in the probability of a hypothesis (A) based on observed data (B).</p>
+<p><strong>Example.</strong> In another factory, bulbs are manufactured on two different production lines, line A and line B. 70% of the production comes from line A and 30% from line B. Of the bulbs from line A, 4% are defective, and of the bulbs from line B, 2% are defective. A customer complains about a defective bulb, and the management cannot determine from which line it originated. Calculate the probability that the defective bulb came from line A.”</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">EXERCISE 6. Dirty sports</p>
+<p>Let’s assume that in a sports competition, 0.2 % of the participants use doping. The use of substances is tested through a blood test. If the substance being tested for is present in the blood, a positive result is obtained with a probability of 99 %. However, the test is somewhat uncertain in a sense that a positive result can be obtained with a probability of 5 % even if the substance is not present in the blood. What is the probability that a person who receives a positive test result is using a prohibited substance?</p>
+</div>
 </section>
 <section id="chain-rule">
 <h2><span class="target" id="index-7"></span>Chain rule<a class="headerlink" href="#chain-rule" title="Permalink to this heading">#</a></h2>
