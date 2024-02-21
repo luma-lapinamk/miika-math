@@ -173,7 +173,37 @@ where
 
 In simpler terms, Bayes' theorem allows us to update our belief in the probability of a hypothesis (A) based on observed data (B).
 
-**Example.** In another factory, bulbs are manufactured on two different production lines, line A and line B. 70% of the production comes from line A and 30% from line B. Of the bulbs from line A, 4% are defective, and of the bulbs from line B, 2% are defective. A customer complains about a defective bulb, and the management cannot determine from which line it originated. Calculate the probability that the defective bulb came from line A."
+**Example.** In another factory, bulbs are manufactured on two different production lines, line A and line B. 70% of the production comes from line A and 30% from line B. Of the bulbs from line A, 4% are defective, and of the bulbs from line B, 2% are defective. A customer complains about a defective bulb, and the management cannot determine from which line it originated. Calculate the probability that the defective bulb came from line A.
+
+Solution. Let's define the events:
+- $A$: The defective bulb came from line A.
+- $B$: The customer got a defective bulb.
+
+We want to calculate $P(A|B)$, the probability that the defective bulb came from line A given that the customer complained about a defective bulb.
+
+Using Bayes' theorem, we have:
+$P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}$
+
+where
+- $P(A) = 0.70$ (Probability that the bulb came from line A)
+- $P(B|A) = 0.04$ (Probability of a customer complaining given the bulb is from line A)
+- $P(B|A') = 0.02$ (Probability of a customer complaining given the bulb is from line B)
+- $P(A') = 1 - P(A) = 1 - 0.70 = 0.30$ (Probability that the bulb came from line B)
+- $P(B) = P(B|A) \times P(A) + P(B|A') \times P(A')$
+
+Let's substitute the values and calculate-
+
+$P(B) = (0.04 \times 0.70) + (0.02 \times 0.30)$
+$P(B) = 0.028 + 0.006$
+$P(B) = 0.034$
+
+For the final solution, let's calculate $P(A|B)$:
+
+$P(A|B) = \frac{0.04 \times 0.70}{0.034}$
+$P(A|B) = \frac{0.028}{0.034}$
+$P(A|B) = 0.823...$
+
+So the probability that the defective bulb came from line A given the customer complaint is approximately 0.82 %.
 
 :::{admonition} EXERCISE 6. Dirty sports
 :class: tip, dropdown

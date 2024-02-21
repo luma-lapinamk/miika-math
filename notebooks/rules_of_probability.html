@@ -228,6 +228,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="binomial_distr.html">Binomial distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discrete_distr.html">Discrete probability distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Poisson_distr.html">Poisson distribution (missing)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="continuos_distr.html">Continuous probability distribution (missing)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistics</span></p>
 <ul class="nav bd-sidenav">
@@ -556,7 +557,32 @@ P(\text{Defective}) &amp;= 0.042 \end{align}\)</span></p>
 <li><p><span class="math notranslate nohighlight">\(P(B)\)</span> is the prior probability of event B (the probability of B occurring before considering any new evidence).</p></li>
 </ul>
 <p>In simpler terms, Bayes’ theorem allows us to update our belief in the probability of a hypothesis (A) based on observed data (B).</p>
-<p><strong>Example.</strong> In another factory, bulbs are manufactured on two different production lines, line A and line B. 70% of the production comes from line A and 30% from line B. Of the bulbs from line A, 4% are defective, and of the bulbs from line B, 2% are defective. A customer complains about a defective bulb, and the management cannot determine from which line it originated. Calculate the probability that the defective bulb came from line A.”</p>
+<p><strong>Example.</strong> In another factory, bulbs are manufactured on two different production lines, line A and line B. 70% of the production comes from line A and 30% from line B. Of the bulbs from line A, 4% are defective, and of the bulbs from line B, 2% are defective. A customer complains about a defective bulb, and the management cannot determine from which line it originated. Calculate the probability that the defective bulb came from line A.</p>
+<p>Solution. Let’s define the events:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A\)</span>: The defective bulb came from line A.</p></li>
+<li><p><span class="math notranslate nohighlight">\(B\)</span>: The customer got a defective bulb.</p></li>
+</ul>
+<p>We want to calculate <span class="math notranslate nohighlight">\(P(A|B)\)</span>, the probability that the defective bulb came from line A given that the customer complained about a defective bulb.</p>
+<p>Using Bayes’ theorem, we have:
+<span class="math notranslate nohighlight">\(P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}\)</span></p>
+<p>where</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P(A) = 0.70\)</span> (Probability that the bulb came from line A)</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(B|A) = 0.04\)</span> (Probability of a customer complaining given the bulb is from line A)</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(B|A') = 0.02\)</span> (Probability of a customer complaining given the bulb is from line B)</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(A') = 1 - P(A) = 1 - 0.70 = 0.30\)</span> (Probability that the bulb came from line B)</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(B) = P(B|A) \times P(A) + P(B|A') \times P(A')\)</span></p></li>
+</ul>
+<p>Let’s substitute the values and calculate-</p>
+<p><span class="math notranslate nohighlight">\(P(B) = (0.04 \times 0.70) + (0.02 \times 0.30)\)</span>
+<span class="math notranslate nohighlight">\(P(B) = 0.028 + 0.006\)</span>
+<span class="math notranslate nohighlight">\(P(B) = 0.034\)</span></p>
+<p>For the final solution, let’s calculate <span class="math notranslate nohighlight">\(P(A|B)\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(P(A|B) = \frac{0.04 \times 0.70}{0.034}\)</span>
+<span class="math notranslate nohighlight">\(P(A|B) = \frac{0.028}{0.034}\)</span>
+<span class="math notranslate nohighlight">\(P(A|B) = 0.823...\)</span></p>
+<p>So the probability that the defective bulb came from line A given the customer complaint is approximately 0.82 %.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">EXERCISE 6. Dirty sports</p>
 <p>Let’s assume that in a sports competition, 0.2 % of the participants use doping. The use of substances is tested through a blood test. If the substance being tested for is present in the blood, a positive result is obtained with a probability of 99 %. However, the test is somewhat uncertain in a sense that a positive result can be obtained with a probability of 5 % even if the substance is not present in the blood. What is the probability that a person who receives a positive test result is using a prohibited substance?</p>
