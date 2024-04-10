@@ -26,6 +26,8 @@ There are 13 Premier League matches happening on the upcoming Saturday and a gam
 a) How many different football pools does there exist?
 
 b) What if the number of matches is $n$?
+
+<p style="text-align: right;"> Answers: a) 1 594 323 </p>
 :::
 
 
