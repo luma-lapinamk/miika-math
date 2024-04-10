@@ -49,6 +49,9 @@ a) How many different **cases** are there when taking into consideration that at
 b) How many different strings (ordered three digit sets) are there that matches of what you can remember about your password?
 
 c) How many different strings are there all together?
+
+<p style="text-align: right;"> Answers: b) 17 600 </p>
+<p style="text-align: right;"> c) 21 952 </p>
 :::
 
 ## {index}`Permutations`
@@ -93,6 +96,9 @@ A teacher has a collection of 12 STEM textbooks: 3 on Physics, 4 on Chemistry an
 a) How many different arrangements can be made from the textbooks?
 
 b) How many different arrangements can be made from the textbooks, when every field of a study is arranged on its own?
+
+<p style="text-align: right;"> Answers: a) 479 001 600 </p>
+<p style="text-align: right;"> c) 103 680 </p>
 :::
 
 ## {index}`Variations, the k-permutations of n`
@@ -123,6 +129,9 @@ A teacher still has a collection of 12 STEM textbooks: 3 on Physics, 4 on Chemis
 a) How many different arrangements can be made from the textbooks?
 
 b) How many different arrangements can be made from the textbooks, when only two fields of a study are chosen and arranged on their own?
+
+<p style="text-align: right;"> Answers: a) 3 991 680 </p>
+<p style="text-align: right;"> c) 14 688 </p>
 :::
 
 ## {index}`Combinations, the k-combinations of n (a bit unfinished)`
@@ -152,6 +161,9 @@ A group of 12 students are having a match of <a href="https://www.pesis.fi/pesis
 a) Two referees are needed. How many different ways there are of choosing two referees?
 
 b) How many different ways there are of choosing one referee and one spectator?
+
+<p style="text-align: right;"> Answers: a) 66 </p>
+<p style="text-align: right;"> c) 132 </p>
 :::
 
 :::{admonition} EXERCISE 6. Lottery
@@ -164,4 +176,7 @@ a) What is the number of ways of choosing a Lottery row?
 b) What is the number of Lottery rows, where there are exactly 5 correct numbers and no correct extra numbers?
 
 *Hint: How many combinations are of 5 correct numbers and how many combinations there are of numbers, that were not drawn at all?*
+
+<p style="text-align: right;"> Answers: a) 18 643 560 </p>
+<p style="text-align: right;"> c) 10 416 </p>
 :::
