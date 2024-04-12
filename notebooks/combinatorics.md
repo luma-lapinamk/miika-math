@@ -27,7 +27,7 @@ a) How many different football pools does there exist?
 
 b) What if the number of matches is $n$?
 
-<p style="text-align: right;"> Answers: a) 1 594 323 </p>
+<p style="text-align: right; font-style: italic;"> Answers: a) 1 594 323 </p>
 :::
 
 
@@ -50,8 +50,8 @@ b) How many different strings (ordered three digit sets) are there that matches 
 
 c) How many different strings are there all together?
 
-<p style="text-align: right;"> Answers: b) 17 600 </p>
-<p style="text-align: right;"> c) 21 952 </p>
+<p style="text-align: right; font-style: italic;"> Answers: b) 17 600 </p>
+<p style="text-align: right; font-style: italic;"> c) 21 952 </p>
 :::
 
 ## {index}`Permutations`
@@ -97,8 +97,8 @@ a) How many different arrangements can be made from the textbooks?
 
 b) How many different arrangements can be made from the textbooks, when every field of a study is arranged on its own?
 
-<p style="text-align: right;"> Answers: a) 479 001 600 </p>
-<p style="text-align: right;"> b) 103 680 </p>
+<p style="text-align: right; font-style: italic;"> Answers: a) 479 001 600 </p>
+<p style="text-align: right; font-style: italic;"> b) 103 680 </p>
 :::
 
 ## {index}`Variations, the k-permutations of n`
@@ -130,8 +130,8 @@ a) How many different arrangements can be made from the textbooks?
 
 b) How many different arrangements can be made from the textbooks, when only two fields of a study are chosen and arranged on their own?
 
-<p style="text-align: right;"> Answers: a) 3 991 680 </p>
-<p style="text-align: right;"> b) 14 688 </p>
+<p style="text-align: right; font-style: italic;"> Answers: a) 3 991 680 </p>
+<p style="text-align: right; font-style: italic;"> b) 14 688 </p>
 :::
 
 ## {index}`Combinations, the k-combinations of n (a bit unfinished)`
@@ -162,8 +162,8 @@ a) Two referees are needed. How many different ways there are of choosing two re
 
 b) How many different ways there are of choosing one referee and one spectator?
 
-<p style="text-align: right;"> Answers: a) 66 </p>
-<p style="text-align: right;"> b) 132 </p>
+<p style="text-align: right; font-style: italic;"> Answers: a) 66 </p>
+<p style="text-align: right; font-style: italic;"> b) 132 </p>
 :::
 
 :::{admonition} EXERCISE 6. Lottery
@@ -177,6 +177,6 @@ b) What is the number of Lottery rows, where there are exactly 5 correct numbers
 
 *Hint: How many combinations are of 5 correct numbers and how many combinations there are of numbers, that were not drawn at all?*
 
-<p style="text-align: right;"> Answers: a) 18 643 560 </p>
-<p style="text-align: right;"> b) 10 416 </p>
+<p style="text-align: right; font-style: italic;"> Answers: a) 18 643 560 </p>
+<p style="text-align: right; font-style: italic;"> b) 10 416 </p>
 :::

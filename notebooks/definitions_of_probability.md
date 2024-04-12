@@ -27,11 +27,15 @@ Below are statistics of some darts practise.
 Statistics of 50 darts throws.
 ```
 What is the probability that the score of a single throw is even?
+
+<p style="text-align: right; font-style: italic;"> Answer: 0.52 </p>
 :::
 
 :::{admonition} EXERCISE 2. Jari 'The King' Litmanen #10
 :class: tip, dropdown
 The greatest Finnish football player is undisputedly Jari Litmanen. The probability that Litmanen scores once in a match 30 % and twice is 10 %. However, Litmanen doesn't score more than twice. What is the probability that Litmanen scores at least once in a match?
+
+<p style="text-align: right; font-style: italic;"> Answer: 0.40 </p>
 :::
 
 ## {index}`Classical definition of probability`
@@ -64,6 +68,10 @@ There are 4 blue, 1 yellow, and 3 red balls in a box. One ball is randomly drawn
 a) blue
 b) yellow
 c) not red?
+
+<p style="text-align: right; font-style: italic;"> Answers: a) $\frac{1}{2}$ </p>
+<p style="text-align: right; font-style: italic;"> b) $\frac{1}{8}$ </p>
+<p style="text-align: right; font-style: italic;"> c) $\frac{5}{8}$ </p>
 :::
 
 :::{admonition} EXERCISE 4. Dial Home Device from Stargate
@@ -75,6 +83,8 @@ A Dial Home Device (DHD in short) consist of 19 glyphs on the inner circle and 1
 To dial an address, seven glyphs must be pressed in a spesific order and one glyph can be selected only once.
 
 What is the possibility that a randomly chosen address will open a wormhole to a planet?
+
+<p style="text-align: right; font-style: italic;"> Answer: $1.6 \cdot 10^{-5}$ </p>
 :::
 
 ## {index}`Geometrical definition of probability`
@@ -87,6 +97,8 @@ Source: <a href="https://www.geogebra.org/m/SUPFr8qC#material/xgTuTpJX" target="
 :::{admonition} EXERCISE 5. Stone is thrown
 :class: tip, dropdown
 A stone is being randomly thrown on an area of land, which has the shape of a rectangle and the dimensions are 4 metres and 6 metres. In the middle of the area is a circular pond with the radius of 2 meters. What is probability that the stone hits the pond?
+
+<p style="text-align: right; font-style: italic;"> Answer: 0.52 </p>
 :::
 
 :::{admonition} EXERCISE 6. Darts - again
@@ -102,4 +114,8 @@ a) What is the probability that a randomly thrown dart will hit at least nine?
 b) Five darts are thrown on each turn. What is the probability that the total points of a turn is at least 49?
 
 c) The possibility to miss the dartboard is 5 %. What is the probability that all five darts will hit at most two?
+
+<p style="text-align: right; font-style: italic;"> Answers: a) 0.036 </p>
+<p style="text-align: right; font-style: italic;"> b) $ 6.9 \cdot 10^{-10}$ </p>
+<p style="text-align: right; font-style: italic;"> c) 0.0092 </p>
 :::
