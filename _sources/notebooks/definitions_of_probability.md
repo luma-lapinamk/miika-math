@@ -84,7 +84,7 @@ To dial an address, seven glyphs must be pressed in a spesific order and one gly
 
 What is the possibility that a randomly chosen address will open a wormhole to a planet?
 
-<p style="text-align: right; font-style: italic;"> Answer: 1.6·10<sup>-5</sup> </p>
+<p style="text-align: right; font-style: italic;"> Answer: 1.6 · 10<sup>-5</sup> </p>
 :::
 
 ## {index}`Geometrical definition of probability`
@@ -116,6 +116,6 @@ b) Five darts are thrown on each turn. What is the probability that the total po
 c) The possibility to miss the dartboard is 5 %. What is the probability that all five darts will hit at most two?
 
 <p style="text-align: right; font-style: italic;"> Answers: a) 0.036 </p>
-<p style="text-align: right; font-style: italic;"> b) 6.9·10<sup>-10</sup> </p>
+<p style="text-align: right; font-style: italic;"> b) 6.9 · 10<sup>-10</sup> </p>
 <p style="text-align: right; font-style: italic;"> c) 0.0092 </p>
 :::

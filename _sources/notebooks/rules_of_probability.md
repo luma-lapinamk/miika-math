@@ -43,11 +43,15 @@ Common elementary events are counted twice unless they are subtracted.
 :::{admonition} EXERCISE 1. Two dices
 :class: tip, dropdown
 In a board game, two six-sided dices are cast. The player wins a prize, if the faces of the dice are the same or the sum of the faces is 7 or 11. If the player doesn't win the prize, the player can try once again. What is the probability that the player wins the prize?
+
+<p style="text-align: right; font-style: italic;"> Answer: 0.63 </p>
 :::
 
 :::{admonition} EXERCISE 2. Oh no more balls!
 :class: tip, dropdown
 The are 7 red balls, 4 blue balls and 5 white balls in box. Two balls are randomly picked. What is the probability that the balls are red and white?
+
+<p style="text-align: right; font-style: italic;"> Answer: 0.29 </p>
 :::
 <br></br>
 
@@ -65,6 +69,8 @@ If you know the chance of something occurring, then you can easily find the chan
 :::{admonition} EXERCISE 3. Birthday on same weekday
 :class: tip, dropdown
 What is the probability that at least two persons of four are born on the same weekday?
+
+<p style="text-align: right; font-style: italic;"> Answer: 0.65 </p>
 :::
 <br></br>
 
@@ -110,6 +116,9 @@ One card is drawn from the deck. What are the odds that the card is a two of spa
 a) four cards are already drawn from the deck?
 
 b) the ace of spades is already drawn and the card drawn is black?
+
+<p style="text-align: right; font-style: italic;"> Answers: a) <sup>1</sup>/<sub>48</sub> </p>
+<p style="text-align: right; font-style: italic;"> b) <sup>1</sup>/<sub>12</sub> </p>
 :::
 
 ## {index}`Law of total probability`
@@ -156,6 +165,8 @@ So, the probability of selecting a defective product is 0.042.
 :::{admonition} EXERCISE 5. Passing a test depends of many factors.
 :class: tip, dropdown
 Let's assume that a student's success in an exam depends heavily on the time of day the exam is held. If the exam is early in the morning, the probability of passing is only 40 %. If it's in the afternoon, the student passes with a probability of 90 %. The teacher schedules the exam with a 30 % probability in the morning and a 70 % probability in the afternoon. What is the probability of passing the exam considering these two factors?
+
+<p style="text-align: right; font-style: italic;"> Answer: 0.75 </p>
 :::
 
 ## {index}`Bayes' theorem`
@@ -208,6 +219,8 @@ So the probability that the defective bulb came from line A given the customer c
 :::{admonition} EXERCISE 6. Dirty sports
 :class: tip, dropdown
 Let's assume that in a sports competition, 0.2 % of the participants use doping. The use of substances is tested through a blood test. If the substance being tested for is present in the blood, a positive result is obtained with a probability of 99 %. However, the test is somewhat uncertain in a sense that a positive result can be obtained with a probability of 5 % even if the substance is not present in the blood. What is the probability that a person who receives a positive test result is using a prohibited substance?
+
+<p style="text-align: right; font-style: italic;"> Answer: 0.038 </p>
 :::
 
 ## {index}`Chain rule`
