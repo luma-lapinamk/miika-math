@@ -9,7 +9,7 @@ The binomial distribution is a discrete probability distribution that describes 
 >
 > - **Constant Probability**: The probability of success is constant for each event. In other words, the probability does not change between events.
 
-The probability of event $A$ happening exactly $k$ times out of $n$ is given by the **discrete probability density function**, also knwon as the **mass function of the binomial distribution**, the **PMF**. The formula looks like
+The probability of event $A$ happening exactly $k$ times out of $n$ is given by the **discrete probability density function**, also known as the **mass function of the binomial distribution**, the **PMF**. The formula looks like
 
 $P(A=k) = \binom{n}{k} p^k (1 - p)^{n - k}$, where
 
@@ -31,7 +31,7 @@ $\begin{align}P(A=2) &= \binom{6}{2} \cdot (\frac{1}{6})^2 \cdot (1 - \frac{1}{6
 &= \frac{3125}{15552} \\ \\
 &= 0.200 \ldots \end{align}$
 
-Looking at the values we can say that there are 15 different ways (combinations) of getting two sixes, one sixth of a change of getting a six on a cast and five sixth of a change of not getting a six.
+Looking at the values we can say that there are 15 different ways (combinations) of getting two sixes, one sixth of a chance of getting a six on a cast and five sixth of a chance of not getting a six.
 
 ```{figure-md} bin_distr_example1
 <img src="../images/probstat/bin_distr_example1.png" alt="Binomial distribution of six dice casts" class="bg-primary mb-1" width="600px" align="center">
@@ -61,7 +61,7 @@ $\begin{align}P(\text{at least two sixes}) &= 1 - P(\text{zero or one sixes}) \\
 
 :::{admonition} EXERCISE 1. More rolls of the dice
 :class: tip, dropdown
-How does the change is getting two sixes change if we have less rolls of the dice? Think about the outcome first and then give an example.
+How does the chance of getting two sixes change if we have less rolls of the dice? Think about the outcome first and then give an example.
 :::
 
 :::{admonition} EXERCISE 2. Basketball
@@ -71,6 +71,9 @@ Lauri Markkanen, a Finnish basketball player for Utah Jazz, has a free throw sho
 a) In a game, he attempts 10 free throws. What is the probability that he makes exactly 8 of them?
 
 b) What is the probability that he makes at most 7 of them?
+
+<p style="text-align: right; font-style: italic;"> Answers: a) 0.23 </p>
+<p style="text-align: right; font-style: italic;"> b) 0.10 </p>
 :::
 
 Binomial distribution can be plotted and the result can be seen from the graph.
@@ -127,6 +130,10 @@ a) If a student guesses the answer to each question, what is the probability tha
 b) What is the expected number of correct answers when quessing?
 
 c) Calculate the variance.
+
+<p style="text-align: right; font-style: italic;"> Answers: a) 0.19 </p>
+<p style="text-align: right; font-style: italic;"> b) 4 </p>
+<p style="text-align: right; font-style: italic;"> c) 3 </p>
 :::
 <br></br>
 
