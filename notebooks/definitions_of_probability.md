@@ -69,9 +69,9 @@ a) blue
 b) yellow
 c) not red?
 
-<p style="text-align: right; font-style: italic;"> Answers: a) $\frac{1}{2}$ </p>
-<p style="text-align: right; font-style: italic;"> b) $\frac{1}{8}$ </p>
-<p style="text-align: right; font-style: italic;"> c) $\frac{5}{8}$ </p>
+<p style="text-align: right; font-style: italic;"> Answers: a) <sup>1</sup>/<sub>2</sub> </p>
+<p style="text-align: right; font-style: italic;"> b) <sup>1</sup>/<sub>8</sub> </p>
+<p style="text-align: right; font-style: italic;"> c) <sup>5</sup>/<sub>8</sub> </p>
 :::
 
 :::{admonition} EXERCISE 4. Dial Home Device from Stargate
@@ -84,7 +84,7 @@ To dial an address, seven glyphs must be pressed in a spesific order and one gly
 
 What is the possibility that a randomly chosen address will open a wormhole to a planet?
 
-<p style="text-align: right; font-style: italic;"> Answer: $1.6 \cdot 10^{-5}$ </p>
+<p style="text-align: right; font-style: italic;"> Answer: 1.6·10<sup>-5</sup> </p>
 :::
 
 ## {index}`Geometrical definition of probability`
@@ -116,6 +116,6 @@ b) Five darts are thrown on each turn. What is the probability that the total po
 c) The possibility to miss the dartboard is 5 %. What is the probability that all five darts will hit at most two?
 
 <p style="text-align: right; font-style: italic;"> Answers: a) 0.036 </p>
-<p style="text-align: right; font-style: italic;"> b) $ 6.9 \cdot 10^{-10}$ </p>
+<p style="text-align: right; font-style: italic;"> b) 6.9·10<sup>-10</sup> </p>
 <p style="text-align: right; font-style: italic;"> c) 0.0092 </p>
 :::
