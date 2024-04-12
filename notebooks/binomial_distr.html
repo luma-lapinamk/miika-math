@@ -228,6 +228,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Binomial distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discrete_distr.html">Discrete probability distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Poisson_distr.html">Poisson distribution (missing)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="continuos_distr.html">Continuous probability distribution (missing)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistics</span></p>
 <ul class="nav bd-sidenav">
@@ -412,7 +413,7 @@ document.write(`
 <li><p><strong>Constant Probability</strong>: The probability of success is constant for each event. In other words, the probability does not change between events.</p></li>
 </ul>
 </div></blockquote>
-<p>The probability of event <span class="math notranslate nohighlight">\(A\)</span> happening exactly <span class="math notranslate nohighlight">\(k\)</span> times out of <span class="math notranslate nohighlight">\(n\)</span> is given by the <strong>discrete probability density function</strong>, also knwon as the <strong>mass function of the binomial distribution</strong>, the <strong>PMF</strong>. The formula looks like</p>
+<p>The probability of event <span class="math notranslate nohighlight">\(A\)</span> happening exactly <span class="math notranslate nohighlight">\(k\)</span> times out of <span class="math notranslate nohighlight">\(n\)</span> is given by the <strong>discrete probability density function</strong>, also known as the <strong>mass function of the binomial distribution</strong>, the <strong>PMF</strong>. The formula looks like</p>
 <p><span class="math notranslate nohighlight">\(P(A=k) = \binom{n}{k} p^k (1 - p)^{n - k}\)</span>, where</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\binom{n}{x}\)</span> is here called as the <strong>binomial coefficient</strong>, also known as the <strong>k-combinations of n</strong>, which represents the number of ways to choose <span class="math notranslate nohighlight">\(k\)</span> successes out of <span class="math notranslate nohighlight">\(n\)</span> events</p></li>
@@ -429,7 +430,7 @@ document.write(`
 &amp;= 15 \cdot \frac{1}{36} \cdot \frac{625}{1296} \\ \\
 &amp;= \frac{3125}{15552} \\ \\
 &amp;= 0.200 \ldots \end{align}\)</span></p>
-<p>Looking at the values we can say that there are 15 different ways (combinations) of getting two sixes, one sixth of a change of getting a six on a cast and five sixth of a change of not getting a six.</p>
+<p>Looking at the values we can say that there are 15 different ways (combinations) of getting two sixes, one sixth of a chance of getting a six on a cast and five sixth of a chance of not getting a six.</p>
 <figure class="align-default" id="bin-distr-example1">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/bin_distr_example1.png"><img alt="Binomial distribution of six dice casts" class="bg-primary mb-1 align-center" src="../_images/bin_distr_example1.png" style="width: 600px;" /></a>
 <figcaption>
@@ -454,7 +455,7 @@ document.write(`
 <br></br></p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">EXERCISE 1. More rolls of the dice</p>
-<p>How does the change is getting two sixes change if we have less rolls of the dice? Think about the outcome first and then give an example.</p>
+<p>How does the chance of getting two sixes change if we have less rolls of the dice? Think about the outcome first and then give an example.</p>
 </div>
 <div class="tip dropdown admonition">
 <p class="admonition-title">EXERCISE 2. Basketball</p>
