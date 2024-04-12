@@ -71,6 +71,9 @@ Lauri Markkanen, a Finnish basketball player for Utah Jazz, has a free throw sho
 a) In a game, he attempts 10 free throws. What is the probability that he makes exactly 8 of them?
 
 b) What is the probability that he makes at most 7 of them?
+
+<p style="text-align: right; font-style: italic;"> Answers: a) 0.23 </p>
+<p style="text-align: right; font-style: italic;"> b) 0.10 </p>
 :::
 
 Binomial distribution can be plotted and the result can be seen from the graph.
@@ -127,6 +130,10 @@ a) If a student guesses the answer to each question, what is the probability tha
 b) What is the expected number of correct answers when quessing?
 
 c) Calculate the variance.
+
+<p style="text-align: right; font-style: italic;"> Answers: a) 0.19 </p>
+<p style="text-align: right; font-style: italic;"> b) 4 </p>
+<p style="text-align: right; font-style: italic;"> c) 3 </p>
 :::
 <br></br>
 
