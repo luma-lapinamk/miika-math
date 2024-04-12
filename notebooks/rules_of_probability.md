@@ -113,12 +113,12 @@ So, the probability that both cards drawn are aces is $\frac{1}{221} \approx 0.0
 :class: tip, dropdown
 One card is drawn from the deck. What are the odds that the card is a two of spades, when
 
-a) four cards are already drawn from the deck?
+a) four red cards are already drawn from the deck?
 
-b) the ace of spades is already drawn and the card drawn is black?
+b) the ace of spades is already drawn and the drawn card is black?
 
 <p style="text-align: right; font-style: italic;"> Answers: a) <sup>1</sup>/<sub>48</sub> </p>
-<p style="text-align: right; font-style: italic;"> b) <sup>1</sup>/<sub>12</sub> </p>
+<p style="text-align: right; font-style: italic;"> b) <sup>1</sup>/<sub>25</sub> </p>
 :::
 
 ## {index}`Law of total probability`

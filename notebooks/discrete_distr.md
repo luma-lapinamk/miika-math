@@ -3,7 +3,7 @@ A binomial distribution is actually a special case of a discrete probability dis
 
 $\text{mean} = \mu = \sum_i^{}p_ix_i$
 
-$\text{variance} = \sigma^2 = \sum_i^{}p_i(x_i-\text{\mu})^2$
+$\text{variance} = \sigma^2 = \sum_i^{}p_i(x_i-\mu)^2$
 
 If each of the individual probabilities, $p_i$, are plotted, the discrete probability distribution is called a **discrete probability density function** (or a probability mass function, PMF). A discrete random variable is one that can take on a countable number of distinct values. For each possible value of the random variable, the PMF gives the probability of observing that value.
 
@@ -29,6 +29,9 @@ $P(\text{the sum of two dices is 10})=\frac{3}{36}=\frac{1}{12}$
 :::{admonition} EXERCISE 1. Mean and variance for the sum of two dices
 :class: tip, dropdown
 Compute the mean and variance for the sum of the faces, when two six-sided dices are thrown.
+
+<p style="text-align: right; font-style: italic;"> Answers: mean = 7 </p>
+<p style="text-align: right; font-style: italic;"> variance = 5.8 </p>
 :::
 
 If we draw a distribution of all the possible sums, we have to count the probabilites separately. A Python code could look like this:
