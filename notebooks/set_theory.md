@@ -22,6 +22,11 @@ Set A is a (proper) subset of set B in a Venn diagram
 >- It's important to note that a set is always considered a subset of itself. That is, if $A$ is a set, then $A \subseteq A$.
 
 **Complement of a set:** The {index}`complement of a set` $A$ in relation to the universal set $U$, denoted by $\overline{A}$, contains all elements in $U$ that are not in $A$. Mathematically, the complement of a $A$ os defined by $-A = \{x \in U \mid x \notin A\}$.
+```{figure-md} Complement
+<img src="../images/algebra/complement.png" alt="A complement of set A presented as a Venn diagram" class="bg-primary mb-1" width="230px" align="center">
+
+A complement of set A presented as a Venn diagram
+```
 
 **Union:** The {index}`union` of $A$ and $B$, denoted $A \cup B$, contains all elements that are in either $A$ or $B$, or both. Mathematically put $A \cup B = \{x \in U \mid x \in A \text{ or } x \in B\}$.
 ```{figure-md} Union
