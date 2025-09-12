@@ -13,7 +13,7 @@ Set theory is a branch of mathematics that deals with the study of collections o
 
 **Subset:** Set $A$ is a {index}`subset` of another set $B$ if every element of $A$ is also an element of $B$. Symbolically this can be expressed as $A \subseteq B$. If $A$ is a subset of $B$ but not equal as $B$ $(A \not= B)$, it is called a **{index}`proper subset`**, and it is denoted by $A \subset B$.
 ```{figure-md} Subset
-<img src="../images/algebra/subset.png" alt="Set A is a subset of set B in a Venn diagram" class="bg-primary mb-1" width="180px" align="center">
+<img src="../images/algebra/subset.png" alt="Set A is a subset of set B in a Venn diagram" class="mb-1" width="180px" align="center">
 
 Set A is a (proper) subset of set B in a Venn diagram.
 ```
@@ -23,28 +23,28 @@ Set A is a (proper) subset of set B in a Venn diagram.
 
 **Complement of a set:** The {index}`complement of a set` $A$ in relation to the universal set $U$, denoted by $\overline{A}$, contains all elements in $U$ that are not in $A$. Mathematically, the complement of a $A$ os defined by $-A = \{x \in U \mid x \notin A\}$.
 ```{figure-md} Complement
-<img src="../images/algebra/complement.png" alt="A complement of set A presented as a Venn diagram" class="bg-primary mb-1" width="180px" align="center">
+<img src="../images/algebra/complement.png" alt="A complement of set A presented as a Venn diagram" class="mb-1" width="180px" align="center">
 
 A complement of set A presented as a Venn diagram.
 ```
 
 **Union:** The {index}`union` of $A$ and $B$, denoted $A \cup B$, contains all elements that are in either $A$ or $B$, or both. Mathematically put $A \cup B = \{x \in U \mid x \in A \text{ or } x \in B\}$.
 ```{figure-md} Union
-<img src="../images/algebra/union.png" alt="Union of sets A and B presented in a Venn diagram" class="bg-primary mb-1" width="300px" align="center">
+<img src="../images/algebra/union.png" alt="Union of sets A and B presented in a Venn diagram" class="mb-1" width="300px" align="center">
 
 Union of sets A and B presented in a Venn diagram
 ```
 
 **Intersection:** The {index}`intersection` of two sets $A$ and $B$, denoted $A \cap B$, is the set of elements that are in both $A$ and $B$. Mathematically $A \cap B = \{x \in U \mid x \in A \text{ and } x \in B\}$.
 ```{figure-md} Intersection
-<img src="../images/algebra/intersection.png" alt="Intersection of sets A and B presented in a Venn diagram" class="bg-primary mb-1" width="300px" align="center">
+<img src="../images/algebra/intersection.png" alt="Intersection of sets A and B presented in a Venn diagram" class="mb-1" width="300px" align="center">
 
 Intersection of sets A and B presented in a Venn diagram
 ```
 
 **Set difference:** The {index}`set difference` between sets $A$ and $B$ consists of all the elements that are only in set $A$ but not in set $B$. In other words, when you subtract one set from another, $A-B$ contains the elements that are exclusive to set $A$ and are not shared with set $B$. Mathematically $A-B = \{x \mid x \in A \text{ and } x \notin B\}$.
 ```{figure-md} Set difference
-<img src="../images/algebra/difference.png" alt="Set difference of sets A and B presented in a Venn diagram" class="bg-primary mb-1" width="300px" align="center">
+<img src="../images/algebra/difference.png" alt="Set difference of sets A and B presented in a Venn diagram" class="mb-1" width="300px" align="center">
 
 Intersection of sets A and B presented in a Venn diagram
 ```
@@ -76,7 +76,7 @@ There are two De Morgan's Laws: one for the negation of a union and one for the 
 **First De Morgan's Law**
 The negation of a union of sets is equivalent to the intersection of the complements of those sets.
 ```{figure-md} First De Morgan's Law
-<img src="../images/algebra/DeMorgan1.png" alt="First De Morgan's Law presented in a Venn diagram" class="bg-primary mb-1" width="300px" align="center">
+<img src="../images/algebra/DeMorgan1.png" alt="First De Morgan's Law presented in a Venn diagram" class="mb-1" width="300px" align="center">
 
 First De Morgan's Law presented in a Venn diagram
 ```
@@ -87,7 +87,7 @@ $\overline{A \cup B} = \overline{A} \cap \overline{B}$.<br><br>
 The negation of an intersection of sets is equivalent to the union of the complements of those sets.
 The negation of a union of sets is equivalent to the intersection of the complements of those sets.
 ```{figure-md} Second De Morgan's Law
-<img src="../images/algebra/DeMorgan2.png" alt="Second De Morgan's Law presented in a Venn diagram" class="bg-primary mb-1" width="300px" align="center">
+<img src="../images/algebra/DeMorgan2.png" alt="Second De Morgan's Law presented in a Venn diagram" class="mb-1" width="300px" align="center">
 
 Second De Morgan's Law presented in a Venn diagram
 ```
