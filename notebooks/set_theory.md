@@ -23,7 +23,7 @@ Set A is a (proper) subset of set B in a Venn diagram
 
 **Complement of a set:** The {index}`complement of a set` $A$ in relation to the universal set $U$, denoted by $\overline{A}$, contains all elements in $U$ that are not in $A$. Mathematically, the complement of a $A$ os defined by $-A = \{x \in U \mid x \notin A\}$.
 ```{figure-md} Complement
-<img src="../images/algebra/complement.png" alt="A complement of set A presented as a Venn diagram" class="bg-primary mb-1" width="230px" align="center">
+<img src="../images/algebra/complement.png" alt="A complement of set A presented as a Venn diagram" class="bg-primary mb-1" width="180px" align="center">
 
 A complement of set A presented as a Venn diagram
 ```
