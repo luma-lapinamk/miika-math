@@ -43,11 +43,6 @@ Every set of numbers is a "proper" subset of larger one, excluding the set of co
 Sets of numbers presented in an Euler diagram
 ```
 
-```{figure-md} Euler_diag
-<img src="../images/algebra/Euler_diag.png" alt="Sets of numbers presented in an Euler diagram" class="mb-1" width="600px" align="center">
-
-Sets of numbers presented in an Euler diagram
-```
 - Natural numbers are a proper subset of integers.
 - Integers are a proper subset of rational numbers.
 - Rational numbers are a subset of the real numbers.
