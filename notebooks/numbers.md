@@ -35,13 +35,13 @@ When numbers cannot be expressed as a ratio of two integers, they are called **{
 
 Every set of numbers is a "proper" subset of larger one, excluding the set of complex numbers: $\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}\subset\mathbb{C}$. This can be presented as an Euler diagram:
 
-```md
 ```{figure} ../images/algebra/Euler_diag.png
 :alt: Set A is a subset of set B in a Venn diagram.
 :width: 600px
 :align: center
 
 Sets of numbers presented in an Euler diagram
+```
 
 ```{figure-md} Euler_diag
 <img src="../images/algebra/Euler_diag.png" alt="Sets of numbers presented in an Euler diagram" class="mb-1" width="600px" align="center">
