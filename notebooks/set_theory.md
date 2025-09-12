@@ -15,7 +15,7 @@ Set theory is a branch of mathematics that deals with the study of collections o
 ```{figure-md} Subset
 <img src="../images/algebra/subset.png" alt="Set A is a subset of set B in a Venn diagram" class="bg-primary mb-1" width="180px" align="center">
 
-Set A is a (proper) subset of set B in a Venn diagram
+Set A is a (proper) subset of set B in a Venn diagram.
 ```
 >- $A \subseteq B$ means that $A$ is a subset of $B$, and $A$ could potentially be equal to $B$.
 >- $A \subset B$ means that $A$ is a proper subset of $B$, indicating that $A$ is strictly contained within $B$ and is not equal to $B$.
@@ -25,7 +25,7 @@ Set A is a (proper) subset of set B in a Venn diagram
 ```{figure-md} Complement
 <img src="../images/algebra/complement.png" alt="A complement of set A presented as a Venn diagram" class="bg-primary mb-1" width="180px" align="center">
 
-A complement of set A presented as a Venn diagram
+A complement of set A presented as a Venn diagram.
 ```
 
 **Union:** The {index}`union` of $A$ and $B$, denoted $A \cup B$, contains all elements that are in either $A$ or $B$, or both. Mathematically put $A \cup B = \{x \in U \mid x \in A \text{ or } x \in B\}$.
