@@ -58,17 +58,15 @@ c) $R(x)=4x^4+14x^3-62x^2+72$
 
 ## Special forms of polynomials
 
-Here are some useful special forms of polynomials:
+Here are some useful special forms of polynomials.
 
-$x^2+2xy+y^2=(x+y)^2$ which means that usually $x^2+y^2\ne(x+y)^2$!
+The Square of a Binomial
 
-$x^2-2xy+y^2=(x-y)^2$
-
-$x^2-y^2=(x+y)(x-y)$
-
-$x^3+y^3=(x+y)(x^2-xy+b^2)$
-
-$x^3-y^3=(x-y)(x^2+xy+y^2)$
+$\begin{align} I) \ (x+y)^2&=x^2+2xy+y^2, \ \text{which means that usually that} \ x^2+y^2\ne(x+y)^2 \\
+II) \ (x-y)^2&=x^2-2xy+y^2 \\ \\
+III) \ x^2-y^2&=(x+y)(x-y) \\
+IV) \ x^3+y^3&=(x+y)(x^2-xy+b^2) \\
+V) \ x^3-y^3&=(x-y)(x^2+xy+y^2 \end{align})$
 
 ### Examples
 a) $A(x)=6x^2+12x+6$
@@ -85,27 +83,56 @@ f) $F(x)=8x^3+27$
 
 g) $R(x)=4x^4+14x^3-62x^2+72$
 
-## Division of polynomials
+## Factoring by gouping
 
-Division is done by factoring the numerator and/or the denominator in order to find something to simplify from both sides of the quotient. The algorithm of *division angel* can in some cases be useful. If the division isn't even, what will be left is a **remainder**.
+Factoring of quadratic polynomials of the form of $P(x)=ax^2+c$ can be factored, if possible, by using the special form of $x^2-y^2=(x+y)(x-y)$.
 
-For eaxmple
+For complete quadratic polynomials of the form of $P(x)=ax^2+bx+c$ a technic called **grouping** is an effective way.
 
-$\frac{(3x^3-7x^2+5x-6)}{(x-2)}=\frac{(x-2)(3x^2-x+3)}{(x-2)}=3x^2-x+3$
+For example, let $P(x)=5x^2+9x-2$. Now we have to solve a pair of equations that satisfies these two conditions:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0yIFXf7gzXA?si=1wpqBl0UpdZLU3Wy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+When $ab=5\cdot(-2)=-10$ and $b=9$, then
 
-### Finally factoring by gouping
+$\begin{align} kl&=-10 \\
+k+l&=9\end{align}$
 
-There are no neat algorithms or tricks to these examples. Just some examples of tougher cases. 🤨
+To work this out, we have to find such integers $k$ and $l$ so that their product equals -10 and their sum equals 9. We can do this by writing down all the possible combinations of $k \cdot l$ that produces -10.
 
-$\begin{align}\text{a)} \ 5x^2+9x-2&=5x^2-x+10x-2 \\
+$\begin{align} 1\cdot(-10)&=-10 \\
+-1\cdot10&=-10 \\
+2\cdot(-5)&=-10 \\
+-2\cdot5&=-10\end{align}$
+
+From the combinations we can see that $-1+10$ is equal to $9$, so that is our solution. Now we can write $9x=-x+10x$ and substitute that in the polynomial.
+
+$\begin{align}5x^2+9x-2&=5x^2-x+10x-2 \\
 &=x(5x-1)+2(5x-1) \\
 &=(5x-1)(x+2)\end{align}$
+<br>
 
-$\begin{align}\text{b)} \ 2x^4-3x^3+2x-3&=2x^4+2x-3x^3-3 \\
+Let's try that for another example. Let $Q(x)=5x^2+11x-12$. This time $k \cdot l=5\cdot(-12)=-60$
+
+$\begin{align} -1\cdot60&=-60 \\
+-2\cdot30&=-60 \\
+-3\cdot20&=-60 \\
+-4\cdot15&=-60 \end{align}$
+
+From the last combination we can now pick $k+l=-4+15=9$. Therefore
+
+$\begin{align}5x^2+11x-12&=5x^2-4x+15x-12 \\
+&=5x^2+15x-4x-12 \ (\text{This time we had to change the order of} \ k \ \text{and} \ l) \\
+&=5x(x+3)-4(x+3) \\
+&=(x+3)(5x-4) \end{align}$
+
+Here is little video of the solution.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BZgkpBQMqww?si=rRxmE_zGZcIct8Bt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+And finally, couple of harder examples to look into.
+
+$\begin{align}\text{a)} \ 2x^4-3x^3+2x-3&=2x^4+2x-3x^3-3 \\
 &=2x(x^3+1)-3(x^3+1) \\
 &=(x^3+1)(2x-3)\end{align}$
 
-$\begin{align}\text{c)} \ x^5-2x^3-4x^2+8&=x^3(x^2-2)-4(x^2-2) \\
+$\begin{align}\text{b)} \ x^5-2x^3-4x^2+8&=x^3(x^2-2)-4(x^2-2) \\
 &=(x^2-2)(x^3-4)\end{align}$

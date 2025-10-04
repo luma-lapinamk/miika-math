@@ -49,3 +49,14 @@ $\begin{align}\text{b)} \ (x^2-1)\cdot(4x+3)&=x^2(4x-3)-1(4x-3) \\
 $\begin{align}\text{c)} \ (-4x^2+2x+5)\cdot(2x-5)&=-4x^2(2x-5)+2x(2x-5)+5(2x-5) \\
 &=-8x^3+20x^2+4x^2-10x+10x-25 \\
 &=-8x^3+24x^2-15\end{align}$
+
+
+### Division of polynomials
+
+Division is done by factoring the numerator and/or the denominator in order to find something to simplify from both sides of the quotient. An algorithm called *division angel* and *grouping* are useful and will be covered in the next chapter called Factoring. If the division isn't even, what will be left is a **remainder**.
+
+For eaxmple
+
+$\frac{(3x^3-7x^2+5x-6)}{(x-2)}=\frac{(x-2)(3x^2-x+3)}{(x-2)}=3x^2-x+3$
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0yIFXf7gzXA?si=1wpqBl0UpdZLU3Wy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
