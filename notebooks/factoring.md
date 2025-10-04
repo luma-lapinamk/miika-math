@@ -101,9 +101,9 @@ $\begin{align} 1\cdot(-10)&=-10 \\
 2\cdot(-5)&=-10 \\
 -2\cdot5&=-10\end{align}$
 
-From the combinations we can see that $-1+10$ is equal to $9$, so that is our solution. Now we can write $\textbf{9x=-x+10x}$ and substitute that in the polynomial.
+From the combinations we can see that $-1+10$ is equal to $9$, so that is our solution. Now we can write $\textbf{9x = -x + 10x}$ and substitute that in the polynomial.
 
-$\begin{align}5x^2+\textbf{9x}-2&=5x^2\textbf{-x+10x}-2 \\
+$\begin{align}5x^2+\textbf{9x}-2&=5x^2\textbf{ -x + 10x}-2 \\
 &=x(5x-1)+2(5x-1) \\
 &=(5x-1)(x+2)\end{align}$
 <br>
