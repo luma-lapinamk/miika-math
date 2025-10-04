@@ -66,7 +66,7 @@ $\begin{align} I) \ (x+y)^2&=x^2+2xy+y^2, \ \text{which means that usually that}
 II) \ (x-y)^2&=x^2-2xy+y^2 \\ \\
 III) \ x^2-y^2&=(x+y)(x-y) \\
 IV) \ x^3+y^3&=(x+y)(x^2-xy+b^2) \\
-V) \ x^3-y^3&=(x-y)(x^2+xy+y^2 \end{align})$
+V) \ x^3-y^3&=(x-y)(x^2+xy+y^2 \end{align}$
 
 ### Examples
 a) $A(x)=6x^2+12x+6$
@@ -87,9 +87,7 @@ g) $R(x)=4x^4+14x^3-62x^2+72$
 
 Factoring of quadratic polynomials of the form of $P(x)=ax^2+c$ can be factored, if possible, by using the special form of $x^2-y^2=(x+y)(x-y)$.
 
-For complete quadratic polynomials of the form of $P(x)=ax^2+bx+c$ a technic called **grouping** is an effective way.
-
-For example, let $P(x)=5x^2+9x-2$. Now we have to solve a pair of equations that satisfies these two conditions:
+For complete quadratic polynomials of the form of $P(x)=ax^2+bx+c$ a technic called **grouping** is an effective way. For example, let $P(x)=5x^2+9x-2$. Now we have to solve a pair of equations that satisfies these two conditions:
 
 When $ab=5\cdot(-2)=-10$ and $b=9$, then
 
@@ -103,14 +101,16 @@ $\begin{align} 1\cdot(-10)&=-10 \\
 2\cdot(-5)&=-10 \\
 -2\cdot5&=-10\end{align}$
 
-From the combinations we can see that $-1+10$ is equal to $9$, so that is our solution. Now we can write $9x=-x+10x$ and substitute that in the polynomial.
+From the combinations we can see that $-1+10$ is equal to $9$, so that is our solution. Now we can write $\textbf{\emph{9x=-x+10x}}$ and substitute that in the polynomial.
 
-$\begin{align}5x^2+9x-2&=5x^2-x+10x-2 \\
+$\begin{align}5x^2+\textbf{\emph{9x}}-2&=5x^2\textbf{\emph{-x+10x}}-2 \\
 &=x(5x-1)+2(5x-1) \\
 &=(5x-1)(x+2)\end{align}$
 <br>
 
-Let's try that for another example. Let $Q(x)=5x^2+11x-12$. This time $k \cdot l=5\cdot(-12)=-60$
+### Another example
+
+Let $Q(x)=5x^2+11x-12$. This time $k \cdot l=5\cdot(-12)=-60$
 
 $\begin{align} -1\cdot60&=-60 \\
 -2\cdot30&=-60 \\
