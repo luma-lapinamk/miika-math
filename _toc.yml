@@ -24,7 +24,6 @@ parts:
   - caption: Functions
     chapters:
     - file: notebooks/linear_functions
-    - file: notebooks/quadratic_functions
     chapters:
     - file: notebooks/blank2
   - caption: Trigonometry
