@@ -1,11 +1,9 @@
 # Functions
 
-```{figure} ../images/algebra/func_machine.png
-:alt: A description what a function does.
-:width: 600px
-:align: center
+```{figure-md} A "function" factory
+<img src="../images/algebra/func_machine.png" alt="A description what a function does." class="mb-1" width="280px" align="center">
 
-The input to the factory is called *range* and the output is called the *domain*.
+The input to the factory is called the *range* and the output is called the *domain*.
 ```
 
 ## Linear functions
