@@ -1,6 +1,6 @@
 # Quadratic functions
 
-(figures are missing)
+**Note: this chapters is formed quickly from lecture notes. The figures are also missing.**
 
 Quadratic functions in the form of $f(x)=ax^2+bx+c$, where $a,b,c ∈ℝ$, are parabolas when poltted in (x,y)-plane.
 
@@ -36,7 +36,8 @@ x=&\frac{-(-4)\pm\sqrt{(-4)^2-4\cdot3\cdot(-9)}}{2\cdot3} \\
 x=&\frac{4\pm\sqrt{124}}{6} \\
 x=&\frac{4\pm\sqrt{124}}{6} \\
 x=&\frac{4\pm2\sqrt{31}}{6} \\
-x=&\frac{2\pm\sqrt{31}}{3} \end{align}$
+x=&\frac{2\pm\sqrt{31}}{3} \\
+\text{and so on...} \end{align}$
 
 <br>
 
@@ -57,7 +58,7 @@ The number of roots can be solved from the discriminant, $D=b^2-4ac$
 > - if $D = 0$, the function has one root and the root is at the same point as the vertex and root is $x=-\frac{b}{2a}$
 > - if $D < 0$, the function has no roots
 
-## Minimun and maximum
+## The extrema: minimun and maximum
 
 The minimum and maximum value of the function can be found from the vertex or from the end points of a specific closed domain.
 

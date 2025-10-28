@@ -1,14 +1,14 @@
 # Functions
 
+**Note: this chapters is formed quickly from lecture notes. The figures are also missing.**
+
 ```{figure-md} A "function" factory
 <img src="../images/algebra/func_machine.png" alt="A description what a function does." class="mb-1" width="500px" align="center">
 
-The input to the factory is called the *range* and the output is called the *domain*.
+The input to the factory is called the *domain* and the output is called the *range*.
 ```
 
 ## Linear functions
-
-(figures are missing)
 
 Linear functions in the form of  $f(x)=ax+b$ are lines in (x,y)-plane, where $a,b\in\mathbb{R}$, and the coefficient $a$ is called the slope and the constant term $b$ is the value of the intersection point with y-axis.
 
