@@ -8,6 +8,8 @@ The input to the factory is called the *range* and the output is called the *dom
 
 ## Linear functions
 
+(figures are missing)
+
 Linear functions in the form of  $f(x)=ax+b$ are lines in (x,y)-plane, where $a,b\in\mathbb{R}$, and the coefficient $a$ is called the slope and the constant term $b$ is the value of the intersection point with y-axis.
 
 The slope, the coefficient in front of the variable $x$, determines if our function is increasing or decreasing one, or horizontal (parallel with the x-axis).
@@ -21,8 +23,6 @@ For example a function $f(x)=3x-1$ multiplies the variable $x$ by three and sub
 
 Let's consider another linear function of 
 $f(x)=-4x+10{,}\ x\in\mathbb{R}$
-
-(missing figure)
 
 The value of the function can be computed depending on the value of the variable $x$.
 
