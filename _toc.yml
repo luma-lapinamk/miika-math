@@ -22,6 +22,7 @@ parts:
     - file: notebooks/linear_equations
     - file: notebooks/inequality
   - caption: Functions
+    - file: notebooks/linear_functions
     chapters:
     - file: notebooks/blank2
   - caption: Trigonometry
