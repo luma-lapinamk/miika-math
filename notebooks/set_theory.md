@@ -93,3 +93,9 @@ Second De Morgan's Law presented in a Venn diagram
 ```
 Mathematically, this law can be expressed as:
 $\overline{A \cap B} =\overline{A} \cup \overline{B}$
+
+:::{admonition} EXAMPLE. (missing)
+:class: tip, dropdown
+ ...
+
+:::
